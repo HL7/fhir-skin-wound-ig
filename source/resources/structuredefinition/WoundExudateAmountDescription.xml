@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="WoundExudateAmountDescription"/>
+    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudateAmountDescription"/>
+    <version value="2.0.0"/>
+    <name value="WoundExudateAmountDescription"/>
+    <status value="draft"/>
+    <date value="2019-06-19"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="Wound Exudate Amount Description describes an estimated volume of wound drainage."/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:cimiwoundExudateAmountDescription">
+            <path value="Observation"/>
+			<short value="Wound Exudate Amount Description"/>
+            <definition value="Wound Exudate Amount Description describes an estimated volume of wound drainage."/>
+        </element>
+        <element id="Observation:cimiwoundExudateAmountDescription.code">
+            <path value="Observation.code"/>
+        </element>
+		<element id="Observation:cimiwoundExudateAmountDescription.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:cimiwoundExudateAmountDescription.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://loinc.org"/>
+		</element>
+		<element id="Observation:cimiwoundExudateAmountDescription.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="39116-9"/>
+		</element>
+		<element id="Observation:cimiwoundExudateAmountDescription.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="Drainage amount of Wound"/>
+		</element>
+        <element id="Observation:cimiwoundExudateAmountDescription.valueCodeableConcept">
+            <path value="Observation.valueCodeableConcept"/>
+            <short value="Wound Exudate Amount Description code"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+			<binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundExudateAmountDescriptionVS"/>
+			</binding>
+        </element>
+    </differential>
+</StructureDefinition>

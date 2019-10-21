@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="BodyLandmarkDescriptionExt"/>
+  <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodyLandmarkDescriptionExt"/>
+  <version value="2.0.0"/>
+  <name value="BodyLocationOrientation"/>
+  <status value="draft"/>
+  <date value="2019-06-19"/>
+  <publisher value="CIMI"/>
+  <description value="A description of a landmark on the body used as a reference to locate something else."/>
+  <fhirVersion value="4.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+	<type value="element"/>
+	<expression value="StructureDefinition"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension:BodyLandmarkDescriptionExt">
+      <path value="Extension"/>
+      <definition value="A description of a landmark on the body used as a reference to locate something else."/>
+      <min value="0"/>
+      <max value="1"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Extension:BodyLandmarkDescriptionExt.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodyLandmarkDescriptionExt"/>
+    </element>
+    <element id="Extension:BodyLandmarkDescriptionExt.valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept"/>
+      <type>
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+      </type>
+	  <binding>
+		<strength value="example"/>
+		<valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/bodyLandmarkDescriptionVS"/>
+	  </binding>
+    </element>
+  </differential>
+</StructureDefinition>

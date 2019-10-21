@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="WoundRelatedObservationsPanel"/>
+    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundRelatedObservationsPanel"/>
+    <version value="2.0.0"/>
+    <name value="WoundRelatedObservationsPanel"/>
+    <status value="draft"/>
+    <date value="2019-06-19"/>
+    <publisher value="CIMI"/>
+    <description value="Observations that are linked to a wound."/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:cimiWoundRelatedObservationsPanel">
+            <path value="Observation"/>
+            <definition value="Observations that are linked to a wound"/>
+        </element>
+		<element id="Observation:cimiWoundRelatedObservationsPanel.value[x]">
+			<path value="Observation.value[x]"/>
+			<min value="0"/>
+			<max value="0"/>
+		</element>
+		<element id="Observation:cimiWoundRelatedObservationsPanel.hasMember">
+			<path value="Observation.hasMember"/>
+			<sliceName value="RelatedObservations"/>
+            <slicing id="10">
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="reference.resolve"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+		</element>
+		<element id="Observation:cimiWoundRelatedObservationsPanel.hasMember:woundBed">
+			<path value="Observation.hasMember"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundBed"/>
+			</type>
+		</element>
+		<element id="Observation:cimiWoundRelatedObservationsPanel.hasMember:woundEdge">
+			<path value="Observation.hasMember"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundEdge"/>
+			</type>
+		</element>
+		<element id="Observation:cimiWoundRelatedObservationsPanel.hasMember:woundTunneling">
+			<path value="Observation.hasMember"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundTunnelingAssert"/>
+			</type>
+		</element>
+		<element id="Observation:cimiWoundRelatedObservationsPanel.hasMember:woundUndermining">
+			<path value="Observation.hasMember"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundUnderminingAssert"/>
+			</type>
+		</element>
+		<element id="Observation:cimiWoundRelatedObservationsPanel.hasMember:woundExudate">
+			<path value="Observation.hasMember"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudateAssert"/>
+			</type>
+		</element>
+		<element id="Observation:cimiWoundRelatedObservationsPanel.hasMember:woundSize">
+			<path value="Observation.hasMember"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundSize"/>
+			</type>
+		</element>
+		<element id="Observation:cimiWoundRelatedObservationsPanel.hasMember:woundShape">
+			<path value="Observation.hasMember"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundShape"/>
+			</type>
+		</element>
+    </differential>
+</StructureDefinition>

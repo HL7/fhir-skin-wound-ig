@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="WoundExudate"/>
+    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudate"/>
+    <name value="Wound Exudate"/>
+    <status value="draft"/>
+    <date value="2019-06-19"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="Wound Exudate describes the color, volume, appearance, odor, and qualitative amount of substance issuing from a wound."/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcwoundExudate">
+            <path value="Observation"/>
+			<short value="Wound Exudate"/>
+            <definition value="Wound Exudate describes the color, volume, appearance, odor, and qualitative amount of substance issuing from a wound."/>
+        </element>
+        <element id="Observation:hspcwoundExudate.code">
+            <path value="Observation.code"/>
+        </element>
+		<element id="Observation:hspcwoundExudate.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:hspcwoundExudate.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://loinc.org"/>
+		</element>
+		<element id="Observation:hspcwoundExudate.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="89259-6"/>
+		</element>
+		<element id="Observation:hspcwoundExudate.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="Presence of wound exudate"/>
+		</element>
+        <element id="Observation:hspcwoundExudate.valueCodeableConcept">
+            <path value="Observation.valueCodeableConcept"/>
+            <short value="Present/Absent"/>
+			<type>
+                <code value="CodeableConcept"/>
+            </type>
+			<binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/presentAbsentVS"/>
+            </binding>
+        </element>
+		<element id="Observation:hspcwoundExudate.related">
+			<path value="Observation.related"/>
+			<slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="target.reference.resolve"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+			<min value="0"/>
+			<max value="1"/>
+		</element>
+		<element id="Observation:hspcwoundExudate.related:woundExudateAmountDescription">
+			<path value="Observation.related"/>
+			<sliceName value="WoundExudateAmountDescription"/>
+			<short value="Wound Exudate Amount Description"/>
+			<min value="0"/>
+			<max value="1"/>
+		</element>
+		<element id="Observation:hspcwoundExudate.related:woundExudateAmountDescription.type">
+			<path value="Observation.related.type"/>
+			<fixedCode value="qualified-by"/>
+		</element>
+		<element id="Observation:hspcwoundExudate.related:woundExudateAmountDescription.target">
+			<path value="Observation.related.target"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudateAmountDescription"/>
+			</type>
+		</element>
+		<element id="Observation:hspcwoundExudate.related:woundExudateAppearance">
+			<path value="Observation.related"/>
+			<sliceName value="woundExudateAppearance"/>
+			<short value="Wound Exudate Appearance"/>
+			<min value="0"/>
+			<max value="1"/>
+		</element>
+		<element id="Observation:hspcwoundExudate.related:woundExudateAppearance.type">
+			<path value="Observation.related.type"/>
+			<fixedCode value="qualified-by"/>
+		</element>
+		<element id="Observation:hspcwoundExudate.related:woundExudateAppearance.target">
+			<path value="Observation.related.target"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudateAppearance"/>
+			</type>
+		</element>
+		<element id="Observation:hspcwoundExudate.related:woundExudateColor">
+			<path value="Observation.related"/>
+			<sliceName value="woundExudateColor"/>
+			<short value="Wound Exudate Color"/>
+			<min value="0"/>
+			<max value="1"/>
+		</element>
+		<element id="Observation:hspcwoundExudate.related:woundExudateColor.type">
+			<path value="Observation.related.type"/>
+			<fixedCode value="qualified-by"/>
+		</element>
+		<element id="Observation:hspcwoundExudate.related:woundExudateColor.target">
+			<path value="Observation.related.target"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudateColor"/>
+			</type>
+		</element>
+		<element id="Observation:hspcwoundExudate.related:woundExudateOdor">
+			<path value="Observation.related"/>
+			<sliceName value="woundExudateOdor"/>
+			<short value="Wound Exudate Odor"/>
+			<min value="0"/>
+			<max value="1"/>
+		</element>
+		<element id="Observation:hspcwoundExudate.related:woundExudateOdor.type">
+			<path value="Observation.related.type"/>
+			<fixedCode value="qualified-by"/>
+		</element>
+		<element id="Observation:hspcwoundExudate.related:woundExudateOdor.target">
+			<path value="Observation.related.target"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudateOdor"/>
+			</type>
+		</element>
+		<element id="Observation:hspcwoundExudate.related:woundExudateVolume">
+			<path value="Observation.related"/>
+			<sliceName value="woundExudateVolume"/>
+			<short value="Wound Exudate Volume"/>
+			<min value="0"/>
+			<max value="1"/>
+		</element>
+		<element id="Observation:hspcwoundExudate.related:woundExudateVolume.type">
+			<path value="Observation.related.type"/>
+			<fixedCode value="qualified-by"/>
+		</element>
+		<element id="Observation:hspcwoundExudate.related:woundExudateVolume.target">
+			<path value="Observation.related.target"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudateVolume"/>
+			</type>
+		</element>
+    </differential>
+</StructureDefinition>

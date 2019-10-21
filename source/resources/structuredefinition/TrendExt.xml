@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="TrendExt"/>
+  <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/TrendExt"/>
+  <version value="2.0.0"/>
+  <name value="Trend"/>
+  <status value="draft"/>
+  <date value="2019-06-19"/>
+  <publisher value="HSPC"/>
+  <description value="Trend is a description of the way in which something is developing or changing; getting better or worse."/>
+  <fhirVersion value="4.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+	<type value="element"/>
+	<expression value="StructureDefinition"/>
+  </context>
+  <mapping>
+	<identity value="2"/>
+	<uri value="http://loinc.org"/>
+	<name value="LOINC"/>
+	<comment value="code=89253-9, display=Trend"/>
+  </mapping>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension:TrendExt">
+      <path value="Extension"/>
+      <definition value="Trend is a description of the way in which something is developing or changing; getting better or worse."/>
+      <min value="0"/>
+      <max value="1"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Extension:TrendExt.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/TrendExt"/>
+    </element>
+    <element id="Extension:TrendExt.valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept"/>
+      <type>
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+      </type>
+        <binding>
+            <strength value="preferred"/>
+            <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/trendVS"/>
+        </binding>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="WoundBedAppearanceArea"/>
+    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundBedAppearanceArea"/>
+    <name value="Wound Bed Appearance Area"/>
+    <status value="draft"/>
+    <date value="2019-06-19"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="Wound Bed Appearance Area describes how much of a wound appears in a certain way."/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcwoundBedAppearanceAreaArea">
+            <path value="Observation"/>
+			<short value="Wound Bed Appearance"/>
+            <definition value="Wound Bed Appearance Area describes how much of a wound appears in a certain way."/>
+        </element>
+        <element id="Observation:hspcwoundBedAppearanceArea.code">
+            <path value="Observation.code"/>
+        </element>
+		<element id="Observation:hspcwoundBedAppearanceArea.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:hspcwoundBedAppearanceArea.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://loinc.org"/>
+		</element>
+		<element id="Observation:hspcwoundBedAppearanceArea.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="72370-0"/>
+		</element>
+		<element id="Observation:hspcwoundBedAppearanceArea.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="Area of identified wound bed appearance/Area of wound bed of Wound base"/>
+		</element>
+        <element id="Observation:hspcwoundBedAppearanceArea.valueQuantity">
+            <path value="Observation.valueQuantity"/>
+            <short value="Appearance Area"/>
+            <type>
+                <code value="Quantity"/>
+            </type>
+        </element>
+		<element id="Observation:hspcwoundBedAppearanceArea.component.valueQuantity.system">
+			<path value="Observation.valueQuantity.system"/>
+			<type>
+                <code value="uri"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/uri"/>
+            </type>
+            <fixedUri value="http://unitsofmeasure.org"/>
+		</element>
+		<element id="Observation:hspcwoundBedAppearanceArea.component.valueQuantity.code">
+			<path value="Observation.valueQuantity.code"/>
+			<type>
+                <code value="code"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/code"/>
+            </type>
+            <fixedCode value="%"/>
+		</element>
+    </differential>
+</StructureDefinition>

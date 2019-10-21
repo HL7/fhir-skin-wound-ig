@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="AnatomicLocationExt"/>
+  <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/AnatomicLocationExt"/>
+  <version value="2.0.0"/>
+  <name value="AnatomicLocation"/>
+  <status value="draft"/>
+  <date value="2019-06-19"/>
+  <publisher value="HSPC"/>
+  <description value="An extension used for the pre-coordinated term that describes an anatomic location."/>
+  <fhirVersion value="4.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+	<type value="element"/>
+	<expression value="StructureDefinition"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension:anatomicLocationExt">
+      <path value="Extension"/>
+      <definition value="An extension used for the pre-coordinated term that describes an anatomic location."/>
+      <min value="0"/>
+      <max value="1"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Extension:anatomicLocationExt.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/AnatomicLocationExt"/>
+    </element>
+    <element id="Extension:anatomicLocationExt.valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept"/>
+      <type>
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+      </type>
+	  <binding>
+		<strength value="preferred"/>
+		<valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundAnatomicLocationVS"/>
+	  </binding>
+    </element>
+  </differential>
+</StructureDefinition>

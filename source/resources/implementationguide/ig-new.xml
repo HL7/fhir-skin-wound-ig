@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7.fhir.us.skinwoundassessment"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="C:\Users\richard.ettema\Documents\GitHub\fhir-skin-wound-ig\source\resources"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="C:\Users\richard.ettema\Documents\GitHub\fhir-skin-wound-ig\source\examples"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="C:\Users\richard.ettema\Documents\GitHub\fhir-skin-wound-ig\framework"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="C:\Users\richard.ettema\Documents\GitHub\fhir-skin-wound-ig\source\pages"/>
+  </extension>
+  <url value="http://hl7.org/fhir/us/skinwoundassessment/ImplementationGuide/hl7.fhir.us.skinwoundassessment"/>
+  <version value="0.3.0"/>
+  <name value="SkinWoundAssessment"/>
+  <title value="FHIR Skin Wound Assessment"/>
+  <status value="active"/>
+  <publisher value="HL7 International - Electronic Health Records Work Group"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://confluence.hl7.org/display/EHR/Electronic+Health+Records+Work+Group"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Used by permission of HL7 International, all rights reserved Creative Commons License"/>
+  <packageId value="hl7.fhir.us.skinwoundassessment"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.0"/>
+  <dependsOn id="USCoreR4">
+    <uri value="http://hl7.org/fhir/us/core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="3.0.0"/>
+  </dependsOn>
+  <definition>
+    <grouping>
+      <name value="base"/>
+    </grouping>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/AssociatedPreconditionExt"/>
+      </reference>
+      <description value="Associated Precondition"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/PresentOnAdmissionExt"/>
+      </reference>
+      <description value="Present on Admission"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/PressureUlcerAssociationExt"/>
+      </reference>
+      <description value="Pressure Ulcer Association"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/DeviceExt"/>
+      </reference>
+      <description value="Device"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/EstimatedIndExt"/>
+      </reference>
+      <description value="Estimated Indicator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundImageExtension"/>
+      </reference>
+      <description value="Wound Image"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/BodySideExt"/>
+      </reference>
+      <description value="Body Side"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/UnderlyingAnatomicalStructureExt"/>
+      </reference>
+      <description value="Underlying Anatomical Structure"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/BodyLocationOrientationExt"/>
+      </reference>
+      <description value="Body Location Orientation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/BodyLocationQualifierExt"/>
+      </reference>
+      <description value="Body Location Qualifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/BodyLandmarkDescriptionExt"/>
+      </reference>
+      <description value="Body Landmark Description"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/DistanceFromLandmarkExt"/>
+      </reference>
+      <description value="Distance From Landmark"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ClockFacePositionExt"/>
+      </reference>
+      <description value="Clock Face Position"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/SurfaceOrientationExt"/>
+      </reference>
+      <description value="Surface Orientation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/BodyLandmarkOrientationExt"/>
+      </reference>
+      <description value="Body Landmark Orientation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundAssessmentInterpretationExt"/>
+      </reference>
+      <description value="Wound Assessment Interpretation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/EpisodeExt"/>
+      </reference>
+      <description value="Episode"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/TrendExt"/>
+      </reference>
+      <description value="Trend"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/RecurrenceExt"/>
+      </reference>
+      <description value="Recurrence"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/PeriodicityExt"/>
+      </reference>
+      <description value="Periodicity"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/AnatomicLocationExt"/>
+      </reference>
+      <description value="Anatomic Location Extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/BodyLocationExt"/>
+      </reference>
+      <description value="Body Location Extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/PeriwoundConditionExt"/>
+      </reference>
+      <description value="Periwound Condition Extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundTypeEtiologyExt"/>
+      </reference>
+      <description value="Wound Type Etiology Extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundInternalItemOrBodyStructureVisibleExt"/>
+      </reference>
+      <description value="Wound Internal Item Or Body Structure Visible Extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundGradationExt"/>
+      </reference>
+      <description value="Wound Gradation Extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundAssert"/>
+      </reference>
+      <description value="Wound Assertion"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundBedAppearance"/>
+      </reference>
+      <description value="Wound Bed Appearance"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundBedColor"/>
+      </reference>
+      <description value="Wound Bed Color"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundBed"/>
+      </reference>
+      <description value="Wound Bed"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundEdge"/>
+      </reference>
+      <description value="Wound Edge"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundSize"/>
+      </reference>
+      <description value="Wound Size"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundEdgeColor"/>
+      </reference>
+      <description value="Wound Edge Color"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundEdgeDescription"/>
+      </reference>
+      <description value="Wound Edge Description"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundTunnelingDirection"/>
+      </reference>
+      <description value="Wound Tunneling Direction"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundTunnelingLength"/>
+      </reference>
+      <description value="Wound Tunneling Length"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundTunnelingAbsentAssert"/>
+      </reference>
+      <description value="Wound Tunneling Absent Assert"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundTunnelingAssert"/>
+      </reference>
+      <description value="Wound Tunneling Assert"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundUnderminingDirection"/>
+      </reference>
+      <description value="Wound Undermining Direction"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundUnderminingLength"/>
+      </reference>
+      <description value="Wound Undermining Length"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundUnderminingAssert"/>
+      </reference>
+      <description value="Wound Undermining Assert"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundExudateAmountDescription"/>
+      </reference>
+      <description value="Wound Exudate Amount Description"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundExudateAppearance"/>
+      </reference>
+      <description value="Wound Exudate Appearance"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundExudateColor"/>
+      </reference>
+      <description value="Wound Exudate Color"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundExudateOdor"/>
+      </reference>
+      <description value="Wound Exudate Odor"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundExudateVolume"/>
+      </reference>
+      <description value="Wound Exudate Volume"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundExudateAssert"/>
+      </reference>
+      <description value="Wound Exudate Assert"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundUnderminingAbsentAssert"/>
+      </reference>
+      <description value="Wound Undermining Absent Assert"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundExudateAbsentAssert"/>
+      </reference>
+      <description value="Wound Exudate Absent Assert"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundShape"/>
+      </reference>
+      <description value="Wound Shape"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundRelatedObservationsPanel"/>
+      </reference>
+      <description value="Wound Related Observations Panel"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/organization-hspc-organizationtype"/>
+      </reference>
+      <description value="HSPC Organization Type code system"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/wound-shape-type"/>
+      </reference>
+      <description value="Wound Shape Type code system"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/communicationModeVS"/>
+      </reference>
+      <description value="Communication Mode value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/courseVS"/>
+      </reference>
+      <description value="Course value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/organizationtypeVS"/>
+      </reference>
+      <description value="Organization Type value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/periwoundConditionVS"/>
+      </reference>
+      <description value="Periwound Condition value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/woundTypeEtiologyVS"/>
+      </reference>
+      <description value="Wound Type Etiology value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/woundAssessmentInterpretationVS"/>
+      </reference>
+      <description value="Wound Assessment Interpretation value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/episodeVS"/>
+      </reference>
+      <description value="Episode value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/trendVS"/>
+      </reference>
+      <description value="Trend value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/woundInternalItemOrBodyStructureVisibleVS"/>
+      </reference>
+      <description value="Wound Internal Item Or Body Structure Visible value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/woundBedAppearanceVS"/>
+      </reference>
+      <description value="Wound Bed Appearance value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/woundBedColorVS"/>
+      </reference>
+      <description value="Wound Bed Color value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/woundEdgeDescriptionVS"/>
+      </reference>
+      <description value="Wound Edge Description value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/woundEdgeColorVS"/>
+      </reference>
+      <description value="Wound Edge Color value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/clockFacePositionVS"/>
+      </reference>
+      <description value="Clock Face Position value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/presentAbsentVS"/>
+      </reference>
+      <description value="Present/Absent value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/woundMeasurementDeviceVS"/>
+      </reference>
+      <description value="Wound Measurement Device value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/woundGradationVS"/>
+      </reference>
+      <description value="Wound Gradation value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/pressureUlcerAssociationVS"/>
+      </reference>
+      <description value="Pressure Ulcer Association value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/bodyLocationQualifierVS"/>
+      </reference>
+      <description value="Body Location Qualifier value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/bodySideVS"/>
+      </reference>
+      <description value="Body Side value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/bodyLocationOrientationVS"/>
+      </reference>
+      <description value="Body Location Orientation value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/woundTypeVS"/>
+      </reference>
+      <description value="Wound Type value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/woundAnatomicLocationVS"/>
+      </reference>
+      <description value="Wound Anatomic Location value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/woundExudateAmountDescriptionVS"/>
+      </reference>
+      <description value="Wound Exudate Amount Description value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/woundExudateAppearanceVS"/>
+      </reference>
+      <description value="Wound Exudate Appearance value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/woundExudateColorVS"/>
+      </reference>
+      <description value="Wound Exudate Color value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/woundExudateOdorVS"/>
+      </reference>
+      <description value="Wound Exudate Odor value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/yesNoVS"/>
+      </reference>
+      <description value="Wound Yes/No value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/bodyLandmarkDescriptionVS"/>
+      </reference>
+      <description value="Body Landmark Description value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/qualitativeWoundDepthVS"/>
+      </reference>
+      <description value="Qualitative Wound Depth value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/surfaceOrientationVS"/>
+      </reference>
+      <description value="Surface Orientation value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/underlyingAnatomicalStructureVS"/>
+      </reference>
+      <description value="Underlying Anatomical Structure value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/recurrenceVS"/>
+      </reference>
+      <description value="Recurrence value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/woundShapeVS"/>
+      </reference>
+      <description value="Wound Shape value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/woundShapeTypeVS"/>
+      </reference>
+      <description value="Wound Shape Type value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CapabilityStatement/skinwoundassessment-client"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CapabilityStatement/skinwoundassessment-server"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <nameUrl value="index.html"/>
+      <title value="Home"/>
+      <generation value="markdown"/>
+      <page>
+        <nameUrl value="guidance.html"/>
+        <title value="Guidance"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="usecases.html"/>
+        <title value="Use Cases"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="profiles.html"/>
+        <title value="Profiles and Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="terminology.html"/>
+        <title value="Terminology"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="CapabilityStatement-skinwoundassessment-server.html"/>
+        <title value="CapabilityStatement server"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="CapabilityStatement-skinwoundassessment-client.html"/>
+        <title value="CapabilityStatement client"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="security.html"/>
+        <title value="Security"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="toc.html"/>
+        <title value="Table of Contents"/>
+        <generation value="html"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="apply"/>
+      <value value="jurisdiction"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="xml"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="JSON"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

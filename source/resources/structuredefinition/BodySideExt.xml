@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="BodySideExt"/>
+  <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodySideExt"/>
+  <version value="2.0.0"/>
+  <name value="BodySide"/>
+  <status value="draft"/>
+  <date value="2019-06-19"/>
+  <publisher value="CIMI"/>
+  <description value="An extension to capture a body side qualifier.  E.g. left, right, bilateral."/>
+  <fhirVersion value="4.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+	<type value="element"/>
+	<expression value="StructureDefinition"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension:bodySide">
+      <path value="Extension"/>
+      <definition value="An extension to capture a body side qualifier.  E.g. left, right, bilateral."/>
+      <min value="0"/>
+      <max value="1"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Extension:bodySide.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodySideExt"/>
+    </element>
+    <element id="Extension:bodySide.valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept"/>
+      <type>
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+      </type>
+	  <binding>
+		<strength value="preferred"/>
+		<valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/bodySideVS"/>
+	  </binding>
+    </element>
+  </differential>
+</StructureDefinition>

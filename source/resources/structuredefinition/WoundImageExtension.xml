@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="WoundImageExtension"/>
+  <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundImageExtension"/>
+  <version value="2.0.0"/>
+  <name value="WoundImageExtension"/>
+  <title value="Wound Image"/>
+  <status value="draft"/>
+  <date value="2019-06-19"/>
+  <publisher value="CIMI"/>
+  <description value="A picture of the wound."/>
+  <fhirVersion value="4.0.0"/>
+  <mapping>
+	<uri value="http://loinc.org/72170-4"/>
+	<identity value="LOINC"/>
+	<name value="Photographic image"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+	<type value="element"/>
+	<expression value="StructureDefinition"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension:woundImageExtension">
+      <path value="Extension"/>
+      <definition value="The qualitative change in the value relative to the previous measurement. Usually only recorded if the change is clinically significant."/>
+      <min value="0"/>
+      <max value="1"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Extension:woundImageExtension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundImageExtension"/>
+    </element>
+    <element id="Extension:woundImageExtension.valueAttachment">
+      <path value="Extension.valueAttachment"/>
+      <type>
+        <code value="Attachment"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Attachment"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

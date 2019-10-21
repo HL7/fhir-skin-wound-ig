@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="PresentOnAdmissionExt"/>
+  <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/PresentOnAdmissionExt"/>
+  <version value="2.0.0"/>
+  <name value="PresentOnAdmission"/>
+  <status value="draft"/>
+  <date value="2019-06-19"/>
+  <publisher value="HSPC"/>
+  <description value="An indication that a condition exists at the time of admission.  Answered as yes or no."/>
+  <fhirVersion value="4.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+	<type value="element"/>
+	<expression value="StructureDefinition"/>
+  </context>
+  <mapping>
+	<identity value="1"/>
+	<uri value="http://loinc.org"/>
+	<name value="LOINC"/>
+	<comment value="code=89251-3, display=Condition present on admission"/>
+  </mapping>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension:presentOnAdmission">
+      <path value="Extension"/>
+      <definition value="An indication that a condition exists at the time of admission.  Answered as yes or no."/>
+      <min value="0"/>
+      <max value="1"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Extension:presentOnAdmission.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/PresentOnAdmissionExt"/>
+    </element>
+    <element id="Extension:presentOnAdmission.valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept"/>
+      <type>
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+      </type>
+        <binding>
+            <strength value="preferred"/>
+            <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/yesNoVS"/>
+        </binding>
+    </element>
+  </differential>
+</StructureDefinition>

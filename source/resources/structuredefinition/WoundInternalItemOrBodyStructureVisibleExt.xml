@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="WoundInternalItemOrBodyStructureVisibleExt"/>
+  <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundInternalItemOrBodyStructureVisibleExt"/>
+  <version value="2.0.0"/>
+  <name value="WoundInternalItemOrBodyStructureVisibleextension"/>
+  <status value="draft"/>
+  <date value="2019-06-19"/>
+  <publisher value="HSPC"/>
+  <description value="Wound Internal Item or Body Structure Visible describes things seen within a wound."/>
+  <fhirVersion value="4.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+	<type value="element"/>
+	<expression value="StructureDefinition"/>
+  </context>
+  <mapping>
+	<uri value="http://loinc.org/89250-5"/>
+	<identity value="LOINC"/>
+	<name value="Device or anatomic structure visible in wound"/>
+  </mapping>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension:WoundInternalItemOrBodyStructureVisibleExt">
+      <path value="Extension"/>
+      <definition value="Wound Internal Item or Body Structure Visible describes things seen within a wound."/>
+      <min value="0"/>
+      <max value="1"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Extension:WoundInternalItemOrBodyStructureVisibleExt.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundInternalItemOrBodyStructureVisibleExt"/>
+    </element>
+    <element id="Extension:WoundInternalItemOrBodyStructureVisibleExt.valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept"/>
+      <type>
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+      </type>
+        <binding>
+            <strength value="preferred"/>
+            <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundInternalItemOrBodyStructureVisibleVS"/>
+        </binding>
+    </element>
+  </differential>
+</StructureDefinition>

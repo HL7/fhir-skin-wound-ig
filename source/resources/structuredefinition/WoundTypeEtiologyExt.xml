@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="WoundTypeEtiologyExt"/>
+  <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundTypeEtiologyExt"/>
+  <version value="2.0.0"/>
+  <name value="WoundTypeEtiologyextension"/>
+  <status value="draft"/>
+  <date value="2019-06-19"/>
+  <publisher value="HSPC"/>
+  <description value="Wound Type Etiology describes the cause of the wound."/>
+  <fhirVersion value="4.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+	<type value="element"/>
+	<expression value="StructureDefinition"/>
+  </context>
+  <mapping>
+	<uri value="http://loinc.org/11373-8"/>
+	<identity value="LOINC"/>
+	<name value="Injury cause"/>
+  </mapping>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension:WoundTypeEtiologyExt">
+      <path value="Extension"/>
+      <definition value="Wound Type Etiology describes the cause of the wound."/>
+      <min value="0"/>
+      <max value="1"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Extension:WoundTypeEtiologyExt.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundTypeEtiologyExt"/>
+    </element>
+    <element id="Extension:WoundTypeEtiologyExt.valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept"/>
+      <type>
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+      </type>
+        <binding>
+            <strength value="preferred"/>
+            <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundTypeEtiologyVS"/>
+        </binding>
+    </element>
+  </differential>
+</StructureDefinition>

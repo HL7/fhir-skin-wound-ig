@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="WoundShape"/>
+    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundShape"/>
+    <version value="2.0.0"/>
+    <name value="WoundShape"/>
+	<title value="Wound Shape"/>
+    <status value="draft"/>
+    <date value="2019-09-30"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="Wound Shape describes the general shape of the wound."/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:WoundShape">
+            <path value="Observation"/>
+			<short value="Wound Shape"/>
+            <definition value="Wound Shape describes the general shape of the wound."/>
+        </element>
+        <element id="Observation:WoundShape.code">
+            <path value="Observation.code"/>
+        </element>
+		<element id="Observation:WoundShape.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:WoundShape.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/wound-shape-type"/>
+		</element>
+		<element id="Observation:WoundShape.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="woundshape"/>
+		</element>
+		<element id="Observation:WoundShape.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="Shape of Wound base"/>
+		</element>
+        <element id="Observation:WoundShape.valueCodeableConcept">
+            <path value="Observation.valueCodeableConcept"/>
+            <short value="Wound Shape code"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundShapeVS"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

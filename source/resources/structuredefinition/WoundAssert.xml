@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="WoundAssert"/>
+    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundAssert"/>
+    <version value="2.0.0"/>
+    <name value="WoundAssert"/>
+    <status value="draft"/>
+    <date value="2019-06-19"/>
+    <publisher value="HSPC"/>
+    <description value="Wound Assert is an assertion model used when the condition exists. Wound is a kind of skin alteration including breaks in skin or injury under or to skin wounds (e.g.,
+    pressure injury by stage)"/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+	<mapping>
+		<identity value="LOINC"/>
+		<uri value="http://loinc.org"/>
+		<name value="LOINC"/>
+		<comment value="code=39135-9, display=Wound assessment panel"/>
+	</mapping>
+    <type value="Condition"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Condition:HSPCWoundAssert">
+            <path value="Condition"/>
+			<short value="Wound Assert"/>
+            <definition value="Wound Assert is an assertion model used when the condition exists. Wound is a kind of skin alteration including breaks in skin or injury under or to skin wounds
+            (e.g., pressure injury by stage)"/>
+        </element>
+        <element id="Condition:HSPCWoundAssert.code:woundType">
+            <path value="Condition.code"/>
+            <short value="woundType"/>
+			<min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundTypeVS"/>
+            </binding>
+        </element>
+        <element id="Condition:HSPCWoundAssert.bodySite">
+            <path value="Condition.bodySite"/>
+            <short value="Body Location"/>
+            <comment value="Key code for this model: BodyLocation_KEY_CODE"/>
+            <min value="0"/>
+            <max value="0"/>
+        </element>
+		<element id="Condition:HSPCWoundAssert.abatement[x]:abatementDate">
+			<path value="Condition.abatement[x]"/>
+			<short value="Abatement Date"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="dateTime"/>
+			</type>
+		</element>
+		<element id="Condition:HSPCWoundAssert.onset[x]:dateOfOnset">
+			<path value="Condition.onset[x]"/>
+			<short value="Onset Date"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="dateTime"/>
+			</type>
+		</element>
+        <element id="Condition:HSPCWoundAssert.extension">
+            <path value="Condition.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="Condition.extension"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Condition:HSPCWoundAssert.extension:presentOnAdmission">
+            <path value="Condition.extension"/>
+            <sliceName value="presentonadmission"/>
+            <short value="Present On Admission"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/PresentOnAdmissionExt"/>
+            </type>
+        </element>
+        <element id="Condition:HSPCWoundAssert.extension:pressureUlcerAssociation">
+            <path value="Condition.extension"/>
+            <sliceName value="pressureulcerassociation"/>
+            <short value="Pressure Ulcer Association"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/PressureUlcerAssociationExt"/>
+            </type>
+        </element>
+		<element id="Condition:HSPCWoundAssert.extension:woundAssessmentInterpretation">
+			<path value="Condition.extension"/>
+			<sliceName value="woundAssessmentInterpretation"/>
+			<short value="Wound Assessment Interpretation"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundAssessmentInterpretationExt"/>
+			</type>
+		</element>
+		<element id="Condition:HSPCWoundAssert.extension:woundEpisode">
+			<path value="Condition.extension"/>
+			<sliceName value="woundEpisode"/>
+			<short value="Wound Episode"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/EpisodeExt"/>
+			</type>
+		</element>
+		<element id="Condition:HSPCWoundAssert.extension:woundTrend">
+			<path value="Condition.extension"/>
+			<sliceName value="woundTrend"/>
+			<short value="Wound Trend"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/TrendExt"/>
+			</type>
+		</element>
+		<element id="Condition:HSPCWoundAssert.extension:PeriwoundConditionExt">
+			<path value="Condition.extension"/>
+			<sliceName value="PeriwoundCondition"/>
+			<short value="Periwound Condition"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/PeriwoundConditionExt"/>
+			</type>
+		</element>
+		<element id="Condition:HSPCWoundAssert.extension:WoundTypeEtiologyExt">
+			<path value="Condition.extension"/>
+			<sliceName value="WoundTypeEtiology"/>
+			<short value="Wound Type Etiology"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundTypeEtiologyExt"/>
+			</type>
+		</element>
+		<element id="Condition:HSPCWoundAssert.extension:WoundImageExtension">
+			<path value="Condition.extension"/>
+			<sliceName value="WoundImage"/>
+			<short value="Wound Image"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundImageExtension"/>
+			</type>
+		</element>
+		<element id="Condition:HSPCWoundAssert.extension:WoundInternalItemOrBodyStructureVisibleExt">
+			<path value="Condition.extension"/>
+			<sliceName value="WoundInternalItemOrBodyStructureVisible"/>
+			<short value="Wound Internal Item Or Body Structure Visible"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundInternalItemOrBodyStructureVisibleExt"/>
+			</type>
+		</element>
+		<element id="Condition:HSPCWoundAssert.extension:WoundGradationExt">
+			<path value="Condition.extension"/>
+			<sliceName value="WoundGradation"/>
+			<short value="Wound Gradation"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundGradationExt"/>
+			</type>
+		</element>
+		<element id="Condition:HSPCWoundAssert.extension:woundRelatedObservationsPanel">
+			<path value="Condition.extension"/>
+			<sliceName value="woundRelatedObservationsPanel"/>
+			<short value="Wound Related Observations Panel"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="Reference"/>
+				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundRelatedObservationsPanel"/>
+			</type>
+		</element>
+		<element id="Condition:HSPCWoundAssert.extension:BodyLocation">
+			<path value="Condition.extension"/>
+			<sliceName value="BodyLocation"/>
+			<short value="Body Location"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodyLocationExt"/>
+			</type>
+		</element>
+		<element id="Condition:HSPCWoundAssert.extension:Recurrence">
+			<path value="Condition.extension"/>
+			<sliceName value="Recurrence"/>
+			<short value="Wound Recurrence"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/RecurrenceExt"/>
+			</type>
+		</element>
+		<element id="Condition:HSPCWoundAssert.identifier">
+			<path value="Condition.identifier"/>
+			<short value="To be used for the wound ID"/>
+		</element>
+    </differential>
+</StructureDefinition>

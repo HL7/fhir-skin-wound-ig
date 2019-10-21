@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="PeriwoundConditionExt"/>
+  <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/PeriwoundConditionExt"/>
+  <version value="2.0.0"/>
+  <name value="PeriwoundConditionextension"/>
+  <status value="draft"/>
+  <date value="2019-06-19"/>
+  <publisher value="HSPC"/>
+  <description value="Periwound Condition is an observation about the state of the skin surrounding a wound."/>
+  <fhirVersion value="4.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+	<type value="element"/>
+	<expression value="StructureDefinition"/>
+  </context>
+  <mapping>
+	<uri value="http://loinc.org/72301-5"/>
+	<identity value="LOINC"/>
+	<name value="Description of Periwound"/>
+  </mapping>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension:PeriwoundConditionExt">
+      <path value="Extension"/>
+      <definition value="Episode describes the occurance of an issue or problem. Is it new, old, first, ongoing, etc."/>
+      <min value="0"/>
+      <max value="1"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Extension:PeriwoundConditionExt.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/PeriwoundConditionExt"/>
+    </element>
+    <element id="Extension:PeriwoundConditionExt.valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept"/>
+      <type>
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+      </type>
+        <binding>
+            <strength value="preferred"/>
+            <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/periwoundConditionVS"/>
+        </binding>
+    </element>
+  </differential>
+</StructureDefinition>

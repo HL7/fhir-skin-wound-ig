@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="WoundTunnelingLength"/>
+    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundTunnelingLength"/>
+    <version value="2.0.0"/>
+    <name value="WoundTunnelingLength"/>
+    <status value="draft"/>
+    <date value="2019-06-19"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="Wound Tunneling Length describes how long a wound sinus is."/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:woundTunnelingLength">
+            <path value="Observation"/>
+			<short value="Wound Tunneling Length"/>
+            <definition value="Wound Tunneling Length describes how long a wound sinus is."/>
+        </element>
+        <element id="Observation:woundTunnelingLength.code">
+            <path value="Observation.code"/>
+        </element>
+		<element id="Observation:woundTunnelingLength.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:woundTunnelingLength.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://loinc.org"/>
+		</element>
+		<element id="Observation:woundTunnelingLength.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="72296-7"/>
+		</element>
+		<element id="Observation:woundTunnelingLength.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="Tunneling [Length] of Wound"/>
+		</element>
+        <element id="Observation:woundTunnelingLength.valueQuantity">
+            <path value="Observation.valueQuantity"/>
+            <short value="Length"/>
+            <type>
+                <code value="Quantity"/>
+            </type>
+        </element>
+        <element id="Observation:woundTunnelingLength.valueQuantity.system">
+            <path value="Observation.valueQuantity.system"/>
+            <type>
+                <code value="uri"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/uri"/>
+            </type>
+            <fixedUri value="http://unitsofmeasure.org"/>
+            <mustSupport value="false"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Observation:woundTunnelingLength.valueQuantity.code">
+            <path value="Observation.valueQuantity.code"/>
+            <type>
+                <code value="code"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/code"/>
+            </type>
+            <fixedCode value="cm"/>
+            <mustSupport value="false"/>
+            <isModifier value="false"/>
+        </element>
+    </differential>
+</StructureDefinition>

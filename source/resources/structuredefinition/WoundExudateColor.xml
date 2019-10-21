@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="WoundExudateColor"/>
+    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudateColor"/>
+    <version value="2.0.0"/>
+    <name value="WoundExudateColor"/>
+    <status value="draft"/>
+    <date value="2019-06-19"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="Wound Exudate Color describes the color of the wound drainage."/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:cimiwoundExudateColor">
+            <path value="Observation"/>
+			<short value="Wound Exudate Color"/>
+            <definition value="Wound Exudate Color describes the color of the wound drainage."/>
+        </element>
+        <element id="Observation:cimiwoundExudateColor.code">
+            <path value="Observation.code"/>
+        </element>
+		<element id="Observation:cimiwoundExudateColor.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:cimiwoundExudateColor.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://loinc.org"/>
+		</element>
+		<element id="Observation:cimiwoundExudateColor.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="72289-2"/>
+		</element>
+		<element id="Observation:cimiwoundExudateColor.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="Color of Exudate from wound"/>
+		</element>
+        <element id="Observation:cimiwoundExudateColor.valueCodeableConcept">
+            <path value="Observation.valueCodeableConcept"/>
+            <short value="Wound Exudate Color code"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+			<binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundExudateColorVS"/>
+			</binding>
+        </element>
+    </differential>
+</StructureDefinition>

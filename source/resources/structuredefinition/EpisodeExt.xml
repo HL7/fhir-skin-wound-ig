@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="EpisodeExt"/>
+  <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/EpisodeExt"/>
+  <version value="2.0.0"/>
+  <name value="Episodeextension"/>
+  <status value="draft"/>
+  <date value="2019-06-19"/>
+  <publisher value="HSPC"/>
+  <description value="Episode describes the occurance of an issue or problem. Is it new, old, first, ongoing, etc."/>
+  <fhirVersion value="4.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+	<type value="element"/>
+	<expression value="StructureDefinition"/>
+  </context>
+  <mapping>
+	<uri value="http://loinc.org/89252-1"/>
+	<identity value="LOINC"/>
+	<name value="Episode of wound"/>
+  </mapping>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension:EpisodeExt">
+      <path value="Extension"/>
+      <definition value="Episode describes the occurance of an issue or problem. Is it new, old, first, ongoing, etc."/>
+      <min value="0"/>
+      <max value="1"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Extension:EpisodeExt.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/EpisodeExt"/>
+    </element>
+    <element id="Extension:EpisodeExt.valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept"/>
+      <type>
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+      </type>
+        <binding>
+            <strength value="preferred"/>
+            <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/episodeVS"/>
+        </binding>
+    </element>
+  </differential>
+</StructureDefinition>

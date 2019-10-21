@@ -1,0 +1,151 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "89254-7"
+}, "valueSet" :null}####
+v: {
+  "display" : "Wound bed panel",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "72371-8"
+}, "valueSet" :null}####
+v: {
+  "display" : "Appearance of Wound base",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "39132-6"
+}, "valueSet" :null}####
+v: {
+  "display" : "Color of Wound base",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "89256-2"
+}, "valueSet" :null}####
+v: {
+  "display" : "Wound edge panel",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "39133-4"
+}, "valueSet" :null}####
+v: {
+  "display" : "Color of Wound edge",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "72304-9"
+}, "valueSet" :null}####
+v: {
+  "display" : "Edge of wound description",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "39116-9"
+}, "valueSet" :null}####
+v: {
+  "display" : "Drainage amount of Wound",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "72290-0"
+}, "valueSet" :null}####
+v: {
+  "display" : "Appearance of Exudate from wound",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "72289-2"
+}, "valueSet" :null}####
+v: {
+  "display" : "Color of Exudate from wound",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "72288-4"
+}, "valueSet" :null}####
+v: {
+  "display" : "Odor of Exudate from wound",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "72287-6"
+}, "valueSet" :null}####
+v: {
+  "display" : "Wound size panel",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "72297-5"
+}, "valueSet" :null}####
+v: {
+  "display" : "Tunneling clock position of Wound",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "72296-7"
+}, "valueSet" :null}####
+v: {
+  "display" : "Tunneling [Length] of Wound",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "72294-2"
+}, "valueSet" :null}####
+v: {
+  "display" : "Undermining clock position of Wound",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "72293-4"
+}, "valueSet" :null}####
+v: {
+  "display" : "Undermining [Length] of Wound",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

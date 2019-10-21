@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="BodyLocationExt"/>
+  <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodyLocationExt"/>
+  <version value="2.0.0"/>
+  <name value="BodyLocationExtension"/>
+  <status value="draft"/>
+  <date value="2019-06-19"/>
+  <publisher value="CIMI"/>
+  <description value="The location on or in the body where an observation was made or a procedure was performed."/>
+  <fhirVersion value="4.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+	<type value="element"/>
+	<expression value="StructureDefinition"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension:BodyLocationExt">
+      <path value="Extension"/>
+      <definition value="The location on or in the body where an observation was made or a procedure was performed."/>
+      <min value="0"/>
+      <max value="1"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Extension:BodyLocationExt.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodyLocationExt"/>
+    </element>
+	<element id="Extension:BodyLocationExt.value">
+		<path value="Extension.value[x]"/>
+		<min value="0"/>
+		<max value="0"/>
+	</element>
+	<element id="Extension:BodyLocationExt.extension:AnatomicLocation">
+		<path value="Extension.extension"/>
+		<sliceName value="PrecoordinatedAnitomicLocation"/>
+		<short value="Precoordinated Anitomic Location"/>
+		<type>
+			<code value="Extension"/>
+			<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/AnatomicLocationExt"/>
+		</type>
+	</element>
+	<element id="Extension:BodyLocationExt.extension:BodySide">
+		<path value="Extension.extension"/>
+		<sliceName value="BodySide"/>
+		<short value="Body Side"/>
+		<type>
+			<code value="Extension"/>
+			<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodySideExt"/>
+		</type>
+	</element>
+	<element id="Extension:BodyLocationExt.extension:BodyLocationOrientation">
+		<path value="Extension.extension"/>
+		<sliceName value="BodyLocationOrientation"/>
+		<short value="Body Location Orientation"/>
+		<type>
+			<code value="Extension"/>
+			<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodyLocationOrientationExt"/>
+		</type>
+	</element>
+	<element id="Extension:BodyLocationExt.extension:UnderlyingAnatomicalStructure">
+		<path value="Extension.extension"/>
+		<sliceName value="UnderlyingAnatomicalStructure"/>
+		<short value="Underlying Anatomical Structure"/>
+		<type>
+			<code value="Extension"/>
+			<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/UnderlyingAnatomicalStructureExt"/>
+		</type>
+	</element>
+	<element id="Extension:BodyLocationExt.extension:BodyLandmarkOrientation">
+		<path value="Extension.extension"/>
+		<sliceName value="BodyLandmarkOrientation"/>
+		<short value="Body Landmark Orientation"/>
+		<type>
+			<code value="Extension"/>
+			<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodyLandmarkOrientationExt"/>
+		</type>
+	</element>
+	<element id="Extension:BodyLocationExt.extension:BodyLocationQualifier">
+		<path value="Extension.extension"/>
+		<sliceName value="BodyLocationQualifier"/>
+		<short value="Body Location Qualifier"/>
+		<type>
+			<code value="Extension"/>
+			<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodyLocationQualifierExt"/>
+		</type>
+	</element>
+  </differential>
+</StructureDefinition>

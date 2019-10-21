@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="BodyLandmarkOrientationExt"/>
+  <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodyLandmarkOrientationExt"/>
+  <version value="2.0.0"/>
+  <name value="BodyLandmarkOrientation"/>
+  <status value="draft"/>
+  <date value="2019-06-19"/>
+  <publisher value="CIMI"/>
+  <description value="Body locations in relation to a specific body landmark (tatoo, scar, other body structure)."/>
+  <fhirVersion value="4.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+	<type value="element"/>
+	<expression value="StructureDefinition"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension:BodyLandmarkOrientationExt">
+      <path value="Extension"/>
+      <definition value="Body locations in relation to a specific body landmark (tatoo, scar, other body structure)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Extension:BodyLandmarkOrientationExt.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodyLandmarkOrientationExt"/>
+    </element>
+	<element id="Extension:BodyLandmarkOrientationExt.value[x]">
+		<path value="Extension.value[x]"/>
+		<min value="0"/>
+		<max value="0"/>
+	</element>
+    <element id="Extension:BodyLandmarkOrientationExt.extension:LandmarkDescription">
+      <path value="Extension.extension"/>
+	  <sliceName value="LandmarkDescription"/>
+	  <short value="Landmark Description"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodyLandmarkDescriptionExt"/>
+      </type>
+    </element>
+    <element id="Extension:BodyLandmarkOrientationExt.extension:ClockFacePosition">
+      <path value="Extension.extension"/>
+	  <sliceName value="ClockFacePosition"/>
+	  <short value="Clock Face Position"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/ClockFacePositionExt"/>
+      </type>
+    </element>
+    <element id="Extension:BodyLandmarkOrientationExt.extension:DistanceFromLandmark">
+      <path value="Extension.extension"/>
+	  <sliceName value="DistanceFromLandmark"/>
+	  <short value="Distance From Landmark"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/DistanceFromLandmarkExt"/>
+      </type>
+    </element>
+	<element id="Extension:BodyLandmarkOrientationExt.extension:SurfaceOrientation">
+	  <path value="Extension.extension"/>
+	  <sliceName value="SurfaceOrientation"/>
+	  <short value="Surface Orientation"/>
+	  <type>
+		<code value="Extension"/>
+		<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/SurfaceOrientationExt"/>
+	  </type>
+	</element>
+  </differential>
+</StructureDefinition>

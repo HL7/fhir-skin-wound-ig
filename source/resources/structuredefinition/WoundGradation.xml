@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="WoundGradation"/>
+    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundGradation"/>
+    <name value="Wound Gradation"/>
+    <status value="draft"/>
+    <date value="2019-06-19"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="Wound Gradation describes the wound stage or degree of burn."/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcwoundGradation">
+            <path value="Observation"/>
+			<short value="Wound Gradation"/>
+            <definition value="Wound Gradation describes the wound stage or degree of burn."/>
+        </element>
+        <element id="Observation:hspcwoundGradation.valueCodeableConcept">
+            <path value="Observation.valueCodeableConcept"/>
+            <short value="Wound Gradation code"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundGradationVS"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

@@ -1,0 +1,208 @@
+{
+  "do-transforms": "false",
+  "topofpage": "true",
+  "license": "CC0-1.0",
+  "igtemplate-dir": "C:/Users/richard.ettema/Documents/GitHub/fhir-skin-wound-ig/",
+  "gen-examples": "false",
+  "special-urls": [],
+  "npm-name": "hl7.fhir.us.skinwoundassessment",
+  "publisher": "HL7 International - Electronic Health Records Work Group",
+  "fixed-business-version": "0.3.0",
+  "extraTemplates": [
+    "mappings"
+  ],
+  "status": "active",
+  "tool": "jekyll",
+  "jurisdiction": "US",
+  "title": "FHIR Skin Wound Assessment",
+  "source": "implementationguide/ig.xml",
+  "version": "4.0.0",
+  "broken-links": "warning",
+  "logging": [
+    "progress"
+  ],
+  "allviews": "true",
+  "working-dir": "C:/Users/richard.ettema/Documents/GitHub/fhir-skin-wound-ig/",
+  "defaults": {
+    "CapabilityStatement": {
+      "template-base": "base.html"
+    },
+    "StructureDefinition": {
+      "template-base": "sd.html",
+      "template-mappings": "sd-mappings.html",
+      "template-defns": "sd-definitions.html"
+    },
+    "OperationDefinition": {
+      "template-base": "base.html"
+    },
+    "SearchParameter": {
+      "template-base": "base.html"
+    },
+    "TestScript": {
+      "template-base": "base.html"
+    },
+    "ValueSet": {
+      "template-base": "base.html"
+    },
+    "Any": {
+      "template-format": "format.html",
+      "swagger": "true",
+      "template-base": "base.html"
+    },
+    "CodeSystem": {
+      "template-base": "base.html"
+    },
+    "ConceptMap": {
+      "template-base": "base.html"
+    },
+    "StructureMap": {
+      "template-base": "ex.html",
+      "profiles": false,
+      "script": false,
+      "content": false
+    }
+  },
+  "canonicalBase": "http://hl7.org/fhir/us/skinwoundassessment",
+  "contact": [
+    {
+      "system": "url",
+      "value": "https://confluence.hl7.org/display/EHR/Electronic+Health+Records+Work+Group"
+    }
+  ],
+  "no-inactive-codes": "false",
+  "sct-edition": "http://snomed.info/sct/731000124108",
+  "name": "SkinWoundAssessment",
+  "dependencyList": [
+    {
+      "location": "http://hl7.org/fhir/us/core",
+      "name": "USCoreR4",
+      "version": "3.0.0",
+      "package": "hl7.fhir.us.core"
+    }
+  ],
+  "swagger": [
+    {
+      "mode": "single",
+      "capabilities": "server"
+    }
+  ],
+  "paths": {
+    "temp": "generated_output/temp",
+    "output": "output",
+    "txCache": "generated_output/txCache",
+    "qa": "generated_output/qa",
+    "specification": "http://hl7.org/fhir/R4",
+    "history": "http://hl7.org/fhir/us/skinwoundassessment/history.cfml",
+    "resources": [
+      "source/resources",
+      "source/examples"
+    ],
+    "pages": [
+      "framework",
+      "source/pages"
+    ]
+  },
+  "spreadsheets": [],
+  "resources": {
+    "StructureDefinition/AssociatedPreconditionExt":{"base":"StructureDefinition-AssociatedPreconditionExt.html"},
+	"StructureDefinition/PresentOnAdmissionExt":{"base":"StructureDefinition-PresentOnAdmissionExt.html"},
+	"StructureDefinition/PressureUlcerAssociationExt":{"base":"StructureDefinition-PressureUlcerAssociationExt.html"},
+	"StructureDefinition/DeviceExt":{"base":"StructureDefinition-DeviceExt.html"},
+	"StructureDefinition/EstimatedIndExt":{"base":"StructureDefinition-EstimatedIndExt.html"},
+	"StructureDefinition/WoundImageExtension":{"base":"StructureDefinition-WoundImageExtension.html"},
+	"StructureDefinition/BodySideExt":{"base":"StructureDefinition-BodySideExt.html"},
+	"StructureDefinition/UnderlyingAnatomicalStructureExt":{"base":"StructureDefinition-UnderlyingAnatomicalStructureExt.html"},
+	"StructureDefinition/BodyLocationOrientationExt":{"base":"StructureDefinition-BodyLocationOrientationExt.html"},
+	"StructureDefinition/BodyLocationQualifierExt":{"base":"StructureDefinition-BodyLocationQualifierExt.html"},
+	"StructureDefinition/BodyLandmarkDescriptionExt":{"base":"StructureDefinition-BodyLandmarkDescriptionExt.html"},
+	"StructureDefinition/DistanceFromLandmarkExt":{"base":"StructureDefinition-DistanceFromLandmarkExt.html"},
+	"StructureDefinition/ClockFacePositionExt":{"base":"StructureDefinition-ClockFacePositionExt.html"},
+	"StructureDefinition/SurfaceOrientationExt":{"base":"StructureDefinition-SurfaceOrientationExt.html"},
+	"StructureDefinition/BodyLandmarkOrientationExt":{"base":"StructureDefinition-BodyLandmarkOrientationExt.html"},
+	"StructureDefinition/WoundAssessmentInterpretationExt":{"base":"StructureDefinition-WoundAssessmentInterpretationExt.html"},
+	"StructureDefinition/RecurrenceExt":{"base":"StructureDefinition-RecurrenceExt.html"},
+	"StructureDefinition/PeriodicityExt":{"base":"StructureDefinition-PeriodicityExt.html"},
+	"StructureDefinition/AnatomicLocationExt":{"base":"StructureDefinition-AnatomicLocationExt.html"},
+	"StructureDefinition/BodyLocationExt":{"base":"StructureDefinition-BodyLocationExt.html"},
+	"StructureDefinition/EpisodeExt":{"base":"StructureDefinition-EpisodeExt.html"},
+	"StructureDefinition/TrendExt":{"base":"StructureDefinition-TrendExt.html"},
+	"StructureDefinition/PeriwoundConditionExt":{"base":"StructureDefinition-PeriwoundConditionExt.html"},
+	"StructureDefinition/WoundTypeEtiologyExt":{"base":"StructureDefinition-WoundTypeEtiologyExt.html"},
+	"StructureDefinition/WoundInternalItemOrBodyStructureVisibleExt":{"base":"StructureDefinition-WoundInternalItemOrBodyStructureVisibleExt.html"},
+	"StructureDefinition/WoundGradationExt":{"base":"StructureDefinition-WoundGradationExt.html"},
+
+	"StructureDefinition/organization":{"base":"StructureDefinition-organization.html"},
+	"StructureDefinition/practitioner":{"base":"StructureDefinition-practitioner.html"},
+	"StructureDefinition/WoundAssert":{"base":"StructureDefinition-WoundAssert.html"},
+	"StructureDefinition/WoundBedAppearance":{"base":"StructureDefinition-WoundBedAppearance.html"},
+	"StructureDefinition/WoundBedColor":{"base":"StructureDefinition-WoundBedColor.html"},
+	"StructureDefinition/WoundBed":{"base":"StructureDefinition-WoundBed.html"},
+	"StructureDefinition/WoundEdge":{"base":"StructureDefinition-WoundEdge.html"},
+	"StructureDefinition/WoundTunneling":{"base":"StructureDefinition-WoundTunneling.html"},
+	"StructureDefinition/WoundUndermining":{"base":"StructureDefinition-WoundUndermining.html"},
+	"StructureDefinition/WoundSize":{"base":"StructureDefinition-WoundSize.html"},
+	"StructureDefinition/WoundExudate":{"base":"StructureDefinition-WoundExudate.html"},
+	"StructureDefinition/WoundEdgeColor":{"base":"StructureDefinition-WoundEdgeColor.html"},
+	"StructureDefinition/WoundEdgeDescription":{"base":"StructureDefinition-WoundEdgeDescription.html"},
+	"StructureDefinition/WoundTunnelingDirection":{"base":"StructureDefinition-WoundTunnelingDirection.html"},
+	"StructureDefinition/WoundTunnelingLength":{"base":"StructureDefinition-WoundTunnelingLength.html"},
+	"StructureDefinition/WoundTunnelingAbsentAssert":{"base":"StructureDefinition-WoundTunnelingAbsentAssert.html"},
+	"StructureDefinition/WoundTunnelingAssert":{"base":"StructureDefinition-WoundTunnelingAssert.html"},
+	"StructureDefinition/WoundUnderminingDirection":{"base":"StructureDefinition-WoundUnderminingDirection.html"},
+	"StructureDefinition/WoundUnderminingLength":{"base":"StructureDefinition-WoundUnderminingLength.html"},
+	"StructureDefinition/WoundUnderminingAssert":{"base":"StructureDefinition-WoundUnderminingAssert.html"},
+	"StructureDefinition/WoundExudateAmountDescription":{"base":"StructureDefinition-WoundExudateAmountDescription.html"},
+	"StructureDefinition/WoundExudateAppearance":{"base":"StructureDefinition-WoundExudateAppearance.html"},
+	"StructureDefinition/WoundExudateColor":{"base":"StructureDefinition-WoundExudateColor.html"},
+	"StructureDefinition/WoundExudateOdor":{"base":"StructureDefinition-WoundExudateOdor.html"},
+	"StructureDefinition/WoundExudateVolume":{"base":"StructureDefinition-WoundExudateVolume.html"},
+	"StructureDefinition/WoundExudateAssert":{"base":"StructureDefinition-WoundExudateAssert.html"},
+	"StructureDefinition/WoundUnderminingAbsentAssert":{"base":"StructureDefinition-WoundUnderminingAbsentAssert.html"},
+	"StructureDefinition/WoundExudateAbsentAssert":{"base":"StructureDefinition-WoundExudateAbsentAssert.html"},
+	"StructureDefinition/WoundShape":{"base":"StructureDefinition-WoundShape.html"},
+	"StructureDefinition/WoundRelatedObservationsPanel":{"base":"StructureDefinition-WoundRelatedObservationsPanel.html"},
+
+	"CodeSystem/organization-hspc-organizationtype":{"base":"CodeSystem-organization-hspc-organizationtype.html","source":"codesystem/organization-hspc-organizationtype.xml"},
+	"CodeSystem/wound-shape-type":{"base":"CodeSystem-wound-shape-type.html","source":"codesystem/wound-shape-type.xml"},
+
+	"ValueSet/communicationMode":{"base":"ValueSet-communicationMode.html"},
+	"ValueSet/courseVS":{"base":"ValueSet-courseVS.html"},
+	"ValueSet/organizationtypeVS":{"base":"ValueSet-organizationtypeVS.html"},
+	"ValueSet/communicationModeVS":{"base":"ValueSet-communicationModeVS.html"},
+	"ValueSet/periwoundConditionVS":{"base":"ValueSet-periwoundConditionVS.html"},
+	"ValueSet/woundAssessmentInterpretationVS":{"base":"ValueSet-woundAssessmentInterpretationVS.html"},
+	"ValueSet/episodeVS":{"base":"ValueSet-episodeVS.html"},
+	"ValueSet/trendVS":{"base":"ValueSet-trendVS.html"},
+	"ValueSet/woundInternalItemOrBodyStructureVisibleVS":{"base":"ValueSet-woundInternalItemOrBodyStructureVisibleVS.html"},
+	"ValueSet/woundBedAppearanceVS":{"base":"ValueSet-woundBedAppearanceVS.html"},
+	"ValueSet/woundBedColorVS":{"base":"ValueSet-woundBedColorVS.html"},
+	"ValueSet/woundEdgeDescriptionVS":{"base":"ValueSet-woundEdgeDescriptionVS.html"},
+	"ValueSet/woundEdgeColorVS":{"base":"ValueSet-woundEdgeColorVS.html"},
+	"ValueSet/clockFacePositionVS":{"base":"ValueSet-clockFacePositionVS.html"},
+	"ValueSet/presentAbsentVS":{"base":"ValueSet-presentAbsentVS.html"},
+	"ValueSet/woundMeasurementDeviceVS":{"base":"ValueSet-woundMeasurementDeviceVS.html"},
+	"ValueSet/woundGradationVS":{"base":"ValueSet-woundGradationVS.html"},
+	"ValueSet/pressureUlcerAssociationVS":{"base":"ValueSet-pressureUlcerAssociationVS.html"},
+	"ValueSet/bodyLocationQualifierVS":{"base":"ValueSet-bodyLocationQualifierVS.html"},
+	"ValueSet/bodySideVS":{"base":"ValueSet-bodySideVS.html"},
+	"ValueSet/bodyLocationOrientationVS":{"base":"ValueSet-bodyLocationOrientationVS.html"},
+	"ValueSet/woundTypeVS":{"base":"ValueSet-woundTypeVS.html"},
+	"ValueSet/woundAnatomicLocationVS":{"base":"ValueSet-woundAnatomicLocationVS.html"},
+	"ValueSet/woundTypeEtiologyVS":{"base":"ValueSet-woundTypeEtiologyVS.html"},
+	"ValueSet/woundExudateAmountDescriptionVS":{"base":"ValueSet-woundExudateAmountDescriptionVS.html"},
+	"ValueSet/woundExudateAppearanceVS":{"base":"ValueSet-woundExudateAppearanceVS.html"},
+	"ValueSet/woundExudateColorVS":{"base":"ValueSet-woundExudateColorVS.html"},
+	"ValueSet/woundExudateOdorVS":{"base":"ValueSet-woundExudateOdorVS.html"},
+	"ValueSet/yesNoVS":{"base":"ValueSet-yesNoVS.html"},
+	"ValueSet/bodyLandmarkDescriptionVS":{"base":"ValueSet-bodyLandmarkDescriptionVS.html"},
+	"ValueSet/underlyingAnatomicalStructureVS":{"base":"ValueSet-underlyingAnatomicalStructureVS.html"},
+	"ValueSet/recurrenceVS":{"base":"ValueSet-recurrenceVS.html"},
+	"ValueSet/surfaceOrientationVS":{"base":"ValueSet-surfaceOrientationVS.html"},
+	"ValueSet/qualitativeWoundDepthVS":{"base":"ValueSet-qualitativeWoundDepthVS.html"},
+	"ValueSet/woundShapeVS":{"base":"ValueSet-woundShapeVS.html"},
+	"ValueSet/woundShapeTypeVS":{"base":"ValueSet-woundShapeTypeVS.html"},
+
+	"CapabilityStatement/skinwoundassessment-client":{"base":"CapabilityStatement-skinwoundassessment-client.html","source":"capabilitystatement/capabilitystatement-client.xml"},
+	"CapabilityStatement/skinwoundassessment-server":{"base":"CapabilityStatement-skinwoundassessment-server.html","source":"capabilitystatement/capabilitystatement-server.xml"}
+  }
+}

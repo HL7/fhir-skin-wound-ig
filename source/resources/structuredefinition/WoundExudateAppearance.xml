@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="WoundExudateAppearance"/>
+    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudateAppearance"/>
+    <version value="2.0.0"/>
+    <name value="WoundExudateAppearance"/>
+    <status value="draft"/>
+    <date value="2019-06-19"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="Wound Exudate Appearance describes what the wound drainage looks like."/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:cimiwoundExudateAppearance">
+            <path value="Observation"/>
+			<short value="Wound Exudate Appearance"/>
+            <definition value="Wound Exudate Appearance describes what the wound drainage looks like."/>
+        </element>
+        <element id="Observation:cimiwoundExudateAppearance.code">
+            <path value="Observation.code"/>
+        </element>
+		<element id="Observation:cimiwoundExudateAppearance.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:cimiwoundExudateAppearance.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://loinc.org"/>
+		</element>
+		<element id="Observation:cimiwoundExudateAppearance.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="72290-0"/>
+		</element>
+		<element id="Observation:cimiwoundExudateAppearance.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="Appearance of Exudate from wound"/>
+		</element>
+        <element id="Observation:cimiwoundExudateAppearance.valueCodeableConcept">
+            <path value="Observation.valueCodeableConcept"/>
+            <short value="Wound Exudate Appearance code"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+			<binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundExudateAppearanceVS"/>
+			</binding>
+        </element>
+    </differential>
+</StructureDefinition>

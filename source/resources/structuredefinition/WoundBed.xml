@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="WoundBed"/>
+    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundBed"/>
+    <version value="2.0.0"/>
+    <name value="WoundBed"/>
+    <status value="draft"/>
+    <date value="2019-06-19"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="Wound Bed describes the color and appearance of the base of a wound."/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcwoundBed">
+            <path value="Observation"/>
+			<short value="Wound Bed"/>
+            <definition value="Wound Bed describes the color and appearance of the base of a wound."/>
+        </element>
+        <element id="Observation:hspcwoundBed.code">
+            <path value="Observation.code"/>
+        </element>
+		<element id="Observation:hspcwoundBed.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:hspcwoundBed.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://loinc.org"/>
+		</element>
+		<element id="Observation:hspcwoundBed.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="89254-7"/>
+		</element>
+		<element id="Observation:hspcwoundBed.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="Wound bed panel"/>
+		</element>
+        <element id="Observation:hspcwoundBed.value[x]">
+            <path value="Observation.value[x]"/>
+			<min value="0"/>
+			<max value="0"/>
+        </element>
+		<element id="Observation:hspcwoundBed.hasMember">
+			<path value="Observation.hasMember"/>
+			<slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="target.resolve()"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+			<short value="Wound Bed Observations"/>
+			<min value="0"/>
+			<max value="*"/>
+		</element>
+		<element id="Observation:hspcwoundBed.hasMember:woundBedAppearance">
+			<path value="Observation.hasMember"/>
+			<sliceName value="woundBedAppearance"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundBedAppearance"/>
+			</type>
+		</element>
+		<element id="Observation:hspcwoundBed.hasMember:woundBedColor">
+			<path value="Observation.hasMember"/>
+			<sliceName value="woundBedColor"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundBedColor"/>
+			</type>
+		</element>
+    </differential>
+</StructureDefinition>

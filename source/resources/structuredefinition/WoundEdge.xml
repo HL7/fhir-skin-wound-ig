@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="WoundEdge"/>
+    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundEdge"/>
+    <version value="2.0.0"/>
+    <name value="WoundEdge"/>
+    <status value="draft"/>
+    <date value="2019-06-19"/>
+    <publisher value="Healthcare Services Platform Consortium"/>
+    <description value="Wound Edge describes the appearance and color of the wound boundaries."/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcwoundEdge">
+            <path value="Observation"/>
+			<short value="Wound Edge"/>
+            <definition value="Wound Edge describes the appearance and color of the wound boundaries."/>
+        </element>
+        <element id="Observation:hspcwoundEdge.code">
+            <path value="Observation.code"/>
+        </element>
+		<element id="Observation:hspcwoundEdge.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:hspcwoundEdge.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://loinc.org"/>
+		</element>
+		<element id="Observation:hspcwoundEdge.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="89256-2"/>
+		</element>
+		<element id="Observation:hspcwoundEdge.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="Wound edge panel"/>
+		</element>
+        <element id="Observation:hspcwoundEdge.valueCodeableConcept">
+            <path value="Observation.valueCodeableConcept"/>
+            <short value="Observation:hspcwoundEdge.valueCodeableConcept"/>
+            <min value="0"/>
+			<max value="0"/>
+        </element>
+		<element id="Observation:hspcwoundEdge.hasMember">
+			<path value="Observation.hasMember"/>
+			<slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="target.resolve()"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+			<min value="0"/>
+			<max value="*"/>
+		</element>
+		<element id="Observation:hspcwoundEdge.hasMember:woundEdgeColor">
+			<path value="Observation.hasMember"/>
+			<sliceName value="woundEdgeColor"/>
+			<short value="Wound Edge Color"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundEdgeColor"/>
+			</type>
+		</element>
+		<element id="Observation:hspcwoundEdge.hasMember:woundEdgeDescription">
+			<path value="Observation.hasMember"/>
+			<sliceName value="woundEdgeDescription"/>
+			<short value="Wound Edge Description"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundEdgeDescription"/>
+			</type>
+		</element>
+    </differential>
+</StructureDefinition>

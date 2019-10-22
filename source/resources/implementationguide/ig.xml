@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Hidden IG for de facto IG publishing-->
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-	<id value="hl7.fhir.us.skinwoundassessment"/>
-	<url value="http://hl7.org/fhir/us/skinwoundassessment/ImplementationGuide/hl7.fhir.us.skinwoundassessment"/>
-	<version value="0.3.0"/>
+	<id value="skinwoundassessment"/>
+	<url value="http://hl7.org/fhir/us/skinwoundassessment/ImplementationGuide/skinwoundassessment"/>
+	<version value="0.1.0"/>
 	<name value="SkinWoundAssessment"/>
 	<title value="FHIR Skin Wound Assessment"/>
 	<status value="active"/>
@@ -680,6 +680,27 @@
 				<reference value="CapabilityStatement/skinwoundassessment-server"/>
 			</reference>
 			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Observation/woundsize-example"/>
+			</reference>
+			<description value="Observation Wound Size example"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Patient/patient-example"/>
+			</reference>
+			<description value="Patient example"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Practitioner/practitioner-example"/>
+			</reference>
+			<description value="Practitioner example"/>
+			<exampleBoolean value="true"/>
 		</resource>
 		<!-- ============ Home Page =============== -->
 		<page>

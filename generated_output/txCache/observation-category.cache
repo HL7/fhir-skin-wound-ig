@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/observation-category",
+  "code" : "exam"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/observation-category\" is not known for the code \"exam\"; The code provided (http://hl7.org/fhir/observation-category#exam) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

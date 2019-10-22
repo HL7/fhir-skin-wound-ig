@@ -1,6 +1,6 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "hl7.fhir.us.skinwoundassessment",
+  "id" : "skinwoundassessment",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
     "valueString" : "C:\\Users\\richard.ettema\\Documents\\GitHub\\fhir-skin-wound-ig\\source\\resources"
@@ -17,8 +17,8 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
     "valueString" : "C:\\Users\\richard.ettema\\Documents\\GitHub\\fhir-skin-wound-ig\\source\\pages"
   }],
-  "url" : "http://hl7.org/fhir/us/skinwoundassessment/ImplementationGuide/hl7.fhir.us.skinwoundassessment",
-  "version" : "0.3.0",
+  "url" : "http://hl7.org/fhir/us/skinwoundassessment/ImplementationGuide/skinwoundassessment",
+  "version" : "0.1.0",
   "name" : "SkinWoundAssessment",
   "title" : "FHIR Skin Wound Assessment",
   "status" : "active",
@@ -677,6 +677,27 @@
         "reference" : "CapabilityStatement/skinwoundassessment-server"
       },
       "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/woundsize-example"
+      },
+      "description" : "Observation Wound Size example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Patient/patient-example"
+      },
+      "description" : "Patient example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Practitioner/practitioner-example"
+      },
+      "description" : "Practitioner example",
+      "exampleBoolean" : true
     }],
     "page" : {
       "nameUrl" : "index.html",

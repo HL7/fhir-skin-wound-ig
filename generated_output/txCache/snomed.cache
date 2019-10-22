@@ -8809,3 +8809,87 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "261074009"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "External",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "44056008",
+  "display" : "Caliper"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Caliper, device",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "261074009",
+  "display" : "External"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "External",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "261074009",
+    "display" : "External"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "4360006",
+        "display" : "Stratum spinosum"
+      },
+      {
+        "code" : "20281003",
+        "display" : "Stratum corneum"
+      },
+      {
+        "code" : "62650009",
+        "display" : "Stratum germinativum"
+      },
+      {
+        "code" : "49874001",
+        "display" : "Stratum granulosum"
+      },
+      {
+        "code" : "795002",
+        "display" : "Deep"
+      },
+      {
+        "code" : "261074009",
+        "display" : "External"
+      },
+      {
+        "code" : "260521003",
+        "display" : "Internal"
+      },
+      {
+        "code" : "26283006",
+        "display" : "Superficial"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "External",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

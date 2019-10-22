@@ -16,7 +16,7 @@ active: terminology
 
 ## Introduction
 
-The Skin Wound Assessment Implementation Guide is based on [FHIR Version STU3] and defines the minimum conformance requirements for implementations.  
+The Skin Wound Assessment Implementation Guide is based on [FHIR Version R4] and defines the minimum conformance requirements for implementations.  
 
 
 ----

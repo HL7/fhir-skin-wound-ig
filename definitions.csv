@@ -9,7 +9,7 @@ dependencyList.name,uscore
 dependencyList.version,current
 do-transforms,FALSE
 extensions,
-fixed-business-version,0.3.0
+fixed-business-version,0.1.0
 gen-examples,FALSE
 igtemplate-dir,C:/Users/richard.ettema/Documents/GitHub/fhir-skin-wound-ig/
 jurisdiction,US

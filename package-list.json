@@ -12,24 +12,6 @@
       "path": "http://build.fhir.org/ig/HL7/SkinWoundAssessment",
       "status": "ci-build",
       "current": true
-    },
-    {
-      "version": "0.2.0",
-      "fhir-version": "3.0.1",
-      "date" : "2019-08-16",
-      "desc": "First ballot, second version (Draft for Comment)",
-      "path": "http://wildfhir3.aegis.net/ig/skinwoundassert",
-      "status": "ballot",
-      "sequence": "STU1"
-    },
-    {
-      "version": "0.1.0",
-      "fhir-version": "3.0.1",
-      "date": "2019-04-04",
-      "desc": "First ballot (Draft for Comment)",
-      "path": "http://wildfhir3.aegis.net/ig/hspcskinwoundassert",
-      "status": "ballot",
-      "sequence": "STU1"
     }
   ]
 }

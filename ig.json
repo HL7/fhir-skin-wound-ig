@@ -7,7 +7,7 @@
   "special-urls": [],
   "npm-name": "hl7.fhir.us.skinwoundassessment",
   "publisher": "HL7 International - Electronic Health Records Work Group",
-  "fixed-business-version": "0.3.0",
+  "fixed-business-version": "0.1.0",
   "extraTemplates": [
     "mappings"
   ],
@@ -203,6 +203,10 @@
 	"ValueSet/woundShapeTypeVS":{"base":"ValueSet-woundShapeTypeVS.html"},
 
 	"CapabilityStatement/skinwoundassessment-client":{"base":"CapabilityStatement-skinwoundassessment-client.html","source":"capabilitystatement/capabilitystatement-client.xml"},
-	"CapabilityStatement/skinwoundassessment-server":{"base":"CapabilityStatement-skinwoundassessment-server.html","source":"capabilitystatement/capabilitystatement-server.xml"}
+	"CapabilityStatement/skinwoundassessment-server":{"base":"CapabilityStatement-skinwoundassessment-server.html","source":"capabilitystatement/capabilitystatement-server.xml"},
+
+    "Observation/woundsize-example": {"base": "Observation-woundsize-example.html"},
+    "Patient/patient-example": {"base": "Patient-patient-example.html"},
+    "Practitioner/practitioner-example": {"base": "Practitioner-practitioner-example.html"}
   }
 }

@@ -49,13 +49,13 @@
 			<slicing>
                 <discriminator>
                     <type value="value"/>
-                    <path value="Observation.component"/>
+                    <path value="code.coding.code"/>
                 </discriminator>
                 <ordered value="false"/>
                 <rules value="open"/>
             </slicing>
 			<min value="0"/>
-			<max value="1"/>
+			<max value="5"/>
 		</element>
 		<element id="Observation:hspcwoundSize.component:woundLength">
 			<path value="Observation.component"/>

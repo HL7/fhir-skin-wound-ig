@@ -36,6 +36,10 @@
         <code value="CodeableConcept"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
       </type>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundMeasurementDeviceVS"/>
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

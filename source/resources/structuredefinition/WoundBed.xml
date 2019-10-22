@@ -49,7 +49,7 @@
 			<slicing>
                 <discriminator>
                     <type value="profile"/>
-                    <path value="target.resolve()"/>
+                    <path value="resolve()"/>
                 </discriminator>
                 <ordered value="false"/>
                 <rules value="open"/>

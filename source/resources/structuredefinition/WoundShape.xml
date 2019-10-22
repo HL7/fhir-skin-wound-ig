@@ -5,7 +5,6 @@
     <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundShape"/>
     <version value="2.0.0"/>
     <name value="WoundShape"/>
-	<title value="Wound Shape"/>
     <status value="draft"/>
     <date value="2019-09-30"/>
     <publisher value="Healthcare Services Platform Consortium"/>

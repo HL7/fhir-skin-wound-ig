@@ -8893,3 +8893,1623 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "400012003"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Abrasion AND/OR friction burn of skin",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "225541009"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Granulation of tissue",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "371250004"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Purple color (qualifier value)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "371251000"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "White color (qualifier value)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "449760000"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Scab of wound edge",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "244185002",
+    "display" : "Entire skin of heel"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "72651009",
+        "display" : "Nail structure"
+      },
+      {
+        "code" : "113279002",
+        "display" : "Gingival structure"
+      },
+      {
+        "code" : "22180002",
+        "display" : "Skin structure of buttock"
+      },
+      {
+        "code" : "51059006",
+        "display" : "Skin structure of calf of leg"
+      },
+      {
+        "code" : "74160004",
+        "display" : "Skin structure of chest"
+      },
+      {
+        "code" : "21308002",
+        "display" : "Skin structure of perianal area"
+      },
+      {
+        "code" : "414781009",
+        "display" : "Mucous membrane structure"
+      },
+      {
+        "code" : "52034004",
+        "display" : "Skin structure of toe"
+      },
+      {
+        "code" : "315003",
+        "display" : "Skin structure of umbilicus"
+      },
+      {
+        "code" : "371309009",
+        "display" : "Skin structure of upper arm"
+      },
+      {
+        "code" : "24785000",
+        "display" : "Skin structure of wrist"
+      },
+      {
+        "code" : "43067004",
+        "display" : "Skin structure of scalp"
+      },
+      {
+        "code" : "45980000",
+        "display" : "Skin structure of scapular region of back"
+      },
+      {
+        "code" : "81992007",
+        "display" : "Skin structure of scrotum"
+      },
+      {
+        "code" : "76552005",
+        "display" : "Skin structure of shoulder"
+      },
+      {
+        "code" : "16621002",
+        "display" : "Skin structure of temporal region"
+      },
+      {
+        "code" : "371305003",
+        "display" : "Skin structure of thigh"
+      },
+      {
+        "code" : "82654007",
+        "display" : "Skin structure of pelvis"
+      },
+      {
+        "code" : "35900000",
+        "display" : "Skin of penis"
+      },
+      {
+        "code" : "48014002",
+        "display" : "Skin structure of perineum"
+      },
+      {
+        "code" : "43081002",
+        "display" : "Skin structure of neck"
+      },
+      {
+        "code" : "113179006",
+        "display" : "Skin structure of nose"
+      },
+      {
+        "code" : "21672008",
+        "display" : "Skin of parietal region"
+      },
+      {
+        "code" : "88089004",
+        "display" : "Skin structure of lip"
+      },
+      {
+        "code" : "75144006",
+        "display" : "Skin structure of lower leg"
+      },
+      {
+        "code" : "70762009",
+        "display" : "Skin structure of head"
+      },
+      {
+        "code" : "84607009",
+        "display" : "Skin structure of heel"
+      },
+      {
+        "code" : "49812005",
+        "display" : "Skin structure of hip"
+      },
+      {
+        "code" : "39687006",
+        "display" : "Skin structure of inguinal region"
+      },
+      {
+        "code" : "41935005",
+        "display" : "Skin structure of jaw"
+      },
+      {
+        "code" : "63464009",
+        "display" : "Skin structure of knee"
+      },
+      {
+        "code" : "73058008",
+        "display" : "Skin structure of labium"
+      },
+      {
+        "code" : "34284005",
+        "display" : "Skin structure of flank"
+      },
+      {
+        "code" : "60496002",
+        "display" : "Skin structure of foot"
+      },
+      {
+        "code" : "5742000",
+        "display" : "Skin structure of forearm"
+      },
+      {
+        "code" : "68698007",
+        "display" : "Skin structure of forehead"
+      },
+      {
+        "code" : "33712006",
+        "display" : "Skin structure of hand"
+      },
+      {
+        "code" : "74757004",
+        "display" : "Skin structure of elbow"
+      },
+      {
+        "code" : "73897004",
+        "display" : "Skin structure of face"
+      },
+      {
+        "code" : "56213003",
+        "display" : "Skin of finger"
+      },
+      {
+        "code" : "76261009",
+        "display" : "Skin structure of axilla"
+      },
+      {
+        "code" : "66643007",
+        "display" : "Skin structure of back"
+      },
+      {
+        "code" : "82038008",
+        "display" : "Skin structure of breast"
+      },
+      {
+        "code" : "23747009",
+        "display" : "Skin structure of chin"
+      },
+      {
+        "code" : "75093004",
+        "display" : "Skin structure of abdomen"
+      },
+      {
+        "code" : "67269001",
+        "display" : "Skin structure of ankle"
+      },
+      {
+        "code" : "76784001",
+        "display" : "Vaginal structure"
+      },
+      {
+        "code" : "51027004",
+        "display" : "Skin structure of sacral region"
+      },
+      {
+        "code" : "22115004",
+        "display" : "Skin structure of coccygeal region"
+      },
+      {
+        "code" : "63029009",
+        "display" : "Skin structure of gluteal fold"
+      },
+      {
+        "code" : "59112000",
+        "display" : "Skin structure of anus"
+      },
+      {
+        "code" : "1902009",
+        "display" : "Skin structure of ear"
+      },
+      {
+        "code" : "362916000",
+        "display" : "Skin of eye region"
+      },
+      {
+        "code" : "284539009",
+        "display" : "Skin of part of mouth region"
+      },
+      {
+        "code" : "79951008",
+        "display" : "Skin of occipital region"
+      },
+      {
+        "code" : "450693000",
+        "display" : "Skin structure over greater trochanter of hip"
+      },
+      {
+        "code" : "286591006",
+        "display" : "Skin of lumbar region"
+      },
+      {
+        "code" : "419975006",
+        "display" : "Skin structure of malleolus"
+      },
+      {
+        "code" : "281726008",
+        "display" : "Skin of part of front of thorax"
+      },
+      {
+        "code" : "367578008",
+        "display" : "Skin structure of hypogastric region"
+      },
+      {
+        "code" : "58226009",
+        "display" : "Skin structure of medial surface of lower leg"
+      },
+      {
+        "code" : "314870004",
+        "display" : "Tongue surface region"
+      },
+      {
+        "code" : "699903000",
+        "display" : "Skin structure of ischial tuberosity subregion of buttock region"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://snomed.info/sct#244185002) is not  valid in the value set WoundAnatomicLocationvalueset"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "244185002"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Entire skin over heel of foot",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "85421007",
+    "display" : "Structure of right half of body"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "51440002",
+        "display" : "Right and left"
+      },
+      {
+        "code" : "399488007",
+        "display" : "Midline"
+      },
+      {
+        "code" : "85421007",
+        "display" : "Structure of right half of body"
+      },
+      {
+        "code" : "31156008",
+        "display" : "Structure of left half of body"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Right side of body",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "85421007"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Right side of body",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "261788001",
+  "display" : "Exteriorized"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Exteriorized",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "2986006",
+  "display" : "Talar facet of navicular bone of foot"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Structure of talar facet of navicular bone of foot",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "80144004",
+  "display" : "Bone structure of calcaneum"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Calcaneum",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "260341007",
+  "display" : "8 o'clock position"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "8 o'clock position",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "255551008",
+    "display" : "Posterior"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "46053002",
+        "display" : "Distal"
+      },
+      {
+        "code" : "255554000",
+        "display" : "Dorsal"
+      },
+      {
+        "code" : "264147007",
+        "display" : "Plantar"
+      },
+      {
+        "code" : "255561001",
+        "display" : "Medial"
+      },
+      {
+        "code" : "49370004",
+        "display" : "Lateral"
+      },
+      {
+        "code" : "255549009",
+        "display" : "Anterior"
+      },
+      {
+        "code" : "255551008",
+        "display" : "Posterior"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Back of",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "255551008"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Back of",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "255509001",
+    "display" : "Large"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "32088001",
+        "display" : "Fifth"
+      },
+      {
+        "code" : "11896004",
+        "display" : "Intermediate"
+      },
+      {
+        "code" : "263871007",
+        "display" : "Sinusoidal"
+      },
+      {
+        "code" : "38033009",
+        "display" : "Amputation stump"
+      },
+      {
+        "code" : "13351007",
+        "display" : "Structure of bursa"
+      },
+      {
+        "code" : "66787007",
+        "display" : "Cephalic"
+      },
+      {
+        "code" : "255286006",
+        "display" : "Glandular"
+      },
+      {
+        "code" : "255509001",
+        "display" : "Large"
+      },
+      {
+        "code" : "385494008",
+        "display" : "Hematoma"
+      },
+      {
+        "code" : "39352004",
+        "display" : "Joint structure"
+      },
+      {
+        "code" : "264082005",
+        "display" : "Lumbar"
+      },
+      {
+        "code" : "260642009",
+        "display" : "Retroperitoneal"
+      },
+      {
+        "code" : "272432007",
+        "display" : "Wall structure"
+      },
+      {
+        "code" : "397406000",
+        "display" : "Collateral branch of vessel"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Large",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "255509001"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Large",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "244185002",
+  "display" : "Entire skin of heel"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Entire skin over heel of foot",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "85421007",
+  "display" : "Structure of right half of body"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Right side of body",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "255551008",
+  "display" : "Posterior"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Back of",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "255509001",
+  "display" : "Large"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Large",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "400012003",
+    "display" : "Abrasion and/or friction burn of skin"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "125667009",
+        "display" : "Contusion"
+      },
+      {
+        "code" : "271761007",
+        "display" : "Scaly skin"
+      },
+      {
+        "code" : "128045006",
+        "display" : "Cellulitis"
+      },
+      {
+        "code" : "271807003",
+        "display" : "Eruption"
+      },
+      {
+        "code" : "274165007",
+        "display" : "Laceration of skin"
+      },
+      {
+        "code" : "95321009",
+        "display" : "Fissure in skin"
+      },
+      {
+        "code" : "13954005",
+        "display" : "Ischemic ulcer"
+      },
+      {
+        "code" : "247444006",
+        "display" : "Excoriation of skin"
+      },
+      {
+        "code" : "428220001",
+        "display" : "Tear of skin"
+      },
+      {
+        "code" : "283545005",
+        "display" : "Gunshot wound"
+      },
+      {
+        "code" : "312609001",
+        "display" : "Puncture wound - injury"
+      },
+      {
+        "code" : "425322008",
+        "display" : "Stab wound"
+      },
+      {
+        "code" : "403601003",
+        "display" : "Neuropathic ulcer"
+      },
+      {
+        "code" : "371032004",
+        "display" : "Stasis ulcer"
+      },
+      {
+        "code" : "399912005",
+        "display" : "Pressure sore"
+      },
+      {
+        "code" : "271767006",
+        "display" : "Peeling of skin"
+      },
+      {
+        "code" : "400012003",
+        "display" : "Abrasion and/or friction burn of skin"
+      },
+      {
+        "code" : "429349001",
+        "display" : "Avulsion of skin"
+      },
+      {
+        "code" : "283682007",
+        "display" : "Bite - wound"
+      },
+      {
+        "code" : "247464001",
+        "display" : "Blistering eruption"
+      },
+      {
+        "code" : "284196006",
+        "display" : "Burn of skin"
+      },
+      {
+        "code" : "444827008",
+        "display" : "Erythema of skin"
+      },
+      {
+        "code" : "279420009",
+        "display" : "Hematoma of skin"
+      },
+      {
+        "code" : "402276007",
+        "display" : "Irritant contact dermatitis due to incontinence"
+      },
+      {
+        "code" : "3644009",
+        "display" : "Macerated skin"
+      },
+      {
+        "code" : "421594008",
+        "display" : "Nonstageable pressure ulcer"
+      },
+      {
+        "code" : "129902007",
+        "display" : "Skin incision finding"
+      },
+      {
+        "code" : "723071003",
+        "display" : "Deep tissue pressure injury"
+      },
+      {
+        "code" : "238792006",
+        "display" : "Mixed arteriovenous leg ulcer"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Abrasion AND/OR friction burn of skin",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "225541009",
+    "display" : "Granulation of tissue"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "449746002",
+        "display" : "Wound slough"
+      },
+      {
+        "code" : "225541009",
+        "display" : "Granulation of tissue"
+      },
+      {
+        "code" : "449745003",
+        "display" : "Fibrinous wound bed"
+      },
+      {
+        "code" : "449743005",
+        "display" : "Wound epithelialization"
+      },
+      {
+        "code" : "421306004",
+        "display" : "Necrotic eschar"
+      },
+      {
+        "code" : "609410002",
+        "display" : "Necrosis of anatomical site"
+      },
+      {
+        "code" : "409590008:58158008",
+        "display" : "Stable Eschar"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Granulation of tissue",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "371250004",
+    "display" : "Purple color"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "371244009",
+        "display" : "Yellow color"
+      },
+      {
+        "code" : "371252007",
+        "display" : "Black color"
+      },
+      {
+        "code" : "371254008",
+        "display" : "Brown color"
+      },
+      {
+        "code" : "371243003",
+        "display" : "Pink color"
+      },
+      {
+        "code" : "371240000",
+        "display" : "Red color"
+      },
+      {
+        "code" : "371251000",
+        "display" : "White color"
+      },
+      {
+        "code" : "371253002",
+        "display" : "Gray color"
+      },
+      {
+        "code" : "371250004",
+        "display" : "Purple color"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Purple color (qualifier value)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "371251000",
+    "display" : "White color"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "371244009",
+        "display" : "Yellow color"
+      },
+      {
+        "code" : "371252007",
+        "display" : "Black color"
+      },
+      {
+        "code" : "371254008",
+        "display" : "Brown color"
+      },
+      {
+        "code" : "371243003",
+        "display" : "Pink color"
+      },
+      {
+        "code" : "371240000",
+        "display" : "Red color"
+      },
+      {
+        "code" : "371251000",
+        "display" : "White color"
+      },
+      {
+        "code" : "371253002",
+        "display" : "Gray color"
+      },
+      {
+        "code" : "371250004",
+        "display" : "Purple color"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "White color (qualifier value)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "449760000",
+    "display" : "Scab of wound edge"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "449741007",
+        "display" : "Wound edges approximated"
+      },
+      {
+        "code" : "427832005",
+        "display" : "Dehiscence of wound of skin"
+      },
+      {
+        "code" : "449751008",
+        "display" : "Rolled wound edge"
+      },
+      {
+        "code" : "449760000",
+        "display" : "Scab of wound edge"
+      },
+      {
+        "code" : "449749009",
+        "display" : "Wound edge diffuse"
+      },
+      {
+        "code" : "449750009",
+        "display" : "Wound edge sharp"
+      },
+      {
+        "code" : "449748001",
+        "display" : "Wound edges attached"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Scab of wound edge",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "371250004",
+    "display" : "Purple color"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "449746002",
+        "display" : "Wound slough"
+      },
+      {
+        "code" : "225541009",
+        "display" : "Granulation of tissue"
+      },
+      {
+        "code" : "449745003",
+        "display" : "Fibrinous wound bed"
+      },
+      {
+        "code" : "449743005",
+        "display" : "Wound epithelialization"
+      },
+      {
+        "code" : "421306004",
+        "display" : "Necrotic eschar"
+      },
+      {
+        "code" : "609410002",
+        "display" : "Necrosis of anatomical site"
+      },
+      {
+        "code" : "409590008:58158008",
+        "display" : "Stable Eschar"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://snomed.info/sct#371250004) is not  valid in the value set WoundBedAppearanceValueSet"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "225541009",
+    "display" : "Granulation of tissue"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "371244009",
+        "display" : "Yellow color"
+      },
+      {
+        "code" : "371252007",
+        "display" : "Black color"
+      },
+      {
+        "code" : "371254008",
+        "display" : "Brown color"
+      },
+      {
+        "code" : "371243003",
+        "display" : "Pink color"
+      },
+      {
+        "code" : "371240000",
+        "display" : "Red color"
+      },
+      {
+        "code" : "371251000",
+        "display" : "White color"
+      },
+      {
+        "code" : "371253002",
+        "display" : "Gray color"
+      },
+      {
+        "code" : "371250004",
+        "display" : "Purple color"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://snomed.info/sct#225541009) is not  valid in the value set WoundBedColorValueSet"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "449760000",
+    "display" : "Scab of wound edge"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "371244009",
+        "display" : "Yellow color"
+      },
+      {
+        "code" : "371252007",
+        "display" : "Black color"
+      },
+      {
+        "code" : "371254008",
+        "display" : "Brown color"
+      },
+      {
+        "code" : "371243003",
+        "display" : "Pink color"
+      },
+      {
+        "code" : "371240000",
+        "display" : "Red color"
+      },
+      {
+        "code" : "371251000",
+        "display" : "White color"
+      },
+      {
+        "code" : "371253002",
+        "display" : "Gray color"
+      },
+      {
+        "code" : "371250004",
+        "display" : "Purple color"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://snomed.info/sct#449760000) is not  valid in the value set WoundEdgeColorValueSet"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "371251000",
+    "display" : "White color"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "449741007",
+        "display" : "Wound edges approximated"
+      },
+      {
+        "code" : "427832005",
+        "display" : "Dehiscence of wound of skin"
+      },
+      {
+        "code" : "449751008",
+        "display" : "Rolled wound edge"
+      },
+      {
+        "code" : "449760000",
+        "display" : "Scab of wound edge"
+      },
+      {
+        "code" : "449749009",
+        "display" : "Wound edge diffuse"
+      },
+      {
+        "code" : "449750009",
+        "display" : "Wound edge sharp"
+      },
+      {
+        "code" : "449748001",
+        "display" : "Wound edges attached"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://snomed.info/sct#371251000) is not  valid in the value set WoundEdgeDescriptionValueSet"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "371251000",
+    "display" : "White color"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "449746002",
+        "display" : "Wound slough"
+      },
+      {
+        "code" : "225541009",
+        "display" : "Granulation of tissue"
+      },
+      {
+        "code" : "449745003",
+        "display" : "Fibrinous wound bed"
+      },
+      {
+        "code" : "449743005",
+        "display" : "Wound epithelialization"
+      },
+      {
+        "code" : "421306004",
+        "display" : "Necrotic eschar"
+      },
+      {
+        "code" : "609410002",
+        "display" : "Necrosis of anatomical site"
+      },
+      {
+        "code" : "409590008:58158008",
+        "display" : "Stable Eschar"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://snomed.info/sct#371251000) is not  valid in the value set WoundBedAppearanceValueSet"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "449760000",
+    "display" : "Scab of wound edge"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "449746002",
+        "display" : "Wound slough"
+      },
+      {
+        "code" : "225541009",
+        "display" : "Granulation of tissue"
+      },
+      {
+        "code" : "449745003",
+        "display" : "Fibrinous wound bed"
+      },
+      {
+        "code" : "449743005",
+        "display" : "Wound epithelialization"
+      },
+      {
+        "code" : "421306004",
+        "display" : "Necrotic eschar"
+      },
+      {
+        "code" : "609410002",
+        "display" : "Necrosis of anatomical site"
+      },
+      {
+        "code" : "409590008:58158008",
+        "display" : "Stable Eschar"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://snomed.info/sct#449760000) is not  valid in the value set WoundBedAppearanceValueSet"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "225541009",
+    "display" : "Granulation of tissue"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "449741007",
+        "display" : "Wound edges approximated"
+      },
+      {
+        "code" : "427832005",
+        "display" : "Dehiscence of wound of skin"
+      },
+      {
+        "code" : "449751008",
+        "display" : "Rolled wound edge"
+      },
+      {
+        "code" : "449760000",
+        "display" : "Scab of wound edge"
+      },
+      {
+        "code" : "449749009",
+        "display" : "Wound edge diffuse"
+      },
+      {
+        "code" : "449750009",
+        "display" : "Wound edge sharp"
+      },
+      {
+        "code" : "449748001",
+        "display" : "Wound edges attached"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://snomed.info/sct#225541009) is not  valid in the value set WoundEdgeDescriptionValueSet"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "371250004",
+    "display" : "Purple color"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "449741007",
+        "display" : "Wound edges approximated"
+      },
+      {
+        "code" : "427832005",
+        "display" : "Dehiscence of wound of skin"
+      },
+      {
+        "code" : "449751008",
+        "display" : "Rolled wound edge"
+      },
+      {
+        "code" : "449760000",
+        "display" : "Scab of wound edge"
+      },
+      {
+        "code" : "449749009",
+        "display" : "Wound edge diffuse"
+      },
+      {
+        "code" : "449750009",
+        "display" : "Wound edge sharp"
+      },
+      {
+        "code" : "449748001",
+        "display" : "Wound edges attached"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://snomed.info/sct#371250004) is not  valid in the value set WoundEdgeDescriptionValueSet"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "84607009",
+    "display" : "Skin structure of heel"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "72651009",
+        "display" : "Nail structure"
+      },
+      {
+        "code" : "113279002",
+        "display" : "Gingival structure"
+      },
+      {
+        "code" : "22180002",
+        "display" : "Skin structure of buttock"
+      },
+      {
+        "code" : "51059006",
+        "display" : "Skin structure of calf of leg"
+      },
+      {
+        "code" : "74160004",
+        "display" : "Skin structure of chest"
+      },
+      {
+        "code" : "21308002",
+        "display" : "Skin structure of perianal area"
+      },
+      {
+        "code" : "414781009",
+        "display" : "Mucous membrane structure"
+      },
+      {
+        "code" : "52034004",
+        "display" : "Skin structure of toe"
+      },
+      {
+        "code" : "315003",
+        "display" : "Skin structure of umbilicus"
+      },
+      {
+        "code" : "371309009",
+        "display" : "Skin structure of upper arm"
+      },
+      {
+        "code" : "24785000",
+        "display" : "Skin structure of wrist"
+      },
+      {
+        "code" : "43067004",
+        "display" : "Skin structure of scalp"
+      },
+      {
+        "code" : "45980000",
+        "display" : "Skin structure of scapular region of back"
+      },
+      {
+        "code" : "81992007",
+        "display" : "Skin structure of scrotum"
+      },
+      {
+        "code" : "76552005",
+        "display" : "Skin structure of shoulder"
+      },
+      {
+        "code" : "16621002",
+        "display" : "Skin structure of temporal region"
+      },
+      {
+        "code" : "371305003",
+        "display" : "Skin structure of thigh"
+      },
+      {
+        "code" : "82654007",
+        "display" : "Skin structure of pelvis"
+      },
+      {
+        "code" : "35900000",
+        "display" : "Skin of penis"
+      },
+      {
+        "code" : "48014002",
+        "display" : "Skin structure of perineum"
+      },
+      {
+        "code" : "43081002",
+        "display" : "Skin structure of neck"
+      },
+      {
+        "code" : "113179006",
+        "display" : "Skin structure of nose"
+      },
+      {
+        "code" : "21672008",
+        "display" : "Skin of parietal region"
+      },
+      {
+        "code" : "88089004",
+        "display" : "Skin structure of lip"
+      },
+      {
+        "code" : "75144006",
+        "display" : "Skin structure of lower leg"
+      },
+      {
+        "code" : "70762009",
+        "display" : "Skin structure of head"
+      },
+      {
+        "code" : "84607009",
+        "display" : "Skin structure of heel"
+      },
+      {
+        "code" : "49812005",
+        "display" : "Skin structure of hip"
+      },
+      {
+        "code" : "39687006",
+        "display" : "Skin structure of inguinal region"
+      },
+      {
+        "code" : "41935005",
+        "display" : "Skin structure of jaw"
+      },
+      {
+        "code" : "63464009",
+        "display" : "Skin structure of knee"
+      },
+      {
+        "code" : "73058008",
+        "display" : "Skin structure of labium"
+      },
+      {
+        "code" : "34284005",
+        "display" : "Skin structure of flank"
+      },
+      {
+        "code" : "60496002",
+        "display" : "Skin structure of foot"
+      },
+      {
+        "code" : "5742000",
+        "display" : "Skin structure of forearm"
+      },
+      {
+        "code" : "68698007",
+        "display" : "Skin structure of forehead"
+      },
+      {
+        "code" : "33712006",
+        "display" : "Skin structure of hand"
+      },
+      {
+        "code" : "74757004",
+        "display" : "Skin structure of elbow"
+      },
+      {
+        "code" : "73897004",
+        "display" : "Skin structure of face"
+      },
+      {
+        "code" : "56213003",
+        "display" : "Skin of finger"
+      },
+      {
+        "code" : "76261009",
+        "display" : "Skin structure of axilla"
+      },
+      {
+        "code" : "66643007",
+        "display" : "Skin structure of back"
+      },
+      {
+        "code" : "82038008",
+        "display" : "Skin structure of breast"
+      },
+      {
+        "code" : "23747009",
+        "display" : "Skin structure of chin"
+      },
+      {
+        "code" : "75093004",
+        "display" : "Skin structure of abdomen"
+      },
+      {
+        "code" : "67269001",
+        "display" : "Skin structure of ankle"
+      },
+      {
+        "code" : "76784001",
+        "display" : "Vaginal structure"
+      },
+      {
+        "code" : "51027004",
+        "display" : "Skin structure of sacral region"
+      },
+      {
+        "code" : "22115004",
+        "display" : "Skin structure of coccygeal region"
+      },
+      {
+        "code" : "63029009",
+        "display" : "Skin structure of gluteal fold"
+      },
+      {
+        "code" : "59112000",
+        "display" : "Skin structure of anus"
+      },
+      {
+        "code" : "1902009",
+        "display" : "Skin structure of ear"
+      },
+      {
+        "code" : "362916000",
+        "display" : "Skin of eye region"
+      },
+      {
+        "code" : "284539009",
+        "display" : "Skin of part of mouth region"
+      },
+      {
+        "code" : "79951008",
+        "display" : "Skin of occipital region"
+      },
+      {
+        "code" : "450693000",
+        "display" : "Skin structure over greater trochanter of hip"
+      },
+      {
+        "code" : "286591006",
+        "display" : "Skin of lumbar region"
+      },
+      {
+        "code" : "419975006",
+        "display" : "Skin structure of malleolus"
+      },
+      {
+        "code" : "281726008",
+        "display" : "Skin of part of front of thorax"
+      },
+      {
+        "code" : "367578008",
+        "display" : "Skin structure of hypogastric region"
+      },
+      {
+        "code" : "58226009",
+        "display" : "Skin structure of medial surface of lower leg"
+      },
+      {
+        "code" : "314870004",
+        "display" : "Tongue surface region"
+      },
+      {
+        "code" : "699903000",
+        "display" : "Skin structure of ischial tuberosity subregion of buttock region"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Skin of heel",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "84607009"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Skin of heel",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

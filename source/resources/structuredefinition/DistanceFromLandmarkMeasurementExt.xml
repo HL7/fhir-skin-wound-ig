@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+	<id value="DistanceFromLandmarkMeasurementExt"/>
+	<url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/DistanceFromLandmarkMeasurementExt"/>
+	<version value="0.2.0"/>
+	<name value="DistanceFromLandmarkMeasurementExt"/>
+	<title value="Distance From Landmark Measurement Extension"/>
+	<status value="draft"/>
+	<date value="2019-08-12"/>
+	<publisher value="CIMI"/>
+	<description value="The measured distance in cm a certain observation is made from a body landmark."/>
+	<fhirVersion value="4.0.0"/>
+	<kind value="complex-type"/>
+	<abstract value="false"/>
+	<context>
+		<type value="element"/>
+		<expression value="StructureDefinition"/>
+	</context>
+	<type value="Extension"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Extension:DistanceFromLandmarkMeasurementExt">
+			<path value="Extension"/>
+			<definition value="The measured distance in cm a certain observation is made from a body landmark."/>
+			<min value="0"/>
+			<max value="1"/>
+			<isModifier value="false"/>
+		</element>
+		<element id="Extension:DistanceFromLandmarkMeasurementExt.url">
+			<path value="Extension.url"/>
+			<fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/DistanceFromLandmarkMeasurementExt"/>
+		</element>
+		<element id="Extension:DistanceFromLandmarkExt.valueQuantity">
+			<path value="Extension.valueQuantity"/>
+			<type>
+				<code value="Quantity"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/Quantity"/>
+			</type>
+		</element>
+		<element id="Extension:DistanceFromLandmarkMeasurementExt.valueQuantity.system">
+			<path value="Extension.valueQuantity.system"/>
+			<type>
+				<code value="uri"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/uri"/>
+			</type>
+			<fixedUri value="http://unitsofmeasure.org"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+		</element>
+		<element id="Extension:DistanceFromLandmarkMeasurementExt.valueQuantity.code">
+			<path value="Extension.valueQuantity.code"/>
+			<type>
+				<code value="code"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/code"/>
+			</type>
+			<fixedCode value="cm"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+		</element>
+	</differential>
+</StructureDefinition>

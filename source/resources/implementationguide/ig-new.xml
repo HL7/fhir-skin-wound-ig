@@ -125,6 +125,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/DistanceFromLandmarkMeasurementExt"/>
+      </reference>
+      <description value="Distance From Landmark Measurement"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/DistanceFromLandmarkExt"/>
       </reference>
       <description value="Distance From Landmark"/>
@@ -226,6 +233,13 @@
         <reference value="StructureDefinition/WoundGradationExt"/>
       </reference>
       <description value="Wound Gradation Extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/WoundRelatedObservationsPanelExt"/>
+      </reference>
+      <description value="Wound Related Observations Panel Extension"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -673,6 +687,62 @@
         <reference value="CapabilityStatement/skinwoundassessment-server"/>
       </reference>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/skinwoundassert-example"/>
+      </reference>
+      <description value="Condition Wound Assert example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/skinwoundbedappearance-example"/>
+      </reference>
+      <description value="Observation Wound Bed Appearance example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/skinwoundbedcolor-example"/>
+      </reference>
+      <description value="Observation Wound Bed Color example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/skinwoundbed-example"/>
+      </reference>
+      <description value="Observation Wound Bed example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/skinwoundedgecolor-example"/>
+      </reference>
+      <description value="Observation Wound Edge Color example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/skinwoundedgedescription-example"/>
+      </reference>
+      <description value="Observation Wound Edge Description example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/skinwoundedge-example"/>
+      </reference>
+      <description value="Observation Wound Edge example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/skinwoundrelatedobservationspanel-example"/>
+      </reference>
+      <description value="Observation Wound Related Observations Panel example"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>

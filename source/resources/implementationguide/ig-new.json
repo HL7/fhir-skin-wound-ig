@@ -129,6 +129,13 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/DistanceFromLandmarkMeasurementExt"
+      },
+      "description" : "Distance From Landmark Measurement",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/DistanceFromLandmarkExt"
       },
       "description" : "Distance From Landmark",
@@ -230,6 +237,13 @@
         "reference" : "StructureDefinition/WoundGradationExt"
       },
       "description" : "Wound Gradation Extension",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/WoundRelatedObservationsPanelExt"
+      },
+      "description" : "Wound Related Observations Panel Extension",
       "exampleBoolean" : false
     },
     {
@@ -677,6 +691,62 @@
         "reference" : "CapabilityStatement/skinwoundassessment-server"
       },
       "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "Condition/skinwoundassert-example"
+      },
+      "description" : "Condition Wound Assert example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/skinwoundbedappearance-example"
+      },
+      "description" : "Observation Wound Bed Appearance example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/skinwoundbedcolor-example"
+      },
+      "description" : "Observation Wound Bed Color example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/skinwoundbed-example"
+      },
+      "description" : "Observation Wound Bed example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/skinwoundedgecolor-example"
+      },
+      "description" : "Observation Wound Edge Color example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/skinwoundedgedescription-example"
+      },
+      "description" : "Observation Wound Edge Description example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/skinwoundedge-example"
+      },
+      "description" : "Observation Wound Edge example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/skinwoundrelatedobservationspanel-example"
+      },
+      "description" : "Observation Wound Related Observations Panel example",
+      "exampleBoolean" : true
     },
     {
       "reference" : {

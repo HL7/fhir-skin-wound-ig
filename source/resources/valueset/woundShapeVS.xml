@@ -12,7 +12,7 @@
 	<experimental value="true"/>
     <date value="2019-09-30"/>
     <publisher value="HSPC"/>
-    <description value="Select SNOMED CT codes. A set of codes that describes the color of the wound bed."/>
+    <description value="Select SNOMED CT codes. A set of codes that describes the shape of the wound bed."/>
     <immutable value="true"/>
     <copyright value="TBD"/>
     

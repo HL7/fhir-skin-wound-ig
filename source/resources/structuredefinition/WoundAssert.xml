@@ -26,59 +26,7 @@
         <element id="Condition:HSPCWoundAssert">
             <path value="Condition"/>
 			<short value="Wound Assert"/>
-            <definition value="Wound Assert is an assertion model used when the condition exists. Wound is a kind of skin alteration including breaks in skin or injury under or to skin wounds
-            (e.g., pressure injury by stage)"/>
-        </element>
-        <element id="Condition:HSPCWoundAssert.code:woundType">
-            <path value="Condition.code"/>
-            <short value="woundType"/>
-			<min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="CodeableConcept"/>
-            </type>
-            <binding>
-                <strength value="preferred"/>
-                <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundTypeVS"/>
-            </binding>
-        </element>
-        <element id="Condition:HSPCWoundAssert.bodySite">
-            <path value="Condition.bodySite"/>
-            <short value="Body Location"/>
-            <comment value="Key code for this model: BodyLocation_KEY_CODE"/>
-            <min value="0"/>
-            <max value="0"/>
-        </element>
-		<element id="Condition:HSPCWoundAssert.abatement[x]:abatementDate">
-			<path value="Condition.abatement[x]"/>
-			<short value="Abatement Date"/>
-			<min value="0"/>
-			<max value="1"/>
-			<type>
-				<code value="dateTime"/>
-			</type>
-		</element>
-		<element id="Condition:HSPCWoundAssert.onset[x]:dateOfOnset">
-			<path value="Condition.onset[x]"/>
-			<short value="Onset Date"/>
-			<min value="0"/>
-			<max value="1"/>
-			<type>
-				<code value="dateTime"/>
-			</type>
-		</element>
-        <element id="Condition:HSPCWoundAssert.extension">
-            <path value="Condition.extension"/>
-            <slicing>
-                <discriminator>
-                    <type value="value"/>
-                    <path value="Condition.extension"/>
-                </discriminator>
-                <ordered value="false"/>
-                <rules value="open"/>
-            </slicing>
-            <min value="0"/>
-            <max value="*"/>
+            <definition value="Wound Assert is an assertion model used when the condition exists. Wound is a kind of skin alteration including breaks in skin or injury under or to skin wounds (e.g., pressure injury by stage)"/>
         </element>
         <element id="Condition:HSPCWoundAssert.extension:presentOnAdmission">
             <path value="Condition.extension"/>
@@ -190,15 +138,15 @@
 				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundGradationExt"/>
 			</type>
 		</element>
-		<element id="Condition:HSPCWoundAssert.extension:woundRelatedObservationsPanel">
+		<element id="Condition:HSPCWoundAssert.extension:woundRelatedObservationsPanelExt">
 			<path value="Condition.extension"/>
 			<sliceName value="woundRelatedObservationsPanel"/>
 			<short value="Wound Related Observations Panel"/>
 			<min value="0"/>
 			<max value="*"/>
 			<type>
-				<code value="Reference"/>
-				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundRelatedObservationsPanel"/>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundRelatedObservationsPanelExt"/>
 			</type>
 		</element>
 		<element id="Condition:HSPCWoundAssert.extension:BodyLocation">
@@ -226,6 +174,44 @@
 		<element id="Condition:HSPCWoundAssert.identifier">
 			<path value="Condition.identifier"/>
 			<short value="To be used for the wound ID"/>
+		</element>
+        <element id="Condition:HSPCWoundAssert.code:woundType">
+            <path value="Condition.code"/>
+            <short value="woundType"/>
+			<min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundTypeVS"/>
+            </binding>
+        </element>
+        <element id="Condition:HSPCWoundAssert.bodySite">
+            <path value="Condition.bodySite"/>
+            <short value="Body Location"/>
+            <comment value="Key code for this model: BodyLocation_KEY_CODE"/>
+            <min value="0"/>
+            <max value="0"/>
+        </element>
+		<element id="Condition:HSPCWoundAssert.abatement[x]:abatementDate">
+			<path value="Condition.abatement[x]"/>
+			<short value="Abatement Date"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="dateTime"/>
+			</type>
+		</element>
+		<element id="Condition:HSPCWoundAssert.onset[x]:dateOfOnset">
+			<path value="Condition.onset[x]"/>
+			<short value="Onset Date"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="dateTime"/>
+			</type>
 		</element>
     </differential>
 </StructureDefinition>

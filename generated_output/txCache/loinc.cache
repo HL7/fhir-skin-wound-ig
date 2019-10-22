@@ -297,3 +297,192 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "72371-8"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Appearance of Wound base",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "72370-0"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Area of identified wound bed appearance/Area of wound bed of Wound base",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "39132-6"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Color of Wound base",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "89255-4"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Wound bed area identified by color/Area of wound bed",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "89254-7"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Wound bed panel",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "39133-4"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Color of Wound edge",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "72304-9"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Edge of wound description",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "89256-2"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Wound edge panel",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "39135-9"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Wound assessment panel",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "72371-8",
+  "display" : "Appearance of Wound base"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Appearance of Wound base",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "72370-0",
+  "display" : "Area of identified wound bed appearance/Area of wound bed of Wound base"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Area of identified wound bed appearance/Area of wound bed of Wound base",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "39132-6",
+  "display" : "Color of Wound base"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Color of Wound base",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "89255-4",
+  "display" : "Wound bed area identified by color/Area of wound bed"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Wound bed area identified by color/Area of wound bed",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "89254-7",
+  "display" : "Wound bed panel"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Wound bed panel",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "39133-4",
+  "display" : "Color of Wound edge"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Color of Wound edge",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "72304-9",
+  "display" : "Edge of wound description"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Edge of wound description",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "89256-2",
+  "display" : "Wound edge panel"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Wound edge panel",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "39135-9",
+  "display" : "Wound assessment panel"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Wound assessment panel",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

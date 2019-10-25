@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation xmlns="http://hl7.org/fhir">
-	<id value="skinwoundedgedescription-example"/>
+	<id value="skinwoundbed-amend"/>
 	<meta>
-		<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundEdgeDescription"/>
+		<versionId value="2"/>
+		<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundBed"/>
 		<security>
 			<system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
 			<code value="HTEST"/>
@@ -11,9 +12,9 @@
 	</meta>
 	<identifier>
 		<system value="https://acme.org/identifiers"/>
-		<value value="watt-scenario-skin-wound-edge-description-1001"/>
+		<value value="wat-scenario-skin-wound-bed-amend"/>
 	</identifier>
-	<status value="final"/>
+	<status value="amended"/>
 	<category>
 		<coding>
 			<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
@@ -24,23 +25,19 @@
 	<code>
 		<coding>
 			<system value="http://loinc.org"/>
-			<code value="72304-9"/>
-			<display value="Edge of wound description"/>
+			<code value="89254-7"/>
+			<display value="Wound bed panel"/>
 		</coding>
-		<text value="Wound edge description"/>
+		<text value="Wound bed panel"/>
 	</code>
 	<subject>
 		<reference value="Patient/patient-example"/>
 	</subject>
-	<effectiveDateTime value="2016-03-26"/>
+	<effectiveDateTime value="2016-08-15"/>
 	<performer>
 		<reference value="Practitioner/practitioner-example"/>
 	</performer>
-	<valueCodeableConcept>
-		<coding>
-			<system value="http://snomed.info/sct"/>
-			<code value="449760000"/>
-			<display value="Scab of wound edge"/>
-		</coding>
-	</valueCodeableConcept>
+	<hasMember>
+		<reference value="Observation/skinwoundbedappearance-amend"/>
+	</hasMember>
 </Observation>

@@ -694,58 +694,163 @@
     },
     {
       "reference" : {
+        "reference" : "AuditEvent/skinwoundassert-amend-auditevent"
+      },
+      "description" : "AuditEvent Skin Wound Assert amend",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "AuditEvent/skinwoundassert-originate-auditevent"
+      },
+      "description" : "AuditEvent Skin Wound Assert originate",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "AuditEvent/skinwoundassert-receive-auditevent"
+      },
+      "description" : "AuditEvent Skin Wound Assert receive",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Condition/skinwoundassert-amend"
+      },
+      "description" : "Condition Skin Wound Assert amend",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
         "reference" : "Condition/skinwoundassert-example"
       },
-      "description" : "Condition Wound Assert example",
+      "description" : "Condition Skin Wound Assert example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Condition/skinwoundassert-originate"
+      },
+      "description" : "Condition Skin Wound Assert originate",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Condition/skinwoundassert-receive"
+      },
+      "description" : "Condition Skin Wound Assert receive",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/skinwoundbedappearance-amend"
+      },
+      "description" : "Observation Skin Wound Bed Appearance amend",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "Observation/skinwoundbedappearance-example"
       },
-      "description" : "Observation Wound Bed Appearance example",
+      "description" : "Observation Skin Wound Bed Appearance example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/skinwoundbedappearance-originate"
+      },
+      "description" : "Observation Skin Wound Bed Appearance originate",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/skinwoundbedappearance-receive"
+      },
+      "description" : "Observation Skin Wound Bed Appearance receive",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "Observation/skinwoundbedcolor-example"
       },
-      "description" : "Observation Wound Bed Color example",
+      "description" : "Observation Skin Wound Bed Color example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/skinwoundbed-amend"
+      },
+      "description" : "Observation Skin Wound Bed amend",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "Observation/skinwoundbed-example"
       },
-      "description" : "Observation Wound Bed example",
+      "description" : "Observation Skin Wound Bed example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/skinwoundbed-originate"
+      },
+      "description" : "Observation Skin Wound Bed originate",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/skinwoundbed-receive"
+      },
+      "description" : "Observation Skin Wound Bed receive",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "Observation/skinwoundedgecolor-example"
       },
-      "description" : "Observation Wound Edge Color example",
+      "description" : "Observation Skin Wound Edge Color example",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "Observation/skinwoundedgedescription-example"
       },
-      "description" : "Observation Wound Edge Description example",
+      "description" : "Observation Skin Wound Edge Description example",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "Observation/skinwoundedge-example"
       },
-      "description" : "Observation Wound Edge example",
+      "description" : "Observation Skin Wound Edge example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/skinwoundrelatedobservationspanel-amend"
+      },
+      "description" : "Observation Skin Wound Related Observations Panel amend",
       "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "Observation/skinwoundrelatedobservationspanel-example"
       },
-      "description" : "Observation Wound Related Observations Panel example",
+      "description" : "Observation Skin Wound Related Observations Panel example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/skinwoundrelatedobservationspanel-originate"
+      },
+      "description" : "Observation Skin Wound Related Observations Panel originate",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/skinwoundrelatedobservationspanel-receive"
+      },
+      "description" : "Observation Skin Wound Related Observations Panel receive",
       "exampleBoolean" : true
     },
     {
@@ -767,6 +872,27 @@
         "reference" : "Practitioner/practitioner-example"
       },
       "description" : "Practitioner example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Provenance/skinwoundassert-amend-provenance"
+      },
+      "description" : "Provenance Skin Wound Assert amend",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Provenance/skinwoundassert-originate-provenance"
+      },
+      "description" : "Provenance Skin Wound Assert originate",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Provenance/skinwoundassert-receive-provenance"
+      },
+      "description" : "Provenance Skin Wound Assert receive",
       "exampleBoolean" : true
     }],
     "page" : {

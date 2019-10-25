@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="skinwoundbedappearance-originate"/>
+	<meta>
+		<versionId value="1"/>
+		<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundBedAppearance"/>
+		<security>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+			<code value="HTEST"/>
+			<display value="test health data"/>
+		</security>
+	</meta>
+	<identifier>
+		<system value="https://acme.org/identifiers"/>
+		<value value="wat-scenario-skin-wound-bed-appearance-originate"/>
+	</identifier>
+	<status value="preliminary"/>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="72371-8"/>
+			<display value="Appearance of Wound base"/>
+		</coding>
+		<text value="Wound bed appearance"/>
+	</code>
+	<subject>
+		<reference value="Patient/patient-example"/>
+	</subject>
+</Observation>

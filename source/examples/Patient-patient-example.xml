@@ -3,6 +3,11 @@
 	<id value="patient-example"/>
 	<meta>
 		<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+		<security>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+			<code value="HTEST"/>
+			<display value="test health data"/>
+		</security>
 	</meta>
 	<extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
 		<extension url="ombCategory">

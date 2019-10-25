@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/condition-category",
+  "code" : "encounter-diagnosis"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/condition-category\" is not known for the code \"encounter-diagnosis\"; The code provided (http://hl7.org/fhir/condition-category#encounter-diagnosis) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

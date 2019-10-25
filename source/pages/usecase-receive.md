@@ -77,17 +77,18 @@ The expectation here is that the generated RLE data FHIR instances will be:
 Example FHIR resource instances illustrating the expected contents of the WAT and RLE data (FHIR resource instances) the Wound Assessment Registry (WAR) actor system will store after each of the _FHIR RLE Events_:
 
 **_1. Receive/Retain Record Entry_**
-- Condition-skinwoundassert-receive
-- Observation-skinwoundrelatedobservationspanel-receive
-- Observation-skinwoundbed-receive
-- Observation-skinwoundbedappearance-receive
+- [Condition-skinwoundassert-receive](Condition-skinwoundassert-receive.html)
+- [Observation-skinwoundrelatedobservationspanel-receive](Observation-skinwoundrelatedobservationspanel-receive.html)
+- [Observation-skinwoundbed-receive](Observation-skinwoundbed-receive.html)
+- [Observation-skinwoundbedappearance-receive](Observation-skinwoundbedappearance-receive.html)
 
 **_2. Evidence of Receive/Retain Record Entry_**
-- AuditEvent-skinwoundassert-receive-auditevent
+- [AuditEvent-skinwoundassert-receive-auditevent](AuditEvent-skinwoundassert-receive-auditevent.html)
 - AuditEvent-skinwoundrelatedobservationspanel-receive-auditevent
 - AuditEvent-skinwoundbed-receive-auditevent
 - AuditEvent-skinwoundbedappearance-receive-auditevent
-- Provenance-skinwoundassert-receive-provenance- Provenance-skinwoundrelatedobservationspanel-receive-provenance
+- [Provenance-skinwoundassert-receive-provenance](Provenance-skinwoundassert-receive-provenance.html)
+- Provenance-skinwoundrelatedobservationspanel-receive-provenance
 - Provenance-skinwoundbed-receive-provenance
 - Provenance-skinwoundbedappearance-receive-provenance
 

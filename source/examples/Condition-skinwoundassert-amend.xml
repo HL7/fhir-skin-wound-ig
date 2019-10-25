@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Condition xmlns="http://hl7.org/fhir">
-	<id value="skinwoundassert-example"/>
+	<id value="skinwoundassert-amend"/>
 	<meta>
+		<versionId value="2"/>
 		<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundAssert"/>
 		<security>
 			<system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
@@ -11,7 +12,7 @@
 	</meta>
 	<extension url="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundRelatedObservationsPanelExt">
 		<valueReference>
-			<reference value="Observation/skinwoundrelatedobservationspanel-example"/>
+			<reference value="Observation/skinwoundrelatedobservationspanel-amend"/>
 		</valueReference>
 	</extension>
 	<extension url="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodyLocationExt">
@@ -139,7 +140,7 @@
 		<reference value="Patient/patient-example"/>
 		<display value="Amy V. Shaw"/>
 	</subject>
-	<recordedDate value="2019-03-26"/>
+	<recordedDate value="2019-08-15"/>
 	<asserter>
 		<reference value="Practitioner/practitioner-example"/>
 	</asserter>

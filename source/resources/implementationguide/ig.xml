@@ -697,58 +697,163 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="AuditEvent/skinwoundassert-amend-auditevent"/>
+			</reference>
+			<description value="AuditEvent Skin Wound Assert amend"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="AuditEvent/skinwoundassert-originate-auditevent"/>
+			</reference>
+			<description value="AuditEvent Skin Wound Assert originate"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="AuditEvent/skinwoundassert-receive-auditevent"/>
+			</reference>
+			<description value="AuditEvent Skin Wound Assert receive"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Condition/skinwoundassert-amend"/>
+			</reference>
+			<description value="Condition Skin Wound Assert amend"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="Condition/skinwoundassert-example"/>
 			</reference>
-			<description value="Condition Wound Assert example"/>
+			<description value="Condition Skin Wound Assert example"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Condition/skinwoundassert-originate"/>
+			</reference>
+			<description value="Condition Skin Wound Assert originate"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Condition/skinwoundassert-receive"/>
+			</reference>
+			<description value="Condition Skin Wound Assert receive"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Observation/skinwoundbedappearance-amend"/>
+			</reference>
+			<description value="Observation Skin Wound Bed Appearance amend"/>
 			<exampleBoolean value="true"/>
 		</resource>
 		<resource>
 			<reference>
 				<reference value="Observation/skinwoundbedappearance-example"/>
 			</reference>
-			<description value="Observation Wound Bed Appearance example"/>
+			<description value="Observation Skin Wound Bed Appearance example"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Observation/skinwoundbedappearance-originate"/>
+			</reference>
+			<description value="Observation Skin Wound Bed Appearance originate"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Observation/skinwoundbedappearance-receive"/>
+			</reference>
+			<description value="Observation Skin Wound Bed Appearance receive"/>
 			<exampleBoolean value="true"/>
 		</resource>
 		<resource>
 			<reference>
 				<reference value="Observation/skinwoundbedcolor-example"/>
 			</reference>
-			<description value="Observation Wound Bed Color example"/>
+			<description value="Observation Skin Wound Bed Color example"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Observation/skinwoundbed-amend"/>
+			</reference>
+			<description value="Observation Skin Wound Bed amend"/>
 			<exampleBoolean value="true"/>
 		</resource>
 		<resource>
 			<reference>
 				<reference value="Observation/skinwoundbed-example"/>
 			</reference>
-			<description value="Observation Wound Bed example"/>
+			<description value="Observation Skin Wound Bed example"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Observation/skinwoundbed-originate"/>
+			</reference>
+			<description value="Observation Skin Wound Bed originate"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Observation/skinwoundbed-receive"/>
+			</reference>
+			<description value="Observation Skin Wound Bed receive"/>
 			<exampleBoolean value="true"/>
 		</resource>
 		<resource>
 			<reference>
 				<reference value="Observation/skinwoundedgecolor-example"/>
 			</reference>
-			<description value="Observation Wound Edge Color example"/>
+			<description value="Observation Skin Wound Edge Color example"/>
 			<exampleBoolean value="true"/>
 		</resource>
 		<resource>
 			<reference>
 				<reference value="Observation/skinwoundedgedescription-example"/>
 			</reference>
-			<description value="Observation Wound Edge Description example"/>
+			<description value="Observation Skin Wound Edge Description example"/>
 			<exampleBoolean value="true"/>
 		</resource>
 		<resource>
 			<reference>
 				<reference value="Observation/skinwoundedge-example"/>
 			</reference>
-			<description value="Observation Wound Edge example"/>
+			<description value="Observation Skin Wound Edge example"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Observation/skinwoundrelatedobservationspanel-amend"/>
+			</reference>
+			<description value="Observation Skin Wound Related Observations Panel amend"/>
 			<exampleBoolean value="true"/>
 		</resource>
 		<resource>
 			<reference>
 				<reference value="Observation/skinwoundrelatedobservationspanel-example"/>
 			</reference>
-			<description value="Observation Wound Related Observations Panel example"/>
+			<description value="Observation Skin Wound Related Observations Panel example"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Observation/skinwoundrelatedobservationspanel-originate"/>
+			</reference>
+			<description value="Observation Skin Wound Related Observations Panel originate"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Observation/skinwoundrelatedobservationspanel-receive"/>
+			</reference>
+			<description value="Observation Skin Wound Related Observations Panel receive"/>
 			<exampleBoolean value="true"/>
 		</resource>
 		<resource>
@@ -770,6 +875,27 @@
 				<reference value="Practitioner/practitioner-example"/>
 			</reference>
 			<description value="Practitioner example"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Provenance/skinwoundassert-amend-provenance"/>
+			</reference>
+			<description value="Provenance Skin Wound Assert amend"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Provenance/skinwoundassert-originate-provenance"/>
+			</reference>
+			<description value="Provenance Skin Wound Assert originate"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Provenance/skinwoundassert-receive-provenance"/>
+			</reference>
+			<description value="Provenance Skin Wound Assert receive"/>
 			<exampleBoolean value="true"/>
 		</resource>
 		<!-- ============ Home Page =============== -->

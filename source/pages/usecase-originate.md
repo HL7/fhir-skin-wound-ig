@@ -92,33 +92,33 @@ The expectation here is that the generated RLE data FHIR instances will be:
 Example FHIR resource instances illustrating the expected contents of the WAT and RLE data (FHIR resource instances) the EHR actor system will store after each of the _FHIR RLE Events_:
 
 **_1. Originate/Retain Record Entry_**
-- Condition-skinwoundassert-originate
-- Observation-skinwoundrelatedobservationspanel-originate
-- Observation-skinwoundbed-originate
-- Observation-skinwoundbedappearance-originate
+- [Condition-skinwoundassert-originate](Condition-skinwoundassert-originate.html)
+- [Observation-skinwoundrelatedobservationspanel-originate](Observation-skinwoundrelatedobservationspanel-originate.html)
+- [Observation-skinwoundbed-originate](Observation-skinwoundbed-originate.html)
+- [Observation-skinwoundbedappearance-originate](Observation-skinwoundbedappearance-originate.html)
 
 **_2. Evidence of Originate/Retain Record Entry_**
-- AuditEvent-skinwoundassert-originate-auditevent
+- [AuditEvent-skinwoundassert-originate-auditevent](AuditEvent-skinwoundassert-originate-auditevent.html)
 - AuditEvent-skinwoundrelatedobservationspanel-originate-auditevent
 - AuditEvent-skinwoundbed-originate-auditevent
 - AuditEvent-skinwoundbedappearance-originate-auditevent
-- Provenance-skinwoundassert-originate-provenance
+- [Provenance-skinwoundassert-originate-provenance](Provenance-skinwoundassert-originate-provenance.html)
 - Provenance-skinwoundrelatedobservationspanel-originate-provenance
 - Provenance-skinwoundbed-originate-provenance
 - Provenance-skinwoundbedappearance-originate-provenance
 
 **_3. Amend Record Entry Content_**
-- Condition-skinwoundassert-amend
-- Observation-skinwoundrelatedobservationspanel-amend
-- Observation-skinwoundbed-amend
-- Observation-skinwoundbedappearance-amend
+- [Condition-skinwoundassert-amend](Condition-skinwoundassert-amend.html)
+- [Observation-skinwoundrelatedobservationspanel-amend](Observation-skinwoundrelatedobservationspanel-amend.html)
+- [Observation-skinwoundbed-amend](Observation-skinwoundbed-amend.html)
+- [Observation-skinwoundbedappearance-amend](Observation-skinwoundbedappearance-amend.html)
 
 **_4. Evidence of Record Entry Ammendment Event_**
-- AuditEvent-skinwoundassert-amend-auditevent
+- [AuditEvent-skinwoundassert-amend-auditevent](AuditEvent-skinwoundassert-amend-auditevent.html)
 - AuditEvent-skinwoundrelatedobservationspanel-amend-auditevent
 - AuditEvent-skinwoundbed-amend-auditevent
 - AuditEvent-skinwoundbedappearance-amend-auditevent
-- Provenance-skinwoundassert-amend-provenance
+- [Provenance-skinwoundassert-amend-provenance](Provenance-skinwoundassert-amend-provenance.html)
 - Provenance-skinwoundrelatedobservationspanel-amend-provenance
 - Provenance-skinwoundbed-amend-provenance
 - Provenance-skinwoundbedappearance-amend-provenance

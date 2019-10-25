@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation xmlns="http://hl7.org/fhir">
-	<id value="skinwoundbed-example"/>
+	<id value="skinwoundbed-originate"/>
 	<meta>
+		<versionId value="1"/>
 		<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundBed"/>
 		<security>
 			<system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
@@ -11,16 +12,9 @@
 	</meta>
 	<identifier>
 		<system value="https://acme.org/identifiers"/>
-		<value value="watt-scenario-skin-wound-bed-1001"/>
+		<value value="wat-scenario-skin-wound-bed-originate"/>
 	</identifier>
-	<status value="final"/>
-	<category>
-		<coding>
-			<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-			<code value="exam"/>
-			<display value="Exam"/>
-		</coding>
-	</category>
+	<status value="preliminary"/>
 	<code>
 		<coding>
 			<system value="http://loinc.org"/>
@@ -32,14 +26,7 @@
 	<subject>
 		<reference value="Patient/patient-example"/>
 	</subject>
-	<effectiveDateTime value="2016-03-26"/>
-	<performer>
-		<reference value="Practitioner/practitioner-example"/>
-	</performer>
 	<hasMember>
-		<reference value="Observation/skinwoundbedappearance-example"/>
-	</hasMember>
-	<hasMember>
-		<reference value="Observation/skinwoundbedcolor-example"/>
+		<reference value="Observation/skinwoundbedappearance-originate"/>
 	</hasMember>
 </Observation>

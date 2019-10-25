@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Provenance xmlns="http://hl7.org/fhir">
+	<id value="skinwoundassert-amend-provenance"/>
+	<meta>
+		<versionId value="1"/>
+		<profile value="http://hl7.org/fhir/StructureDefinition/ehrsrle-provenance"/>
+		<security>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+			<code value="HTEST"/>
+			<display value="test health data"/>
+		</security>
+	</meta>
+	<target>
+		<reference value="Patient/patient-example"/>
+	</target>
+	<occurredPeriod>
+		<start value="2019-08-15"/>
+		<end value="2019-08-16"/>
+	</occurredPeriod>
+	<recorded value="2019-08-15T18:44:21Z"/>
+	<policy value="http://ehr.familyclinic.com/fhir/Consent/25"/>
+	<reason>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+			<code value="RECORDMGT"/>
+			<display value="records management"/>
+		</coding>
+	</reason>
+	<agent>
+		<type>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+				<code value="AUT"/>
+			</coding>
+		</type>
+		<who>
+			<reference value="Practitioner/practitioner-example"/>
+		</who>
+	</agent>
+	<agent>
+		<type>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+				<code value="DEV"/>
+			</coding>
+		</type>
+		<who>
+			<display value="Workstation01.ehr.familyclinic.com"/>
+		</who>
+	</agent>
+	<entity>
+		<role value="source"/>
+		<what>
+			<reference value="Condition/skinwoundassert-amend"/>
+		</what>
+	</entity>
+	<signature>
+		<type>
+			<system value="urn:iso-astm:E1762-95:2013"/>
+			<code value="1.2.840.10065.1.12.1.14"/>
+			<display value="Source Signature"/>
+		</type>
+		<when value="2019-08-15T18:42:55Z"/>
+		<who>
+			<reference value="Practitioner/practitioner-example"/>
+		</who>
+		<targetFormat value="application/fhir+xml"/>
+		<sigFormat value="application/signature+xml"/>
+		<data value="dGhpcyBibG9iIGlzIHNuaXBwZWQ="/>
+	</signature>
+</Provenance>

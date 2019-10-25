@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuditEvent xmlns="http://hl7.org/fhir">
+	<id value="skinwoundassert-receive-auditevent"/>
+	<meta>
+		<versionId value="1"/>
+		<profile value="http://hl7.org/fhir/StructureDefinition/ehrsrle-auditevent"/>
+		<security>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+			<code value="HTEST"/>
+			<display value="test health data"/>
+		</security>
+	</meta>
+	<type>
+		<system value="http://terminology.hl7.org/CodeSystem/audit-event-type"/>
+		<code value="rest"/>
+		<display value="Restful Operation"/>
+	</type>
+	<subtype>
+		<system value="http://hl7.org/fhir/restful-interaction"/>
+		<code value="update"/>
+		<display value="Update"/>
+	</subtype>
+	<action value="U"/>
+	<recorded value="2019-08-15T18:43:37Z"/>
+	<outcome value="0"/>
+	<agent>
+		<type>
+			<coding>
+				<system value="http://dicom.nema.org/resources/ontology/DCM"/>
+				<code value="110153"/>
+				<display value="Source Role ID"/>
+			</coding>
+		</type>
+		<who>
+			<identifier>
+				<system value="urn:oid:2.16.840.1.113883.4.2"/> 
+				<value value="2.16.840.1.113883.4.2"/> 
+			</identifier>
+		</who>
+		<altId value="6580"/>
+		<requestor value="false"/>
+		<network>
+			<address value="Workstation01.ehr.familyclinic.com"/>
+			<type value="1"/>
+		</network>
+	</agent>
+	<agent>
+		<type>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/extra-security-role-type"/>
+				<code value="humanuser"/>
+				<display value="human user"/>
+			</coding>
+		</type> 
+		<who>
+			<identifier>
+				<value value="mbrody"/>
+			</identifier>
+		</who>
+		<altId value="601847123"/>
+		<name value="Michael Brody"/>
+		<requestor value="true"/>
+	</agent>
+	<source>
+		<site value="Family Clinic EHR Cloud"/>
+		<observer>
+			<display value="ehr.familyclinic.com"/>
+		</observer>
+		<type>
+			<system value="http://terminology.hl7.org/CodeSystem/security-source-type"/>
+			<code value="3"/>
+			<display value="Web Server"/>
+		</type>
+	</source>
+	<entity>
+		<what>
+			<reference value="Patient/patient-example"/>
+		</what>
+		<type>
+			<system value="http://terminology.hl7.org/CodeSystem/audit-entity-type"/>
+			<code value="1"/>
+			<display value="Person"/>
+		</type>
+		<role>
+			<system value="http://terminology.hl7.org/CodeSystem/object-role"/>
+			<code value="1"/>
+			<display value="Patient"/>
+		</role>
+	</entity>
+	<entity>
+		<what>
+			<reference value="Condition/skinwoundassert-receive"/>
+		</what>
+		<type>
+			<system value="http://terminology.hl7.org/CodeSystem/audit-entity-type"/>
+			<code value="2"/>
+			<display value="System Object"/>
+		</type>
+		<lifecycle>
+			<system value="http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle"/>
+			<code value="receive"/>
+			<display value="Receive/Retain Record Lifecycle Event"/>
+		</lifecycle>
+	</entity>
+</AuditEvent>

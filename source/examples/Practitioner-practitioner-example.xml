@@ -3,6 +3,11 @@
 	<id value="practitioner-example"/>
 	<meta>
 		<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+		<security>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+			<code value="HTEST"/>
+			<display value="test health data"/>
+		</security>
 	</meta>
 	<identifier>
 		<system value="http://hl7.org/fhir/sid/us-npi"/>

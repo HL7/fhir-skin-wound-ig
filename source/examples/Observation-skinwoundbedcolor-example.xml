@@ -3,6 +3,11 @@
 	<id value="skinwoundbedcolor-example"/>
 	<meta>
 		<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundBedColor"/>
+		<security>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+			<code value="HTEST"/>
+			<display value="test health data"/>
+		</security>
 	</meta>
 	<identifier>
 		<system value="https://acme.org/identifiers"/>

@@ -4,9 +4,9 @@ allviews,TRUE
 broken-links,warning
 canonicalBase,http://hl7.org/fhir/us/skinwoundassessment
 codesystems,
-dependencyList.location,http://hl7.org/fhir/us/core
+dependencyList.location,http://hl7.org/fhir/us/core/2019Sep
 dependencyList.name,uscore
-dependencyList.version,current
+dependencyList.version,3.0.1
 do-transforms,FALSE
 extensions,
 fixed-business-version,0.1.0

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="woundShapeTypeVS"/>
+	<id value="woundObservationTypeVS"/>
 	<meta>
 		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
 	</meta>
-	<url value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundShapeTypeVS"/>
+	<url value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundObservationTypeVS"/>
 	<version value="0.01"/>
-	<name value="WoundShapeType"/>
+	<name value="WoundObservationTypeValueSet"/>
 	<status value="draft"/>
 	<experimental value="true"/>
 	<date value="2019-10-07"/>
@@ -17,15 +17,22 @@
 			<value value="https://confluence.hl7.org/display/EHR/Electronic+Health+Records+Work+Group"/>
 		</telecom>
 	</contact>
-	<description value="The set of codes that define an observation describing the shape of a wound base."/>
+	<description value="The set of codes that define specialized observation types of a wound."/>
 	<immutable value="true"/>
 	<copyright value="Used by permission of HL7 International, all rights reserved Creative Commons License"/>
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/us/skinwoundassessment/wound-shape-type"/>
+			<system value="http://hl7.org/fhir/us/skinwoundassessment/wound-observation-type"/>
 			<concept>
 				<code value="woundshape" />
-				<display value="Shape of Wound base" />
+				<display value="Shape of Wound" />
+			</concept>
+		</include>
+		<include>
+			<system value="http://hl7.org/fhir/us/skinwoundassessment/wound-observation-type"/>
+			<concept>
+				<code value="woundvolume" />
+				<display value="Volume of Wound" />
 			</concept>
 		</include>
 	</compose>

@@ -299,6 +299,56 @@
 				<valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/qualitativeWoundDepthVS"/>
 			</binding>
 		</element>
+		<element id="Observation:hspcwoundSize.component:woundVolume">
+			<path value="Observation.component"/>
+			<sliceName value="woundVolume"/>
+			<short value="Wound Volume"/>
+			<min value="0"/>
+			<max value="1"/>
+		</element>
+        <element id="Observation:hspcwoundSize.component.code:woundVolume">
+            <path value="Observation.component.code"/>
+        </element>
+		<element id="Observation:hspcwoundSize.component.code.coding:woundVolume">
+			<path value="Observation.component.code.coding"/>
+		</element>
+		<element id="Observation:hspcwoundSize.component.code.coding.system:woundVolume">
+			<path value="Observation.component.code.coding.system"/>
+			<fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/wound-observation-type"/>
+		</element>
+		<element id="Observation:hspcwoundSize.component.code.coding.code:woundVolume">
+			<path value="Observation.component.code.coding.code"/>
+			<fixedCode value="woundvolume"/>
+		</element>
+		<element id="Observation:hspcwoundSize.component.code.coding.display:woundVolume">
+			<path value="Observation.component.code.coding.display"/>
+			<fixedString value="Volume of Wound"/>
+		</element>
+		<element id="Observation:hspcwoundSize.component.valueQuantity:woundVolume">
+			<path value="Observation.component.valueQuantity"/>
+            <short value="Volume"/>
+			<type>
+				<code value="Quantity"/>
+			</type>
+		</element>
+		<element id="Observation:hspcwoundSize.component.valueQuantity.system:woundVolume">
+            <path value="Observation.component.valueQuantity.system"/>
+            <type>
+                <code value="uri"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/uri"/>
+            </type>
+            <fixedUri value="http://unitsofmeasure.org"/>
+            <mustSupport value="false"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Observation:hspcwoundSize.component.valueQuantity.code:woundVolume">
+            <path value="Observation.component.valueQuantity.code"/>
+            <type>
+                <code value="code"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/code"/>
+            </type>
+            <fixedCode value="mL"/>
+        </element>
 		<element id="Observation:hspcwoundSize.extension:device">
 			<path value="Observation.extension"/>
 			<short value="Measurement Device"/>

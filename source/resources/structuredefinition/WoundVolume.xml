@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
-    <id value="WoundExudateVolume"/>
-    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudateVolume"/>
-    <version value="2.0.0"/>
-    <name value="WoundExudateVolume"/>
+    <id value="WoundVolume"/>
+    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundVolume"/>
+    <version value="0.1.0"/>
+    <name value="Wound  Volume"/>
     <status value="draft"/>
     <date value="2019-06-19"/>
     <publisher value="Healthcare Services Platform Consortium"/>
-    <description value="Wound Exudate Volume is the measured amount of wound drainage."/>
+    <description value="Wound Volume is the space occupied by the wound, measured in mL."/>
     <fhirVersion value="4.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
@@ -16,19 +16,37 @@
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
     <derivation value="constraint"/>
     <differential>
-        <element id="Observation:cimiwoundExudateVolume">
+        <element id="Observation:cimiwoundVolume">
             <path value="Observation"/>
-			<short value="Wound Exudate Volume"/>
-            <definition value="Wound Exudate Volume is the measured amount of wound drainage."/>
+			<short value="Wound Volume"/>
+            <definition value="Wound Volume is the space occupied by the wound, measured in mL."/>
         </element>
-        <element id="Observation:cimiwoundExudateVolume.valueQuantity">
+        <element id="Observation:cimiwoundVolume.code">
+            <path value="Observation.code"/>
+        </element>
+		<element id="Observation:cimiwoundVolume.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:cimiwoundVolume.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/wound-type"/>
+		</element>
+		<element id="Observation:cimiwoundVolume.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="woundvolume"/>
+		</element>
+		<element id="Observation:cimiwoundVolume.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="Volumn of Wound base"/>
+		</element>
+        <element id="Observation:cimiwoundVolume.valueQuantity">
             <path value="Observation.valueQuantity"/>
             <short value="Volume"/>
             <type>
                 <code value="Quantity"/>
             </type>
         </element>
-        <element id="Observation:cimiwoundExudateVolume.valueQuantity.system">
+        <element id="Observation:cimiwoundVolume.valueQuantity.system">
             <path value="Observation.valueQuantity.system"/>
             <type>
                 <code value="uri"/>
@@ -38,7 +56,7 @@
             <mustSupport value="false"/>
             <isModifier value="false"/>
         </element>
-        <element id="Observation:cimiwoundExudateVolume.valueQuantity.code">
+        <element id="Observation:cimiwoundVolume.valueQuantity.code">
             <path value="Observation.valueQuantity.code"/>
             <type>
                 <code value="code"/>
@@ -48,13 +66,5 @@
             <mustSupport value="false"/>
             <isModifier value="false"/>
         </element>
-		<element id="Observation:cimiwoundExudateVolume.extension:EstimatedInd">
-			<path value="Observation.extension"/>
-			<short value="Estimated Indicator"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/EstimatedIndExt"/>
-			</type>
-		</element>
     </differential>
 </StructureDefinition>

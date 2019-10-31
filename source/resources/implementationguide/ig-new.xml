@@ -38,9 +38,9 @@
   <fhirVersion value="4.0.0"/>
   <fhirVersion value="4.0.0"/>
   <dependsOn id="USCoreR4">
-    <uri value="http://hl7.org/fhir/us/core"/>
+    <uri value="http://hl7.org/fhir/us/core/2019Sep"/>
     <packageId value="hl7.fhir.us.core"/>
-    <version value="3.0.0"/>
+    <version value="3.0.1"/>
   </dependsOn>
   <definition>
     <grouping>
@@ -426,9 +426,9 @@
     </resource>
     <resource>
       <reference>
-        <reference value="CodeSystem/wound-shape-type"/>
+        <reference value="CodeSystem/wound-observation-type"/>
       </reference>
-      <description value="Wound Shape Type code system"/>
+      <description value="Wound Observation Type code system (temporary)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -671,9 +671,9 @@
     </resource>
     <resource>
       <reference>
-        <reference value="ValueSet/woundShapeTypeVS"/>
+        <reference value="ValueSet/woundObservationTypeVS"/>
       </reference>
-      <description value="Wound Shape Type value set"/>
+      <description value="Wound Observation Type value set (temporary)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -896,8 +896,13 @@
       <title value="Home"/>
       <generation value="markdown"/>
       <page>
-        <nameUrl value="guidance.html"/>
-        <title value="Guidance"/>
+        <nameUrl value="generalguidance.html"/>
+        <title value="General Guidance"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="accuracyauthenticity.html"/>
+        <title value="Accuracy and Authenticity"/>
         <generation value="markdown"/>
       </page>
       <page>

@@ -74,9 +74,9 @@
   "name": "SkinWoundAssessment",
   "dependencyList": [
     {
-      "location": "http://hl7.org/fhir/us/core",
+      "location": "http://hl7.org/fhir/us/core/2019Sep",
       "name": "USCoreR4",
-      "version": "3.0.0",
+      "version": "3.0.1",
       "package": "hl7.fhir.us.core"
     }
   ],
@@ -165,7 +165,7 @@
     "StructureDefinition/WoundRelatedObservationsPanel":{"base":"StructureDefinition-WoundRelatedObservationsPanel.html"},
 
     "CodeSystem/organization-hspc-organizationtype":{"base":"CodeSystem-organization-hspc-organizationtype.html","source":"codesystem/organization-hspc-organizationtype.xml"},
-    "CodeSystem/wound-shape-type":{"base":"CodeSystem-wound-shape-type.html","source":"codesystem/wound-shape-type.xml"},
+    "CodeSystem/wound-observation-type":{"base":"CodeSystem-wound-observation-type.html","source":"codesystem/wound-observation-type.xml"},
 
     "ValueSet/communicationMode":{"base":"ValueSet-communicationMode.html"},
     "ValueSet/courseVS":{"base":"ValueSet-courseVS.html"},
@@ -202,7 +202,7 @@
     "ValueSet/surfaceOrientationVS":{"base":"ValueSet-surfaceOrientationVS.html"},
     "ValueSet/qualitativeWoundDepthVS":{"base":"ValueSet-qualitativeWoundDepthVS.html"},
     "ValueSet/woundShapeVS":{"base":"ValueSet-woundShapeVS.html"},
-    "ValueSet/woundShapeTypeVS":{"base":"ValueSet-woundShapeTypeVS.html"},
+    "ValueSet/woundObservationTypeVS":{"base":"ValueSet-woundObservationTypeVS.html"},
 
     "CapabilityStatement/skinwoundassessment-client":{"base":"CapabilityStatement-skinwoundassessment-client.html","source":"capabilitystatement/capabilitystatement-client.xml"},
     "CapabilityStatement/skinwoundassessment-server":{"base":"CapabilityStatement-skinwoundassessment-server.html","source":"capabilitystatement/capabilitystatement-server.xml"},

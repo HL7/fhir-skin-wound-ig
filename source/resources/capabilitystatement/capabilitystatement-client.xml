@@ -2,7 +2,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
   <id value="skinwoundassessment-client"/>
   <url value="http://hl7.org/fhir/us/skinwoundassessment/CapabilityStatement/skinwoundassessment-client"/>
-  <version value="4.0.0"/>
+  <version value="0.1.0"/>
   <name value="CapStmtSkinWoundAssessment"/>
   <title value="CapabilityStatement Skin Wound Assessment"/>
   <status value="active"/>
@@ -20,7 +20,7 @@
   <fhirVersion value="4.0.0"/>
   <format value="xml"/>
   <format value="json"/>
-  <implementationGuide value="http://hl7.org/fhir/us/core"/>
+  <implementationGuide value="http://hl7.org/fhir/us/core/2019Sep"/>
   <rest>
     <mode value="client"/>
     <resource>

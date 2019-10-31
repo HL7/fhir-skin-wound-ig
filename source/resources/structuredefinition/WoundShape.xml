@@ -29,7 +29,7 @@
 		</element>
 		<element id="Observation:WoundShape.code.coding.system">
 			<path value="Observation.code.coding.system"/>
-			<fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/wound-shape-type"/>
+			<fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/wound-observation-type"/>
 		</element>
 		<element id="Observation:WoundShape.code.coding.code">
 			<path value="Observation.code.coding.code"/>
@@ -37,7 +37,7 @@
 		</element>
 		<element id="Observation:WoundShape.code.coding.display">
 			<path value="Observation.code.coding.display"/>
-			<fixedString value="Shape of Wound base"/>
+			<fixedString value="Shape of Wound"/>
 		</element>
         <element id="Observation:WoundShape.valueCodeableConcept">
             <path value="Observation.valueCodeableConcept"/>

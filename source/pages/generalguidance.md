@@ -1,7 +1,10 @@
 ---
 title: General Guidance
 layout: default
-active: terminology
+active: guidance
+topofpage: true
+r4: http://hl7.org/fhir/R4/
+us_r4: http://hl7.org/fhir/us/core/
 ---
 
 This section outlines important definitions and interpretations and requirements common to all Skin Wound Assessment actors used in this guide.
@@ -38,8 +41,6 @@ Please refer to each Use Case definition page for specific guidance:
 ## Record LifeCycle Events
 
 Processing of the FHIR Record Lifecycle Events is defined as the capture of Conformance Criteria from each the following EHR FM R2 Record Infrastructure (RI) sections. The initial minimum required candidate Conformance Criteria are highlighted. Additional criteria may be processed by a system but will not be required at this time.
-
-Please note that testing at the [HL7 FHIR Connectathon 22 - Skin Wound Assessment Test Track](https://confluence.hl7.org/display/FHIR/2019-09+Skin+Wound+Assessment) event will cover Use Cases #1 _Originate and Amend_ and #3 _Search_. Use Case #2 _Receive and Retain_ is optional and an aspirational goal.
 
 **a. Originate/Retain Originate and Retain Record Entry (Function RI.1.1.1)**
 * i. (cc1)The system SHALL provide the ability to capture (originate) a Record Entry instance corresponding to an Action instance and context

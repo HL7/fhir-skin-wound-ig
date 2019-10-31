@@ -433,9 +433,9 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="CodeSystem/wound-shape-type"/>
+				<reference value="CodeSystem/wound-observation-type"/>
 			</reference>
-			<description value="Wound Shape Type code system"/>
+			<description value="Wound Observation Type code system (temporary)"/>
 			<exampleBoolean value="false"/>
 		</resource>
 		<resource>
@@ -678,9 +678,9 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="ValueSet/woundShapeTypeVS"/>
+				<reference value="ValueSet/woundObservationTypeVS"/>
 			</reference>
-			<description value="Wound Shape Type value set"/>
+			<description value="Wound Observation Type value set (temporary)"/>
 			<exampleBoolean value="false"/>
 		</resource>
 		<resource>
@@ -903,20 +903,25 @@
 			<nameUrl value="index.html"/>
 			<title value="Home"/>
 			<generation value="markdown"/>
-			<!-- ============ Guidance Page =============== -->
+			<!-- ============ Guidance Pages =============== -->
 			<page>
-				<nameUrl value="guidance.html"/>
-				<title value="Guidance"/>
+				<nameUrl value="generalguidance.html"/>
+				<title value="General Guidance"/>
 				<generation value="markdown"/>
 			</page>
-			<!-- ============ Guidance Page =============== -->
-			<!-- ============ Use Cases Page =============== -->
+			<page>
+				<nameUrl value="accuracyauthenticity.html"/>
+				<title value="Accuracy and Authenticity"/>
+				<generation value="markdown"/>
+			</page>
+			<!-- ============ Guidance Pages =============== -->
+			<!-- ============ Use Case Pages =============== -->
 			<page>
 				<nameUrl value="usecases.html"/>
 				<title value="Use Cases"/>
 				<generation value="markdown"/>
 			</page>
-			<!-- ============ Guidance Page =============== -->
+			<!-- ============ Use Case Pages =============== -->
 			<!-- ============ Profiles Page =============== -->
 			<page>
 				<nameUrl value="profiles.html"/>

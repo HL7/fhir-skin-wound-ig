@@ -3,8 +3,19 @@
   <li>
     <a href="index.html">Home</a>
   </li>
-  <li>
-    <a href="guidance.html">Guidance</a>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Guidance<b class="caret">
+      </b>  <!-- Skin Wound Assessment Guidance Pages -->
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="generalguidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="accuracyauthenticity.html">Accuracy &amp; Authenticity</a>
+      </li>
+    </ul>
   </li>
 
   <li class="dropdown">

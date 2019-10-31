@@ -42,9 +42,9 @@
   "4.0.0"],
   "dependsOn" : [{
     "id" : "USCoreR4",
-    "uri" : "http://hl7.org/fhir/us/core",
+    "uri" : "http://hl7.org/fhir/us/core/2019Sep",
     "packageId" : "hl7.fhir.us.core",
-    "version" : "3.0.0"
+    "version" : "3.0.1"
   }],
   "definition" : {
     "grouping" : [{
@@ -430,9 +430,9 @@
     },
     {
       "reference" : {
-        "reference" : "CodeSystem/wound-shape-type"
+        "reference" : "CodeSystem/wound-observation-type"
       },
-      "description" : "Wound Shape Type code system",
+      "description" : "Wound Observation Type code system (temporary)",
       "exampleBoolean" : false
     },
     {
@@ -675,9 +675,9 @@
     },
     {
       "reference" : {
-        "reference" : "ValueSet/woundShapeTypeVS"
+        "reference" : "ValueSet/woundObservationTypeVS"
       },
-      "description" : "Wound Shape Type value set",
+      "description" : "Wound Observation Type value set (temporary)",
       "exampleBoolean" : false
     },
     {
@@ -900,8 +900,13 @@
       "title" : "Home",
       "generation" : "markdown",
       "page" : [{
-        "nameUrl" : "guidance.html",
-        "title" : "Guidance",
+        "nameUrl" : "generalguidance.html",
+        "title" : "General Guidance",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "accuracyauthenticity.html",
+        "title" : "Accuracy and Authenticity",
         "generation" : "markdown"
       },
       {

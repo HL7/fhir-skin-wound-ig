@@ -57,7 +57,7 @@
 			<min value="0"/>
 			<max value="1"/>
 		</element>
-		<element id="Observation:hspcwoundBedColor.compnent.code">
+		<element id="Observation:hspcwoundBedColor.component.code">
 			<path value="Observation.component.code"/>
 		</element>
 		<element id="Observation:hspcwoundBedColor.component.code.coding">

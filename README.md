@@ -17,11 +17,11 @@ GitHub will automatically trigger a new build whenever you commit changes.
 
 ### Find your rendered IG automatically available at
 
-TBD
+https://build.fhir.org/ig/HL7/fhir-skin-wound-ig/branches/master/index.html
 
 ### For a build log see
 
-TBD
+https://build.fhir.org/ig/HL7/fhir-skin-wound-ig/branches/master/qa.html
 
 ---
 

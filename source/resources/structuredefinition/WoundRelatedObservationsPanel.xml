@@ -9,7 +9,7 @@
     <date value="2019-06-19"/>
     <publisher value="CIMI"/>
     <description value="Observations that are linked to a wound."/>
-    <fhirVersion value="4.0.0"/>
+    <fhirVersion value="4.0.1"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
     <type value="Observation"/>

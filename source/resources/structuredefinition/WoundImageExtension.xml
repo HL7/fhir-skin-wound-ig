@@ -9,7 +9,7 @@
   <date value="2019-06-19"/>
   <publisher value="CIMI"/>
   <description value="A picture of the wound."/>
-  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.1"/>
   <mapping>
 	<uri value="http://loinc.org/72170-4"/>
 	<identity value="LOINC"/>

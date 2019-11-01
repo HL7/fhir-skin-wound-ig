@@ -10,7 +10,7 @@
     <publisher value="HSPC"/>
     <description value="Wound Assert is an assertion model used when the condition exists. Wound is a kind of skin alteration including breaks in skin or injury under or to skin wounds (e.g.,
     pressure injury by stage)"/>
-    <fhirVersion value="4.0.0"/>
+    <fhirVersion value="4.0.1"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
 	<mapping>

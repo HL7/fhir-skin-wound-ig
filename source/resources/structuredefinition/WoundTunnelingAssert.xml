@@ -9,7 +9,7 @@
     <date value="2019-06-19"/>
     <publisher value="HSPC"/>
     <description value="Wound Tunneling Assert is an assertion model used when the condition exists. Wound tunneling is the presence of sinus channels in the wound."/>
-    <fhirVersion value="4.0.0"/>
+    <fhirVersion value="4.0.1"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
     <type value="Condition"/>

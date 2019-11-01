@@ -38,5 +38,5 @@ title,FHIR Skin Wound Assessment
 tool,jekyll
 topofpage,TRUE
 valuesets,
-version,4.0.0
+version,4.0.1
 working-dir,C:/Users/richard.ettema/Documents/GitHub/fhir-skin-wound-ig/

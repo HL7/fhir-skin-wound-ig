@@ -16,7 +16,7 @@
   "jurisdiction": "US",
   "title": "FHIR Skin Wound Assessment",
   "source": "implementationguide/ig.xml",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "broken-links": "warning",
   "logging": [
     "progress"

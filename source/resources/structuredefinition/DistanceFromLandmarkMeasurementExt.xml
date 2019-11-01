@@ -9,7 +9,7 @@
 	<date value="2019-08-12"/>
 	<publisher value="CIMI"/>
 	<description value="The measured distance in cm a certain observation is made from a body landmark."/>
-	<fhirVersion value="4.0.0"/>
+	<fhirVersion value="4.0.1"/>
 	<kind value="complex-type"/>
 	<abstract value="false"/>
 	<context>

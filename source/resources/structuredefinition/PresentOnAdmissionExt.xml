@@ -8,7 +8,7 @@
   <date value="2019-06-19"/>
   <publisher value="HSPC"/>
   <description value="An indication that a condition exists at the time of admission.  Answered as yes or no."/>
-  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>

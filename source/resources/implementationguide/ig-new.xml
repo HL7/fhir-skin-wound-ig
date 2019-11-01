@@ -35,8 +35,8 @@
   <copyright value="Used by permission of HL7 International, all rights reserved Creative Commons License"/>
   <packageId value="hl7.fhir.us.skinwoundassessment"/>
   <license value="CC0-1.0"/>
-  <fhirVersion value="4.0.0"/>
-  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.1"/>
+  <fhirVersion value="4.0.1"/>
   <dependsOn id="USCoreR4">
     <uri value="http://hl7.org/fhir/us/core/2019Sep"/>
     <packageId value="hl7.fhir.us.core"/>

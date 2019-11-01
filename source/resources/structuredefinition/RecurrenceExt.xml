@@ -8,7 +8,7 @@
   <date value="2019-06-19"/>
   <publisher value="HSPC"/>
   <description value="How often an event re-occurs."/>
-  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>

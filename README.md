@@ -1,4 +1,3 @@
-
 # Welcome to the FHIR R4 Skin Wound Assessment respository
 
 Please refer to the [HL7 Skin and Wound PSS](https://confluence.hl7.org/display/CIC/Skin+and+Wound+PSS) for the project details.

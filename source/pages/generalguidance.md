@@ -38,82 +38,640 @@ Please refer to each Use Case definition page for specific guidance:
 3. [Use Case - Search](usecase-search.html): Query and retrieval of the Wound Assessment Template (WAT) data from either an EHR actor system or Wound Assessement Registry (WAR) actor system
 
 
-## Record LifeCycle Events
+## Record LifeCycle Events - Metadata Captured in FHIR Resources
 
-Processing of the FHIR Record Lifecycle Events is defined as the capture of Conformance Criteria from each the following EHR FM R2 Record Infrastructure (RI) sections. The initial minimum required candidate Conformance Criteria are highlighted. Additional criteria may be processed by a system but will not be required at this time.
+_The following table has been updated with corrected mappings to the FHIR R4 specification [AuditEvent](http://hl7.org/fhir/R4/ehrsrle/ehrsrle-auditevent.html) and [Provenance](http://hl7.org/fhir/R4/ehrsrle/ehrsrle-provenance.html) resource types._
 
-**a. Originate/Retain Originate and Retain Record Entry (Function RI.1.1.1)**
-* i. (cc1)The system SHALL provide the ability to capture (originate) a Record Entry instance corresponding to an Action instance and context
-* ii. (cc2) The system SHALL capture a unique instance identifier for each Record Entry.
-* iii. (cc3) The system SHALL capture the signature event (e.g., digital signature) of the origination entry Author, binding signature to Record Entry content.
-* iv. (cc4)The system SHALL provide the ability to capture both structured and unstructured content in Record Entries.
-* v. (cc5) The The system SHALL provide the ability to capture Record Entries from information recorded during system downtime.
-* vi. (cc6) The system SHOULD provide the ability to integrate Record Entries from Information recorded during system downtime.
-* vii. (cc7) The system SHALL provide the ability to capture the date/time an Action was taken or data was collected if different than date/time of the Record Entry.
-* viii. (cc8) The system SHOULD capture metadata that identifies the source of non-originated Record Entry (e.g., templated, copied, duplicated, or boilerplate information).
-* ix.  (cc9) The system MAY provide the ability to tag unstructured Record Entry content to organize it according to need, for example, in a time-related fashion or by application-specific groups (such as photographs, handwritten notes, or auditory sounds), or by order of relative importance.
-* <div id="publish-box">x. (cc10) The system SHALL capture and maintain a Record Entry encoded as a standards-based data object (e.g., HL7 Continuity of Care, other HL7 CDA R2 Document, ISO 13606 artifact).</div>
-* xi. (cc11) The system MAY capture and maintain a standards-based data object to mirror (be duplicate and synchronous with) internal Record Entry representation.
+The following table shows the FHIR Resources and applicable Attributes captured - event, provenance and evidentiary metadata - at each occurrence of a Record Lifecycle Event. W5 metadata includes who, what, when, where, why attributes as shown below. W5 metadata elements are required.
 
-**b. Evidence of Record Entry Originate/Retain Event (Function RI.1.1.1.1)**
-* i. (cc1) The system SHALL audit each occurrence when a Record Entry is originated and retained.
-* ii. (cc2) The system SHALL capture identity of the organization where Record Entry content is originated.
-* iii. (cc3) The system SHALL capture identity of the patient who is subject of Record Entry content.
-* <div id="publish-box">iv. (cc4) The system SHALL capture identity of the individual(s) who performed the Action documented in Record Entry content.</div>
-* v. (cc5) The system SHALL capture identity of the user who entered/authored Record Entry content.
-* vi. (cc6) The system SHALL capture identity of the system application which originated Record Entry content.
-* vii. (cc7) IF the source of Record Entry content is a device, THEN the system SHALL capture identity of the device.
-* viii. (cc8) The system SHALL capture the Action as evidenced by Record Entry content.
-* ix. (cc9) The system SHALL capture the type of Record Event trigger (i.e., originate/retain).
-* x. (cc10) The system SHALL capture the date and time of Action occurrence as evidenced by Record Entry content.
-* <div id="publish-box">xi. (cc11) The system SHALL capture the date and time Record Entry content is originated.</div>
-* xii. (cc12) The system MAY capture the duration of the Action evidenced by Record Entry content.
-* xiii. (cc13) The system MAY capture the physical location of the Action evidenced by Record Entry content.
-* xiv. (cc14) The system SHOULD capture identity of the location (i.e., network address) where Record Entry content is originated.
-* xv. (cc15) The system MAY capture the rationale for the Action evidenced by Record Entry content.
-* xvi. (cc16) The system MAY capture the rationale for originating Record Entry content.
-* xvii. (cc17) IF Record Entry content includes templates (boilerplate information) or copied (duplicated) information, THEN the system SHOULD capture the source of such content.
+<table border="1" cellspacing="0" cellpadding="5" style="border-collapse:collapse;border:solid windowtext 1pt">
+	<thead>
+		<tr>
+			<td style="font-weight:bold">Record Lifecycle Event Metadata</td>
+			<td style="font-weight:bold">FHIR R4 Resource</td>
+			<td style="font-weight:bold">Resource Element(s)</td>
+		</tr>
+	</thead>
+	<tr>
+		<td colspan="3" style="background:#C6D9F1">WHO</td>
+	</tr>
+	<tr>
+		<td rowspan="3">Organization</td>
+		<td>Provenance</td>
+		<td>signature : Signature 0..*</td>
+	</tr>
+	<tr>
+		<td>Provenance.agent : 1..*</td>
+		<td>
+			type: CodeableConcept 0..1 &laquo; ProvenanceParticipantType+ &raquo;
+			<br />
+			role: CodeableConcept 0..* &laquo; SecurityRoleType+ &raquo;
+			<br />
+			who: Reference (Organization) 1..1
+			<br />
+			onBehalfOf: Reference (Organization) 0..1
+		</td>
+	</tr>
+	<tr>
+		<td>AuditEvent.agent : 1..*</td>
+		<td>
+			type: CodeableConcept 0..1 &laquo; ParticipationRoleType &raquo;
+			<br />
+			role: CodeableConcept 0..* &laquo; SecurityRoleCode &raquo;
+			<br />
+			who: Resource(Organization) 0..1
+			<br />
+			altId: string 0..1
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="3">Patient</td>
+		<td>Provenance</td>
+		<td>signature : Signature 0..*</td>
+	</tr>
+	<tr>
+		<td>Provenance.agent : 1..*</td>
+		<td>
+			type: CodeableConcept 0..1 &laquo; ProvenanceParticipantType+ &raquo;
+			<br />
+			role: CodeableConcept 0..* &laquo; SecurityRoleType+ &raquo;
+			<br />
+			who: Reference (Patient) 1..1
+			<br />
+			onBehalfOf: Reference (Patient) 0..1
+		</td>
+	</tr>
+	<tr>
+		<td>AuditEvent.agent : 1..*</td>
+		<td>
+			type: CodeableConcept 0..1 &laquo; ParticipationRoleType &raquo;
+			<br />
+			role: CodeableConcept 0..* &laquo; SecurityRoleCode &raquo;
+			<br />
+			who: Resource(Patient) 0..1
+			<br />
+			altId: string 0..1
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="3">
+			<p>Action - Performer</p>
+			<p>Record - Author/User</p>
+		</td>
+		<td>Provenance</td>
+		<td>signature : Signature 0..*</td>
+	</tr>
+	<tr>
+		<td>Provenance.agent : 1..*</td>
+		<td>
+			type: CodeableConcept 0..1 &laquo; ProvenanceParticipantType+ &raquo;
+			<br />
+			role: CodeableConcept 0..* &laquo; SecurityRoleType+ &raquo;
+			<br />
+			who: Reference (Practitioner|PractitionerRole|RelatedPerson|Patient|Device|Organization) 1..1
+			<br />
+			onBehalfOf: Reference (Practitioner|PractitionerRole|RelatedPerson|Patient|Device|Organization) 0..1
+		</td>
+	</tr>
+	<tr>
+		<td>AuditEvent.agent : 1..*</td>
+		<td>
+			type: CodeableConcept 0..1 &laquo; ParticipationRoleType &raquo;
+			<br />
+			role: CodeableConcept 0..* &laquo; SecurityRoleCode &raquo;
+			<br />
+			who: Resource(PractitionerRole|Practitioner|Organization|Device|Patient|RelatedPerson) 0..1
+			<br />
+			altId: string 0..1
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="3">Record - System/Device</td>
+		<td>Provenance</td>
+		<td>signature : Signature 0..*</td>
+	</tr>
+	<tr>
+		<td>Provenance.agent : 1..*</td>
+		<td>
+			type: CodeableConcept 0..1 &laquo; ProvenanceParticipantType+ &raquo;
+			<br />
+			role: CodeableConcept 0..* &laquo; SecurityRoleType+ &raquo;
+			<br />
+			who: Reference (Device) 1..1
+			<br />
+			onBehalfOf: Reference (Device) 0..1
+		</td>
+	</tr>
+	<tr>
+		<td>AuditEvent.agent : 1..*</td>
+		<td>
+			type: CodeableConcept 0..1 &laquo; ParticipationRoleType &raquo;
+			<br />
+			role: CodeableConcept 0..* &laquo; SecurityRoleCode &raquo;
+			<br />
+			who: Resource(Device) 0..1
+			<br />
+			altId: string 0..1
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" style="background:#C6D9F1">WHAT</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Action - Taken</td>
+		<td>Provenance</td>
+		<td>activity: CodeableConcept 0..1 &laquo; ProvenanceActivityType &raquo;</td>
+	</tr>
+	<tr>
+		<td>AuditEvent</td>
+		<td>
+			type: Coding 1..1 &laquo; AuditEventID+ &raquo;
+			<br />
+			subtype: Coding 0..* &laquo; AuditEventSub-Type+ &raquo;
+			<br />
+			action: code 0..1 &laquo; AuditEventAction &raquo;
+		</td>
+	</tr>
+	<tr>
+		<td>Record - Lifecyle Event</td>
+		<td>AuditEvent.entity: 0..*</td>
+		<td>
+			what: Reference(Any) 0..1
+			<br />
+			type: Coding 0..1 &laquo; AuditEventEventType &raquo;
+			<br />
+			role: Coding 0..1 &laquo; AuditEventEventRole &raquo;
+			<br />
+			lifecycle: Coding 0..1 &laquo; ObjectLifecycleEvents &raquo;
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" valign="top" style="background:#C6D9F1">WHEN</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Action - Date/Time</td>
+		<td>Provenance</td>
+		<td>occurredPeriod : Period 0..1</td>
+	</tr>
+	<tr>
+		<td>AuditEvent</td>
+		<td>period : Period 0..1</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Record - Date/Time</td>
+		<td>Provenance</td>
+		<td>recorded : instant 1..1</td>
+	</tr>
+	<tr>
+		<td>AuditEvent</td>
+		<td>recorded : instant 1..1</td>
+	</tr>
+	<tr>
+		<td colspan="3" valign="top" style="background:#C6D9F1">WHERE</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Action - Physical Location</td>
+		<td>Provenance</td>
+		<td>location : Reference(Location) 0..1</td>
+	</tr>
+	<tr>
+		<td>AuditEvent.source : 1..1</td>
+		<td>
+			site: string 0..1
+			<br />
+			observer: Reference (Organization) 1..1
+			<br />
+			type: Coding 0..* &laquo; AuditEventSourceType &raquo;
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Record - Network Address</td>
+		<td>Provenance</td>
+		<td>location : Reference(Location) 0..1</td>
+	</tr>
+	<tr>
+		<td>AuditEvent.agent.network</td>
+		<td>
+			address : string 0..1
+			<br />
+			type : code 0..1 &laquo; AuditEventAgentNetworkType &raquo;
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" valign="top" style="background:#C6D9F1">WHY</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Action - Reason, Rationale, Purpose</td>
+		<td>Provenance</td>
+		<td>reason : CodeableConcept 0..*</td>
+	</tr>
+	<tr>
+		<td>AuditEvent.agent : 1..*</td>
+		<td>purposeOfUse : CodeableConcept 0..* &laquo; v3.PurposeOfUse &raquo;</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Record - Reason, Rationale, Purpose</td>
+		<td>Provenance</td>
+		<td>
+			reason : CodeableConcept 0..*
+			<br />
+			policy : uri 0..*
+		</td>
+	</tr>
+	<tr>
+		<td>AuditEvent</td>
+		<td>purposeOfEvent : CodeableConcept 0..* &laquo; v3.PurposeOfUse &raquo;</td>
+	</tr>
+	<tr>
+		<td colspan="3" valign="top" style="background:#C6D9F1">Additional Evidentiary Metadata, as applicable</td>
+	</tr>
+	<tr>
+		<td>Digital Signature(s)</td>
+		<td>
+			Provenance
+			<br />
+			<span style="color:blue">one per signature</span>
+		</td>
+		<td>signature : Signature 0..*</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Record Entry ID</td>
+		<td>Provenance</td>
+		<td>target : Reference(Any) 1..*</td>
+	</tr>
+	<tr>
+		<td>AuditEvent.entity : 0..*</td>
+		<td>what : Reference(Any) 0..1</td>
+	</tr>
+	<tr>
+		<td rowspan="3">
+			Record Entry Content ID(s):
+			<br />
+			data, docs, artifacts
+		</td>
+		<td>Provenance</td>
+		<td>target : Reference(Any) 1..*</td>
+	</tr>
+	<tr>
+		<td>
+			Provenance.entity : 0..*
+			<br />
+			<span style="color:blue">one per Record Entry</span>
+		</td>
+		<td>
+			role : code 0..1 &laquo; ProvenanceEntityRole &raquo;
+			<br />
+			what : Reference(Any) 1..1
+			<br />
+			agent : [see Provenance.agent]
+		</td>
+	</tr>
+	<tr>
+		<td>
+			AuditEvent.entity : 0..*
+			<br />
+			<span style="color:blue">one per Content item</span>
+		</td>
+		<td>
+			what : Reference(Any) 0..1
+			<br />
+			type : Coding 0..1 &laquo; AuditEventEventType &raquo;
+			<br />
+			role : Coding 0..1 &laquo; AuditEventEventRole &raquo;
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Corresponding/linked Record Entry(ies)</td>
+		<td>
+			Provenance.entity : 0..*
+			<br />
+			<span style="color:blue">one per linked Record Entry</span>
+		</td>
+		<td>
+			role : code 1..1 &laquo; ProvenanceEntityRole &raquo;
+			<br />
+			what : Reference(Any) 1..1
+			<br />
+			agent : [see Provenance.agent]
+		</td>
+	</tr>
+	<tr>
+		<td>
+			AuditEvent.entity : 0..*
+			<br />
+			<span style="color:blue">one per linked Record Entry</span>
+		</td>
+		<td>
+			what : Reference(Any) 0..1
+			<br />
+			type : Coding 0..1 &laquo; AuditEventEventType &raquo;
+			<br />
+			role : Coding 0..1 &laquo; AuditEventEventRole &raquo;
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Amendment/Translation Sequence</td>
+		<td>
+			Provenance.entity : 0..*
+			<br />
+			<span style="color:blue">one for each Record Entry in sequence</span>
+		</td>
+		<td>
+			role : code 1..1 &laquo; ProvenanceEntityRole &raquo;
+			<br />
+			what : Reference(Any) 1..1
+			<br />
+			agent : [see Provenance.agent]
+		</td>
+	</tr>
+	<tr>
+		<td>AuditEvent.entity : 0..*</td>
+		<td>lifecycle: Coding 0..1 &laquo; ObjectLifecycleEvents &raquo;</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Pointer to Pre Event Entry, if chained</td>
+		<td>
+			Provenance.entity : 0..*
+			<br />
+			<span style="color:blue">one per previous instance</span>
+		</td>
+		<td>
+			role : code 1..1 &laquo; ProvenanceEntityRole &raquo;
+			<br />
+			what : Reference(Any) 1..1
+			<br />
+			agent : [see Provenance.agent]
+		</td>
+	</tr>
+	<tr>
+		<td>
+			AuditEvent.entity : 0..*
+			<br />
+			<span style="color:blue">one per previous instance</span>
+		</td>
+		<td>
+			what : Reference(Any) 0..1
+			<br />
+			type : Coding 0..1 &laquo; AuditEventEventType &raquo;
+			<br />
+			role : Coding 0..1 &laquo; AuditEventEventRole &raquo;
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="3">
+			Source of Copied Content
+			<br />
+			(e.g. copy/paste template)
+		</td>
+		<td>
+			Provenance.entity : 0..*
+			<br />
+			<span style="color:blue">one per source</span>
+		</td>
+		<td>
+			role : code 1..1 &laquo; ProvenanceEntityRole &raquo;
+			<br />
+			what : Reference(Any) 1..1
+			<br />
+			agent : [see Provenance.agent]
+		</td>
+	</tr>
+	<tr>
+		<td>
+			AuditEvent.source : 1..1
+			<br />
+			<span style="color:blue">one per source</span>
+		</td>
+		<td>
+			site: string 0..1
+			<br />
+			observer: Reference(PractitionerRole|Practitioner|Organization|Device|Patient|RelatedPerson) 1..1
+			<br />
+			type: Coding 0..* &laquo; AuditEventSourceType &raquo;
+		</td>
+	</tr>
+	<tr>
+		<td>
+			AuditEvent.entity : 0..*
+			<br />
+			<span style="color:blue">one per source</span>
+		</td>
+		<td>
+			what : Reference(Any) 0..1
+			<br />
+			type : Coding 0..1 &laquo; AuditEventEventType &raquo;
+			<br />
+			role : Coding 0..1 &laquo; AuditEventEventRole &raquo;
+		</td>
+	</tr>
+	<tr>
+		<td>Event is known Disclosure</td>
+		<td>AuditEvent.entity : 0..*</td>
+		<td>
+			lifecycle: Coding 0..1 &laquo; ObjectLifecycleEvents &raquo;
+			<br />
+			where lifecycle = "disclose"
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Record Entry Permissions</td>
+		<td>
+			AuditEvent.agent : 1..*
+			<br />
+			<span style="color:blue">one per agent</span>
+		</td>
+		<td>
+			<b>[for role-based permissions]</b>
+			<br />
+			role: CodeableConcept 0..* &laquo; SecurityRoleCode &raquo;
+			<br />
+			<b>[for user-based permissions]</b>
+			<br />
+			who: Resource(PractitionerRole|Practitioner|Organization|Device|Patient|RelatedPerson) 0..1
+			<br />
+			altId: string 0..1
+		</td>
+	</tr>
+	<tr>
+		<td>
+			AuditEvent.entity : 0..*
+			<br />
+			<span style="color:blue">One per agent label</span>
+		</td>
+		<td>securityLabel : Coding 0..* &laquo; SecurityLabels &raquo;</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Event Transaction Entries</td>
+		<td>
+			Provenance.entity : 0..*
+			<br />
+			<span style="color:blue">one per Record Entry</span>
+		</td>
+		<td>
+			role : code 1..1 &laquo; ProvenanceEntityRole &raquo;
+			<br />
+			what : Reference(Any) 1..1
+			<br />
+			agent : [see Provenance.agent]
+		</td>
+	</tr>
+	<tr>
+		<td>
+			AuditEvent.entity : 0..*
+			<br />
+			<span style="color:blue">one per Record Entry</span>
+		</td>
+		<td>
+			what : Reference(Any) 0..1
+			<br />
+			type : Coding 0..1 &laquo; AuditEventEventType &raquo;
+			<br />
+			role : Coding 0..1 &laquo; AuditEventEventRole &raquo;
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Identifier/Version of Translation Tools</td>
+		<td>
+			Provenance.entity : 0..*
+			<br />
+			<span style="color:blue">one per translation event</span>
+		</td>
+		<td>
+			role : code 1..1 &laquo; ProvenanceEntityRole &raquo;
+			<br />
+			what : Reference(Any) 1..1
+			<br />
+			agent : [see Provenance.agent]
+		</td>
+	</tr>
+	<tr>
+		<td>
+			AuditEvent.agent : 1..*
+			<br />
+			<span style="color:blue">one per translation event</span>
+		</td>
+		<td>
+			type: CodeableConcept 0..1 &laquo; ParticipationRoleType &raquo;
+			<br />
+			role: CodeableConcept 0..* &laquo; SecurityRoleCode &raquo;
+			<br />
+			who: Resource(Device) 0..1
+			<br />
+			altId: string 0..1
+		</td>
+	</tr>
+</table>
 
-**c. Amend Record Entry Content (Function RI.1.1.2)**
-* i. (cc 1) The system SHALL provide the ability to update (amend) Record Entry content.
-* ii. (cc2) The system SHALL maintain the original and all previously amended versions of the Record Entry, retaining each version instance without alteration.
-* <div id="publish-box">iii. (cc3) The system SHALL capture a new uniquely identifiable version of the Record Entry, incorporating amended content.</div>
-* iv. (cc4) The system SHALL capture the signature event (e.g., digital signature) of the amendment Author, binding signature to Record Entry content.
 
-**d. Evidence of Record Entry Amendment Event (Function RI.1.1.2.1)**
-* i. (cc1) The system SHALL audit each occurrence when a Record Entry is amended.
-* ii. (cc2) The system SHALL capture identity of the organization where Record Entry content is amended.
-* <div id="publish-box">iii. (cc3) The system SHALL capture identity of the patient who is subject of amended Record Entry content.</div>
-* iv. (cc4) The system SHALL capture identity of the user who entered/authored Record Entry content amendment.
-* v. (cc5) The system SHALL capture identity of the system application which amended Record Entry content.
-* vi. (cc6) The system SHALL capture the type of Record Event trigger (i.e., amendment).
-* <div id="publish-box">vii. (cc7) The system SHALL capture the date and time Record Entry content is amended.</div>
-* viii. (cc8) The system SHOULD capture identity of the location (i.e., network address) where Record Entry content is amended.
-* ix. (cc9) The system SHOULD capture the rationale for amending Record Entry content.
-* x. (cc10) The system SHALL capture a sequence identifier for amended Record Entry content.
-* xi. (cc11) The system SHOULD capture a reference (e.g., link, pointer) to pre-amendment data for each amended Record Entry.
+## Record LifeCycle Events - Conformance Criteria
 
-**e. Receive and Retain Record Entries (Function RI.1.1.9)**
-* i. (cc1) The system SHOULD provide the ability to capture and maintain Record Entry content from external systems, retaining and persisting original unaltered content and signature bindings, Action and Record Entry provenance and metadata.
-* ii. (cc2) The system SHALL provide the ability to capture and maintain Record Entry extracts from external systems, retaining and persisting source, identity, record content, corresponding provenance and metadata.
-* iii. (cc3) The system SHALL identify the patient or individual subject of received Record Entry content.
-* iv. (cc4) IF received with Record Entry content, THEN the system SHOULD control subsequent data access to that permitted by corresponding authorizations and patient consents.
+Processing of the FHIR Record Lifecycle Events (RLE) is defined as the capture of Conformance Criteria from the [ISO/TS 21089](https://www.iso.org/obp/ui/#iso:std:iso:ts:21089:ed-1:v1:en) Record lifecycle events and action instances sections. The initial minimum required candidate Conformance Criteria are highlighted and shall be captured if the recording system supports this data. Additional criteria may be processed by a system but will not be required at this time.
 
-**f. Evidence of Receive/Retain Event (Function RI.1.1.9.1)**
-* i. (cc1) The system SHALL audit each occurrence when externally-sourced Record Entry content is received and retained.
-* ii. (cc2) The system SHALL capture identity of the organization transmitting Record Entry content received and retained.
-* iii. (cc3) The system system SHALL capture identity of the organization receiving transmitted Record Entry content.
-* iv. (cc4) The system SHALL capture identity of the patient who is subject of received Record Entry content
-* v. (cc5) IF the system supports user verification of receipt of externally-sourced Record Entry content, THEN the system SHALL capture identity of the user accepting receipt of the transmitted Record Entry content.
-* vi. (cc6) The system SHALL capture identity of the system application which transmitted Record Entry content.
-* vii. (cc7) The system SHALL capture identity of the system application which received Record Entry content.
-* viii. (cc8) The system SHALL capture the type of Record Event trigger (i.e., receive).
-* ix. (cc9) The system SHALL capture the date and time Record Entry content is received.
-* x. (cc10) The system SHOULD capture identity of the location (i.e., network address) where the Record Entry content is received.
-* xi. (cc11) The system MAY capture the rationale for accepting receipt of transmitted Record Entry content.
-* xii. (cc12) The system SHALL capture the type of Record Entry content received (e.g., original, amended, updated data).
-* xiii. (cc13) IF an internal identifier is assigned to data/documents received from an external source, THEN the system MAY capture the data, document or other identifier for the Record Entry received.
-* xiv. (cc14) The system MAY capture data elements for the Record Entry received.
+_Please see the [Guidance - Accuracy and Authenticity](accuracyauthenticity.html) page for specific guidance on mapping these criteria to FHIR RLE resource types [AuditEvent](http://hl7.org/fhir/R4/ehrsrle/ehrsrle-auditevent.html) and [US Core Provenance (R4)]._
+
+**15.1.1 Initial action instance**
+* <div id="publish-box">(cc1) SHALL Who - Action Subject - Individual Subject of Care ID</div>
+* <div id="publish-box">(cc2) SHALL Who - Accountable Health/care Party(ies), if applicable:</div>
+* <div id="publish-box">(cc3) SHALL - Organization ID/Descriptor</div>
+* <div id="publish-box">(cc4) SHALL - Business Unit ID/Descriptor</div>
+* <div id="publish-box">(cc5) SHALL - Individual Healthcare Professional, Caregiver ID</div>
+* (cc6) SHOULD - Role - relative to organization, business unit
+* (cc7) SHOULD - Role - relative to Action Subject
+* (cc8) SHOULD - Role - relative to action instance: e.g. perform, assist, observe
+* (cc9) SHOULD - Scope of accountability
+* <div id="publish-box">(cc10) SHALL What - Action taken, performed, rendered: Action Instance ID</div>
+* <div id="publish-box">(cc11) SHALL What - Action status: e.g. pending, in progress, complete, cancelled</div>
+* <div id="publish-box">(cc12) SHALL When - Action date/time, duration</div>
+* <div id="publish-box">(cc13) SHALL Where - Action physical location: e.g. point of service/care</div>
+* (cc14) SHOULD Why - rationale or purpose for action taken, if applicable
+
+**15.1.2 Record lifecycle event - Originate/retain record entry instance(s)**
+* <div id="publish-box">(cc1) SHALL Who - Record Entry Subject - Individual Subject of Care ID</div>
+* <div id="publish-box">(cc2) SHALL Who - Accountable Health/care Party(ies), if applicable:</div>
+* (cc3) SHOULD - Digital Signature
+* <div id="publish-box">(cc4) SHALL - Organization ID/Descriptor</div>
+* <div id="publish-box">(cc5) SHALL - Business Unit ID/Descriptor</div>
+* <div id="publish-box">(cc6) SHALL - Individual Healthcare Professional, Caregiver ID</div>
+* (cc7) SHOULD - Role - relative to organization, business unit
+* (cc8) SHOULD - Role - relative to Record Entry Instance: e.g. author, scribe/proxy, verifier
+* (cc9) SHOULD - Role - relative to individual author of content
+* (cc10) SHOULD - Scope of accountability
+* <div id="publish-box">(cc11) SHALL Who - Accountable Health/care Agent(s), if applicable:</div>
+* (cc12) SHOULD - Digital Signature
+* <div id="publish-box">(cc13) SHALL - Device, application or software ID</div>
+* (cc14) SHOULD - Role - relative to Record Entry Instance: originator, source
+* (cc15) SHOULD - Scope of accountability
+* <div id="publish-box">(cc16) SHALL What - Action Instance ID</div>
+* <div id="publish-box">(cc17) SHALL What - Record Entry Instance ID</div>
+* <div id="publish-box">(cc18) SHALL What - Record Entry Lifecycle Event: originate</div>
+* <div id="publish-box">(cc19) SHALL What - Record Entry instance status: e.g. new, updated, verified</div>
+* <div id="publish-box">(cc20) SHALL What - Record Entry completion status: e.g. documented, dictated (pre-transcription), in progress, incomplete, pre-authenticated, authenticated, legally authenticated (ref: HL7)</div>
+* <div id="publish-box">(cc21) SHALL When - Record Entry origination date/time</div>
+* <div id="publish-box">(cc22) SHALL Where - Record Entry physical location, point of origination</div>
+* <div id="publish-box">(cc23) SHALL Where - network address</div>
+* (cc24) SHOULD Why - rationale or purpose for Record Entry origination
+
+**15.2.1 Subsequent action instance**
+* <div id="publish-box">(cc1) SHALL Who - Action Subject - Individual Subject of Care ID</div>
+* <div id="publish-box">(cc2) SHALL Who - Accountable Health/care Party(ies), if applicable:</div>
+* <div id="publish-box">(cc3) SHALL - Organization ID/Descriptor</div>
+* <div id="publish-box">(cc4) SHALL - Business Unit ID/Descriptor</div>
+* <div id="publish-box">(cc5) SHALL - Individual Healthcare Professional, Caregiver ID</div>
+* (cc6) SHOULD - Role - relative to organization, business unit
+* (cc7) SHOULD - Role - relative to Action Subject
+* (cc8) SHOULD - Role - relative to action instance: e.g. perform, assist, observe
+* (cc9) SHOULD - Scope of accountability
+* <div id="publish-box">(cc10) SHALL What - Action taken, performed, rendered: Action Instance ID</div>
+* <div id="publish-box">(cc11) SHALL What - Action status: e.g. pending, in progress, complete, cancelled</div>
+* <div id="publish-box">(cc12) SHALL When - Action date/time, duration</div>
+* <div id="publish-box">(cc13) SHALL Where - Action physical location: e.g. point of service/care</div>
+* (cc14) SHOULD Why - rationale or purpose for action taken, if applicable
+
+**15.2.2 Record lifecycle event - Amend (update) record entry instance(s)**
+* <div id="publish-box">(cc1) SHALL Who - Record Entry Subject - Individual Subject of Care ID</div>
+* <div id="publish-box">(cc2) SHALL Who - Accountable Health/care Party(ies), if applicable:</div>
+* (cc3) SHOULD - Digital Signature
+* <div id="publish-box">(cc4) SHALL - Organization ID/Descriptor</div>
+* <div id="publish-box">(cc5) SHALL - Business Unit ID/Descriptor</div>
+* <div id="publish-box">(cc6) SHALL - Individual Healthcare Professional, Caregiver ID</div>
+* (cc7) SHOULD - Role - relative to organization, business unit
+* (cc8) SHOULD - Role - relative to Record Entry Instance: e.g. author, scribe/proxy
+* (cc9) SHOULD - Role - relative to individual author of content
+* (cc10) SHOULD - Scope of accountability
+* <div id="publish-box">(cc11) SHALL What - Action Instance ID</div>
+* <div id="publish-box">(cc12) SHALL What - Record Entry Instance ID</div>
+* <div id="publish-box">(cc13) SHALL What - Record Entry Lifecycle Event: update</div>
+* <div id="publish-box">(cc14) SHALL What - Record Entry instance status: e.g. updated</div>
+* <div id="publish-box">(cc15) SHALL What - Record Entry completion status</div>
+* <div id="publish-box">(cc16) SHALL When - Record Entry update date/time</div>
+* <div id="publish-box">(cc17) SHALL Where - Record Entry physical location, point of update</div>
+* <div id="publish-box">(cc18) SHALL Where - network address</div>
+* (cc19) SHOULD Why - rationale or purpose for Record Entry update
+
+**15.25 Record lifecycle event - Verify**
+* <div id="publish-box">(cc1) SHALL Who - Record Entry Subject - Individual Subject of Care ID</div>
+* <div id="publish-box">(cc2) SHALL Who - Accountable Health/care Party(ies), if applicable:</div>
+* (cc3) SHOULD - Digital Signature
+* <div id="publish-box">(cc4) SHALL - Organization ID/Descriptor</div>
+* <div id="publish-box">(cc5) SHALL - Business Unit ID/Descriptor</div>
+* <div id="publish-box">(cc6) SHALL - Individual Healthcare Professional, Caregiver ID</div>
+* (cc7) SHOULD - Role - relative to organization, business unit
+* (cc8) SHOULD - Role - relative to Record Entry Instance: e.g. verifier
+* (cc9) SHOULD - Scope of accountability
+* <div id="publish-box">(cc10) SHALL Who - Accountable Health/care Agent(s), if applicable:</div>
+* (cc11) SHOULD - Digital Signature
+* <div id="publish-box">(cc12) SHALL - Device, application or software ID</div>
+* (cc13) SHOULD - Role - relative to Record Entry Instance: e.g. verifier
+* (cc14) SHOULD - Scope of accountability
+* <div id="publish-box">(cc15) SHALL What - Action Instance ID</div>
+* <div id="publish-box">(cc16) SHALL What - Record Entry Instance ID</div>
+* <div id="publish-box">(cc17) SHALL What - Record Entry Lifecycle Event: verify</div>
+* <div id="publish-box">(cc18) SHALL What - Record Entry instance status: e.g. verified</div>
+* <div id="publish-box">(cc19) SHALL What - Record Entry completion status: e.g. completed</div>
+* <div id="publish-box">(cc20) SHALL When - Record Entry verification date/time</div>
+* <div id="publish-box">(cc21) SHALL Where - Record Entry physical location, point of verification</div>
+* <div id="publish-box">(cc22) SHALL Where - network address</div>
+* (cc23) SHOULD Why - rationale or purpose for Record Entry verification
 
 ---
 

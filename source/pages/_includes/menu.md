@@ -15,6 +15,9 @@
       <li>
         <a href="accuracyauthenticity.html">Accuracy &amp; Authenticity</a>
       </li>
+      <li>
+        <a href="rlemapping.html">RLE Mapping</a>
+      </li>
     </ul>
   </li>
 

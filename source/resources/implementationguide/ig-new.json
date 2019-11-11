@@ -910,6 +910,11 @@
         "generation" : "markdown"
       },
       {
+        "nameUrl" : "rlemapping.html",
+        "title" : "RLE Mapping",
+        "generation" : "markdown"
+      },
+      {
         "nameUrl" : "usecases.html",
         "title" : "Use Cases",
         "generation" : "markdown"

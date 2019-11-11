@@ -914,6 +914,11 @@
 				<title value="Accuracy and Authenticity"/>
 				<generation value="markdown"/>
 			</page>
+			<page>
+				<nameUrl value="rlemapping.html"/>
+				<title value="RLE Mapping"/>
+				<generation value="markdown"/>
+			</page>
 			<!-- ============ Guidance Pages =============== -->
 			<!-- ============ Use Case Pages =============== -->
 			<page>

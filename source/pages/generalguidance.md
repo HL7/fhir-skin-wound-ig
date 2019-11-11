@@ -8,6 +8,7 @@ us_r4: http://hl7.org/fhir/us/core/
 ---
 
 This section outlines important definitions and interpretations and requirements common to all Skin Wound Assessment actors used in this guide.
+
 The conformance verbs used are defined in [FHIR Conformance Rules].
 
 ---

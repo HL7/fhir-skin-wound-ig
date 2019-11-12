@@ -18,6 +18,9 @@ active: terminology
 
 The Skin Wound Assessment Implementation Guide is based on [FHIR Version R4] and defines the minimum conformance requirements for implementations.  
 
+## Acknowledgements
+
+This IG references extensive Wound Assessment work resourced from the [Agency for Healthcare Research and Quality (AHRQ)](https://www.ahrq.gov) and CIMI's work on Wound Assessment for clinical content attributes.
 
 ----
 
@@ -27,7 +30,8 @@ The Skin Wound Assessment Implementation Guide is based on [FHIR Version R4] and
 
 - *Reed Gelzer, Trustworthy EHR LLC*
 - *Michael Brody, TLD Systems*
-- *Nathan Davis*
+- *Nathan Davis, Intermountain Healthcare*
+- *Susan Matney, Intermountain Healthcare*
 
 *[AEGIS.net, Inc.](http://www.aegis.net) members.*
 

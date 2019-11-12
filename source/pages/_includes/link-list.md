@@ -10,7 +10,9 @@
 [FHIR Search]: {{site.data.fhir.path}}search.html
 [FHIR Terminology]: {{site.data.fhir.path}}terminologies.html
 [FHIR Version R4]: {{site.data.fhir.path}}index.html "FHIR Version R4 Specification Home Page"
-[Guidance]: generalguidance.html  "General Guidance Page"
+[Guidance - Accuracy and Authenticity]: accuracyauthenticity.html
+[Guidance - General Guidance]: generalguidance.html
+[Guidance - RLE Mapping]: rlemapping.html
 [Home]: index.html "Home Page"
 [HTTP]: {{site.data.fhir.path}}http.html
 [logical view]: {{site.data.fhir.path}}formats.html#table

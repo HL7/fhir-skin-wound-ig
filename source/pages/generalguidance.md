@@ -568,7 +568,7 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 
 Processing of the FHIR Record Lifecycle Events (RLE) is defined as the capture of Conformance Criteria from the [ISO/TS 21089](https://www.iso.org/obp/ui/#iso:std:iso:ts:21089:ed-1:v1:en) Record lifecycle events and action instances sections. The initial minimum required candidate Conformance Criteria are highlighted and shall be captured if the recording system supports this data. Additional criteria may be processed by a system but will not be required at this time.
 
-_Please see the [Guidance - Accuracy and Authenticity](accuracyauthenticity.html) page for specific guidance on mapping these criteria to FHIR RLE resource types [AuditEvent](http://hl7.org/fhir/R4/ehrsrle/ehrsrle-auditevent.html) and [US Core Provenance (R4)]._
+_Please see the [Guidance - RLE Mapping] page for specific guidance on mapping these criteria to FHIR RLE resource types [AuditEvent](http://hl7.org/fhir/R4/ehrsrle/ehrsrle-auditevent.html) and [US Core Provenance (R4)]._
 
 **15.1.1 Initial action instance**
 * <div id="publish-box">(cc1) SHALL Who - Action Subject - Individual Subject of Care ID</div>

@@ -18,7 +18,7 @@ active: terminology
 
 ## Introduction
 
-The Skin Wound Assessment Implementation Guide is based on [FHIR Version R4] and defines an initial set of  minimum conformance requirements for implementations. This work is being conducted under the Electronic Health Records (EHR) Workgroup and utilizes the Podiatry Profile PSS work compiling clinical content as a test of concept. The test of concept is the next step in constructing a framework for building conformance-testable representations for accuracy and authenticity attributes, required for asserting data accuracy, records authenticity, and fitness for use for specified end-uses. (See Guidance tab). This work benefits substantially from ongoing cross-collaboration with the CIMI Workgroup.  
+The Skin Wound Assessment Implementation Guide is based on [FHIR Version R4] and defines an initial set of  minimum conformance requirements for implementations. This work is being conducted under the [Electronic Health Records (EHR) Workgroup](https://confluence.hl7.org/display/EHR) and utilizes the [Podiatry Profile PSS](https://confluence.hl7.org/display/CIC/Skin+and+Wound+PSS) work compiling clinical content as a test of concept. The test of concept is the next step in constructing a framework for building conformance-testable representations for accuracy and authenticity attributes, required for asserting data accuracy, records authenticity, and fitness for use for specified end-uses. (See Guidance tab). This work benefits substantially from ongoing cross-collaboration with the CIMI Workgroup.  
 
 <br />
 

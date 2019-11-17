@@ -649,6 +649,34 @@ _Please see the [Guidance - RLE Mapping] page for specific guidance on mapping t
 * <div id="publish-box">(cc18) SHALL Where - network address</div>
 * (cc19) SHOULD Why - rationale or purpose for Record Entry update
 
+**15.9 Record lifecycle event - Receive/retain record entry instance(s)**
+* <div id="publish-box">(cc1) SHALL Who - Record Entry Subject - Individual Subject of Care ID</div>
+* <div id="publish-box">(cc2) SHALL Who - Source/Sender - Reporter, Discloser, Transmitter - Accountable Health/care Party(ies), if applicable:</div>
+* <div id="publish-box">(cc3) SHALL - Organization ID/Descriptor</div>
+* <div id="publish-box">(cc4) SHALL - Business Unit ID/Descriptor</div>
+* <div id="publish-box">(cc5) SHALL - Individual Healthcare Professional, Caregiver ID</div>
+* <div id="publish-box">(cc6) SHALL Who - Intended Recipient- Accountable Health/care Party(ies), if applicable:</div>
+* <div id="publish-box">(cc7) SHALL - Organization ID/Descriptor</div>
+* <div id="publish-box">(cc8) SHALL - Business Unit ID/Descriptor</div>
+* <div id="publish-box">(cc9) SHALL - Individual Healthcare Professional, Caregiver ID</div>
+* (cc10) SHOULD - Role - relative to organization, business unit
+* (cc11) SHOULD - Role - relative to Record Entry Instance: e.g. recipient
+* (cc12) SHOULD - Scope of accountability
+* <div id="publish-box">(cc13) SHALL Who - Accountable Health/care Agent(s), if applicable:</div>
+* (cc14) SHOULD - Digital Signature
+* <div id="publish-box">(cc15) SHALL - Device, application or software ID</div>
+* (cc16) SHOULD - Role - relative to Record Entry Instance: e.g. receiver
+* (cc17) SHOULD - Scope of accountability 
+* <div id="publish-box">(cc18) SHALL What - Action Instance ID</div>
+* <div id="publish-box">(cc19) SHALL What - Record Entry Instance ID(s)</div>
+* <div id="publish-box">(cc20) SHALL What - Record Entry Lifecycle Event: receipt</div>
+* <div id="publish-box">(cc21) SHALL What - Record Entry instance status: e.g. received</div>
+* <div id="publish-box">(cc22) SHALL What - Record Entry completion status: e.g. completed</div>
+* <div id="publish-box">(cc23) SHALL When - Record Entry: e.g. date/time of receipt</div>
+* <div id="publish-box">(cc24) SHALL Where - Record Entry physical location: e.g. point of receipt</div>
+* <div id="publish-box">(cc25) SHALL Where - network address</div>
+* (cc26) SHOULD Why - rationale or purpose for Record Entry receipt
+
 **15.25 Record lifecycle event - Verify**
 * <div id="publish-box">(cc1) SHALL Who - Record Entry Subject - Individual Subject of Care ID</div>
 * <div id="publish-box">(cc2) SHALL Who - Accountable Health/care Party(ies), if applicable:</div>

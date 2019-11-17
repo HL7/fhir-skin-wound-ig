@@ -23,8 +23,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:527e8f2a-92b5-40e8-a7a5-b4c4db489b75",
-    "timestamp" : "2019-10-25T18:57:46.281Z",
+    "identifier" : "urn:uuid:b98a85a5-a215-496a-bd01-324c6450afe9",
+    "timestamp" : "2019-11-17T00:46:04.905Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -35,7 +35,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -177,8 +177,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:7024da95-c204-426d-ac8d-6268c7bf32a4",
-    "timestamp" : "2019-10-25T18:57:46.438Z",
+    "identifier" : "urn:uuid:1da2f070-fb1f-4a57-982a-d2c2fb08eca0",
+    "timestamp" : "2019-11-17T00:46:05.093Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -189,7 +189,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -383,8 +383,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:b83b587a-7e3b-4fff-a987-d784b4a3d486",
-    "timestamp" : "2019-10-25T18:57:46.562Z",
+    "identifier" : "urn:uuid:8226edbd-393c-4a95-8fce-2351c89eabdc",
+    "timestamp" : "2019-11-17T00:46:05.280Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -395,7 +395,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -468,8 +468,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:feb4cac7-ccfe-4b89-873f-5938010468fc",
-    "timestamp" : "2019-10-25T18:57:46.703Z",
+    "identifier" : "urn:uuid:90085d98-5dbd-4dc7-aa6c-9175eff707ce",
+    "timestamp" : "2019-11-17T00:46:05.468Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -480,7 +480,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -520,8 +520,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:27c4c584-db0e-442f-a63a-be659a606f9a",
-    "timestamp" : "2019-10-25T18:57:46.844Z",
+    "identifier" : "urn:uuid:3e243dfa-fa68-4b59-946d-59516ae6e31f",
+    "timestamp" : "2019-11-17T00:46:05.671Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -532,7 +532,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -587,8 +587,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:ed34eee0-21e6-4bee-b886-b9e090f4a92d",
-    "timestamp" : "2019-10-25T18:57:46.969Z",
+    "identifier" : "urn:uuid:cab4f068-a063-4e71-91ef-0917006b8490",
+    "timestamp" : "2019-11-17T00:46:05.859Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -599,7 +599,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -690,8 +690,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:59903264-ed6a-4b4b-93ec-990383b3a832",
-    "timestamp" : "2019-10-25T18:57:47.156Z",
+    "identifier" : "urn:uuid:d8d64daf-bc6f-4d56-b859-c072b4dbbe1f",
+    "timestamp" : "2019-11-17T00:46:06.046Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -702,7 +702,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -814,8 +814,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:6d1e92f8-9d74-4d09-8eb7-ac0676770b02",
-    "timestamp" : "2019-10-25T18:57:47.344Z",
+    "identifier" : "urn:uuid:cd822eaa-3b1f-4ecb-b62d-068b05c33ac9",
+    "timestamp" : "2019-11-17T00:46:06.312Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -826,7 +826,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -912,8 +912,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:297e7d0c-fc0d-4f3a-bab2-5b4867c122a4",
-    "timestamp" : "2019-10-25T18:57:47.484Z",
+    "identifier" : "urn:uuid:bed163cb-0672-482c-846e-2768593b5a30",
+    "timestamp" : "2019-11-17T00:46:06.452Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -924,7 +924,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -1011,8 +1011,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:d23ceccb-1560-4377-88d3-061ec487a68e",
-    "timestamp" : "2019-10-25T18:57:47.609Z",
+    "identifier" : "urn:uuid:b6c3346b-1609-4d9d-bce6-095a892eb7e8",
+    "timestamp" : "2019-11-17T00:46:06.640Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1023,7 +1023,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -1125,8 +1125,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:8ad4fc20-018f-4ae6-a4f0-c14f79ee7209",
-    "timestamp" : "2019-10-25T18:57:47.781Z",
+    "identifier" : "urn:uuid:22ee4a71-0016-4acc-a338-690ec76c63dd",
+    "timestamp" : "2019-11-17T00:46:06.859Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1137,7 +1137,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -1224,8 +1224,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:9185d2fb-9dc7-4aad-80a7-87f1e815472e",
-    "timestamp" : "2019-10-25T18:57:47.922Z",
+    "identifier" : "urn:uuid:8ae462ae-8e6d-49cb-ba3a-f58d4e368b00",
+    "timestamp" : "2019-11-17T00:46:07.015Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1236,7 +1236,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -1273,8 +1273,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:e0f4241e-3b33-4df0-b163-b8220fa1c458",
-    "timestamp" : "2019-10-25T18:57:48.047Z",
+    "identifier" : "urn:uuid:1d304343-5316-40f5-a826-1a3a09adbc27",
+    "timestamp" : "2019-11-17T00:46:07.218Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1285,7 +1285,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -1342,8 +1342,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:78c48dc9-b369-4232-b932-a529c0cc94ee",
-    "timestamp" : "2019-10-25T18:57:48.250Z",
+    "identifier" : "urn:uuid:333c21ea-2775-4054-b2f4-1295acb87db8",
+    "timestamp" : "2019-11-17T00:46:07.359Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1354,7 +1354,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -1416,8 +1416,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:83cfbf48-e0b9-4f28-a89d-43e709f48ac2",
-    "timestamp" : "2019-10-25T18:57:48.422Z",
+    "identifier" : "urn:uuid:01c682fe-f943-4678-af9c-7f352030aa0e",
+    "timestamp" : "2019-11-17T00:46:07.702Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1428,7 +1428,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -1513,8 +1513,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:c4479342-4a25-43f0-abdd-88634bbad26c",
-    "timestamp" : "2019-10-25T18:57:48.547Z",
+    "identifier" : "urn:uuid:66d190fd-1f81-4241-85fe-1a2a00f067e8",
+    "timestamp" : "2019-11-17T00:46:07.952Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1525,7 +1525,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -1630,8 +1630,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:c65d52b1-9006-43f1-af2e-bc177a41842a",
-    "timestamp" : "2019-10-25T18:57:48.672Z",
+    "identifier" : "urn:uuid:770e65ff-43bb-42b2-8092-aacbde808d44",
+    "timestamp" : "2019-11-17T00:46:08.140Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1642,7 +1642,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -1865,8 +1865,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:1747267b-9d78-4f72-9291-a2b73caa9c69",
-    "timestamp" : "2019-10-25T18:57:48.828Z",
+    "identifier" : "urn:uuid:9f932304-846d-4031-8d6a-8ace46fdd3b5",
+    "timestamp" : "2019-11-17T00:46:08.296Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1877,7 +1877,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -2242,8 +2242,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:cbbfe141-0656-416c-a2df-5c7b3f97760e",
-    "timestamp" : "2019-10-25T18:57:49.016Z",
+    "identifier" : "urn:uuid:32220640-a447-4056-aabb-a0c3159937b8",
+    "timestamp" : "2019-11-17T00:46:08.702Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -2254,7 +2254,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -2670,8 +2670,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:8c9a298c-3ad4-4c5c-b6a9-f0384a25a5ab",
-    "timestamp" : "2019-10-25T18:57:49.187Z",
+    "identifier" : "urn:uuid:b44abe45-28f4-4929-b35f-bd2b9085b0df",
+    "timestamp" : "2019-11-17T00:46:08.984Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -2682,7 +2682,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -3036,8 +3036,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:ab4c9fc7-e647-43e1-b5c9-73c61dca4a2d",
-    "timestamp" : "2019-10-25T18:57:49.391Z",
+    "identifier" : "urn:uuid:e29b837d-018d-462f-b4ca-eeb4c2fab03a",
+    "timestamp" : "2019-11-17T00:46:09.296Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -3048,7 +3048,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -3116,8 +3116,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:6a6d9002-781d-4bf4-9613-ee7c364663fb",
-    "timestamp" : "2019-10-25T18:57:49.516Z",
+    "identifier" : "urn:uuid:3e42373c-57a6-48f2-908c-98b45a9fef18",
+    "timestamp" : "2019-11-17T00:46:09.468Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -3128,7 +3128,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -3233,8 +3233,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:f47387ae-f43a-4f99-a7eb-4a9683ed04d2",
-    "timestamp" : "2019-10-25T18:57:49.672Z",
+    "identifier" : "urn:uuid:d1632577-033c-40f4-bd15-7c97349836e1",
+    "timestamp" : "2019-11-17T00:46:09.640Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -3245,7 +3245,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -3342,8 +3342,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:e66a5257-ceba-49a7-a55b-61fd396d00d7",
-    "timestamp" : "2019-10-25T18:57:49.812Z",
+    "identifier" : "urn:uuid:b7565db5-950f-49cd-9e8e-66448147e923",
+    "timestamp" : "2019-11-17T00:46:09.796Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -3354,7 +3354,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -3391,8 +3391,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:78dfd6b4-47e0-427f-b7f9-8c3e0e8a5639",
-    "timestamp" : "2019-10-25T18:57:49.937Z",
+    "identifier" : "urn:uuid:aeba74c6-2620-4fbf-aec8-2feef754b42e",
+    "timestamp" : "2019-11-17T00:46:10.093Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -3403,7 +3403,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -3596,8 +3596,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:255f0b3e-45a6-4908-927a-a5b1bde014c6",
-    "timestamp" : "2019-10-25T18:57:50.109Z",
+    "identifier" : "urn:uuid:54ba92ce-25cb-4f5d-85c5-5d6934b6d4ca",
+    "timestamp" : "2019-11-17T00:46:10.265Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -3608,7 +3608,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -3864,8 +3864,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:19e6da1b-d070-49eb-b2b0-ac5f192c6c35",
-    "timestamp" : "2019-10-25T18:57:50.266Z",
+    "identifier" : "urn:uuid:f21acc51-26da-4f18-b238-7351edaa61b0",
+    "timestamp" : "2019-11-17T00:46:11.718Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -3876,7 +3876,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -3963,8 +3963,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:456112e7-6b3a-463c-89be-a297ca7a850b",
-    "timestamp" : "2019-10-25T18:57:50.453Z",
+    "identifier" : "urn:uuid:ef24aed7-8bf2-451a-8a72-09d8155be94f",
+    "timestamp" : "2019-11-17T00:46:11.905Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -3975,7 +3975,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -4077,8 +4077,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:df89df4e-897e-4afe-a713-62d95f7ebd1c",
-    "timestamp" : "2019-10-25T18:57:50.578Z",
+    "identifier" : "urn:uuid:463d059e-51db-4593-b000-57e5d3ccbc44",
+    "timestamp" : "2019-11-17T00:46:15.218Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -4089,7 +4089,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -4216,8 +4216,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:bf77c57e-670a-418a-8859-ab0a48a5dde9",
-    "timestamp" : "2019-10-25T18:57:50.734Z",
+    "identifier" : "urn:uuid:6d14549b-5266-4f9a-8863-244aa444712b",
+    "timestamp" : "2019-11-17T00:46:15.421Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -4228,7 +4228,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -4367,8 +4367,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:eaf3e618-6950-45b8-8d8b-b42cd2a329c1",
-    "timestamp" : "2019-10-25T18:57:50.859Z",
+    "identifier" : "urn:uuid:6ba207dc-3ea3-45d9-afbb-6349ec08bdc3",
+    "timestamp" : "2019-11-17T00:46:15.624Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -4379,7 +4379,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -4527,669 +4527,6 @@ v: {
 }, "valueSet" :null, "lang":"null"}####
 v: {
   "display" : "External",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://snomed.info/sct",
-    "code" : "244185002",
-    "display" : "Entire skin of heel"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "concept" : [{
-        "code" : "72651009",
-        "display" : "Nail structure"
-      },
-      {
-        "code" : "113279002",
-        "display" : "Gingival structure"
-      },
-      {
-        "code" : "22180002",
-        "display" : "Skin structure of buttock"
-      },
-      {
-        "code" : "51059006",
-        "display" : "Skin structure of calf of leg"
-      },
-      {
-        "code" : "74160004",
-        "display" : "Skin structure of chest"
-      },
-      {
-        "code" : "21308002",
-        "display" : "Skin structure of perianal area"
-      },
-      {
-        "code" : "414781009",
-        "display" : "Mucous membrane structure"
-      },
-      {
-        "code" : "52034004",
-        "display" : "Skin structure of toe"
-      },
-      {
-        "code" : "315003",
-        "display" : "Skin structure of umbilicus"
-      },
-      {
-        "code" : "371309009",
-        "display" : "Skin structure of upper arm"
-      },
-      {
-        "code" : "24785000",
-        "display" : "Skin structure of wrist"
-      },
-      {
-        "code" : "43067004",
-        "display" : "Skin structure of scalp"
-      },
-      {
-        "code" : "45980000",
-        "display" : "Skin structure of scapular region of back"
-      },
-      {
-        "code" : "81992007",
-        "display" : "Skin structure of scrotum"
-      },
-      {
-        "code" : "76552005",
-        "display" : "Skin structure of shoulder"
-      },
-      {
-        "code" : "16621002",
-        "display" : "Skin structure of temporal region"
-      },
-      {
-        "code" : "371305003",
-        "display" : "Skin structure of thigh"
-      },
-      {
-        "code" : "82654007",
-        "display" : "Skin structure of pelvis"
-      },
-      {
-        "code" : "35900000",
-        "display" : "Skin of penis"
-      },
-      {
-        "code" : "48014002",
-        "display" : "Skin structure of perineum"
-      },
-      {
-        "code" : "43081002",
-        "display" : "Skin structure of neck"
-      },
-      {
-        "code" : "113179006",
-        "display" : "Skin structure of nose"
-      },
-      {
-        "code" : "21672008",
-        "display" : "Skin of parietal region"
-      },
-      {
-        "code" : "88089004",
-        "display" : "Skin structure of lip"
-      },
-      {
-        "code" : "75144006",
-        "display" : "Skin structure of lower leg"
-      },
-      {
-        "code" : "70762009",
-        "display" : "Skin structure of head"
-      },
-      {
-        "code" : "84607009",
-        "display" : "Skin structure of heel"
-      },
-      {
-        "code" : "49812005",
-        "display" : "Skin structure of hip"
-      },
-      {
-        "code" : "39687006",
-        "display" : "Skin structure of inguinal region"
-      },
-      {
-        "code" : "41935005",
-        "display" : "Skin structure of jaw"
-      },
-      {
-        "code" : "63464009",
-        "display" : "Skin structure of knee"
-      },
-      {
-        "code" : "73058008",
-        "display" : "Skin structure of labium"
-      },
-      {
-        "code" : "34284005",
-        "display" : "Skin structure of flank"
-      },
-      {
-        "code" : "60496002",
-        "display" : "Skin structure of foot"
-      },
-      {
-        "code" : "5742000",
-        "display" : "Skin structure of forearm"
-      },
-      {
-        "code" : "68698007",
-        "display" : "Skin structure of forehead"
-      },
-      {
-        "code" : "33712006",
-        "display" : "Skin structure of hand"
-      },
-      {
-        "code" : "74757004",
-        "display" : "Skin structure of elbow"
-      },
-      {
-        "code" : "73897004",
-        "display" : "Skin structure of face"
-      },
-      {
-        "code" : "56213003",
-        "display" : "Skin of finger"
-      },
-      {
-        "code" : "76261009",
-        "display" : "Skin structure of axilla"
-      },
-      {
-        "code" : "66643007",
-        "display" : "Skin structure of back"
-      },
-      {
-        "code" : "82038008",
-        "display" : "Skin structure of breast"
-      },
-      {
-        "code" : "23747009",
-        "display" : "Skin structure of chin"
-      },
-      {
-        "code" : "75093004",
-        "display" : "Skin structure of abdomen"
-      },
-      {
-        "code" : "67269001",
-        "display" : "Skin structure of ankle"
-      },
-      {
-        "code" : "76784001",
-        "display" : "Vaginal structure"
-      },
-      {
-        "code" : "51027004",
-        "display" : "Skin structure of sacral region"
-      },
-      {
-        "code" : "22115004",
-        "display" : "Skin structure of coccygeal region"
-      },
-      {
-        "code" : "63029009",
-        "display" : "Skin structure of gluteal fold"
-      },
-      {
-        "code" : "59112000",
-        "display" : "Skin structure of anus"
-      },
-      {
-        "code" : "1902009",
-        "display" : "Skin structure of ear"
-      },
-      {
-        "code" : "362916000",
-        "display" : "Skin of eye region"
-      },
-      {
-        "code" : "284539009",
-        "display" : "Skin of part of mouth region"
-      },
-      {
-        "code" : "79951008",
-        "display" : "Skin of occipital region"
-      },
-      {
-        "code" : "450693000",
-        "display" : "Skin structure over greater trochanter of hip"
-      },
-      {
-        "code" : "286591006",
-        "display" : "Skin of lumbar region"
-      },
-      {
-        "code" : "419975006",
-        "display" : "Skin structure of malleolus"
-      },
-      {
-        "code" : "281726008",
-        "display" : "Skin of part of front of thorax"
-      },
-      {
-        "code" : "367578008",
-        "display" : "Skin structure of hypogastric region"
-      },
-      {
-        "code" : "58226009",
-        "display" : "Skin structure of medial surface of lower leg"
-      },
-      {
-        "code" : "314870004",
-        "display" : "Tongue surface region"
-      },
-      {
-        "code" : "699903000",
-        "display" : "Skin structure of ischial tuberosity subregion of buttock region"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://snomed.info/sct#244185002) is not  valid in the value set WoundAnatomicLocationvalueset"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "244185002"
-}, "valueSet" :null, "lang":"null"}####
-v: {
-  "display" : "Entire skin over heel of foot",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://snomed.info/sct",
-    "code" : "85421007",
-    "display" : "Structure of right half of body"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "concept" : [{
-        "code" : "51440002",
-        "display" : "Right and left"
-      },
-      {
-        "code" : "399488007",
-        "display" : "Midline"
-      },
-      {
-        "code" : "85421007",
-        "display" : "Structure of right half of body"
-      },
-      {
-        "code" : "31156008",
-        "display" : "Structure of left half of body"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "Right side of body",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "85421007"
-}, "valueSet" :null, "lang":"null"}####
-v: {
-  "display" : "Right side of body",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "261788001",
-  "display" : "Exteriorized"
-}, "valueSet" :null, "lang":"null"}####
-v: {
-  "display" : "Exteriorized",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "2986006",
-  "display" : "Talar facet of navicular bone of foot"
-}, "valueSet" :null, "lang":"null"}####
-v: {
-  "display" : "Structure of talar facet of navicular bone of foot",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "80144004",
-  "display" : "Bone structure of calcaneum"
-}, "valueSet" :null, "lang":"null"}####
-v: {
-  "display" : "Calcaneum",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "260341007",
-  "display" : "8 o'clock position"
-}, "valueSet" :null, "lang":"null"}####
-v: {
-  "display" : "8 o'clock position",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "44056008",
-  "display" : "Caliper"
-}, "valueSet" :null, "lang":"null"}####
-v: {
-  "display" : "Caliper, device",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://snomed.info/sct",
-    "code" : "255551008",
-    "display" : "Posterior"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "concept" : [{
-        "code" : "46053002",
-        "display" : "Distal"
-      },
-      {
-        "code" : "255554000",
-        "display" : "Dorsal"
-      },
-      {
-        "code" : "264147007",
-        "display" : "Plantar"
-      },
-      {
-        "code" : "255561001",
-        "display" : "Medial"
-      },
-      {
-        "code" : "49370004",
-        "display" : "Lateral"
-      },
-      {
-        "code" : "255549009",
-        "display" : "Anterior"
-      },
-      {
-        "code" : "255551008",
-        "display" : "Posterior"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "Back of",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "255551008"
-}, "valueSet" :null, "lang":"null"}####
-v: {
-  "display" : "Back of",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://snomed.info/sct",
-    "code" : "255509001",
-    "display" : "Large"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "concept" : [{
-        "code" : "32088001",
-        "display" : "Fifth"
-      },
-      {
-        "code" : "11896004",
-        "display" : "Intermediate"
-      },
-      {
-        "code" : "263871007",
-        "display" : "Sinusoidal"
-      },
-      {
-        "code" : "38033009",
-        "display" : "Amputation stump"
-      },
-      {
-        "code" : "13351007",
-        "display" : "Structure of bursa"
-      },
-      {
-        "code" : "66787007",
-        "display" : "Cephalic"
-      },
-      {
-        "code" : "255286006",
-        "display" : "Glandular"
-      },
-      {
-        "code" : "255509001",
-        "display" : "Large"
-      },
-      {
-        "code" : "385494008",
-        "display" : "Hematoma"
-      },
-      {
-        "code" : "39352004",
-        "display" : "Joint structure"
-      },
-      {
-        "code" : "264082005",
-        "display" : "Lumbar"
-      },
-      {
-        "code" : "260642009",
-        "display" : "Retroperitoneal"
-      },
-      {
-        "code" : "272432007",
-        "display" : "Wall structure"
-      },
-      {
-        "code" : "397406000",
-        "display" : "Collateral branch of vessel"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "Large",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "255509001"
-}, "valueSet" :null, "lang":"null"}####
-v: {
-  "display" : "Large",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://snomed.info/sct",
-    "code" : "400012003",
-    "display" : "Abrasion and/or friction burn of skin"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "concept" : [{
-        "code" : "125667009",
-        "display" : "Contusion"
-      },
-      {
-        "code" : "271761007",
-        "display" : "Scaly skin"
-      },
-      {
-        "code" : "128045006",
-        "display" : "Cellulitis"
-      },
-      {
-        "code" : "271807003",
-        "display" : "Eruption"
-      },
-      {
-        "code" : "274165007",
-        "display" : "Laceration of skin"
-      },
-      {
-        "code" : "95321009",
-        "display" : "Fissure in skin"
-      },
-      {
-        "code" : "13954005",
-        "display" : "Ischemic ulcer"
-      },
-      {
-        "code" : "247444006",
-        "display" : "Excoriation of skin"
-      },
-      {
-        "code" : "428220001",
-        "display" : "Tear of skin"
-      },
-      {
-        "code" : "283545005",
-        "display" : "Gunshot wound"
-      },
-      {
-        "code" : "312609001",
-        "display" : "Puncture wound - injury"
-      },
-      {
-        "code" : "425322008",
-        "display" : "Stab wound"
-      },
-      {
-        "code" : "403601003",
-        "display" : "Neuropathic ulcer"
-      },
-      {
-        "code" : "371032004",
-        "display" : "Stasis ulcer"
-      },
-      {
-        "code" : "399912005",
-        "display" : "Pressure sore"
-      },
-      {
-        "code" : "271767006",
-        "display" : "Peeling of skin"
-      },
-      {
-        "code" : "400012003",
-        "display" : "Abrasion and/or friction burn of skin"
-      },
-      {
-        "code" : "429349001",
-        "display" : "Avulsion of skin"
-      },
-      {
-        "code" : "283682007",
-        "display" : "Bite - wound"
-      },
-      {
-        "code" : "247464001",
-        "display" : "Blistering eruption"
-      },
-      {
-        "code" : "284196006",
-        "display" : "Burn of skin"
-      },
-      {
-        "code" : "444827008",
-        "display" : "Erythema of skin"
-      },
-      {
-        "code" : "279420009",
-        "display" : "Hematoma of skin"
-      },
-      {
-        "code" : "402276007",
-        "display" : "Irritant contact dermatitis due to incontinence"
-      },
-      {
-        "code" : "3644009",
-        "display" : "Macerated skin"
-      },
-      {
-        "code" : "421594008",
-        "display" : "Nonstageable pressure ulcer"
-      },
-      {
-        "code" : "129902007",
-        "display" : "Skin incision finding"
-      },
-      {
-        "code" : "723071003",
-        "display" : "Deep tissue pressure injury"
-      },
-      {
-        "code" : "238792006",
-        "display" : "Mixed arteriovenous leg ulcer"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "Abrasion AND/OR friction burn of skin",
   "severity" : null,
   "error" : ""
 }
@@ -5472,6 +4809,387 @@ v: {
 }, "valueSet" :null, "lang":"null"}####
 v: {
   "display" : "Skin of heel",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "85421007",
+    "display" : "Structure of right half of body"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "51440002",
+        "display" : "Right and left"
+      },
+      {
+        "code" : "399488007",
+        "display" : "Midline"
+      },
+      {
+        "code" : "85421007",
+        "display" : "Structure of right half of body"
+      },
+      {
+        "code" : "31156008",
+        "display" : "Structure of left half of body"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Right side of body",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "85421007"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Right side of body",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "261788001",
+  "display" : "Exteriorized"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Exteriorized",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "2986006",
+  "display" : "Talar facet of navicular bone of foot"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Talar facet of navicular bone of foot",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "80144004",
+  "display" : "Bone structure of calcaneum"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Calcaneus",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "260341007",
+  "display" : "8 o'clock position"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "8 o'clock position",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "44056008",
+  "display" : "Caliper"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Caliper",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "255551008",
+    "display" : "Posterior"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "46053002",
+        "display" : "Distal"
+      },
+      {
+        "code" : "255554000",
+        "display" : "Dorsal"
+      },
+      {
+        "code" : "264147007",
+        "display" : "Plantar"
+      },
+      {
+        "code" : "255561001",
+        "display" : "Medial"
+      },
+      {
+        "code" : "49370004",
+        "display" : "Lateral"
+      },
+      {
+        "code" : "255549009",
+        "display" : "Anterior"
+      },
+      {
+        "code" : "255551008",
+        "display" : "Posterior"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Posterior",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "255551008"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Posterior",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "255509001",
+    "display" : "Large"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "32088001",
+        "display" : "Fifth"
+      },
+      {
+        "code" : "11896004",
+        "display" : "Intermediate"
+      },
+      {
+        "code" : "263871007",
+        "display" : "Sinusoidal"
+      },
+      {
+        "code" : "38033009",
+        "display" : "Amputation stump"
+      },
+      {
+        "code" : "13351007",
+        "display" : "Structure of bursa"
+      },
+      {
+        "code" : "66787007",
+        "display" : "Cephalic"
+      },
+      {
+        "code" : "255286006",
+        "display" : "Glandular"
+      },
+      {
+        "code" : "255509001",
+        "display" : "Large"
+      },
+      {
+        "code" : "385494008",
+        "display" : "Hematoma"
+      },
+      {
+        "code" : "39352004",
+        "display" : "Joint structure"
+      },
+      {
+        "code" : "264082005",
+        "display" : "Lumbar"
+      },
+      {
+        "code" : "260642009",
+        "display" : "Retroperitoneal"
+      },
+      {
+        "code" : "272432007",
+        "display" : "Wall structure"
+      },
+      {
+        "code" : "397406000",
+        "display" : "Collateral branch of vessel"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Large",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "255509001"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Large",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "400012003",
+    "display" : "Abrasion and/or friction burn of skin"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "125667009",
+        "display" : "Contusion"
+      },
+      {
+        "code" : "271761007",
+        "display" : "Scaly skin"
+      },
+      {
+        "code" : "128045006",
+        "display" : "Cellulitis"
+      },
+      {
+        "code" : "271807003",
+        "display" : "Eruption"
+      },
+      {
+        "code" : "274165007",
+        "display" : "Laceration of skin"
+      },
+      {
+        "code" : "95321009",
+        "display" : "Fissure in skin"
+      },
+      {
+        "code" : "13954005",
+        "display" : "Ischemic ulcer"
+      },
+      {
+        "code" : "247444006",
+        "display" : "Excoriation of skin"
+      },
+      {
+        "code" : "428220001",
+        "display" : "Tear of skin"
+      },
+      {
+        "code" : "283545005",
+        "display" : "Gunshot wound"
+      },
+      {
+        "code" : "312609001",
+        "display" : "Puncture wound - injury"
+      },
+      {
+        "code" : "425322008",
+        "display" : "Stab wound"
+      },
+      {
+        "code" : "403601003",
+        "display" : "Neuropathic ulcer"
+      },
+      {
+        "code" : "371032004",
+        "display" : "Stasis ulcer"
+      },
+      {
+        "code" : "399912005",
+        "display" : "Pressure sore"
+      },
+      {
+        "code" : "271767006",
+        "display" : "Peeling of skin"
+      },
+      {
+        "code" : "400012003",
+        "display" : "Abrasion and/or friction burn of skin"
+      },
+      {
+        "code" : "429349001",
+        "display" : "Avulsion of skin"
+      },
+      {
+        "code" : "283682007",
+        "display" : "Bite - wound"
+      },
+      {
+        "code" : "247464001",
+        "display" : "Blistering eruption"
+      },
+      {
+        "code" : "284196006",
+        "display" : "Burn of skin"
+      },
+      {
+        "code" : "444827008",
+        "display" : "Erythema of skin"
+      },
+      {
+        "code" : "279420009",
+        "display" : "Hematoma of skin"
+      },
+      {
+        "code" : "402276007",
+        "display" : "Irritant contact dermatitis due to incontinence"
+      },
+      {
+        "code" : "3644009",
+        "display" : "Macerated skin"
+      },
+      {
+        "code" : "421594008",
+        "display" : "Nonstageable pressure ulcer"
+      },
+      {
+        "code" : "129902007",
+        "display" : "Skin incision finding"
+      },
+      {
+        "code" : "723071003",
+        "display" : "Deep tissue pressure injury"
+      },
+      {
+        "code" : "238792006",
+        "display" : "Mixed arteriovenous leg ulcer"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Abrasion AND/OR friction burn of skin",
   "severity" : null,
   "error" : ""
 }
@@ -6016,6 +5734,54 @@ v: {
 {"code" : {
   "coding" : [{
     "system" : "http://snomed.info/sct",
+    "code" : "225541009",
+    "display" : "Granulation of tissue"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "449741007",
+        "display" : "Wound edges approximated"
+      },
+      {
+        "code" : "427832005",
+        "display" : "Dehiscence of wound of skin"
+      },
+      {
+        "code" : "449751008",
+        "display" : "Rolled wound edge"
+      },
+      {
+        "code" : "449760000",
+        "display" : "Scab of wound edge"
+      },
+      {
+        "code" : "449749009",
+        "display" : "Wound edge diffuse"
+      },
+      {
+        "code" : "449750009",
+        "display" : "Wound edge sharp"
+      },
+      {
+        "code" : "449748001",
+        "display" : "Wound edges attached"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://snomed.info/sct#225541009) is not  valid in the value set WoundEdgeDescriptionValueSet"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
     "code" : "371251000",
     "display" : "White color"
   }]
@@ -6175,54 +5941,6 @@ v: {
 {"code" : {
   "coding" : [{
     "system" : "http://snomed.info/sct",
-    "code" : "225541009",
-    "display" : "Granulation of tissue"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "concept" : [{
-        "code" : "449741007",
-        "display" : "Wound edges approximated"
-      },
-      {
-        "code" : "427832005",
-        "display" : "Dehiscence of wound of skin"
-      },
-      {
-        "code" : "449751008",
-        "display" : "Rolled wound edge"
-      },
-      {
-        "code" : "449760000",
-        "display" : "Scab of wound edge"
-      },
-      {
-        "code" : "449749009",
-        "display" : "Wound edge diffuse"
-      },
-      {
-        "code" : "449750009",
-        "display" : "Wound edge sharp"
-      },
-      {
-        "code" : "449748001",
-        "display" : "Wound edges attached"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://snomed.info/sct#225541009) is not  valid in the value set WoundEdgeDescriptionValueSet"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://snomed.info/sct",
     "code" : "371250004",
     "display" : "Purple color"
   }]
@@ -6292,15 +6010,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:b0177b73-752c-4144-8600-430a59408c8a",
-    "timestamp" : "2019-10-25T18:58:45.406Z",
+    "identifier" : "urn:uuid:1ec93961-a9ba-4412-8d50-908004a32b05",
+    "timestamp" : "2019-11-17T00:47:21.421Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -6442,15 +6160,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:48dac319-9b5a-4d62-9f46-ef0df60f126a",
-    "timestamp" : "2019-10-25T18:58:45.609Z",
+    "identifier" : "urn:uuid:3a3a4351-cdec-49f4-8bc6-c1aa7f3faa48",
+    "timestamp" : "2019-11-17T00:47:21.718Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -6644,15 +6362,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:7cc43b82-9f6e-4744-b7d4-899fce6b5fb7",
-    "timestamp" : "2019-10-25T18:58:45.828Z",
+    "identifier" : "urn:uuid:d7cec3ec-654b-4238-b58d-ca16e711b94d",
+    "timestamp" : "2019-11-17T00:47:21.906Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -6725,15 +6443,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:e84c4695-bb58-49fb-8059-8e1a029abb8f",
-    "timestamp" : "2019-10-25T18:58:46.047Z",
+    "identifier" : "urn:uuid:129c44be-c456-4da7-a661-f5db9b70ee5c",
+    "timestamp" : "2019-11-17T00:47:22.093Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -6773,15 +6491,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:e6fad9c5-f538-45a8-b87e-b0461c3c9041",
-    "timestamp" : "2019-10-25T18:58:46.219Z",
+    "identifier" : "urn:uuid:3f2755e0-0453-404d-94ba-9c88308749f8",
+    "timestamp" : "2019-11-17T00:47:22.687Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -6836,15 +6554,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:6123ac6e-2854-4a57-b76d-d7648efc788a",
-    "timestamp" : "2019-10-25T18:58:46.422Z",
+    "identifier" : "urn:uuid:6e6bde91-4418-4734-b686-fb92b9bfc899",
+    "timestamp" : "2019-11-17T00:47:22.874Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -6935,15 +6653,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:8cf505d5-8d54-405e-8898-cba6fd70719a",
-    "timestamp" : "2019-10-25T18:58:46.641Z",
+    "identifier" : "urn:uuid:0e6d86f8-ea2f-4897-a4c5-cf22036386a2",
+    "timestamp" : "2019-11-17T00:47:23.062Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -7055,15 +6773,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:6a1b869c-18ee-4469-a3e9-a31c4f2ad28f",
-    "timestamp" : "2019-10-25T18:58:46.828Z",
+    "identifier" : "urn:uuid:08cf9ac6-5e21-4067-aea7-76f2deb71dae",
+    "timestamp" : "2019-11-17T00:47:23.265Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -7149,15 +6867,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:5381f030-179a-4632-86f4-c52f06129c98",
-    "timestamp" : "2019-10-25T18:58:47.062Z",
+    "identifier" : "urn:uuid:07b91e9d-ac1c-4668-9cd3-12a96a68dcfc",
+    "timestamp" : "2019-11-17T00:47:23.452Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -7244,15 +6962,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:4f531726-5c9b-4c2c-96b6-679d53908656",
-    "timestamp" : "2019-10-25T18:58:47.250Z",
+    "identifier" : "urn:uuid:a13c4f8f-9311-405c-a439-9a2586b2e417",
+    "timestamp" : "2019-11-17T00:47:23.640Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -7354,15 +7072,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:97ed7480-45b8-4536-abb2-972c67079a20",
-    "timestamp" : "2019-10-25T18:58:47.641Z",
+    "identifier" : "urn:uuid:19b74d7c-a809-47f8-bdfb-46d7cb822cf2",
+    "timestamp" : "2019-11-17T00:47:23.843Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -7449,15 +7167,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:7e359be9-ccb3-47ba-a3d6-255c887ca258",
-    "timestamp" : "2019-10-25T18:58:47.859Z",
+    "identifier" : "urn:uuid:4965d4d8-0dbb-4540-851e-ac7ff385e27f",
+    "timestamp" : "2019-11-17T00:47:24.031Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -7494,15 +7212,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:fac44bfd-1e9f-468a-a8ce-2ecffbfc5ccc",
-    "timestamp" : "2019-10-25T18:58:48.047Z",
+    "identifier" : "urn:uuid:ac9ca9ad-7d0e-4abf-8382-31b69c4c3644",
+    "timestamp" : "2019-11-17T00:47:24.218Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -7559,15 +7277,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:30d7a04d-de9c-4eb7-93f9-c100e4d5fb15",
-    "timestamp" : "2019-10-25T18:58:48.281Z",
+    "identifier" : "urn:uuid:54aee9e5-8bad-49d4-9590-cdd25444c4c7",
+    "timestamp" : "2019-11-17T00:47:24.718Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -7629,15 +7347,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:df0983a7-6c90-438e-8aa6-7cd8fda17f68",
-    "timestamp" : "2019-10-25T18:58:48.531Z",
+    "identifier" : "urn:uuid:c9d729dc-6934-4a61-9116-d2613e437cb9",
+    "timestamp" : "2019-11-17T00:47:24.937Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -7722,15 +7440,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:4862191a-9a52-46c7-b075-039dd0721ced",
-    "timestamp" : "2019-10-25T18:58:48.719Z",
+    "identifier" : "urn:uuid:ef95021b-8f18-4def-b166-df8252b60b77",
+    "timestamp" : "2019-11-17T00:47:25.109Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -7835,15 +7553,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:8fe07ac5-75ee-4409-9baa-1c6a130482d3",
-    "timestamp" : "2019-10-25T18:58:48.937Z",
+    "identifier" : "urn:uuid:f1fec240-07c8-43f5-8778-db9b2c99fcad",
+    "timestamp" : "2019-11-17T00:47:25.406Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -8066,15 +7784,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:28e76a54-adbc-4c04-ab1e-444175a2d327",
-    "timestamp" : "2019-10-25T18:58:49.109Z",
+    "identifier" : "urn:uuid:17723091-bfcf-4eb9-b27e-f9de7c34a9a3",
+    "timestamp" : "2019-11-17T00:47:25.577Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -8439,15 +8157,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:070c02d1-648c-4c66-8894-4bd8fcc415e5",
-    "timestamp" : "2019-10-25T18:58:49.312Z",
+    "identifier" : "urn:uuid:c23d2e12-08c5-4f8f-b661-919d1499df4f",
+    "timestamp" : "2019-11-17T00:47:25.781Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -8863,15 +8581,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:d4f5c792-dc36-4162-8678-b70847ffb742",
-    "timestamp" : "2019-10-25T18:58:49.547Z",
+    "identifier" : "urn:uuid:aa68fa80-1944-4f40-a4cc-53d4d375b95b",
+    "timestamp" : "2019-11-17T00:47:25.952Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -9225,15 +8943,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:ab4f15a7-3bcc-4f15-b5e1-3a392f995e46",
-    "timestamp" : "2019-10-25T18:58:49.781Z",
+    "identifier" : "urn:uuid:778c54b0-945a-4f33-b3ba-0f6254f2a0be",
+    "timestamp" : "2019-11-17T00:47:26.171Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -9301,15 +9019,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:9a7ac1a3-fa07-4f8f-adf7-d60003293d9d",
-    "timestamp" : "2019-10-25T18:58:50.000Z",
+    "identifier" : "urn:uuid:963dba7a-43a9-450d-891a-ed2c489c66e2",
+    "timestamp" : "2019-11-17T00:47:26.749Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -9414,15 +9132,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:17608f5d-a651-4e63-a5f8-c5f367cfa46d",
-    "timestamp" : "2019-10-25T18:58:50.203Z",
+    "identifier" : "urn:uuid:34e9c177-e6dd-4a50-b1e0-66178f55be0e",
+    "timestamp" : "2019-11-17T00:47:26.937Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -9519,15 +9237,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:289727c3-2eb6-431d-b33b-3a287641bee3",
-    "timestamp" : "2019-10-25T18:58:50.422Z",
+    "identifier" : "urn:uuid:2769d426-2a51-4846-adb6-0c3b748548a4",
+    "timestamp" : "2019-11-17T00:47:27.515Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -9564,15 +9282,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:eb19137c-3049-45ac-8094-fefeee17ded5",
-    "timestamp" : "2019-10-25T18:58:50.625Z",
+    "identifier" : "urn:uuid:cbb37eee-710a-4485-a970-5b2fcefb91ca",
+    "timestamp" : "2019-11-17T00:47:28.265Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -9765,15 +9483,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:69ba0597-517e-4a95-918d-ed9a617b3b2a",
-    "timestamp" : "2019-10-25T18:58:50.844Z",
+    "identifier" : "urn:uuid:505a605b-8e23-4b87-aeea-a537aea95986",
+    "timestamp" : "2019-11-17T00:47:28.718Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -10029,15 +9747,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:9e55788c-f299-40f2-8966-61b5e26e409c",
-    "timestamp" : "2019-10-25T18:58:51.047Z",
+    "identifier" : "urn:uuid:82edfc9b-0469-4464-af4a-c88a790084e6",
+    "timestamp" : "2019-11-17T00:47:29.015Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -10124,15 +9842,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:3743500d-95ed-4e78-9357-303e66fb56fc",
-    "timestamp" : "2019-10-25T18:58:51.234Z",
+    "identifier" : "urn:uuid:1d90605b-514e-43b3-8e06-c14450fad949",
+    "timestamp" : "2019-11-17T00:47:29.218Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -10234,15 +9952,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:97ef68e1-c1de-4be4-b399-c64f70e7766b",
-    "timestamp" : "2019-10-25T18:58:51.453Z",
+    "identifier" : "urn:uuid:b4f0d290-a06e-4207-8eea-157f8bf096b1",
+    "timestamp" : "2019-11-17T00:47:29.406Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -10369,15 +10087,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:c17ab9e8-99cd-408d-aae1-1d9776fabf70",
-    "timestamp" : "2019-10-25T18:58:51.672Z",
+    "identifier" : "urn:uuid:4da311a4-acd1-43bd-86a1-829f4cb5c7cc",
+    "timestamp" : "2019-11-17T00:47:29.593Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -10516,15 +10234,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:df954824-fd64-45e0-a3b2-6b221493dd2c",
-    "timestamp" : "2019-10-25T18:58:51.891Z",
+    "identifier" : "urn:uuid:95181fb9-b79c-46a9-b6bf-db7c596c2c47",
+    "timestamp" : "2019-11-17T00:47:29.796Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct?version=http://snomed.info/sct/20611000087101/version/20190430"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20190301"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",

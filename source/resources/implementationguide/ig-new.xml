@@ -896,24 +896,44 @@
       <title value="Home"/>
       <generation value="markdown"/>
       <page>
-        <nameUrl value="generalguidance.html"/>
-        <title value="General Guidance"/>
+        <nameUrl value="guidance.html"/>
+        <title value="Guidance"/>
         <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="accuracyauthenticity.html"/>
-        <title value="Accuracy and Authenticity"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="rlemapping.html"/>
-        <title value="RLE Mapping"/>
-        <generation value="markdown"/>
+        <page>
+          <nameUrl value="generalguidance.html"/>
+          <title value="General Guidance"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="accuracyauthenticity.html"/>
+          <title value="Accuracy and Authenticity"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="rlemapping.html"/>
+          <title value="RLE Mapping"/>
+          <generation value="markdown"/>
+        </page>
       </page>
       <page>
         <nameUrl value="usecases.html"/>
         <title value="Use Cases"/>
         <generation value="markdown"/>
+        <page>
+          <nameUrl value="usecase-originate.html"/>
+          <title value="Use Case - Originate then Amend"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="usecase-receive.html"/>
+          <title value="Use Case - Receive and Retain"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="usecase-search.html"/>
+          <title value="Use Case - Search"/>
+          <generation value="markdown"/>
+        </page>
       </page>
       <page>
         <nameUrl value="profiles.html"/>
@@ -926,19 +946,24 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="CapabilityStatement-skinwoundassessment-server.html"/>
-        <title value="CapabilityStatement server"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="CapabilityStatement-skinwoundassessment-client.html"/>
-        <title value="CapabilityStatement client"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
         <nameUrl value="security.html"/>
         <title value="Security"/>
         <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="conformance.html"/>
+        <title value="Conformance"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="CapabilityStatement-skinwoundassessment-server.html"/>
+          <title value="CapabilityStatement server"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="CapabilityStatement-skinwoundassessment-client.html"/>
+          <title value="CapabilityStatement client"/>
+          <generation value="markdown"/>
+        </page>
       </page>
       <page>
         <nameUrl value="downloads.html"/>

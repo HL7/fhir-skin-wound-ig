@@ -23,6 +23,12 @@ The conformance verbs used are defined in [FHIR Conformance Rules].
 
 <!-- end TOC -->
 
+## FHIR Version Support
+
+See Managing Multiple FHIR Versions - [Mime Type Parameter](http://hl7.org/fhir/R4/versioning.html#mt-version) section for details regarding requirements for client and server actors' support of the fhirVersion=4.0 parameter.
+
+<br />
+
 ## Use Case Guidance
 
 The Use Case definitions represent descrete portions of functionality within a given EHR actor system and/or Wound Assessment Registry (WAR) actor system complete workflow in capturing Wound Assessment Template data. This specificity provides the implementer with a more focused representation of the needed functionality within their given system.
@@ -38,6 +44,7 @@ Please refer to each Use Case definition page for specific guidance:
 
 3. [Use Case - Search](usecase-search.html): Query and retrieval of the Wound Assessment Template (WAT) data from either an EHR actor system or Wound Assessement Registry (WAR) actor system
 
+<br />
 
 ## Record LifeCycle Events - Metadata Captured in FHIR Resources
 
@@ -563,6 +570,7 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 	</tr>
 </table>
 
+<br />
 
 ## Record LifeCycle Events - Conformance Criteria
 

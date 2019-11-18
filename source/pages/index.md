@@ -46,5 +46,13 @@ The Skin Wound Assessment Implementation Guide is based on [FHIR Version R4] and
 - *Richard Ettema, AEGIS*
 - *Carie Hammond, AEGIS*
 
+<br />
+
+## References
+
+- ISO 21089:2018, Health Informatics - Trusted End-to-End Information Flows
+- ISO/HL7 10781:2014 Health Informatics - Electronic Health Record System Functional Model Release 2
+- [FHIR Record Lifecycle Event (RLE) Implementation Guide (IG)](http://hl7.org/fhir/R4/ehrsrle/ehrsrle.html) - part of FHIR Core Release 4, 2019
+- FHIR Implementation Support - [Clinical Safety]({{site.data.fhir.path}}safety.html) - part of FHIR Core Release 4, 2019
 
 {% include link-list.md %}

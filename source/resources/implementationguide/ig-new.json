@@ -900,24 +900,44 @@
       "title" : "Home",
       "generation" : "markdown",
       "page" : [{
-        "nameUrl" : "generalguidance.html",
-        "title" : "General Guidance",
-        "generation" : "markdown"
-      },
-      {
-        "nameUrl" : "accuracyauthenticity.html",
-        "title" : "Accuracy and Authenticity",
-        "generation" : "markdown"
-      },
-      {
-        "nameUrl" : "rlemapping.html",
-        "title" : "RLE Mapping",
-        "generation" : "markdown"
+        "nameUrl" : "guidance.html",
+        "title" : "Guidance",
+        "generation" : "markdown",
+        "page" : [{
+          "nameUrl" : "generalguidance.html",
+          "title" : "General Guidance",
+          "generation" : "markdown"
+        },
+        {
+          "nameUrl" : "accuracyauthenticity.html",
+          "title" : "Accuracy and Authenticity",
+          "generation" : "markdown"
+        },
+        {
+          "nameUrl" : "rlemapping.html",
+          "title" : "RLE Mapping",
+          "generation" : "markdown"
+        }]
       },
       {
         "nameUrl" : "usecases.html",
         "title" : "Use Cases",
-        "generation" : "markdown"
+        "generation" : "markdown",
+        "page" : [{
+          "nameUrl" : "usecase-originate.html",
+          "title" : "Use Case - Originate then Amend",
+          "generation" : "markdown"
+        },
+        {
+          "nameUrl" : "usecase-receive.html",
+          "title" : "Use Case - Receive and Retain",
+          "generation" : "markdown"
+        },
+        {
+          "nameUrl" : "usecase-search.html",
+          "title" : "Use Case - Search",
+          "generation" : "markdown"
+        }]
       },
       {
         "nameUrl" : "profiles.html",
@@ -930,19 +950,24 @@
         "generation" : "markdown"
       },
       {
-        "nameUrl" : "CapabilityStatement-skinwoundassessment-server.html",
-        "title" : "CapabilityStatement server",
-        "generation" : "markdown"
-      },
-      {
-        "nameUrl" : "CapabilityStatement-skinwoundassessment-client.html",
-        "title" : "CapabilityStatement client",
-        "generation" : "markdown"
-      },
-      {
         "nameUrl" : "security.html",
         "title" : "Security",
         "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "conformance.html",
+        "title" : "Conformance",
+        "generation" : "markdown",
+        "page" : [{
+          "nameUrl" : "CapabilityStatement-skinwoundassessment-server.html",
+          "title" : "CapabilityStatement server",
+          "generation" : "markdown"
+        },
+        {
+          "nameUrl" : "CapabilityStatement-skinwoundassessment-client.html",
+          "title" : "CapabilityStatement client",
+          "generation" : "markdown"
+        }]
       },
       {
         "nameUrl" : "downloads.html",

@@ -579,6 +579,8 @@ Processing of the FHIR Record Lifecycle Events (RLE) is defined as the capture o
 _Please see the [Guidance - RLE Mapping] page for specific guidance on mapping these criteria to FHIR RLE resource types [AuditEvent](http://hl7.org/fhir/R4/ehrsrle/ehrsrle-auditevent.html) and [US Core Provenance (R4)]._
 
 **15.1.1 Initial action instance**
+
+_**Identity/Accountability Context**_
 * <div id="publish-box">(cc1) SHALL Who - Action Subject - Individual Subject of Care ID</div>
 * <div id="publish-box">(cc2) SHALL Who - Accountable Health/care Party(ies), if applicable:</div>
 * <div id="publish-box">(cc3) SHALL - Organization ID/Descriptor</div>
@@ -594,7 +596,29 @@ _Please see the [Guidance - RLE Mapping] page for specific guidance on mapping t
 * <div id="publish-box">(cc13) SHALL Where - Action physical location: e.g. point of service/care</div>
 * (cc14) SHOULD Why - rationale or purpose for action taken, if applicable
 
+_**Data Integrity Context**_<a name="ggccref1"><sup>DIC</sup></a>
+* <div id="publish-box">(dic1) If applicable - Purpose of data/record record capture</div>
+* (dic2) If applicable - Purpose of data/record use: fitness, suitability, relevance
+* (dic3) If applicable - Evidence of data/record provenance
+* (dic4) If applicable - Measures and rules to ensure accuracy, continuity, consistency, completeness: of the health record and record entry
+
+_**Clinical Context**_<a name="ggccref2"><sup>CLC</sup></a>
+* (clc1) If applicable - Action - clinical purpose, rationale
+* (clc2) If applicable - Action - clinical facts, findings, observations
+* (clc3) If applicable - Action - clinical context, conditions
+* (clc4) If applicable - Measures and rules to ensure continuity, completeness: of the health/care Action
+* (clc5) If applicable - Measures and indicators for compliance (e.g. with standards of practice/care), quality, performance, outcomes
+
+_**Administrative/Operational Context**_<a name="ggccref3"><sup>AOC</sup></a>
+* (aoc1) If applicable - Allocations, deployments
+* (aoc2) If applicable - Assigned responsibility
+* (aoc3) If applicable - Resource utilization: staff, time, facilities, devices, supplies
+* (aoc4) If applicable - Costs
+* (aoc5) If applicable - Productivity, work load
+
 **15.1.2 Record lifecycle event - Originate/retain record entry instance(s)**
+
+_**Identity/Accountability Context**_
 * <div id="publish-box">(cc1) SHALL Who - Record Entry Subject - Individual Subject of Care ID</div>
 * <div id="publish-box">(cc2) SHALL Who - Accountable Health/care Party(ies), if applicable:</div>
 * (cc3) SHOULD - Digital Signature
@@ -620,7 +644,18 @@ _Please see the [Guidance - RLE Mapping] page for specific guidance on mapping t
 * <div id="publish-box">(cc23) SHALL Where - network address</div>
 * (cc24) SHOULD Why - rationale or purpose for Record Entry origination
 
+_**Data Integrity Context**_
+* [As captured in Section [15.1.1 DIC](#ggccref1)]
+
+_**Clinical Context**_
+* [As captured in Section [15.1.1 CLC](#ggccref2)]
+
+_**Administrative/Operational Context**_
+* [As captured in Section [15.1.1 AOC](#ggccref3)]
+
 **15.2.1 Subsequent action instance**
+
+_**Identity/Accountability Context**_
 * <div id="publish-box">(cc1) SHALL Who - Action Subject - Individual Subject of Care ID</div>
 * <div id="publish-box">(cc2) SHALL Who - Accountable Health/care Party(ies), if applicable:</div>
 * <div id="publish-box">(cc3) SHALL - Organization ID/Descriptor</div>
@@ -636,7 +671,18 @@ _Please see the [Guidance - RLE Mapping] page for specific guidance on mapping t
 * <div id="publish-box">(cc13) SHALL Where - Action physical location: e.g. point of service/care</div>
 * (cc14) SHOULD Why - rationale or purpose for action taken, if applicable
 
+_**Data Integrity Context**_
+* [As captured in Section [15.1.1 DIC](#ggccref1)]
+
+_**Clinical Context**_
+* [As captured in Section [15.1.1 CLC](#ggccref2)]
+
+_**Administrative/Operational Context**_
+* [As captured in Section [15.1.1 AOC](#ggccref3)]
+
 **15.2.2 Record lifecycle event - Amend (update) record entry instance(s)**
+
+_**Identity/Accountability Context**_
 * <div id="publish-box">(cc1) SHALL Who - Record Entry Subject - Individual Subject of Care ID</div>
 * <div id="publish-box">(cc2) SHALL Who - Accountable Health/care Party(ies), if applicable:</div>
 * (cc3) SHOULD - Digital Signature
@@ -657,7 +703,18 @@ _Please see the [Guidance - RLE Mapping] page for specific guidance on mapping t
 * <div id="publish-box">(cc18) SHALL Where - network address</div>
 * (cc19) SHOULD Why - rationale or purpose for Record Entry update
 
+_**Data Integrity Context**_
+* [As captured in Section [15.1.1 DIC](#ggccref1)]
+
+_**Clinical Context**_
+* [As captured in Section [15.1.1 CLC](#ggccref2)]
+
+_**Administrative/Operational Context**_
+* [As captured in Section [15.1.1 AOC](#ggccref3)]
+
 **15.9 Record lifecycle event - Receive/retain record entry instance(s)**
+
+_**Identity/Accountability Context**_
 * <div id="publish-box">(cc1) SHALL Who - Record Entry Subject - Individual Subject of Care ID</div>
 * <div id="publish-box">(cc2) SHALL Who - Source/Sender - Reporter, Discloser, Transmitter - Accountable Health/care Party(ies), if applicable:</div>
 * <div id="publish-box">(cc3) SHALL - Organization ID/Descriptor</div>
@@ -685,7 +742,18 @@ _Please see the [Guidance - RLE Mapping] page for specific guidance on mapping t
 * <div id="publish-box">(cc25) SHALL Where - network address</div>
 * (cc26) SHOULD Why - rationale or purpose for Record Entry receipt
 
+_**Data Integrity Context**_
+* [As captured in Section [15.1.1 DIC](#ggccref1)]
+
+_**Clinical Context**_
+* [As captured in Section [15.1.1 CLC](#ggccref2)]
+
+_**Administrative/Operational Context**_
+* [As captured in Section [15.1.1 AOC](#ggccref3)]
+
 **15.25 Record lifecycle event - Verify**
+
+_**Identity/Accountability Context**_
 * <div id="publish-box">(cc1) SHALL Who - Record Entry Subject - Individual Subject of Care ID</div>
 * <div id="publish-box">(cc2) SHALL Who - Accountable Health/care Party(ies), if applicable:</div>
 * (cc3) SHOULD - Digital Signature
@@ -709,6 +777,15 @@ _Please see the [Guidance - RLE Mapping] page for specific guidance on mapping t
 * <div id="publish-box">(cc21) SHALL Where - Record Entry physical location, point of verification</div>
 * <div id="publish-box">(cc22) SHALL Where - network address</div>
 * (cc23) SHOULD Why - rationale or purpose for Record Entry verification
+
+_**Data Integrity Context**_
+* [As captured in Section [15.1.1 DIC](#ggccref1)]
+
+_**Clinical Context**_
+* [As captured in Section [15.1.1 CLC](#ggccref2)]
+
+_**Administrative/Operational Context**_
+* [As captured in Section [15.1.1 AOC](#ggccref3)]
 
 ---
 

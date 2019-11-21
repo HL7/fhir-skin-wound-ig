@@ -598,9 +598,9 @@ _**Identity/Accountability Context**_
 
 _**Data Integrity Context**_<a name="ggccref1"><sup>DIC</sup></a>
 * <div id="publish-box">(dic1) If applicable - Purpose of data/record record capture</div>
-* (dic2) If applicable - Purpose of data/record use: fitness, suitability, relevance
+* <div id="publish-box">(dic2) If applicable - Purpose of data/record use: fitness, suitability, relevance</div>
 * (dic3) If applicable - Evidence of data/record provenance
-* (dic4) If applicable - Measures and rules to ensure accuracy, continuity, consistency, completeness: of the health record and record entry
+* <div id="publish-box">(dic4) If applicable - Measures and rules to ensure accuracy, continuity, consistency, completeness: of the health record and record entry</div>
 
 _**Clinical Context**_<a name="ggccref2"><sup>CLC</sup></a>
 * (clc1) If applicable - Action - clinical purpose, rationale

@@ -4,7 +4,7 @@
   <meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
   </meta>
-  <url value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundExudateColorVS"/>
+  <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/ValueSet/woundExudateColorVS"/>
     <version value="0.01"/>
     <name value="WoundExudateColorValueSet"/>
     <status value="draft"/>

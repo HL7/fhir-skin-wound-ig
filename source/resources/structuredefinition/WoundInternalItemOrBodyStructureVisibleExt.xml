@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="WoundInternalItemOrBodyStructureVisibleExt"/>
-  <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundInternalItemOrBodyStructureVisibleExt"/>
+  <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundInternalItemOrBodyStructureVisibleExt"/>
   <version value="2.0.0"/>
   <name value="WoundInternalItemOrBodyStructureVisibleextension"/>
   <status value="draft"/>
@@ -13,7 +13,7 @@
   <abstract value="false"/>
   <context>
 	<type value="element"/>
-	<expression value="StructureDefinition"/>
+	<expression value="Condition"/>
   </context>
   <mapping>
 	<uri value="http://loinc.org/89250-5"/>
@@ -33,7 +33,7 @@
     </element>
     <element id="Extension:WoundInternalItemOrBodyStructureVisibleExt.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundInternalItemOrBodyStructureVisibleExt"/>
+      <fixedUri value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundInternalItemOrBodyStructureVisibleExt"/>
     </element>
     <element id="Extension:WoundInternalItemOrBodyStructureVisibleExt.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>
@@ -43,7 +43,7 @@
       </type>
         <binding>
             <strength value="preferred"/>
-            <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundInternalItemOrBodyStructureVisibleVS"/>
+            <valueSet value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/ValueSet/woundInternalItemOrBodyStructureVisibleVS"/>
         </binding>
     </element>
   </differential>

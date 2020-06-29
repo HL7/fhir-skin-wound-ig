@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
     <id value="WoundExudateAssert"/>
-    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudateAssert"/>
+    <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundExudateAssert"/>
     <version value="2.0.0"/>
     <name value="WoundExudateAssert"/>
     <status value="draft"/>
@@ -13,7 +13,7 @@
     <kind value="complex-type"/>
     <abstract value="false"/>
     <type value="Condition"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Condition:cimiWoundExudateAssert">
@@ -21,6 +21,61 @@
 			<short value="Wound Exudate Assert"/>
             <definition value="Wound Exudate Assert is an assertion model used when the condition exists. Wound exudate is the presence of fluid drainage."/>
         </element>
+		<element id="Condition:cimiWoundExudateAssert.extension:woundExudateAppearanceExt">
+			<path value="Condition.extension"/>
+			<sliceName value="woundExudateAppearanceExt"/>
+			<short value="Wound Exudate Appearance Ext"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundExudateAppearanceExt"/>
+			</type>
+		</element>
+		<element id="Condition:cimiWoundExudateAssert.extension:woundExudateColorExt">
+			<path value="Condition.extension"/>
+			<sliceName value="woundExudateColorExt"/>
+			<short value="Wound Exudate Color Ext"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundExudateColorExt"/>
+			</type>
+		</element>
+		<element id="Condition:cimiWoundExudateAssert.extension:woundExudateOdorExt">
+			<path value="Condition.extension"/>
+			<sliceName value="woundExudateOdorExt"/>
+			<short value="Wound Exudate Odor Ext"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundExudateOdorExt"/>
+			</type>
+		</element>
+		<element id="Condition:cimiWoundExudateAssert.extension:woundExudateVolumeExt">
+			<path value="Condition.extension"/>
+			<sliceName value="woundExudateVolumeExt"/>
+			<short value="Wound Exudate Volume Ext"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundExudateVolumeExt"/>
+			</type>
+		</element>
+		<element id="Condition:cimiWoundExudateAssert.extension:woundExudateAmountDescriptionExt">
+			<path value="Condition.extension"/>
+			<sliceName value="woundExudateAmountDescriptionExt"/>
+			<short value="Wound Exudate Amount Description Ext"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundExudateAmountDescriptionExt"/>
+			</type>
+		</element>
         <element id="Condition:cimiWoundExudateAssert.code">
             <path value="Condition.code"/>
             <short value="Wound Exudate"/>
@@ -44,72 +99,6 @@
 		<element id="Condition:cimiWoundExudateAssert.code.coding.display">
 			<path value="Condition.code.coding.display"/>
 			<fixedString value="Wound discharge"/>
-		</element>
-		<element id="Condition:cimiWoundExudateAssert.extension">
-			<path value="Condition.extension"/>
-            <slicing>
-                <discriminator>
-                    <type value="value"/>
-                    <path value="Condition.extension"/>
-                </discriminator>
-                <ordered value="false"/>
-                <rules value="open"/>
-            </slicing>
-		</element>
-		<element id="Condition:cimiWoundExudateAssert.extension:woundExudateAmountDescription">
-			<path value="Condition.extension"/>
-			<sliceName value="woundExudateAmountDescription"/>
-			<short value="Wound Exudate Amount Description"/>
-            <min value="0"/>
-            <max value="*"/>
-            <type>
-                <code value="Reference"/>
-                <profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudateAmountDescription"/>
-            </type>
-		</element>
-		<element id="Condition:cimiWoundExudateAssert.extension:woundExudateAppearance">
-			<path value="Condition.extension"/>
-			<sliceName value="woundExudateAppearance"/>
-			<short value="Wound Exudate Apprearance"/>
-            <min value="0"/>
-            <max value="*"/>
-            <type>
-                <code value="Reference"/>
-                <profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudateAppearance"/>
-            </type>
-		</element>
-		<element id="Condition:cimiWoundExudateAssert.extension:woundExudateColor">
-			<path value="Condition.extension"/>
-			<sliceName value="woundExudateColor"/>
-			<short value="Wound Exudate Color"/>
-            <min value="0"/>
-            <max value="*"/>
-            <type>
-                <code value="Reference"/>
-                <profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudateColor"/>
-            </type>
-		</element>
-		<element id="Condition:cimiWoundExudateAssert.extension:woundExudateOdor">
-			<path value="Condition.extension"/>
-			<sliceName value="woundExudateOdor"/>
-			<short value="Wound Exudate Odor"/>
-            <min value="0"/>
-            <max value="*"/>
-            <type>
-                <code value="Reference"/>
-                <profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudateOdor"/>
-            </type>
-		</element>
-		<element id="Condition:cimiWoundExudateAssert.extension:woundExudateVolume">
-			<path value="Condition.extension"/>
-			<sliceName value="woundExudateVolume"/>
-			<short value="Wound Exudate Volume"/>
-            <min value="0"/>
-            <max value="*"/>
-            <type>
-                <code value="Reference"/>
-                <profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudateVolume"/>
-            </type>
 		</element>
     </differential>
 </StructureDefinition>

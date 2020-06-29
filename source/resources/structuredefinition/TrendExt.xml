@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="TrendExt"/>
-  <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/TrendExt"/>
+  <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/TrendExt"/>
   <version value="2.0.0"/>
   <name value="Trend"/>
   <status value="draft"/>
@@ -13,7 +13,7 @@
   <abstract value="false"/>
   <context>
 	<type value="element"/>
-	<expression value="StructureDefinition"/>
+	<expression value="Condition"/>
   </context>
   <mapping>
 	<identity value="2"/>
@@ -34,7 +34,7 @@
     </element>
     <element id="Extension:TrendExt.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/TrendExt"/>
+      <fixedUri value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/TrendExt"/>
     </element>
     <element id="Extension:TrendExt.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>
@@ -44,7 +44,7 @@
       </type>
         <binding>
             <strength value="preferred"/>
-            <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/trendVS"/>
+            <valueSet value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/ValueSet/trendVS"/>
         </binding>
     </element>
   </differential>

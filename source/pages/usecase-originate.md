@@ -16,13 +16,13 @@ us_r4: http://hl7.org/fhir/us/core/
 
 ##  Introduction
 
-### Wound Assessment Template (WAT) Scenario - Use Case - Originate and Retain (null), then Amend (populate with clinical content).
+### Wound Assessment and Treatment Template (WATT) Scenario - Use Case - Originate and Retain (null), then Amend (populate with clinical content).
 
 Demonstrate how an EHR actor incorporates the [FHIR Record Lifecycle Event (RLE) Implementation Guide (IG)](http://hl7.org/fhir/R4/ehrsrle/ehrsrle.html) processing of the Originate/Retain and Amend Record Content events when first recording the Wound Assessement Template data.
 
 The focus of this use case is the verification and validation of recording and storage of the FHIR Record Lifecycle Event data represented by the FHIR Resource Types of [AuditEvent](http://hl7.org/fhir/R4/ehrsrle/ehrsrle-auditevent.html) and [US Core Provenance (R4)].
 
-* This represents the first trial definition of incorporating the RLE Originate and Retain event and RLE Amend event into the the WAT data creation. This is the simplest way for the local system to demonstrate that the "populate with clinical content" step began from an "all null clinical content" state. This also establishes that the null-state template may pre-exist on the local system for any interval (seconds to years) prior to its "Amend" to add an instance of assessment.
+* This represents the first trial definition of incorporating the RLE Originate and Retain event and RLE Amend event into the the WATT data creation. This is the simplest way for the local system to demonstrate that the "populate with clinical content" step began from an "all null clinical content" state. This also establishes that the null-state template may pre-exist on the local system for any interval (seconds to years) prior to its "Amend" to add an instance of assessment.
 * For future work, we may identify the complexity of demonstrating that the null-state version could be empty also of patient demographics, thus the null state could be used as the initial state for all subsequent patient-specific captures as Amend events to the all-null original.
 
 <p>&nbsp;</p>
@@ -53,11 +53,11 @@ This use case defines the FHIR Record Lifecycle Event processes performed by an 
 The following is the expected behavior of the EHR actor system when implementing the _FHIR RLE Events_ when first recording the Wound Assessment Template data:
 
 **_1. Originate/Retain Record Entry_**
-The creation of the the Wound Assessment Template (WAT) data as _empty_ FHIR resource instances of
+The creation of the the Wound Assessment and Treatment Template (WATT) data as _empty_ FHIR resource instances of
 * The [WoundAssert Condition (R4)] profiled **Condition**
 * The [WoundRelatedObservationsPanel Observation (R4)] profiled **Observation**
   * The various Wound profiled related **Observations**
-* <div id="publish-box">Clarification - the <i>empty</i> WAT FHIR resource are expected to be minimally populated where only mandatory/required elements are assigned with known or default values. Please see the example resources in the section <i>1. Originate/Retain Record Entry</i> below.</div>
+* <div id="publish-box">Clarification - the <i>empty</i> WATT FHIR resource are expected to be minimally populated where only mandatory/required elements are assigned with known or default values. Please see the example resources in the section <i>1. Originate/Retain Record Entry</i> below.</div>
 
 **_2. Evidence of Originate/Retain Record Entry_**
 The creation of the corresponding FHIR RLE [AuditEvent](http://hl7.org/fhir/R4/ehrsrle/ehrsrle-auditevent.html) and [US Core Provenance (R4)] resources related to #1.
@@ -73,8 +73,8 @@ The creation of the corresponding FHIR RLE [AuditEvent](http://hl7.org/fhir/R4/e
 
 <p>&nbsp;</p>
 
-### WAT Data Storage
-The expectation for the EHR actor system is that all of the above RLE processes will be implemented as a single transaction. This will result in the EHR actor's (FHIR) data repository storing two (2) versions the WAT data FHIR resources:
+### WATT Data Storage
+The expectation for the EHR actor system is that all of the above RLE processes will be implemented as a single transaction. This will result in the EHR actor's (FHIR) data repository storing two (2) versions the WATT data FHIR resources:
 * #1 - empty created version 1 instances, then
 * #3 - the updated current version 2 instances
 
@@ -82,14 +82,14 @@ The expectation for the EHR actor system is that all of the above RLE processes 
 
 ### RLE Data Storage
 The expectation here is that the generated RLE data FHIR instances will be:
-* #2 - one [AuditEvent](http://hl7.org/fhir/R4/ehrsrle/ehrsrle-auditevent.html) and one [US Core Provenance (R4)] instance for each corresponding WAT data FHIR resource created, and
-* #4 - one [AuditEvent](http://hl7.org/fhir/R4/ehrsrle/ehrsrle-auditevent.html) and one [US Core Provenance (R4)] instance for each corresponding WAT data FHIR resource updated
+* #2 - one [AuditEvent](http://hl7.org/fhir/R4/ehrsrle/ehrsrle-auditevent.html) and one [US Core Provenance (R4)] instance for each corresponding WATT data FHIR resource created, and
+* #4 - one [AuditEvent](http://hl7.org/fhir/R4/ehrsrle/ehrsrle-auditevent.html) and one [US Core Provenance (R4)] instance for each corresponding WATT data FHIR resource updated
 
 <p>&nbsp;</p>
 
 ### Data Examples
 
-Example FHIR resource instances illustrating the expected contents of the WAT and RLE data (FHIR resource instances) the EHR actor system will store after each of the _FHIR RLE Events_:
+Example FHIR resource instances illustrating the expected contents of the WATT and RLE data (FHIR resource instances) the EHR actor system will store after each of the _FHIR RLE Events_:
 
 **_1. Originate/Retain Record Entry_**
 - [Condition-skinwoundassert-originate](Condition-skinwoundassert-originate.html)
@@ -126,9 +126,9 @@ Example FHIR resource instances illustrating the expected contents of the WAT an
 <p>&nbsp;</p>
 
 ## Validation Test Details
-**Validation of Wound Assessment Template (WAT) data**
+**Validation of Wound Assessment and Treatment Template (WATT) data**
 
-_See [Use Case - Search](usecase-search.html): Query and retrieval of the Wound Assessment Template (WAT) data_
+_See [Use Case - Search](usecase-search.html): Query and retrieval of the Wound Assessment and Treatment Template (WATT) data_
 
 **Validation for Evidence of FHIR Record Lifecycle Event data**
 
@@ -163,7 +163,7 @@ Accept: application/fhir+xml or application/fhir+json
 ```
 
 **Action 1b (Test Step):**
-Origin system executes a FHIR Search Interaction for the RLE [AuditEvent](http://hl7.org/fhir/R4/ehrsrle/ehrsrle-auditevent.html) or [US Core Provenance (R4)] resources matching a specific Patient id, date and WAT resource type to the destination system
+Origin system executes a FHIR Search Interaction for the RLE [AuditEvent](http://hl7.org/fhir/R4/ehrsrle/ehrsrle-auditevent.html) or [US Core Provenance (R4)] resources matching a specific Patient id, date and WATT resource type to the destination system
 ```
 GET [base]/AuditEvent?patient=[Patient id]&date=[YYYY-MM-DD]&entity-type=Condition
 

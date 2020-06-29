@@ -4,7 +4,7 @@ layout: default
 active: terminology
 ---
 
-This page lists all the CodeSystems, ValueSets, and ConceptMaps defined as part of the Skin Wound Assessment implementation Guide. For more information on using codes in resources, see the the [FHIR specification]({{site.data.fhir.path}}terminologies.html).
+This page lists all the CodeSystems, ValueSets, and ConceptMaps defined as part of the Lower Extremity Skin Wound Assessment implementation Guide. For more information on using codes in resources, see the the [FHIR specification]({{site.data.fhir.path}}terminologies.html).
 
 ## Code Systems
 

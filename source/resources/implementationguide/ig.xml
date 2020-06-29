@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Hidden IG for de facto IG publishing-->
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-	<id value="skinwoundassessment"/>
-	<url value="http://hl7.org/fhir/us/skinwoundassessment/ImplementationGuide/skinwoundassessment"/>
+	<id value="lower-extremity-skin-wound-assessment"/>
+	<url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/ImplementationGuide/lower-extremity-skin-wound-assessment"/>
 	<version value="0.1.0"/>
-	<name value="SkinWoundAssessment"/>
-	<title value="FHIR Skin Wound Assessment"/>
+	<name value="LowerExtremitySkinWoundAssessmentIG"/>
+	<title value="Lower Extremity Skin Wound Assessment - IG"/>
 	<status value="active"/>
 	<publisher value="HL7 International - Electronic Health Records Work Group"/>
 	<contact>
@@ -17,7 +17,7 @@
 	</contact>
 	<copyright value="Used by permission of HL7 International, all rights reserved Creative Commons License"/>
 	<!-- 0..1 Use and/or publishing restrictions -->
-	<packageId value="hl7.fhir.us.skinwoundassessment"/>
+	<packageId value="hl7.fhir.us.lower-extremity-skin-wound-assessment"/>
 	<!-- 0..1 NPM Package name for IG -->
 	<license value="CC0-1.0"/>
 	<!--*****HARDCODED********* 0..1 SPDX license code for this IG (or not-open-source) -->
@@ -231,6 +231,90 @@
 				<reference value="StructureDefinition/WoundRelatedObservationsPanelExt"/>
 			</reference>
 			<description value="Wound Related Observations Panel Extension"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/WoundTunnelingAssertExt"/>
+			</reference>
+			<description value="Wound Tunneling Assert Extension"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/WoundTunnelingDirectionExt"/>
+			</reference>
+			<description value="Wound Tunneling Direction Extension"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/WoundTunnelingLengthExt"/>
+			</reference>
+			<description value="Wound Tunneling Length Extension"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/WoundUnderminingAssertExt"/>
+			</reference>
+			<description value="Wound Undermining Assert Extension"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/WoundUnderminingDirectionExt"/>
+			</reference>
+			<description value="Wound Undermining Direction Extension"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/WoundUnderminingLengthExt"/>
+			</reference>
+			<description value="Wound Undermining Length Extension"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/WoundExudateAssertExt"/>
+			</reference>
+			<description value="Wound Exudate Assert Extension"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/WoundExudateAmountDescriptionExt"/>
+			</reference>
+			<description value="Wound Exudate Amount Description Extension"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/WoundExudateAppearanceExt"/>
+			</reference>
+			<description value="Wound Exudate Appearance Extension"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/WoundExudateColorExt"/>
+			</reference>
+			<description value="Wound Exudate Color Extension"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/WoundExudateOdorExt"/>
+			</reference>
+			<description value="Wound Exudate Odor Extension"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/WoundExudateVolumeExt"/>
+			</reference>
+			<description value="Wound Exudate Volume Extension"/>
 			<exampleBoolean value="false"/>
 		</resource>
 		<!--
@@ -685,13 +769,13 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="CapabilityStatement/skinwoundassessment-client"/>
+				<reference value="CapabilityStatement/lower-extremity-skin-wound-assessment-client"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
 		<resource>
 			<reference>
-				<reference value="CapabilityStatement/skinwoundassessment-server"/>
+				<reference value="CapabilityStatement/lower-extremity-skin-wound-assessment-server"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
@@ -981,12 +1065,12 @@
 				<title value="Conformance"/>
 				<generation value="markdown"/>
 				<page>
-					<nameUrl value="CapabilityStatement-skinwoundassessment-server.html"/>
+					<nameUrl value="CapabilityStatement-lower-extremity-skin-wound-assessment-server.html"/>
 					<title value="CapabilityStatement server"/>
 					<generation value="markdown"/>
 				</page>
 				<page>
-					<nameUrl value="CapabilityStatement-skinwoundassessment-client.html"/>
+					<nameUrl value="CapabilityStatement-lower-extremity-skin-wound-assessment-client.html"/>
 					<title value="CapabilityStatement client"/>
 					<generation value="markdown"/>
 				</page>

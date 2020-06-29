@@ -16,7 +16,7 @@ us_r4: http://hl7.org/fhir/us/core/
 
 ##  Introduction
 
-### Wound Assessment Template (WAT) Scenario - Use Case - Search.
+### Wound Assessment and Treatment Template (WATT) Scenario - Use Case - Search.
 
 <p>&nbsp;</p>
 
@@ -26,11 +26,11 @@ The following actors and FHIR interactions are part of this Use Case:
 
 * **Wound Assessment Registry (and Repository)**
   * _FHIR Interactions from other EHR actors_:
-    * read and search of WAT data
+    * read and search of WATT data
 
 * **EHR - Example: Primary Care Physician (PCP)**
   * _FHIR Interactions to Registry_:
-    * read and search of WAT data
+    * read and search of WATT data
 
 <p>&nbsp;</p>
 
@@ -44,15 +44,15 @@ This use case defines one or more FHIR search operations initiated by the EHR ac
 
 ## FHIR Search Interactions
 
-The first search interaction for the WAT retrieval will be based on the WAT profiled Condition resource type where the following search parameters will be incorporated:
+The first search interaction for the WATT retrieval will be based on the WATT profiled Condition resource type where the following search parameters will be incorporated:
 
-* **_profile** - The value will be fixed to the WAT profiled Condition resource type canonical URI "http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundAssert"
+* **_profile** - The value will be fixed to the WATT profiled Condition resource type canonical URI "http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundAssert"
 * **asserted-date** - Default to today's date
   * Specific date, default can be current date; or,
   * Date range where one or two instances of the search parameter are given with either the 'ge' (greater than or equal) or 'le' (less than or equal) prefixes
 * **patient** - (Optional, if known) Specific Patient.id reference
 
-The second search interaction for the WAT retrieval will be on the WAT profiled related Observation(s) referenced from the returned WAT Condition resources in the first search interaction where the follow search interactions will be incorportated:
+The second search interaction for the WATT retrieval will be on the WAT profiled related Observation(s) referenced from the returned WATT Condition resources in the first search interaction where the follow search interactions will be incorportated:
 
 * **_id** - The WAT related Observation wound panel resource id(s) returned from the first search
 * **_include:recurse** (WoundRelatedObservationsPanel) - Observation:related-target
@@ -63,20 +63,20 @@ The second search interaction for the WAT retrieval will be on the WAT profiled 
 
 _Specific date search_
 ```
-GET [base]/Condition?_profile=http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundAssert&asserted-date=2019-04-19&patient=1234
+GET [base]/Condition?_profile=http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundAssert&asserted-date=2019-04-19&patient=1234
 ```
 
 _Date range search_
 ```
-GET [base]/Condition?_profile=http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundAssert&asserted-date=ge2019-04-18&asserted-date=le2019-04-20&patient=1234
+GET [base]/Condition?_profile=http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundAssert&asserted-date=ge2019-04-18&asserted-date=le2019-04-20&patient=1234
 ```
 
 <p>&nbsp;</p>
 
 ## Implementation Details
-**EHR search for WAT data from Wound Assessment Registry (WAR)**
+**EHR search for WATT data from Wound Assessment Registry (WAR)**
 
-The process of a single EHR actor retrieving existing specific Skin Wound Assessment data from the Wound Assessment Registry (WAR) is done via a FHIR GET search operation that targets the Skin Wound Assessment conformant (profiled) Condition resource type. The search criteria will consist at a minimum of the Condition.meta.profile equal to the Skin Wound Assessment IG WoundAssert profile canonical URL and a targeted datetime range. An additional search result parameter for inclusion of the WoundRelatedObservationsPanel profiled Observation Resources will also be defined in the search criteria parameters. This _include result parameter will also have the :recurse modifier in insure all related Observations in the panel are returned.
+The process of a single EHR actor retrieving existing specific Lower Extremity Skin Wound Assessment data from the Wound Assessment Registry (WAR) is done via a FHIR GET search operation that targets the Lower Extremity Skin Wound Assessment conformant (profiled) Condition resource type. The search criteria will consist at a minimum of the Condition.meta.profile equal to the Lower Extremity Skin Wound Assessment IG WoundAssert profile canonical URL and a targeted datetime range. An additional search result parameter for inclusion of the WoundRelatedObservationsPanel profiled Observation Resources will also be defined in the search criteria parameters. This _include result parameter will also have the :recurse modifier in insure all related Observations in the panel are returned.
 
 The expectation is that the WAR will manage the wound data to insure there is no duplication of data. For example, if the targeted datetime ranges for muliple search interactions overlap, the WAR will examine each Resource returned to determine if that Resource has already been received from a prior search interaction. If a Resource is received and matches an existing Resource previously received, the WAR will either replace that Resource or perform a FHIR update (preferred) of the existing Resource.
 
@@ -94,17 +94,17 @@ _See [Use Case - Receive and Retain](usecase-receive.html)_
 If the destination system is pre-populated prior to the test execution with known test data, the setup step can be skipped. Otherwise, for automated testing, the testing platform can send the known test data to the destination system.
 
 **Action 1a (Test Step):**
-Origin system executes a FHIR Search Interaction for the Skin Wound Assessment Condition(s) matching a specific date and optional Patient to the destination system, or
+Origin system executes a FHIR Search Interaction for the Lower Extremity Skin Wound Assessment Condition(s) matching a specific date and optional Patient to the destination system, or
 ```
-GET [base]/Condition?_profile=http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundAssert&asserted-date=[YYYY-MM-DD]{&patient=[Patient id]}
+GET [base]/Condition?_profile=http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundAssert&asserted-date=[YYYY-MM-DD]{&patient=[Patient id]}
 
 Accept: application/fhir+xml or application/fhir+json
 ```
 
 **Action 1b (Test Step):**
-Origin system executes a FHIR Search Interaction for the WAT Condition(s) within a specific date range and optional Patient to the destination system
+Origin system executes a FHIR Search Interaction for the WATT Condition(s) within a specific date range and optional Patient to the destination system
 ```
-GET [base]/Condition?_profile=http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundAssert&asserted-date=ge[YYYY-MM-DD]&asserted-date=le[YYYY-MM-DD]{&patient=[Patient id]}
+GET [base]/Condition?_profile=http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundAssert&asserted-date=ge[YYYY-MM-DD]&asserted-date=le[YYYY-MM-DD]{&patient=[Patient id]}
 
 Accept: application/fhir+xml or application/fhir+json
 ```
@@ -115,13 +115,13 @@ Accept: application/fhir+xml or application/fhir+json
 * GET URL - verify expected search parameters in path
 * HTTP response code is 200 (OK)
 * HTTP response body is a FHIR Bundle Resource Type
-* Validate all returned Bundle.entry.resource contents declare profile conformance to Podiatry WAT IG
+* Validate all returned Bundle.entry.resource contents declare profile conformance to Lower Extremity Skin Wound Assessment IG
 * Validate returned Bundle against base FHIR specification Bundle profile (FHIR Validation Engine will perform individual validation of each Bundle.entry.resource using their declared profile conformance)
 
 **Action 2 (Test Step):**
-Origin system executes a FHIR Search Interaction for the WAT related Observation(s) for a WAT Condition retrieved in Action 1a or 1b to the destination system
+Origin system executes a FHIR Search Interaction for the WATT related Observation(s) for a WATT Condition retrieved in Action 1a or 1b to the destination system
 ```
-GET [base]/Observation?_include:recurse=Observation:related-target&_id=[WAT Condition id]
+GET [base]/Observation?_include:recurse=Observation:related-target&_id=[WATT Condition id]
 
 Accept: application/fhir+xml or application/fhir+json
 ```
@@ -132,7 +132,7 @@ Accept: application/fhir+xml or application/fhir+json
 * GET URL - verify expected search parameters in path
 * HTTP response code is 200 (OK)
 * HTTP response body is a FHIR Bundle Resource Type
-* Validate all returned Bundle.entry.resource contents declare profile conformance to Podiatry WAT IG
+* Validate all returned Bundle.entry.resource contents declare profile conformance to Lower Extremity Skin Wound Assessment IG
 * Validate returned Bundle against base FHIR specification Bundle profile (FHIR Validation Engine will perform individual validation of each Bundle.entry.resource using their declared profile conformance)
 
 <p>&nbsp;</p>

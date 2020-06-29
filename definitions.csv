@@ -2,11 +2,11 @@ Configuration Parameter,Configuration Value ( use '|' for lists)
 onlyJson,FALSE
 allviews,TRUE
 broken-links,warning
-canonicalBase,http://hl7.org/fhir/us/skinwoundassessment
+canonicalBase,http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment
 codesystems,
-dependencyList.location,http://hl7.org/fhir/us/core/2019Sep
+dependencyList.location,http://hl7.org/fhir/us/core
 dependencyList.name,uscore
-dependencyList.version,3.0.1
+dependencyList.version,3.1.0
 do-transforms,FALSE
 extensions,
 fixed-business-version,0.1.0
@@ -16,7 +16,7 @@ jurisdiction,US
 logging,progress
 mappings,FALSE
 no-inactive-codes,FALSE
-npm-name,hl7.fhir.us.skinwoundassessment
+npm-name,hl7.fhir.us.lower-extremity-skin-wound-assessment
 paths.output,output
 paths.pages,framework|source/pages
 paths.qa,generated_output/qa
@@ -24,7 +24,7 @@ paths.resources,source/resources|source/examples
 paths.specification,http://hl7.org/fhir/R4
 paths.temp,generated_output/temp
 paths.txCache,generated_output/txCache
-paths.history,http://hl7.org/fhir/us/skinwoundassessment/history.html
+paths.history,http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/history.html
 publisher,HL7 International - Electronic Health Records Work Group
 contact.system,url
 contact.value,https://confluence.hl7.org/display/EHR/Electronic+Health+Records+Work+Group
@@ -34,7 +34,7 @@ source,implementationguide/ig.xml
 special-urls,
 status,draft
 structuremaps,
-title,FHIR Skin Wound Assessment
+title,Lower Extremity Skin Wound Assessment
 tool,jekyll
 topofpage,TRUE
 valuesets,

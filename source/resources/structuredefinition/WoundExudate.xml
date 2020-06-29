@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
     <id value="WoundExudate"/>
-    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudate"/>
+    <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundExudate"/>
     <name value="Wound Exudate"/>
     <status value="draft"/>
     <date value="2019-06-19"/>
@@ -46,7 +46,7 @@
             </type>
 			<binding>
                 <strength value="preferred"/>
-                <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/presentAbsentVS"/>
+                <valueSet value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/ValueSet/presentAbsentVS"/>
             </binding>
         </element>
 		<element id="Observation:hspcwoundExudate.related">
@@ -77,7 +77,7 @@
 			<path value="Observation.related.target"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudateAmountDescription"/>
+				<targetProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundExudateAmountDescription"/>
 			</type>
 		</element>
 		<element id="Observation:hspcwoundExudate.related:woundExudateAppearance">
@@ -95,7 +95,7 @@
 			<path value="Observation.related.target"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudateAppearance"/>
+				<targetProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundExudateAppearance"/>
 			</type>
 		</element>
 		<element id="Observation:hspcwoundExudate.related:woundExudateColor">
@@ -113,7 +113,7 @@
 			<path value="Observation.related.target"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudateColor"/>
+				<targetProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundExudateColor"/>
 			</type>
 		</element>
 		<element id="Observation:hspcwoundExudate.related:woundExudateOdor">
@@ -131,7 +131,7 @@
 			<path value="Observation.related.target"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudateOdor"/>
+				<targetProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundExudateOdor"/>
 			</type>
 		</element>
 		<element id="Observation:hspcwoundExudate.related:woundExudateVolume">
@@ -149,7 +149,7 @@
 			<path value="Observation.related.target"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudateVolume"/>
+				<targetProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundExudateVolume"/>
 			</type>
 		</element>
     </differential>

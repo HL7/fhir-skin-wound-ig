@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="DistanceFromLandmarkExt"/>
-  <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/DistanceFromLandmarkExt"/>
+  <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/DistanceFromLandmarkExt"/>
   <version value="2.0.0"/>
   <name value="DistanceFromLandmark"/>
   <status value="draft"/>
@@ -13,7 +13,7 @@
   <abstract value="false"/>
   <context>
 	<type value="element"/>
-	<expression value="StructureDefinition"/>
+	<expression value="Extension"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -31,7 +31,7 @@
       <sliceName value="DeviceExt"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/DeviceExt"/>
+        <profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/DeviceExt"/>
       </type>
     </element>
     <element id="Extension:DistanceFromLandmarkExt.extension:DistanceFromLandmarkMeasurementExt">
@@ -39,12 +39,12 @@
       <sliceName value="MeasurementDeviceExt"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/DistanceFromLandmarkMeasurementExt"/>
+        <profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/DistanceFromLandmarkMeasurementExt"/>
       </type>
     </element>
     <element id="Extension:DistanceFromLandmarkExt.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/DistanceFromLandmarkExt"/>
+      <fixedUri value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/DistanceFromLandmarkExt"/>
     </element>
     <element id="Extension:DistanceFromLandmarkExt.value[x]">
       <path value="Extension.value[x]"/>

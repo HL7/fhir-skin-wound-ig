@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
     <id value="WoundGradation"/>
-    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundGradation"/>
+    <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundGradation"/>
     <name value="Wound Gradation"/>
     <status value="draft"/>
     <date value="2019-06-19"/>
@@ -28,7 +28,7 @@
             </type>
             <binding>
                 <strength value="preferred"/>
-                <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundGradationVS"/>
+                <valueSet value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/ValueSet/woundGradationVS"/>
             </binding>
         </element>
     </differential>

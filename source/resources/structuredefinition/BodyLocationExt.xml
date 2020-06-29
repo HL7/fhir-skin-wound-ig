@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="BodyLocationExt"/>
-  <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodyLocationExt"/>
+  <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/BodyLocationExt"/>
   <version value="2.0.0"/>
   <name value="BodyLocationExtension"/>
   <status value="draft"/>
@@ -13,7 +13,7 @@
   <abstract value="false"/>
   <context>
 	<type value="element"/>
-	<expression value="StructureDefinition"/>
+	<expression value="Condition"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -26,22 +26,13 @@
       <max value="1"/>
       <isModifier value="false"/>
     </element>
-    <element id="Extension:BodyLocationExt.url">
-      <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodyLocationExt"/>
-    </element>
-	<element id="Extension:BodyLocationExt.value">
-		<path value="Extension.value[x]"/>
-		<min value="0"/>
-		<max value="0"/>
-	</element>
 	<element id="Extension:BodyLocationExt.extension:AnatomicLocation">
 		<path value="Extension.extension"/>
 		<sliceName value="PrecoordinatedAnitomicLocation"/>
 		<short value="Precoordinated Anitomic Location"/>
 		<type>
 			<code value="Extension"/>
-			<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/AnatomicLocationExt"/>
+			<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/AnatomicLocationExt"/>
 		</type>
 	</element>
 	<element id="Extension:BodyLocationExt.extension:BodySide">
@@ -50,7 +41,7 @@
 		<short value="Body Side"/>
 		<type>
 			<code value="Extension"/>
-			<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodySideExt"/>
+			<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/BodySideExt"/>
 		</type>
 	</element>
 	<element id="Extension:BodyLocationExt.extension:BodyLocationOrientation">
@@ -59,7 +50,7 @@
 		<short value="Body Location Orientation"/>
 		<type>
 			<code value="Extension"/>
-			<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodyLocationOrientationExt"/>
+			<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/BodyLocationOrientationExt"/>
 		</type>
 	</element>
 	<element id="Extension:BodyLocationExt.extension:UnderlyingAnatomicalStructure">
@@ -68,7 +59,7 @@
 		<short value="Underlying Anatomical Structure"/>
 		<type>
 			<code value="Extension"/>
-			<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/UnderlyingAnatomicalStructureExt"/>
+			<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/UnderlyingAnatomicalStructureExt"/>
 		</type>
 	</element>
 	<element id="Extension:BodyLocationExt.extension:BodyLandmarkOrientation">
@@ -77,7 +68,7 @@
 		<short value="Body Landmark Orientation"/>
 		<type>
 			<code value="Extension"/>
-			<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodyLandmarkOrientationExt"/>
+			<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/BodyLandmarkOrientationExt"/>
 		</type>
 	</element>
 	<element id="Extension:BodyLocationExt.extension:BodyLocationQualifier">
@@ -86,8 +77,17 @@
 		<short value="Body Location Qualifier"/>
 		<type>
 			<code value="Extension"/>
-			<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodyLocationQualifierExt"/>
+			<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/BodyLocationQualifierExt"/>
 		</type>
+	</element>
+    <element id="Extension:BodyLocationExt.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/BodyLocationExt"/>
+    </element>
+	<element id="Extension:BodyLocationExt.value">
+		<path value="Extension.value[x]"/>
+		<min value="0"/>
+		<max value="0"/>
 	</element>
   </differential>
 </StructureDefinition>

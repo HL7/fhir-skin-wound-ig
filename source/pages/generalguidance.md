@@ -7,7 +7,7 @@ r4: http://hl7.org/fhir/R4/
 us_r4: http://hl7.org/fhir/us/core/
 ---
 
-This section outlines important definitions and interpretations and requirements common to all Skin Wound Assessment actors used in this guide.
+This section outlines important definitions and interpretations and requirements common to all Lower Extremity Skin Wound Assessment actors used in this guide.
 
 The conformance verbs used are defined in [FHIR Conformance Rules].
 
@@ -31,18 +31,18 @@ See Managing Multiple FHIR Versions - [Mime Type Parameter](http://hl7.org/fhir/
 
 ## Use Case Guidance
 
-The Use Case definitions represent descrete portions of functionality within a given EHR actor system and/or Wound Assessment Registry (WAR) actor system complete workflow in capturing Wound Assessment Template data. This specificity provides the implementer with a more focused representation of the needed functionality within their given system.
+The Use Case definitions represent descrete portions of functionality within a given EHR actor system and/or Wound Assessment Registry (WAR) actor system complete workflow in capturing Wound Assessment and Treatment Template (WATT) data. This specificity provides the implementer with a more focused representation of the needed functionality within their given system.
 
 Please refer to each Use Case definition page for specific guidance:
 
-1. [Use Case - Originate and Retain (null), then Amend (populate with clinical content)](usecase-originate.html): FHIR Record Lifecycle Event (RLE) Originate and Retain, and Amend in relation to the initial creation of the Wound Assessment Template (WAT) data as empty templates and then fully populated instances in an EHR actor system
-  * This represents the first trial definition of incorporating the RLE Originate and Retain event and RLE Amend event into the the WAT data creation. This is the simplest way for the local system to demonstrate that the "populate with clinical content" step began from an "all null clinical content" state. This also establishes that the null-state template may pre-exist on the local system for any interval (seconds to years) prior to its "Amend" to add an instance of assessment.
+1. [Use Case - Originate and Retain (null), then Amend (populate with clinical content)](usecase-originate.html): FHIR Record Lifecycle Event (RLE) Originate and Retain, and Amend in relation to the initial creation of the Wound Assessment and Treatment Template (WATT) data as empty templates and then fully populated instances in an EHR actor system
+  * This represents the first trial definition of incorporating the RLE Originate and Retain event and RLE Amend event into the the WATT data creation. This is the simplest way for the local system to demonstrate that the "populate with clinical content" step began from an "all null clinical content" state. This also establishes that the null-state template may pre-exist on the local system for any interval (seconds to years) prior to its "Amend" to add an instance of assessment.
   * For future work, we may identify the complexity of demonstrating that the null-state version could be empty also of patient demographics, thus the null state could be used as the initial state for all subsequent patient-specific captures as Amend events to the all-null original.
 
 
-2. [Use Case - Receive and Retain](usecase-receive.html): FHIR Record Lifecycle Event (RLE) Receive and Retain in relation to the sending of Wound Assessment Template (WAT) data from an EHR actor system to a Wound Assessement Registry (WAR) actor system
+2. [Use Case - Receive and Retain](usecase-receive.html): FHIR Record Lifecycle Event (RLE) Receive and Retain in relation to the sending of Wound Assessment and Treatment Template (WATT) data from an EHR actor system to a Wound Assessement Registry (WAR) actor system
 
-3. [Use Case - Search](usecase-search.html): Query and retrieval of the Wound Assessment Template (WAT) data from either an EHR actor system or Wound Assessement Registry (WAR) actor system
+3. [Use Case - Search](usecase-search.html): Query and retrieval of the Wound Assessment and Treatment Template (WATT) data from either an EHR actor system or Wound Assessement Registry (WAR) actor system
 
 <br />
 
@@ -71,9 +71,9 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 	<tr>
 		<td>Provenance.agent : 1..*</td>
 		<td>
-			type: CodeableConcept 0..1 &laquo; ProvenanceParticipantType+ &raquo;
+			type: CodeableConcept 0..1 &lArr; ProvenanceParticipantType+ &rArr;
 			<br />
-			role: CodeableConcept 0..* &laquo; SecurityRoleType+ &raquo;
+			role: CodeableConcept 0..* &lArr; SecurityRoleType+ &rArr;
 			<br />
 			who: Reference (Organization) 1..1
 			<br />
@@ -83,9 +83,9 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 	<tr>
 		<td>AuditEvent.agent : 1..*</td>
 		<td>
-			type: CodeableConcept 0..1 &laquo; ParticipationRoleType &raquo;
+			type: CodeableConcept 0..1 &lArr; ParticipationRoleType &rArr;
 			<br />
-			role: CodeableConcept 0..* &laquo; SecurityRoleCode &raquo;
+			role: CodeableConcept 0..* &lArr; SecurityRoleCode &rArr;
 			<br />
 			who: Resource(Organization) 0..1
 			<br />
@@ -100,9 +100,9 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 	<tr>
 		<td>Provenance.agent : 1..*</td>
 		<td>
-			type: CodeableConcept 0..1 &laquo; ProvenanceParticipantType+ &raquo;
+			type: CodeableConcept 0..1 &lArr; ProvenanceParticipantType+ &rArr;
 			<br />
-			role: CodeableConcept 0..* &laquo; SecurityRoleType+ &raquo;
+			role: CodeableConcept 0..* &lArr; SecurityRoleType+ &rArr;
 			<br />
 			who: Reference (Patient) 1..1
 			<br />
@@ -112,9 +112,9 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 	<tr>
 		<td>AuditEvent.agent : 1..*</td>
 		<td>
-			type: CodeableConcept 0..1 &laquo; ParticipationRoleType &raquo;
+			type: CodeableConcept 0..1 &lArr; ParticipationRoleType &rArr;
 			<br />
-			role: CodeableConcept 0..* &laquo; SecurityRoleCode &raquo;
+			role: CodeableConcept 0..* &lArr; SecurityRoleCode &rArr;
 			<br />
 			who: Resource(Patient) 0..1
 			<br />
@@ -132,9 +132,9 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 	<tr>
 		<td>Provenance.agent : 1..*</td>
 		<td>
-			type: CodeableConcept 0..1 &laquo; ProvenanceParticipantType+ &raquo;
+			type: CodeableConcept 0..1 &lArr; ProvenanceParticipantType+ &rArr;
 			<br />
-			role: CodeableConcept 0..* &laquo; SecurityRoleType+ &raquo;
+			role: CodeableConcept 0..* &lArr; SecurityRoleType+ &rArr;
 			<br />
 			who: Reference (Practitioner|PractitionerRole|RelatedPerson|Patient|Device|Organization) 1..1
 			<br />
@@ -144,9 +144,9 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 	<tr>
 		<td>AuditEvent.agent : 1..*</td>
 		<td>
-			type: CodeableConcept 0..1 &laquo; ParticipationRoleType &raquo;
+			type: CodeableConcept 0..1 &lArr; ParticipationRoleType &rArr;
 			<br />
-			role: CodeableConcept 0..* &laquo; SecurityRoleCode &raquo;
+			role: CodeableConcept 0..* &lArr; SecurityRoleCode &rArr;
 			<br />
 			who: Resource(PractitionerRole|Practitioner|Organization|Device|Patient|RelatedPerson) 0..1
 			<br />
@@ -161,9 +161,9 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 	<tr>
 		<td>Provenance.agent : 1..*</td>
 		<td>
-			type: CodeableConcept 0..1 &laquo; ProvenanceParticipantType+ &raquo;
+			type: CodeableConcept 0..1 &lArr; ProvenanceParticipantType+ &rArr;
 			<br />
-			role: CodeableConcept 0..* &laquo; SecurityRoleType+ &raquo;
+			role: CodeableConcept 0..* &lArr; SecurityRoleType+ &rArr;
 			<br />
 			who: Reference (Device) 1..1
 			<br />
@@ -173,9 +173,9 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 	<tr>
 		<td>AuditEvent.agent : 1..*</td>
 		<td>
-			type: CodeableConcept 0..1 &laquo; ParticipationRoleType &raquo;
+			type: CodeableConcept 0..1 &lArr; ParticipationRoleType &rArr;
 			<br />
-			role: CodeableConcept 0..* &laquo; SecurityRoleCode &raquo;
+			role: CodeableConcept 0..* &lArr; SecurityRoleCode &rArr;
 			<br />
 			who: Resource(Device) 0..1
 			<br />
@@ -188,16 +188,16 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 	<tr>
 		<td rowspan="2">Action - Taken</td>
 		<td>Provenance</td>
-		<td>activity: CodeableConcept 0..1 &laquo; ProvenanceActivityType &raquo;</td>
+		<td>activity: CodeableConcept 0..1 &lArr; ProvenanceActivityType &rArr;</td>
 	</tr>
 	<tr>
 		<td>AuditEvent</td>
 		<td>
-			type: Coding 1..1 &laquo; AuditEventID+ &raquo;
+			type: Coding 1..1 &lArr; AuditEventID+ &rArr;
 			<br />
-			subtype: Coding 0..* &laquo; AuditEventSub-Type+ &raquo;
+			subtype: Coding 0..* &lArr; AuditEventSub-Type+ &rArr;
 			<br />
-			action: code 0..1 &laquo; AuditEventAction &raquo;
+			action: code 0..1 &lArr; AuditEventAction &rArr;
 		</td>
 	</tr>
 	<tr>
@@ -206,11 +206,11 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 		<td>
 			what: Reference(Any) 0..1
 			<br />
-			type: Coding 0..1 &laquo; AuditEventEventType &raquo;
+			type: Coding 0..1 &lArr; AuditEventEventType &rArr;
 			<br />
-			role: Coding 0..1 &laquo; AuditEventEventRole &raquo;
+			role: Coding 0..1 &lArr; AuditEventEventRole &rArr;
 			<br />
-			lifecycle: Coding 0..1 &laquo; ObjectLifecycleEvents &raquo;
+			lifecycle: Coding 0..1 &lArr; ObjectLifecycleEvents &rArr;
 		</td>
 	</tr>
 	<tr>
@@ -249,7 +249,7 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 			<br />
 			observer: Reference (Organization) 1..1
 			<br />
-			type: Coding 0..* &laquo; AuditEventSourceType &raquo;
+			type: Coding 0..* &lArr; AuditEventSourceType &rArr;
 		</td>
 	</tr>
 	<tr>
@@ -262,7 +262,7 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 		<td>
 			address : string 0..1
 			<br />
-			type : code 0..1 &laquo; AuditEventAgentNetworkType &raquo;
+			type : code 0..1 &lArr; AuditEventAgentNetworkType &rArr;
 		</td>
 	</tr>
 	<tr>
@@ -275,7 +275,7 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 	</tr>
 	<tr>
 		<td>AuditEvent.agent : 1..*</td>
-		<td>purposeOfUse : CodeableConcept 0..* &laquo; v3.PurposeOfUse &raquo;</td>
+		<td>purposeOfUse : CodeableConcept 0..* &lArr; v3.PurposeOfUse &rArr;</td>
 	</tr>
 	<tr>
 		<td rowspan="2">Record - Reason, Rationale, Purpose</td>
@@ -288,7 +288,7 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 	</tr>
 	<tr>
 		<td>AuditEvent</td>
-		<td>purposeOfEvent : CodeableConcept 0..* &laquo; v3.PurposeOfUse &raquo;</td>
+		<td>purposeOfEvent : CodeableConcept 0..* &lArr; v3.PurposeOfUse &rArr;</td>
 	</tr>
 	<tr>
 		<td colspan="3" valign="top" style="background:#C6D9F1">Additional Evidentiary Metadata, as applicable</td>
@@ -327,7 +327,7 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 			<span style="color:blue">one per Record Entry</span>
 		</td>
 		<td>
-			role : code 0..1 &laquo; ProvenanceEntityRole &raquo;
+			role : code 0..1 &lArr; ProvenanceEntityRole &rArr;
 			<br />
 			what : Reference(Any) 1..1
 			<br />
@@ -343,9 +343,9 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 		<td>
 			what : Reference(Any) 0..1
 			<br />
-			type : Coding 0..1 &laquo; AuditEventEventType &raquo;
+			type : Coding 0..1 &lArr; AuditEventEventType &rArr;
 			<br />
-			role : Coding 0..1 &laquo; AuditEventEventRole &raquo;
+			role : Coding 0..1 &lArr; AuditEventEventRole &rArr;
 		</td>
 	</tr>
 	<tr>
@@ -356,7 +356,7 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 			<span style="color:blue">one per linked Record Entry</span>
 		</td>
 		<td>
-			role : code 1..1 &laquo; ProvenanceEntityRole &raquo;
+			role : code 1..1 &lArr; ProvenanceEntityRole &rArr;
 			<br />
 			what : Reference(Any) 1..1
 			<br />
@@ -372,9 +372,9 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 		<td>
 			what : Reference(Any) 0..1
 			<br />
-			type : Coding 0..1 &laquo; AuditEventEventType &raquo;
+			type : Coding 0..1 &lArr; AuditEventEventType &rArr;
 			<br />
-			role : Coding 0..1 &laquo; AuditEventEventRole &raquo;
+			role : Coding 0..1 &lArr; AuditEventEventRole &rArr;
 		</td>
 	</tr>
 	<tr>
@@ -385,7 +385,7 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 			<span style="color:blue">one for each Record Entry in sequence</span>
 		</td>
 		<td>
-			role : code 1..1 &laquo; ProvenanceEntityRole &raquo;
+			role : code 1..1 &lArr; ProvenanceEntityRole &rArr;
 			<br />
 			what : Reference(Any) 1..1
 			<br />
@@ -394,7 +394,7 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 	</tr>
 	<tr>
 		<td>AuditEvent.entity : 0..*</td>
-		<td>lifecycle: Coding 0..1 &laquo; ObjectLifecycleEvents &raquo;</td>
+		<td>lifecycle: Coding 0..1 &lArr; ObjectLifecycleEvents &rArr;</td>
 	</tr>
 	<tr>
 		<td rowspan="2">Pointer to Pre Event Entry, if chained</td>
@@ -404,7 +404,7 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 			<span style="color:blue">one per previous instance</span>
 		</td>
 		<td>
-			role : code 1..1 &laquo; ProvenanceEntityRole &raquo;
+			role : code 1..1 &lArr; ProvenanceEntityRole &rArr;
 			<br />
 			what : Reference(Any) 1..1
 			<br />
@@ -420,9 +420,9 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 		<td>
 			what : Reference(Any) 0..1
 			<br />
-			type : Coding 0..1 &laquo; AuditEventEventType &raquo;
+			type : Coding 0..1 &lArr; AuditEventEventType &rArr;
 			<br />
-			role : Coding 0..1 &laquo; AuditEventEventRole &raquo;
+			role : Coding 0..1 &lArr; AuditEventEventRole &rArr;
 		</td>
 	</tr>
 	<tr>
@@ -437,7 +437,7 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 			<span style="color:blue">one per source</span>
 		</td>
 		<td>
-			role : code 1..1 &laquo; ProvenanceEntityRole &raquo;
+			role : code 1..1 &lArr; ProvenanceEntityRole &rArr;
 			<br />
 			what : Reference(Any) 1..1
 			<br />
@@ -455,7 +455,7 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 			<br />
 			observer: Reference(PractitionerRole|Practitioner|Organization|Device|Patient|RelatedPerson) 1..1
 			<br />
-			type: Coding 0..* &laquo; AuditEventSourceType &raquo;
+			type: Coding 0..* &lArr; AuditEventSourceType &rArr;
 		</td>
 	</tr>
 	<tr>
@@ -467,16 +467,16 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 		<td>
 			what : Reference(Any) 0..1
 			<br />
-			type : Coding 0..1 &laquo; AuditEventEventType &raquo;
+			type : Coding 0..1 &lArr; AuditEventEventType &rArr;
 			<br />
-			role : Coding 0..1 &laquo; AuditEventEventRole &raquo;
+			role : Coding 0..1 &lArr; AuditEventEventRole &rArr;
 		</td>
 	</tr>
 	<tr>
 		<td>Event is known Disclosure</td>
 		<td>AuditEvent.entity : 0..*</td>
 		<td>
-			lifecycle: Coding 0..1 &laquo; ObjectLifecycleEvents &raquo;
+			lifecycle: Coding 0..1 &lArr; ObjectLifecycleEvents &rArr;
 			<br />
 			where lifecycle = "disclose"
 		</td>
@@ -491,7 +491,7 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 		<td>
 			<b>[for role-based permissions]</b>
 			<br />
-			role: CodeableConcept 0..* &laquo; SecurityRoleCode &raquo;
+			role: CodeableConcept 0..* &lArr; SecurityRoleCode &rArr;
 			<br />
 			<b>[for user-based permissions]</b>
 			<br />
@@ -506,7 +506,7 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 			<br />
 			<span style="color:blue">One per agent label</span>
 		</td>
-		<td>securityLabel : Coding 0..* &laquo; SecurityLabels &raquo;</td>
+		<td>securityLabel : Coding 0..* &lArr; SecurityLabels &rArr;</td>
 	</tr>
 	<tr>
 		<td rowspan="2">Event Transaction Entries</td>
@@ -516,7 +516,7 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 			<span style="color:blue">one per Record Entry</span>
 		</td>
 		<td>
-			role : code 1..1 &laquo; ProvenanceEntityRole &raquo;
+			role : code 1..1 &lArr; ProvenanceEntityRole &rArr;
 			<br />
 			what : Reference(Any) 1..1
 			<br />
@@ -532,9 +532,9 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 		<td>
 			what : Reference(Any) 0..1
 			<br />
-			type : Coding 0..1 &laquo; AuditEventEventType &raquo;
+			type : Coding 0..1 &lArr; AuditEventEventType &rArr;
 			<br />
-			role : Coding 0..1 &laquo; AuditEventEventRole &raquo;
+			role : Coding 0..1 &lArr; AuditEventEventRole &rArr;
 		</td>
 	</tr>
 	<tr>
@@ -545,7 +545,7 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 			<span style="color:blue">one per translation event</span>
 		</td>
 		<td>
-			role : code 1..1 &laquo; ProvenanceEntityRole &raquo;
+			role : code 1..1 &lArr; ProvenanceEntityRole &rArr;
 			<br />
 			what : Reference(Any) 1..1
 			<br />
@@ -559,9 +559,9 @@ The following table shows the FHIR Resources and applicable Attributes captured 
 			<span style="color:blue">one per translation event</span>
 		</td>
 		<td>
-			type: CodeableConcept 0..1 &laquo; ParticipationRoleType &raquo;
+			type: CodeableConcept 0..1 &lArr; ParticipationRoleType &rArr;
 			<br />
-			role: CodeableConcept 0..* &laquo; SecurityRoleCode &raquo;
+			role: CodeableConcept 0..* &lArr; SecurityRoleCode &rArr;
 			<br />
 			who: Resource(Device) 0..1
 			<br />

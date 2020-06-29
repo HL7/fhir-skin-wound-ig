@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="RecurrenceExt"/>
-  <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/RecurrenceExt"/>
+  <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/RecurrenceExt"/>
   <version value="2.0.0"/>
   <name value="Recurrence"/>
   <status value="draft"/>
@@ -12,8 +12,8 @@
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
-	<type value="element"/>
-	<expression value="StructureDefinition"/>
+    <type value="element"/>
+    <expression value="Condition"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -26,9 +26,17 @@
       <max value="1"/>
       <isModifier value="false"/>
     </element>
+    <element id="Extension:Recurrence.extension:Periodicity">
+      <path value="Extension.extension"/>
+      <sliceName value="Periodicity"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/PeriodicityExt"/>
+      </type>
+    </element>
     <element id="Extension:Recurrence.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/RecurrenceExt"/>
+      <fixedUri value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/RecurrenceExt"/>
     </element>
     <element id="Extension:Recurrence.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>
@@ -37,17 +45,9 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
       </type>
       <binding>
-            <strength value="preferred"/>
-            <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/recurrenceVS"/>
-        </binding>
+        <strength value="preferred"/>
+        <valueSet value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/ValueSet/recurrenceVS"/>
+      </binding>
     </element>
-	<element id="Extension:Recurrence.extension:Periodicity">
-		<path value="Extension.extension"/>
-		<sliceName value="Periodicity"/>
-		<type>
-			<code value="Extension"/>
-			<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/PeriodicityExt"/>
-		</type>
-	</element>
   </differential>
 </StructureDefinition>

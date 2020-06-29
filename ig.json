@@ -5,7 +5,7 @@
   "igtemplate-dir": "C:/Users/richard.ettema/Documents/GitHub/fhir-skin-wound-ig/",
   "gen-examples": "false",
   "special-urls": [],
-  "npm-name": "hl7.fhir.us.skinwoundassessment",
+  "npm-name": "hl7.fhir.us.lower-extremity-skin-wound-assessment",
   "publisher": "HL7 International - Electronic Health Records Work Group",
   "fixed-business-version": "0.1.0",
   "extraTemplates": [
@@ -14,7 +14,7 @@
   "status": "active",
   "tool": "jekyll",
   "jurisdiction": "US",
-  "title": "FHIR Skin Wound Assessment",
+  "title": "Lower Extremity Skin Wound Assessment",
   "source": "implementationguide/ig.xml",
   "version": "4.0.1",
   "broken-links": "warning",
@@ -62,7 +62,7 @@
       "content": false
     }
   },
-  "canonicalBase": "http://hl7.org/fhir/us/skinwoundassessment",
+  "canonicalBase": "http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment",
   "contact": [
     {
       "system": "url",
@@ -74,9 +74,9 @@
   "name": "SkinWoundAssessment",
   "dependencyList": [
     {
-      "location": "http://hl7.org/fhir/us/core/2019Sep",
+      "location": "http://hl7.org/fhir/us/core",
       "name": "USCoreR4",
-      "version": "3.0.1",
+      "version": "3.1.0",
       "package": "hl7.fhir.us.core"
     }
   ],
@@ -92,7 +92,7 @@
     "txCache": "generated_output/txCache",
     "qa": "generated_output/qa",
     "specification": "http://hl7.org/fhir/R4",
-    "history": "http://hl7.org/fhir/us/skinwoundassessment/history.cfml",
+    "history": "http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/history.html",
     "resources": [
       "source/resources",
       "source/examples"
@@ -132,6 +132,18 @@
     "StructureDefinition/WoundInternalItemOrBodyStructureVisibleExt":{"base":"StructureDefinition-WoundInternalItemOrBodyStructureVisibleExt.html"},
     "StructureDefinition/WoundGradationExt":{"base":"StructureDefinition-WoundGradationExt.html"},
     "StructureDefinition/WoundRelatedObservationsPanelExt":{"base":"StructureDefinition-WoundRelatedObservationsPanelExt.html"},
+    "StructureDefinition/WoundTunnelingAssertExt":{"base":"StructureDefinition-WoundTunnelingAssertExt.html"},
+    "StructureDefinition/WoundTunnelingDirectionExt":{"base":"StructureDefinition-WoundTunnelingDirectionExt.html"},
+    "StructureDefinition/WoundTunnelingLengthExt":{"base":"StructureDefinition-WoundTunnelingLengthExt.html"},
+    "StructureDefinition/WoundUnderminingAssertExt":{"base":"StructureDefinition-WoundUnderminingAssertExt.html"},
+    "StructureDefinition/WoundUnderminingDirectionExt":{"base":"StructureDefinition-WoundUnderminingDirectionExt.html"},
+    "StructureDefinition/WoundUnderminingLengthExt":{"base":"StructureDefinition-WoundUnderminingLengthExt.html"},
+    "StructureDefinition/WoundExudateAssertExt":{"base":"StructureDefinition-WoundExudateAssertExt.html"},
+    "StructureDefinition/WoundExudateAmountDescriptionExt":{"base":"StructureDefinition-WoundExudateAmountDescriptionExt.html"},
+    "StructureDefinition/WoundExudateAppearanceExt":{"base":"StructureDefinition-WoundExudateAppearanceExt.html"},
+    "StructureDefinition/WoundExudateColorExt":{"base":"StructureDefinition-WoundExudateColorExt.html"},
+    "StructureDefinition/WoundExudateOdorExt":{"base":"StructureDefinition-WoundExudateOdorExt.html"},
+    "StructureDefinition/WoundExudateVolumeExt":{"base":"StructureDefinition-WoundExudateVolumeExt.html"},
 
     "StructureDefinition/organization":{"base":"StructureDefinition-organization.html"},
     "StructureDefinition/practitioner":{"base":"StructureDefinition-practitioner.html"},
@@ -204,8 +216,8 @@
     "ValueSet/woundShapeVS":{"base":"ValueSet-woundShapeVS.html"},
     "ValueSet/woundObservationTypeVS":{"base":"ValueSet-woundObservationTypeVS.html"},
 
-    "CapabilityStatement/skinwoundassessment-client":{"base":"CapabilityStatement-skinwoundassessment-client.html","source":"capabilitystatement/capabilitystatement-client.xml"},
-    "CapabilityStatement/skinwoundassessment-server":{"base":"CapabilityStatement-skinwoundassessment-server.html","source":"capabilitystatement/capabilitystatement-server.xml"},
+    "CapabilityStatement/lower-extremity-skin-wound-assessment-client":{"base":"CapabilityStatement-lower-extremity-skin-wound-assessment-client.html","source":"capabilitystatement/capabilitystatement-client.xml"},
+    "CapabilityStatement/lower-extremity-skin-wound-assessment-server":{"base":"CapabilityStatement-lower-extremity-skin-wound-assessment-server.html","source":"capabilitystatement/capabilitystatement-server.xml"},
 
     "AuditEvent/skinwoundassert-amend-auditevent": {"base": "AuditEvent-skinwoundassert-amend-auditevent.html"},
     "AuditEvent/skinwoundassert-originate-auditevent": {"base": "AuditEvent-skinwoundassert-originate-auditevent.html"},

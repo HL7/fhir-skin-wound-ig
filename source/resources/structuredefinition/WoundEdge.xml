@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
     <id value="WoundEdge"/>
-    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundEdge"/>
+    <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundEdge"/>
     <version value="2.0.0"/>
     <name value="WoundEdge"/>
     <status value="draft"/>
@@ -64,7 +64,7 @@
 			<short value="Wound Edge Color"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundEdgeColor"/>
+				<targetProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundEdgeColor"/>
 			</type>
 		</element>
 		<element id="Observation:hspcwoundEdge.hasMember:woundEdgeDescription">
@@ -73,7 +73,7 @@
 			<short value="Wound Edge Description"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundEdgeDescription"/>
+				<targetProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundEdgeDescription"/>
 			</type>
 		</element>
     </differential>

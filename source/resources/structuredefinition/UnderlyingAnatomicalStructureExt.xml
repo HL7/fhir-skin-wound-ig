@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UnderlyingAnatomicalStructureExt"/>
-  <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/UnderlyingAnatomicalStructureExt"/>
+  <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/UnderlyingAnatomicalStructureExt"/>
   <version value="2.0.0"/>
   <name value="UnderlyingAnatomicalStructure"/>
   <status value="draft"/>
@@ -13,7 +13,7 @@
   <abstract value="false"/>
   <context>
 	<type value="element"/>
-	<expression value="StructureDefinition"/>
+	<expression value="Extension"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -28,7 +28,7 @@
     </element>
     <element id="Extension:UnderlyingAnatomicalStructureExt.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/UnderlyingAnatomicalStructureExt"/>
+      <fixedUri value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/UnderlyingAnatomicalStructureExt"/>
     </element>
     <element id="Extension:UnderlyingAnatomicalStructureExt.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>

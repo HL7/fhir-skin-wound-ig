@@ -1,6 +1,6 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "skinwoundassessment",
+  "id" : "lower-extremity-skin-wound-assessment",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
     "valueString" : "C:\\Users\\richard.ettema\\Documents\\GitHub\\fhir-skin-wound-ig\\source\\resources"
@@ -17,10 +17,10 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
     "valueString" : "C:\\Users\\richard.ettema\\Documents\\GitHub\\fhir-skin-wound-ig\\source\\pages"
   }],
-  "url" : "http://hl7.org/fhir/us/skinwoundassessment/ImplementationGuide/skinwoundassessment",
+  "url" : "http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/ImplementationGuide/lower-extremity-skin-wound-assessment",
   "version" : "0.1.0",
-  "name" : "SkinWoundAssessment",
-  "title" : "FHIR Skin Wound Assessment",
+  "name" : "LowerExtremitySkinWoundAssessmentIG",
+  "title" : "Lower Extremity Skin Wound Assessment - IG",
   "status" : "active",
   "publisher" : "HL7 International - Electronic Health Records Work Group",
   "contact" : [{
@@ -36,15 +36,15 @@
     }]
   }],
   "copyright" : "Used by permission of HL7 International, all rights reserved Creative Commons License",
-  "packageId" : "hl7.fhir.us.skinwoundassessment",
+  "packageId" : "hl7.fhir.us.lower-extremity-skin-wound-assessment",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1",
   "4.0.1"],
   "dependsOn" : [{
     "id" : "USCoreR4",
-    "uri" : "http://hl7.org/fhir/us/core/2019Sep",
+    "uri" : "http://hl7.org/fhir/us/core",
     "packageId" : "hl7.fhir.us.core",
-    "version" : "3.0.1"
+    "version" : "3.1.0"
   }],
   "definition" : {
     "grouping" : [{
@@ -244,6 +244,90 @@
         "reference" : "StructureDefinition/WoundRelatedObservationsPanelExt"
       },
       "description" : "Wound Related Observations Panel Extension",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/WoundTunnelingAssertExt"
+      },
+      "description" : "Wound Tunneling Assert Extension",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/WoundTunnelingDirectionExt"
+      },
+      "description" : "Wound Tunneling Direction Extension",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/WoundTunnelingLengthExt"
+      },
+      "description" : "Wound Tunneling Length Extension",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/WoundUnderminingAssertExt"
+      },
+      "description" : "Wound Undermining Assert Extension",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/WoundUnderminingDirectionExt"
+      },
+      "description" : "Wound Undermining Direction Extension",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/WoundUnderminingLengthExt"
+      },
+      "description" : "Wound Undermining Length Extension",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/WoundExudateAssertExt"
+      },
+      "description" : "Wound Exudate Assert Extension",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/WoundExudateAmountDescriptionExt"
+      },
+      "description" : "Wound Exudate Amount Description Extension",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/WoundExudateAppearanceExt"
+      },
+      "description" : "Wound Exudate Appearance Extension",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/WoundExudateColorExt"
+      },
+      "description" : "Wound Exudate Color Extension",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/WoundExudateOdorExt"
+      },
+      "description" : "Wound Exudate Odor Extension",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/WoundExudateVolumeExt"
+      },
+      "description" : "Wound Exudate Volume Extension",
       "exampleBoolean" : false
     },
     {
@@ -682,13 +766,13 @@
     },
     {
       "reference" : {
-        "reference" : "CapabilityStatement/skinwoundassessment-client"
+        "reference" : "CapabilityStatement/lower-extremity-skin-wound-assessment-client"
       },
       "exampleBoolean" : false
     },
     {
       "reference" : {
-        "reference" : "CapabilityStatement/skinwoundassessment-server"
+        "reference" : "CapabilityStatement/lower-extremity-skin-wound-assessment-server"
       },
       "exampleBoolean" : false
     },
@@ -959,12 +1043,12 @@
         "title" : "Conformance",
         "generation" : "markdown",
         "page" : [{
-          "nameUrl" : "CapabilityStatement-skinwoundassessment-server.html",
+          "nameUrl" : "CapabilityStatement-lower-extremity-skin-wound-assessment-server.html",
           "title" : "CapabilityStatement server",
           "generation" : "markdown"
         },
         {
-          "nameUrl" : "CapabilityStatement-skinwoundassessment-client.html",
+          "nameUrl" : "CapabilityStatement-lower-extremity-skin-wound-assessment-client.html",
           "title" : "CapabilityStatement client",
           "generation" : "markdown"
         }]

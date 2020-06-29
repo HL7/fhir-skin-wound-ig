@@ -3,7 +3,7 @@
 	<id value="skinwoundrelatedobservationspanel-amend"/>
 	<meta>
 		<versionId value="2"/>
-		<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundRelatedObservationsPanel"/>
+		<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundRelatedObservationsPanel"/>
 		<security>
 			<system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
 			<code value="HTEST"/>

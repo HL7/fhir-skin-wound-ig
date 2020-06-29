@@ -2,20 +2,20 @@
 <Condition xmlns="http://hl7.org/fhir">
 	<id value="skinwoundassert-example"/>
 	<meta>
-		<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundAssert"/>
+		<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundAssert"/>
 		<security>
 			<system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
 			<code value="HTEST"/>
 			<display value="test health data"/>
 		</security>
 	</meta>
-	<extension url="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundRelatedObservationsPanelExt">
+	<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundRelatedObservationsPanelExt">
 		<valueReference>
 			<reference value="Observation/skinwoundrelatedobservationspanel-example"/>
 		</valueReference>
 	</extension>
-	<extension url="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodyLocationExt">
-		<extension url="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/AnatomicLocationExt">
+	<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/BodyLocationExt">
+		<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/AnatomicLocationExt">
 			<valueCodeableConcept>
 				<coding>
 					<system value="http://snomed.info/sct"/>
@@ -24,7 +24,7 @@
 				</coding>
 			</valueCodeableConcept>
 		</extension>
-		<extension url="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodySideExt">
+		<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/BodySideExt">
 			<valueCodeableConcept>
 				<coding>
 					<system value="http://snomed.info/sct"/>
@@ -33,7 +33,7 @@
 				</coding>
 			</valueCodeableConcept>
 		</extension>
-		<extension url="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodyLocationOrientationExt">
+		<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/BodyLocationOrientationExt">
 			<valueCodeableConcept>
 				<coding>
 					<system value="http://snomed.info/sct"/>
@@ -42,7 +42,7 @@
 				</coding>
 			</valueCodeableConcept>
 		</extension>
-		<extension url="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/UnderlyingAnatomicalStructureExt">
+		<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/UnderlyingAnatomicalStructureExt">
 			<valueCodeableConcept>
 				<coding>
 					<system value="http://snomed.info/sct"/>
@@ -51,8 +51,8 @@
 				</coding>
 			</valueCodeableConcept>
 		</extension>
-		<extension url="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodyLandmarkOrientationExt">
-			<extension url="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodyLandmarkDescriptionExt">
+		<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/BodyLandmarkOrientationExt">
+			<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/BodyLandmarkDescriptionExt">
 				<valueCodeableConcept>
 					<coding>
 						<system value="http://snomed.info/sct"/>
@@ -61,7 +61,7 @@
 					</coding>
 				</valueCodeableConcept>
 			</extension>
-			<extension url="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/ClockFacePositionExt">
+			<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/ClockFacePositionExt">
 				<valueCodeableConcept>
 					<coding>
 						<system value="http://snomed.info/sct"/>
@@ -70,8 +70,8 @@
 					</coding>
 				</valueCodeableConcept>
 			</extension>
-			<extension url="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/DistanceFromLandmarkExt">
-				<extension url="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/DeviceExt">
+			<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/DistanceFromLandmarkExt">
+				<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/DeviceExt">
 					<valueCodeableConcept>
 						<coding>
 							<system value="http://snomed.info/sct"/>
@@ -80,7 +80,7 @@
 						</coding>
 					</valueCodeableConcept>
 				</extension>
-				<extension url="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/DistanceFromLandmarkMeasurementExt">
+				<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/DistanceFromLandmarkMeasurementExt">
 					<valueQuantity>
 						<value value="0.5"/>
 						<unit value="cm"/>
@@ -89,7 +89,7 @@
 					</valueQuantity>
 				</extension>
 			</extension>
-			<extension url="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/SurfaceOrientationExt">
+			<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/SurfaceOrientationExt">
 				<valueCodeableConcept>
 					<coding>
 						<system value="http://snomed.info/sct"/>
@@ -99,7 +99,7 @@
 				</valueCodeableConcept>
 			</extension>
 		</extension>
-		<extension url="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodyLocationQualifierExt">
+		<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/BodyLocationQualifierExt">
 			<valueCodeableConcept>
 				<coding>
 					<system value="http://snomed.info/sct"/>

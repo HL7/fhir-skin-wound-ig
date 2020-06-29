@@ -4,7 +4,7 @@
   <meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
   </meta>
-  <url value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/trendVS"/>
+  <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/ValueSet/trendVS"/>
     <version value="0.01"/>
     <name value="Trendvalueset"/>
     <status value="draft"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="PeriodicityExt"/>
-  <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/PeriodicityExt"/>
+  <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/PeriodicityExt"/>
   <version value="2.0.0"/>
   <name value="Periodicity"/>
   <status value="draft"/>
@@ -13,7 +13,7 @@
   <abstract value="false"/>
   <context>
 	<type value="element"/>
-	<expression value="StructureDefinition"/>
+	<expression value="Extension"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -28,7 +28,7 @@
     </element>
     <element id="Extension:Periodicity.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/PeriodicityExt"/>
+      <fixedUri value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/PeriodicityExt"/>
     </element>
     <element id="Extension:Periodicity.valueQuantity">
       <path value="Extension.valueQuantity"/>

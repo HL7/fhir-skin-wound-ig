@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
     <id value="WoundBed"/>
-    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundBed"/>
+    <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundBed"/>
     <version value="2.0.0"/>
     <name value="WoundBed"/>
     <status value="draft"/>
@@ -63,7 +63,7 @@
 			<sliceName value="woundBedAppearance"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundBedAppearance"/>
+				<targetProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundBedAppearance"/>
 			</type>
 		</element>
 		<element id="Observation:hspcwoundBed.hasMember:woundBedColor">
@@ -71,7 +71,7 @@
 			<sliceName value="woundBedColor"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundBedColor"/>
+				<targetProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundBedColor"/>
 			</type>
 		</element>
     </differential>

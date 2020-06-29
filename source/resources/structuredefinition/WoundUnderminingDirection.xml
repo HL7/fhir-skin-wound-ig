@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
     <id value="WoundUnderminingDirection"/>
-    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundUnderminingDirection"/>
+    <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundUnderminingDirection"/>
     <version value="2.0.0"/>
     <name value="WoundUnderminingDirection"/>
     <status value="draft"/>
@@ -47,7 +47,7 @@
             </type>
 			<binding>
                 <strength value="preferred"/>
-                <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/clockFacePositionVS"/>
+                <valueSet value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/ValueSet/clockFacePositionVS"/>
 			</binding>
         </element>
     </differential>

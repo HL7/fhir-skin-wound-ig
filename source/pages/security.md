@@ -33,7 +33,7 @@ In addition to the FHIR security guidance, this implementation guide imposes the
 -  For Authentication and Authorization, Systems **SHOULD**, are encouraged to, support the [SMART App Launch Framework](http://www.hl7.org/fhir/smart-app-launch/history.cfml) for client <-> server interactions. NOTE: The SMART on FHIR specifications include the required OAuth 2.0 scopes for enabling security decisions.
 -  Systems **SHALL** implement consent requirements per their state, local, and institutional policies. The Business Associate Agreements **SHOULD** document systems mutual consent requirements.
 -  Systems **SHOULD** provide Provenance statements using the [US Core Provenance (R4)] resource and associated requirements.
--  Systems **SHOULD** implement the [FHIR Digital Signatures]({{site.data.fhir.path}}security.html#digital%20signatures) and provide feedback on its appropriateness for Skin Wound Assessment transactions.
+-  Systems **SHOULD** implement the [FHIR Digital Signatures]({{site.data.fhir.path}}security.html#digital%20signatures) and provide feedback on its appropriateness for Lower Extremity Skin Wound Assessment transactions.
 -  Systems **SHOULD** protect the confidentiality of data at rest via encryption and associated access controls. The policies and methods used are outside the scope of this specification.
 
 <br />

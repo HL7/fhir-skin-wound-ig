@@ -1,6 +1,6 @@
-# Welcome to the FHIR R4 Skin Wound Assessment respository
+# Welcome to the FHIR R4 Lower Extremity Skin Wound Assessment respository
 
-Please refer to the [HL7 Skin and Wound PSS](https://confluence.hl7.org/display/CIC/Skin+and+Wound+PSS) for the project details.
+Please refer to the [Lower Extremity Skin Wound Assessment FHIR IG PSS](https://confluence.hl7.org/display/EHR/2020-02-19+Lower+Extremity+Skin+Wound+Assessment+FHIR+IG) for the project details.
 
 Please refer the HL7 Confluence [EHR WG Projects / Podiatry](https://confluence.hl7.org/display/EHR/Podiatry) site for additional information around on-going efforts.
 

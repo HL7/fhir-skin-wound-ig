@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="AnatomicLocationExt"/>
-  <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/AnatomicLocationExt"/>
+  <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/AnatomicLocationExt"/>
   <version value="2.0.0"/>
   <name value="AnatomicLocation"/>
   <status value="draft"/>
@@ -13,7 +13,7 @@
   <abstract value="false"/>
   <context>
 	<type value="element"/>
-	<expression value="StructureDefinition"/>
+	<expression value="Extension"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -28,7 +28,7 @@
     </element>
     <element id="Extension:anatomicLocationExt.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/AnatomicLocationExt"/>
+      <fixedUri value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/AnatomicLocationExt"/>
     </element>
     <element id="Extension:anatomicLocationExt.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>
@@ -38,7 +38,7 @@
       </type>
 	  <binding>
 		<strength value="preferred"/>
-		<valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundAnatomicLocationVS"/>
+		<valueSet value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/ValueSet/woundAnatomicLocationVS"/>
 	  </binding>
     </element>
   </differential>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="DeviceExt"/>
-  <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/DeviceExt"/>
+  <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/DeviceExt"/>
   <version value="2.0.0"/>
   <name value="Device"/>
   <status value="draft"/>
@@ -13,7 +13,11 @@
   <abstract value="false"/>
   <context>
 	<type value="element"/>
-	<expression value="StructureDefinition"/>
+	<expression value="Observation"/>
+  </context>
+  <context>
+	<type value="element"/>
+	<expression value="Extension"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -28,7 +32,7 @@
     </element>
     <element id="Extension:device.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/DeviceExt"/>
+      <fixedUri value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/DeviceExt"/>
     </element>
     <element id="Extension:device.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>
@@ -38,7 +42,7 @@
       </type>
       <binding>
         <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundMeasurementDeviceVS"/>
+        <valueSet value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/ValueSet/woundMeasurementDeviceVS"/>
       </binding>
     </element>
   </differential>

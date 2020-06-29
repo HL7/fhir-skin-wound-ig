@@ -9,7 +9,7 @@ r3: http://hl7.org/fhir/STU3/
 ### Operations Listed By Use Case
 {:.no_toc}
 
-#### Common to All Skin Wound Assessment Implementation Use Cases
+#### Common to All Lower Extremity Skin Wound Assessment Implementation Use Cases
 {:.no_toc}
 
 |Name|Link to R4 Operation|

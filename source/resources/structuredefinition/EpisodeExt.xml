@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="EpisodeExt"/>
-  <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/EpisodeExt"/>
+  <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/EpisodeExt"/>
   <version value="2.0.0"/>
   <name value="Episodeextension"/>
   <status value="draft"/>
@@ -13,7 +13,7 @@
   <abstract value="false"/>
   <context>
 	<type value="element"/>
-	<expression value="StructureDefinition"/>
+	<expression value="Condition"/>
   </context>
   <mapping>
 	<uri value="http://loinc.org/89252-1"/>
@@ -33,7 +33,7 @@
     </element>
     <element id="Extension:EpisodeExt.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/EpisodeExt"/>
+      <fixedUri value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/EpisodeExt"/>
     </element>
     <element id="Extension:EpisodeExt.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>
@@ -43,7 +43,7 @@
       </type>
         <binding>
             <strength value="preferred"/>
-            <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/episodeVS"/>
+            <valueSet value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/ValueSet/episodeVS"/>
         </binding>
     </element>
   </differential>

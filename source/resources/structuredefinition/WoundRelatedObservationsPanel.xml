@@ -1,24 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
-    <id value="WoundRelatedObservationsPanel"/>
-    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundRelatedObservationsPanel"/>
-    <version value="2.0.0"/>
-    <name value="WoundRelatedObservationsPanel"/>
-    <status value="draft"/>
-    <date value="2019-06-19"/>
-    <publisher value="CIMI"/>
-    <description value="Observations that are linked to a wound."/>
-    <fhirVersion value="4.0.1"/>
-    <kind value="complex-type"/>
-    <abstract value="false"/>
-    <type value="Observation"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
-    <derivation value="constraint"/>
-    <differential>
-        <element id="Observation:cimiWoundRelatedObservationsPanel">
-            <path value="Observation"/>
-            <definition value="Observations that are linked to a wound"/>
+	<!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+	<id value="WoundRelatedObservationsPanel"/>
+	<url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundRelatedObservationsPanel"/>
+	<version value="2.0.0"/>
+	<name value="WoundRelatedObservationsPanel"/>
+	<status value="draft"/>
+	<date value="2019-06-19"/>
+	<publisher value="CIMI"/>
+	<description value="Observations that are linked to a wound."/>
+	<fhirVersion value="4.0.1"/>
+	<kind value="complex-type"/>
+	<abstract value="false"/>
+	<type value="Observation"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Observation:cimiWoundRelatedObservationsPanel">
+			<path value="Observation"/>
+			<definition value="Observations that are linked to a wound"/>
+		</element>
+        <element id="Observation:cimiWoundRelatedObservationsPanel.extension:woundTunnelingAssert">
+            <path value="Observation.extension"/>
+            <sliceName value="woundTunnelingAssert"/>
+            <short value="Wound Tunneling Assert"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundTunnelingAssertExt"/>
+            </type>
+        </element>
+        <element id="Observation:cimiWoundRelatedObservationsPanel.extension:woundUnderminingAssert">
+            <path value="Observation.extension"/>
+            <sliceName value="woundUnderminingAssert"/>
+            <short value="Wound Undermining Assert"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundUnderminingAssertExt"/>
+            </type>
+        </element>
+        <element id="Observation:cimiWoundRelatedObservationsPanel.extension:woundExudateAssert">
+            <path value="Observation.extension"/>
+            <sliceName value="woundExudateAssert"/>
+            <short value="Wound Exudate Assert"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundExudateAssertExt"/>
+            </type>
         </element>
 		<element id="Observation:cimiWoundRelatedObservationsPanel.value[x]">
 			<path value="Observation.value[x]"/>
@@ -27,16 +60,16 @@
 		</element>
 		<element id="Observation:cimiWoundRelatedObservationsPanel.hasMember">
 			<path value="Observation.hasMember"/>
-            <slicing>
-                <discriminator>
-                    <type value="profile"/>
-                    <path value="resolve()"/>
-                </discriminator>
-                <ordered value="false"/>
-                <rules value="open"/>
-            </slicing>
-            <min value="0"/>
-            <max value="*"/>
+			<slicing>
+				<discriminator>
+					<type value="profile"/>
+					<path value="resolve()"/>
+				</discriminator>
+				<ordered value="false"/>
+				<rules value="open"/>
+			</slicing>
+			<min value="0"/>
+			<max value="*"/>
 		</element>
 		<element id="Observation:cimiWoundRelatedObservationsPanel.hasMember:woundBed">
 			<path value="Observation.hasMember"/>
@@ -44,7 +77,7 @@
 			<short value="Wound Bed"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundBed"/>
+				<targetProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundBed"/>
 			</type>
 		</element>
 		<element id="Observation:cimiWoundRelatedObservationsPanel.hasMember:woundEdge">
@@ -53,34 +86,7 @@
 			<short value="Wound Edge"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundEdge"/>
-			</type>
-		</element>
-		<element id="Observation:cimiWoundRelatedObservationsPanel.hasMember:woundTunneling">
-			<path value="Observation.hasMember"/>
-			<sliceName value="WoundTunneling"/>
-			<short value="Wound Tunneling"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundTunnelingAssert"/>
-			</type>
-		</element>
-		<element id="Observation:cimiWoundRelatedObservationsPanel.hasMember:woundUndermining">
-			<path value="Observation.hasMember"/>
-			<sliceName value="WoundUndermining"/>
-			<short value="Wound Undermining"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundUnderminingAssert"/>
-			</type>
-		</element>
-		<element id="Observation:cimiWoundRelatedObservationsPanel.hasMember:woundExudate">
-			<path value="Observation.hasMember"/>
-			<sliceName value="WoundExudate"/>
-			<short value="Wound Exudate"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudateAssert"/>
+				<targetProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundEdge"/>
 			</type>
 		</element>
 		<element id="Observation:cimiWoundRelatedObservationsPanel.hasMember:woundSize">
@@ -89,7 +95,7 @@
 			<short value="Wound Size"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundSize"/>
+				<targetProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundSize"/>
 			</type>
 		</element>
 		<element id="Observation:cimiWoundRelatedObservationsPanel.hasMember:woundShape">
@@ -98,8 +104,8 @@
 			<short value="Wound Shape"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundShape"/>
+				<targetProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundShape"/>
 			</type>
 		</element>
-    </differential>
+	</differential>
 </StructureDefinition>

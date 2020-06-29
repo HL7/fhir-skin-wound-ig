@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="wound-observation-type"/>
-	<url value="http://hl7.org/fhir/us/skinwoundassessment/wound-observation-type"/>
+	<url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/wound-observation-type"/>
 	<version value="0.1.0"/>
 	<name value="WoundObservationTypeCodeSystem"/>
 	<title value="Wound Observation Type Code System"/>

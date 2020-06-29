@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
     <id value="WoundUnderminingAssert"/>
-    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundUnderminingAssert"/>
+    <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundUnderminingAssert"/>
     <version value="2.0.0"/>
     <name value="WoundUnderminingAssert"/>
     <status value="draft"/>
@@ -13,7 +13,7 @@
     <kind value="complex-type"/>
     <abstract value="false"/>
     <type value="Condition"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Condition:cimiWoundUnderminingAssert">
@@ -21,6 +21,28 @@
 			<short value="Wound Undermining Assert"/>
             <definition value="Wound Undermining Assert is an assertion model used when the condition exists. Wound undermining is the presence of erosion under the wound edges"/>
         </element>
+		<element id="Condition:cimiWoundUnderminingAssert.extension:woundUnderminingDirectionExt">
+			<path value="Condition.extension"/>
+			<sliceName value="woundUnderminingDirectionExt"/>
+			<short value="Wound Undermining Direction Ext"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundUnderminingDirectionExt"/>
+			</type>
+		</element>
+		<element id="Condition:cimiWoundUnderminingAssert.extension:woundTunnelingLengthExt">
+			<path value="Condition.extension"/>
+			<sliceName value="woundUnderminingLengthExt"/>
+			<short value="Wound Undermining Length Ext"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundUnderminingLengthExt"/>
+			</type>
+		</element>
         <element id="Condition:cimiWoundUnderminingAssert.code">
             <path value="Condition.code"/>
             <short value="Wound Undermining"/>
@@ -44,39 +66,6 @@
 		<element id="Condition:cimiWoundUnderminingAssert.code.coding.display">
 			<path value="Condition.code.coding.display"/>
 			<fixedString value="Wound tissue undermining"/>
-		</element>
-		<element id="Condition:cimiWoundUnderminingAssert.extension">
-			<path value="Condition.extension"/>
-            <slicing>
-                <discriminator>
-                    <type value="value"/>
-                    <path value="Condition.extension"/>
-                </discriminator>
-                <ordered value="false"/>
-                <rules value="open"/>
-            </slicing>
-		</element>
-		<element id="Condition:cimiWoundUnderminingAssert.extension:woundUnderminingDirection">
-			<path value="Condition.extension"/>
-			<sliceName value="woundUnderminingDirection"/>
-			<short value="Wound Undermining Direction"/>
-            <min value="0"/>
-            <max value="*"/>
-            <type>
-                <code value="Reference"/>
-                <profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundUnderminingDirection"/>
-            </type>
-		</element>
-		<element id="Condition:cimiWoundUnderminingAssert.extension:woundUnderminingLength">
-			<path value="Condition.extension"/>
-			<sliceName value="woundUnderminingLength"/>
-			<short value="Wound Undermining Length"/>
-            <min value="0"/>
-            <max value="*"/>
-            <type>
-                <code value="Reference"/>
-                <profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundUnderminingLength"/>
-            </type>
 		</element>
     </differential>
 </StructureDefinition>

@@ -16,9 +16,9 @@ us_r4: http://hl7.org/fhir/us/core/
 
 ##  Introduction
 
-### Wound Assessment Template (WAT) Scenario - Use Case - Originate and Retain.
+### Wound Assessment and Treatment Template (WATT) Scenario - Use Case - Originate and Retain.
 
-Demonstrate how an EHR actor incorporates the [FHIR Record Lifecycle Event (RLE) Implementation Guide (IG)](http://hl7.org/fhir/R4/ehrsrle/ehrsrle.html) processing of the Originate/Retain and Amend Record Content events when receiving Wound Assessement Template data.
+Demonstrate how an EHR actor incorporates the [FHIR Record Lifecycle Event (RLE) Implementation Guide (IG)](http://hl7.org/fhir/R4/ehrsrle/ehrsrle.html) processing of the Originate/Retain and Amend Record Content events when receiving Wound Assessement and Treatment Template (WATT) data.
 
 The focus of this use case is the verification and validation of recording and storage of the FHIR Record Lifecycle Event data represented by the FHIR Resource Types of [AuditEvent](http://hl7.org/fhir/R4/ehrsrle/ehrsrle-auditevent.html) and [US Core Provenance (R4)].
 
@@ -30,11 +30,11 @@ The following actors, FHIR Interactions and RLE events are part of this Use Case
 
 * **Wound Assessment Registry (and Repository)**
   * _FHIR Interactions from other EHR actors_:
-    * create, read, update, search and transaction of WAT data
+    * create, read, update, search and transaction of WATT data
 
 * **EHR - Example: Primary Care Physician (PCP)**
   * _FHIR Interactions to Registry_:
-    * create, read, update, search and transaction of WAT data
+    * create, read, update, search and transaction of WATT data
   * _FHIR RLE Events_:
     * Receive/Retain Record Entry
     * Evidence of Receive/Retain Record Entry
@@ -62,19 +62,19 @@ The creation of the the Wound Assessment Template data as empty FHIR resource in
 **_2. Evidence of Receive/Retain Record Entry_**
 The creation of the corresponding FHIR RLE [AuditEvent](http://hl7.org/fhir/R4/ehrsrle/ehrsrle-auditevent.html) and [US Core Provenance (R4)] resources related to #1.
 
-### WAT Data Storage
-The expectation for the Wound Assessment Registry (WAR) actor system is that all of the Wound Assessment Template data will be processeded as a single transaction. This will result in the Wound Assessment Registry (WAR) actor's (FHIR) data repository storing a local copy of the WAT data FHIR resources:
+### WATT Data Storage
+The expectation for the Wound Assessment Registry (WAR) actor system is that all of the Wound Assessment and Treatment Template (WATT) data will be processeded as a single transaction. This will result in the Wound Assessment Registry (WAR) actor's (FHIR) data repository storing a local copy of the WATT data FHIR resources:
 * #1 - fully populated created version 1 instances
 
 ### RLE Data Storage
 The expectation here is that the generated RLE data FHIR instances will be:
-* #2 - one [AuditEvent](http://hl7.org/fhir/R4/ehrsrle/ehrsrle-auditevent.html) and one [US Core Provenance (R4)] instance for each corresponding WAT data FHIR resource received and created
+* #2 - one [AuditEvent](http://hl7.org/fhir/R4/ehrsrle/ehrsrle-auditevent.html) and one [US Core Provenance (R4)] instance for each corresponding WATT data FHIR resource received and created
 
 <p>&nbsp;</p>
 
 ### Data Examples
 
-Example FHIR resource instances illustrating the expected contents of the WAT and RLE data (FHIR resource instances) the Wound Assessment Registry (WAR) actor system will store after each of the _FHIR RLE Events_:
+Example FHIR resource instances illustrating the expected contents of the WATT and RLE data (FHIR resource instances) the Wound Assessment Registry (WAR) actor system will store after each of the _FHIR RLE Events_:
 
 **_1. Receive/Retain Record Entry_**
 - [Condition-skinwoundassert-receive](Condition-skinwoundassert-receive.html)
@@ -95,9 +95,9 @@ Example FHIR resource instances illustrating the expected contents of the WAT an
 <p>&nbsp;</p>
 
 ## Validation Test Details
-**Validation of Wound Assessment Template (WAT) data**
+**Validation of Wound Assessment and Treatment Template (WATT) data**
 
-_See [Use Case - Search](usecase-search.html): Query and retrieval of the Wound Assessment Template (WAT) data_
+_See [Use Case - Search](usecase-search.html): Query and retrieval of the Wound Assessment and Treatment Template (WATT) data_
 
 **Validation for Evidence of FHIR Record Lifecycle Event data**
 
@@ -132,7 +132,7 @@ Accept: application/fhir+xml or application/fhir+json
 ```
 
 **Action 1b (Test Step):**
-Origin system executes a FHIR Search Interaction for the RLE [AuditEvent](http://hl7.org/fhir/R4/ehrsrle/ehrsrle-auditevent.html) or [US Core Provenance (R4)] resources matching a specific Patient id, date and WAT resource type to the destination system
+Origin system executes a FHIR Search Interaction for the RLE [AuditEvent](http://hl7.org/fhir/R4/ehrsrle/ehrsrle-auditevent.html) or [US Core Provenance (R4)] resources matching a specific Patient id, date and WATT resource type to the destination system
 ```
 GET [base]/AuditEvent?patient=[Patient id]&date=[YYYY-MM-DD]&entity-type=Condition
 

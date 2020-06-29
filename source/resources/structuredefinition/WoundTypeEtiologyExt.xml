@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="WoundTypeEtiologyExt"/>
-  <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundTypeEtiologyExt"/>
+  <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundTypeEtiologyExt"/>
   <version value="2.0.0"/>
   <name value="WoundTypeEtiologyextension"/>
   <status value="draft"/>
@@ -13,7 +13,7 @@
   <abstract value="false"/>
   <context>
 	<type value="element"/>
-	<expression value="StructureDefinition"/>
+	<expression value="Condition"/>
   </context>
   <mapping>
 	<uri value="http://loinc.org/11373-8"/>
@@ -33,7 +33,7 @@
     </element>
     <element id="Extension:WoundTypeEtiologyExt.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundTypeEtiologyExt"/>
+      <fixedUri value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundTypeEtiologyExt"/>
     </element>
     <element id="Extension:WoundTypeEtiologyExt.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>
@@ -43,7 +43,7 @@
       </type>
         <binding>
             <strength value="preferred"/>
-            <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundTypeEtiologyVS"/>
+            <valueSet value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/ValueSet/woundTypeEtiologyVS"/>
         </binding>
     </element>
   </differential>

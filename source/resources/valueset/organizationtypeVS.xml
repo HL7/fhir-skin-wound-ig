@@ -4,7 +4,7 @@
   <meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
   </meta>
-  <url value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/organizationtypeVS"/>
+  <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/ValueSet/organizationtypeVS"/>
   <version value="0.01"/>
   <name value="OrganizationType"/>
   <status value="draft"/>
@@ -22,7 +22,7 @@
   <copyright value="Intermountain Healthcare"/>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/us/skinwoundassessment/organization-hspc-organizationtype"/>
+      <system value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/organization-hspc-organizationtype"/>
         <concept>
             <code value="526758010" />
             <display value="Clinic" />

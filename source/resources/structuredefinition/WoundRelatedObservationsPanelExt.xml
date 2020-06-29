@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="WoundRelatedObservationsPanelExt"/>
-  <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundRelatedObservationsPanelExt"/>
+  <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundRelatedObservationsPanelExt"/>
   <version value="0.1.0"/>
   <name value="WoundRelatedObservationsPanelExt"/>
   <status value="draft"/>
@@ -13,7 +13,7 @@
   <abstract value="false"/>
   <context>
 	<type value="element"/>
-	<expression value="StructureDefinition"/>
+	<expression value="Condition"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -28,14 +28,14 @@
     </element>
     <element id="Extension:WoundRelatedObservationsPanelExt.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundRelatedObservationsPanelExt"/>
+      <fixedUri value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundRelatedObservationsPanelExt"/>
     </element>
     <element id="Extension:WoundRelatedObservationsPanelExt.valueReference">
       <path value="Extension.valueReference"/>
       <type>
         <code value="Reference"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundRelatedObservationsPanel"/>
+        <targetProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundRelatedObservationsPanel"/>
       </type>
     </element>
   </differential>

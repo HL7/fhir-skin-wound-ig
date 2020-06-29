@@ -6,7 +6,7 @@
 
   <li class="dropdown">
     <a href="#" data-toggle="dropdown" class="dropdown-toggle">Guidance<b class="caret">
-      </b>  <!-- Skin Wound Assessment Guidance Pages -->
+      </b>  <!-- Lower Extremity Skin Wound Assessment Guidance Pages -->
     </a>
     <ul class="dropdown-menu">
       <li>
@@ -23,7 +23,7 @@
 
   <li class="dropdown">
     <a href="#" data-toggle="dropdown" class="dropdown-toggle">Use Cases<b class="caret">
-      </b>  <!-- Skin Wound Assessment Individual Use Cases -->
+      </b>  <!-- Lower Extremity Skin Wound Assessment Individual Use Cases -->
     </a>
     <ul class="dropdown-menu">
       <li>
@@ -58,10 +58,10 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="CapabilityStatement-skinwoundassessment-server.html">Conformance requirements for Server</a>
+        <a href="CapabilityStatement-lower-extremity-skin-wound-assessment-server.html">Conformance requirements for Server</a>
       </li>
       <li>
-        <a href="CapabilityStatement-skinwoundassessment-client.html">Conformance requirements for Client</a>
+        <a href="CapabilityStatement-lower-extremity-skin-wound-assessment-client.html">Conformance requirements for Client</a>
       </li>
     </ul>
   </li>

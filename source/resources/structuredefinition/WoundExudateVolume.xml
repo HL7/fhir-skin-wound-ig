@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
     <id value="WoundExudateVolume"/>
-    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundExudateVolume"/>
+    <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundExudateVolume"/>
     <version value="2.0.0"/>
     <name value="WoundExudateVolume"/>
     <status value="draft"/>
@@ -21,6 +21,14 @@
 			<short value="Wound Exudate Volume"/>
             <definition value="Wound Exudate Volume is the measured amount of wound drainage."/>
         </element>
+		<element id="Observation:cimiwoundExudateVolume.extension:EstimatedInd">
+			<path value="Observation.extension"/>
+			<short value="Estimated Indicator"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/EstimatedIndExt"/>
+			</type>
+		</element>
         <element id="Observation:cimiwoundExudateVolume.valueQuantity">
             <path value="Observation.valueQuantity"/>
             <short value="Volume"/>
@@ -48,13 +56,5 @@
             <mustSupport value="false"/>
             <isModifier value="false"/>
         </element>
-		<element id="Observation:cimiwoundExudateVolume.extension:EstimatedInd">
-			<path value="Observation.extension"/>
-			<short value="Estimated Indicator"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/EstimatedIndExt"/>
-			</type>
-		</element>
     </differential>
 </StructureDefinition>

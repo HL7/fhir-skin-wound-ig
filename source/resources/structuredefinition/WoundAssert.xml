@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
     <id value="WoundAssert"/>
-    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundAssert"/>
+    <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundAssert"/>
     <version value="2.0.0"/>
     <name value="WoundAssert"/>
     <status value="draft"/>
@@ -20,7 +20,7 @@
 		<comment value="code=39135-9, display=Wound assessment panel"/>
 	</mapping>
     <type value="Condition"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Condition:HSPCWoundAssert">
@@ -36,7 +36,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/PresentOnAdmissionExt"/>
+                <profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/PresentOnAdmissionExt"/>
             </type>
         </element>
         <element id="Condition:HSPCWoundAssert.extension:pressureUlcerAssociation">
@@ -47,7 +47,7 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/PressureUlcerAssociationExt"/>
+                <profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/PressureUlcerAssociationExt"/>
             </type>
         </element>
 		<element id="Condition:HSPCWoundAssert.extension:woundAssessmentInterpretation">
@@ -58,7 +58,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundAssessmentInterpretationExt"/>
+				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundAssessmentInterpretationExt"/>
 			</type>
 		</element>
 		<element id="Condition:HSPCWoundAssert.extension:woundEpisode">
@@ -69,7 +69,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/EpisodeExt"/>
+				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/EpisodeExt"/>
 			</type>
 		</element>
 		<element id="Condition:HSPCWoundAssert.extension:woundTrend">
@@ -80,7 +80,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/TrendExt"/>
+				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/TrendExt"/>
 			</type>
 		</element>
 		<element id="Condition:HSPCWoundAssert.extension:PeriwoundConditionExt">
@@ -91,7 +91,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/PeriwoundConditionExt"/>
+				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/PeriwoundConditionExt"/>
 			</type>
 		</element>
 		<element id="Condition:HSPCWoundAssert.extension:WoundTypeEtiologyExt">
@@ -102,7 +102,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundTypeEtiologyExt"/>
+				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundTypeEtiologyExt"/>
 			</type>
 		</element>
 		<element id="Condition:HSPCWoundAssert.extension:WoundImageExtension">
@@ -110,10 +110,10 @@
 			<sliceName value="WoundImage"/>
 			<short value="Wound Image"/>
 			<min value="0"/>
-			<max value="*"/>
+			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundImageExtension"/>
+				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundImageExtension"/>
 			</type>
 		</element>
 		<element id="Condition:HSPCWoundAssert.extension:WoundInternalItemOrBodyStructureVisibleExt">
@@ -124,7 +124,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundInternalItemOrBodyStructureVisibleExt"/>
+				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundInternalItemOrBodyStructureVisibleExt"/>
 			</type>
 		</element>
 		<element id="Condition:HSPCWoundAssert.extension:WoundGradationExt">
@@ -135,7 +135,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundGradationExt"/>
+				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundGradationExt"/>
 			</type>
 		</element>
 		<element id="Condition:HSPCWoundAssert.extension:woundRelatedObservationsPanelExt">
@@ -143,10 +143,10 @@
 			<sliceName value="woundRelatedObservationsPanel"/>
 			<short value="Wound Related Observations Panel"/>
 			<min value="0"/>
-			<max value="*"/>
+			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundRelatedObservationsPanelExt"/>
+				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundRelatedObservationsPanelExt"/>
 			</type>
 		</element>
 		<element id="Condition:HSPCWoundAssert.extension:BodyLocation">
@@ -157,7 +157,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/BodyLocationExt"/>
+				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/BodyLocationExt"/>
 			</type>
 		</element>
 		<element id="Condition:HSPCWoundAssert.extension:Recurrence">
@@ -168,7 +168,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/RecurrenceExt"/>
+				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/RecurrenceExt"/>
 			</type>
 		</element>
 		<element id="Condition:HSPCWoundAssert.identifier">
@@ -185,7 +185,7 @@
             </type>
             <binding>
                 <strength value="preferred"/>
-                <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundTypeVS"/>
+                <valueSet value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/ValueSet/woundTypeVS"/>
             </binding>
         </element>
         <element id="Condition:HSPCWoundAssert.bodySite">
@@ -195,18 +195,18 @@
             <min value="0"/>
             <max value="0"/>
         </element>
-		<element id="Condition:HSPCWoundAssert.abatement[x]:abatementDate">
-			<path value="Condition.abatement[x]"/>
-			<short value="Abatement Date"/>
+		<element id="Condition:HSPCWoundAssert.onset[x]:dateOfOnset">
+			<path value="Condition.onset[x]"/>
+			<short value="Onset Date"/>
 			<min value="0"/>
 			<max value="1"/>
 			<type>
 				<code value="dateTime"/>
 			</type>
 		</element>
-		<element id="Condition:HSPCWoundAssert.onset[x]:dateOfOnset">
-			<path value="Condition.onset[x]"/>
-			<short value="Onset Date"/>
+		<element id="Condition:HSPCWoundAssert.abatement[x]:abatementDate">
+			<path value="Condition.abatement[x]"/>
+			<short value="Abatement Date"/>
 			<min value="0"/>
 			<max value="1"/>
 			<type>

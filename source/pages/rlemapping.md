@@ -25,7 +25,7 @@ The conformance verbs used are defined in [FHIR Conformance Rules].
 
 ## Record Lifecycle Event Metadata Mapping
 
-The following Record Lifecycle Event Metadata mappings are intended to facilitate the development and implementation of the recording of these events within all Skin Wound Assessment actor systems used in this guide. The Record Lifecycle Events Metadata mappings covered in this page are:
+The following Record Lifecycle Event Metadata mappings are intended to facilitate the development and implementation of the recording of these events within all Lower Extremity Skin Wound Assessment actor systems used in this guide. The Record Lifecycle Events Metadata mappings covered in this page are:
 * 15.1.2 Record lifecycle event - Originate/retain record entry instance(s)
 * 15.2.2 Record lifecycle event - Amend (update) record entry instance(s)
 * 15.9 Record lifecycle event - Receive/retain record entry instance(s)

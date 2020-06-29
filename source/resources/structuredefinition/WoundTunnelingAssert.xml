@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
     <id value="WoundTunnelingAssert"/>
-    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundTunnelingAssert"/>
+    <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundTunnelingAssert"/>
     <version value="2.0.0"/>
     <name value="WoundTunnelingAssert"/>
     <status value="draft"/>
@@ -13,7 +13,7 @@
     <kind value="complex-type"/>
     <abstract value="false"/>
     <type value="Condition"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Condition:HSPCWoundTunneling">
@@ -21,6 +21,28 @@
 			<short value="Wound Tunneling Assert"/>
             <definition value="Wound Tunneling Assert is an assertion model used when the condition exists. Wound tunneling is the presence of sinus channels in the wound"/>
         </element>
+		<element id="Condition:HSPCWoundTunneling.extension:woundTunnelingDirectionExt">
+			<path value="Condition.extension"/>
+			<sliceName value="woundTunnelingDirectionExt"/>
+			<short value="Wound Tunneling Direction Ext"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundTunnelingDirectionExt"/>
+			</type>
+		</element>
+		<element id="Condition:HSPCWoundTunneling.extension:woundTunnelingLengthExt">
+			<path value="Condition.extension"/>
+			<sliceName value="woundTunnelingLengthExt"/>
+			<short value="Wound Tunneling Length Ext"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundTunnelingLengthExt"/>
+			</type>
+		</element>
         <element id="Condition:HSPCWoundTunneling.code">
             <path value="Condition.code"/>
             <short value="Wound Tunneling"/>
@@ -44,39 +66,6 @@
 		<element id="Condition:HSPCWoundTunneling.code.coding.display">
 			<path value="Condition.code.coding.display"/>
 			<fixedString value="Tunneling wound"/>
-		</element>
-		<element id="Condition:HSPCWoundTunneling.extension">
-			<path value="Condition.extension"/>
-            <slicing>
-                <discriminator>
-                    <type value="value"/>
-                    <path value="Condition.extension"/>
-                </discriminator>
-                <ordered value="false"/>
-                <rules value="open"/>
-            </slicing>
-		</element>
-		<element id="Condition:HSPCWoundTunneling.extension:woundTunnelingDirection">
-			<path value="Condition.extension"/>
-			<sliceName value="woundTunnelingDirection"/>
-			<short value="Wound Tunneling Direction"/>
-            <min value="0"/>
-            <max value="*"/>
-            <type>
-                <code value="Reference"/>
-                <profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundTunnelingDirection"/>
-            </type>
-		</element>
-		<element id="Condition:HSPCWoundTunneling.extension:woundTunnelingLength">
-			<path value="Condition.extension"/>
-			<sliceName value="woundTunnelingLength"/>
-			<short value="Wound Tunneling Length"/>
-            <min value="0"/>
-            <max value="*"/>
-            <type>
-                <code value="Reference"/>
-                <profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundTunnelingLength"/>
-            </type>
 		</element>
     </differential>
 </StructureDefinition>

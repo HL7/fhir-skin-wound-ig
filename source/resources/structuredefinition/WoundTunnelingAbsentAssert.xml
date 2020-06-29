@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
     <id value="WoundTunnelingAbsentAssert"/>
-    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundTunnelingAbsentAssert"/>
+    <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundTunnelingAbsentAssert"/>
     <version value="2.0.0"/>
     <name value="WoundTunnelingAbsentAssert"/>
     <status value="draft"/>
@@ -13,7 +13,7 @@
     <kind value="complex-type"/>
     <abstract value="false"/>
     <type value="Condition"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Condition:woundTunnelingAbsentAssert">

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
     <id value="WoundShape"/>
-    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundShape"/>
+    <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundShape"/>
     <version value="2.0.0"/>
     <name value="WoundShape"/>
     <status value="draft"/>
@@ -29,7 +29,7 @@
 		</element>
 		<element id="Observation:WoundShape.code.coding.system">
 			<path value="Observation.code.coding.system"/>
-			<fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/wound-observation-type"/>
+			<fixedUri value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/wound-observation-type"/>
 		</element>
 		<element id="Observation:WoundShape.code.coding.code">
 			<path value="Observation.code.coding.code"/>
@@ -47,7 +47,7 @@
             </type>
             <binding>
                 <strength value="preferred"/>
-                <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundShapeVS"/>
+                <valueSet value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/ValueSet/woundShapeVS"/>
             </binding>
         </element>
     </differential>

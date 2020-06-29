@@ -3,14 +3,14 @@
 	<id value="skinwoundassert-originate"/>
 	<meta>
 		<versionId value="1"/>
-		<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundAssert"/>
+		<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundAssert"/>
 		<security>
 			<system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
 			<code value="HTEST"/>
 			<display value="test health data"/>
 		</security>
 	</meta>
-	<extension url="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundRelatedObservationsPanelExt">
+	<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundRelatedObservationsPanelExt">
 		<valueReference>
 			<reference value="Observation/skinwoundrelatedobservationspanel-originate"/>
 		</valueReference>

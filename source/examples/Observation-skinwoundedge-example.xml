@@ -2,7 +2,7 @@
 <Observation xmlns="http://hl7.org/fhir">
 	<id value="skinwoundedge-example"/>
 	<meta>
-		<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundEdge"/>
+		<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundEdge"/>
 		<security>
 			<system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
 			<code value="HTEST"/>

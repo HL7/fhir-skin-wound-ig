@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
     <id value="WoundSize"/>
-    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundSize"/>
+    <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundSize"/>
     <version value="2.0.0"/>
     <name value="WoundSize"/>
     <status value="draft"/>
@@ -21,6 +21,15 @@
 			<short value="Wound Size"/>
             <definition value="Wound Size describes the dimensions of a wound."/>
         </element>
+		<element id="Observation:hspcwoundSize.extension:device">
+			<path value="Observation.extension"/>
+            <sliceName value="device"/>
+			<short value="Measurement Device"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/DeviceExt"/>
+			</type>
+		</element>
         <element id="Observation:hspcwoundSize.code">
             <path value="Observation.code"/>
         </element>
@@ -64,21 +73,21 @@
 			<min value="0"/>
 			<max value="1"/>
 		</element>
-        <element id="Observation:hspcwoundSize.coomponent.code:woundLength">
+        <element id="Observation:hspcwoundSize.component.code:woundLength">
             <path value="Observation.component.code"/>
         </element>
-		<element id="Observation:hspcwoundSize.code.coding:woundLength">
+		<element id="Observation:hspcwoundSize.component.code.coding:woundLength">
 			<path value="Observation.component.code.coding"/>
 		</element>
-		<element id="Observation:hspcwoundSize.code.coding.system:woundLength">
+		<element id="Observation:hspcwoundSize.component.code.coding.system:woundLength">
 			<path value="Observation.component.code.coding.system"/>
 			<fixedUri value="http://loinc.org"/>
 		</element>
-		<element id="Observation:hspcwoundSize.code.coding.code:woundLength">
+		<element id="Observation:hspcwoundSize.component.code.coding.code:woundLength">
 			<path value="Observation.component.code.coding.code"/>
 			<fixedCode value="39126-8"/>
 		</element>
-		<element id="Observation:hspcwoundSize.code.coding.display:woundLength">
+		<element id="Observation:hspcwoundSize.component.code.coding.display:woundLength">
 			<path value="Observation.component.code.coding.display"/>
 			<fixedString value="Length of Wound"/>
 		</element>
@@ -115,25 +124,25 @@
 			<min value="0"/>
 			<max value="1"/>
 		</element>
-        <element id="Observation:hspcwoundSize.coomponent.code:woundWidth">
+        <element id="Observation:hspcwoundSize.component.code:woundWidth">
             <path value="Observation.component.code"/>
         </element>
-		<element id="Observation:hspcwoundSize.code.coding:woundWidth">
+		<element id="Observation:hspcwoundSize.component.code.coding:woundWidth">
 			<path value="Observation.component.code.coding"/>
 		</element>
-		<element id="Observation:hspcwoundSize.code.coding.system:woundWidth">
+		<element id="Observation:hspcwoundSize.component.code.coding.system:woundWidth">
 			<path value="Observation.component.code.coding.system"/>
 			<fixedUri value="http://loinc.org"/>
 		</element>
-		<element id="Observation:hspcwoundSize.code.coding.code:woundWidth">
+		<element id="Observation:hspcwoundSize.component.code.coding.code:woundWidth">
 			<path value="Observation.component.code.coding.code"/>
 			<fixedCode value="39125-0"/>
 		</element>
-		<element id="Observation:hspcwoundSize.code.coding.display:woundWidth">
+		<element id="Observation:hspcwoundSize.component.code.coding.display:woundWidth">
 			<path value="Observation.component.code.coding.display"/>
 			<fixedString value="Width of Wound"/>
 		</element>
-        <element id="Observation:hspcwoundSize.valueQuantity:woundWidth">
+        <element id="Observation:hspcwoundSize.component.valueQuantity:woundWidth">
             <path value="Observation.component.valueQuantity"/>
             <type>
                 <code value="Quantity"/>
@@ -166,25 +175,25 @@
 			<min value="0"/>
 			<max value="1"/>
 		</element>
-        <element id="Observation:hspcwoundSize.coomponent.code:woundDepth">
+        <element id="Observation:hspcwoundSize.component.code:woundDepth">
             <path value="Observation.component.code"/>
         </element>
-		<element id="Observation:hspcwoundSize.code.coding:woundDepth">
+		<element id="Observation:hspcwoundSize.component.code.coding:woundDepth">
 			<path value="Observation.component.code.coding"/>
 		</element>
-		<element id="Observation:hspcwoundSize.code.coding.system:woundDepth">
+		<element id="Observation:hspcwoundSize.component.code.coding.system:woundDepth">
 			<path value="Observation.component.code.coding.system"/>
 			<fixedUri value="http://loinc.org"/>
 		</element>
-		<element id="Observation:hspcwoundSize.code.coding.code:woundDepth">
+		<element id="Observation:hspcwoundSize.component.code.coding.code:woundDepth">
 			<path value="Observation.component.code.coding.code"/>
 			<fixedCode value="39127-6"/>
 		</element>
-		<element id="Observation:hspcwoundSize.code.coding.display:woundDepth">
+		<element id="Observation:hspcwoundSize.component.code.coding.display:woundDepth">
 			<path value="Observation.component.code.coding.display"/>
 			<fixedString value="Depth of Wound"/>
 		</element>
-        <element id="Observation:hspcwoundSize.valueQuantity:woundDepth">
+        <element id="Observation:hspcwoundSize.component.valueQuantity:woundDepth">
             <path value="Observation.component.valueQuantity"/>
             <type>
                 <code value="Quantity"/>
@@ -296,7 +305,7 @@
 			</type>
 			<binding>
 				<strength value="preferred"/>
-				<valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/qualitativeWoundDepthVS"/>
+				<valueSet value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/ValueSet/qualitativeWoundDepthVS"/>
 			</binding>
 		</element>
 		<element id="Observation:hspcwoundSize.component:woundVolume">
@@ -314,7 +323,7 @@
 		</element>
 		<element id="Observation:hspcwoundSize.component.code.coding.system:woundVolume">
 			<path value="Observation.component.code.coding.system"/>
-			<fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/wound-observation-type"/>
+			<fixedUri value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/wound-observation-type"/>
 		</element>
 		<element id="Observation:hspcwoundSize.component.code.coding.code:woundVolume">
 			<path value="Observation.component.code.coding.code"/>
@@ -349,17 +358,5 @@
             </type>
             <fixedCode value="mL"/>
         </element>
-		<element id="Observation:hspcwoundSize.extension:device">
-			<path value="Observation.extension"/>
-			<short value="Measurement Device"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/DeviceExt"/>
-			</type>
-			<binding>
-				<strength value="preferred"/>
-				<valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundMeasurementDeviceVS"/>
-			</binding>
-		</element>
     </differential>
 </StructureDefinition>

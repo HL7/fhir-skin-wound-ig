@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
 	<id value="DistanceFromLandmarkMeasurementExt"/>
-	<url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/DistanceFromLandmarkMeasurementExt"/>
+	<url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/DistanceFromLandmarkMeasurementExt"/>
 	<version value="0.2.0"/>
 	<name value="DistanceFromLandmarkMeasurementExt"/>
 	<title value="Distance From Landmark Measurement Extension"/>
@@ -13,8 +13,8 @@
 	<kind value="complex-type"/>
 	<abstract value="false"/>
 	<context>
-		<type value="element"/>
-		<expression value="StructureDefinition"/>
+	<type value="element"/>
+	<expression value="Extension"/>
 	</context>
 	<type value="Extension"/>
 	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -29,7 +29,7 @@
 		</element>
 		<element id="Extension:DistanceFromLandmarkMeasurementExt.url">
 			<path value="Extension.url"/>
-			<fixedUri value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/DistanceFromLandmarkMeasurementExt"/>
+			<fixedUri value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/DistanceFromLandmarkMeasurementExt"/>
 		</element>
 		<element id="Extension:DistanceFromLandmarkExt.valueQuantity">
 			<path value="Extension.valueQuantity"/>

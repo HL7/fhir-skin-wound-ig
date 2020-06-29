@@ -9,9 +9,9 @@ us_r4: http://hl7.org/fhir/us/core/
 
 Please refer to each Conformance CapabilityStatement definition page for specific details:
 
-1. [Conformance requirements for Server](CapabilityStatement-skinwoundassessment-server.html): defines the expected capabilities of a FHIR server system
+1. [Conformance requirements for Server](CapabilityStatement-lower-extremity-skin-wound-assessment-server.html): defines the expected capabilities of a FHIR server system
 
-2. [Conformance requirements for Client](CapabilityStatement-skinwoundassessment-client.html): defines the expected capabilities of a FHIR client system
+2. [Conformance requirements for Client](CapabilityStatement-lower-extremity-skin-wound-assessment-client.html): defines the expected capabilities of a FHIR client system
 
 ---
 

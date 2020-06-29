@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
     <id value="WoundUndermining"/>
-    <url value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundUndermining"/>
+    <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundUndermining"/>
     <name value="Wound Undermining"/>
     <status value="draft"/>
     <date value="2019-06-19"/>
@@ -46,7 +46,7 @@
             </type>
 			<binding>
                 <strength value="preferred"/>
-                <valueSet value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/presentAbsentVS"/>
+                <valueSet value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/ValueSet/presentAbsentVS"/>
             </binding>
         </element>
 		<element id="Observation:hspcwoundUndermining.related">
@@ -77,7 +77,7 @@
 			<path value="Observation.related.target"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundUnderminingDirection"/>
+				<targetProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundUnderminingDirection"/>
 			</type>
 		</element>
 		<element id="Observation:hspcwoundUndermining.related:woundUnderminingLength">
@@ -95,7 +95,7 @@
 			<path value="Observation.related.target"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundUnderminingLength"/>
+				<targetProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundUnderminingLength"/>
 			</type>
 		</element>
     </differential>

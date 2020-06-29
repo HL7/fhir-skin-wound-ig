@@ -2,14 +2,14 @@
 <Observation xmlns="http://hl7.org/fhir">
 	<id value="woundsize-example"/>
 	<meta>
-		<profile value="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/WoundSize"/>
+		<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundSize"/>
 		<security>
 			<system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
 			<code value="HTEST"/>
 			<display value="test health data"/>
 		</security>
 	</meta>
-	<extension url="http://hl7.org/fhir/us/skinwoundassessment/StructureDefinition/DeviceExt">
+	<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/DeviceExt">
 		<valueCodeableConcept>
 			<coding>
 				<system value="http://snomed.info/sct"/>

@@ -2,7 +2,7 @@
 <ValueSet  xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../schema/valueset.xsd">
   <id value="woundTypeVS"/>
 
-  <url value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/woundTypeVS"/>
+  <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/ValueSet/woundTypeVS"/>
   <version value="0.01"/>
   <name value="CIMIWoundTypevalueset"/>
   <status value="draft"/>

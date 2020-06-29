@@ -2,7 +2,7 @@
 <ValueSet  xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../schema/valueset.xsd">
   <id value="pressureUlcerAssociationVS"/>
 
-  <url value="http://hl7.org/fhir/us/skinwoundassessment/ValueSet/pressureUlcerAssociationVS"/>
+  <url value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/ValueSet/pressureUlcerAssociationVS"/>
   <version value="0.01"/>
   <name value="PressureUlcerAssociationvalueset"/>
   <status value="draft"/>

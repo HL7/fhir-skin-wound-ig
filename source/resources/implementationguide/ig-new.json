@@ -52,13 +52,6 @@
     }],
     "resource" : [{
       "reference" : {
-        "reference" : "StructureDefinition/AssociatedPreconditionExt"
-      },
-      "description" : "Associated Precondition",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
         "reference" : "StructureDefinition/PresentOnAdmissionExt"
       },
       "description" : "Present on Admission",
@@ -332,6 +325,13 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/WoundRecurrenceExt"
+      },
+      "description" : "Wound Recurrence Extension",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/WoundAssert"
       },
       "description" : "Wound Assertion",
@@ -398,13 +398,6 @@
         "reference" : "StructureDefinition/WoundTunnelingLength"
       },
       "description" : "Wound Tunneling Length",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/WoundTunnelingAbsentAssert"
-      },
-      "description" : "Wound Tunneling Absent Assert",
       "exampleBoolean" : false
     },
     {
@@ -479,20 +472,6 @@
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/WoundUnderminingAbsentAssert"
-      },
-      "description" : "Wound Undermining Absent Assert",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/WoundExudateAbsentAssert"
-      },
-      "description" : "Wound Exudate Absent Assert",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
         "reference" : "StructureDefinition/WoundShape"
       },
       "description" : "Wound Shape",
@@ -503,13 +482,6 @@
         "reference" : "StructureDefinition/WoundRelatedObservationsPanel"
       },
       "description" : "Wound Related Observations Panel",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "CodeSystem/organization-hspc-organizationtype"
-      },
-      "description" : "HSPC Organization Type code system",
       "exampleBoolean" : false
     },
     {
@@ -531,13 +503,6 @@
         "reference" : "ValueSet/courseVS"
       },
       "description" : "Course value set",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "ValueSet/organizationtypeVS"
-      },
-      "description" : "Organization Type value set",
       "exampleBoolean" : false
     },
     {
@@ -827,6 +792,27 @@
     },
     {
       "reference" : {
+        "reference" : "Condition/skinwoundexudateassert-example"
+      },
+      "description" : "Condition Skin Wound Exudate Assert example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Condition/skinwoundtunnelingassert-example"
+      },
+      "description" : "Condition Skin Wound Tunneling Assert example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Condition/skinwoundunderminingassert-example"
+      },
+      "description" : "Condition Skin Wound Undermining Assert example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
         "reference" : "Observation/skinwoundbedappearance-amend"
       },
       "description" : "Observation Skin Wound Bed Appearance amend",
@@ -911,6 +897,41 @@
     },
     {
       "reference" : {
+        "reference" : "Observation/skinwoundexudateamountdescription-example"
+      },
+      "description" : "Observation Skin Wound Exudate Amount Description example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/skinwoundexudateappearance-example"
+      },
+      "description" : "Observation Skin Wound Exudate Appearance example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/skinwoundexudatecolor-example"
+      },
+      "description" : "Observation Skin Wound Exudate Color example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/skinwoundexudateodor-example"
+      },
+      "description" : "Observation Skin Wound Exudate Odor example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/skinwoundexudatevolume-example"
+      },
+      "description" : "Observation Skin Wound Exudate Volume example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
         "reference" : "Observation/skinwoundrelatedobservationspanel-amend"
       },
       "description" : "Observation Skin Wound Related Observations Panel amend",
@@ -935,6 +956,34 @@
         "reference" : "Observation/skinwoundrelatedobservationspanel-receive"
       },
       "description" : "Observation Skin Wound Related Observations Panel receive",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/skinwoundtunnelingdirection-example"
+      },
+      "description" : "Observation Skin Wound Tunneling Direction example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/skinwoundtunnelinglength-example"
+      },
+      "description" : "Observation Skin Wound Tunneling Length example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/skinwoundunderminingdirection-example"
+      },
+      "description" : "Observation Skin Wound Undermining Direction example",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Observation/skinwoundundermininglength-example"
+      },
+      "description" : "Observation Skin Wound Undermining Length example",
       "exampleBoolean" : true
     },
     {

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="skinwoundexudatevolume-example"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundExudateVolume"/>
+		<security>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+			<code value="HTEST"/>
+			<display value="test health data"/>
+		</security>
+	</meta>
+	<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/EstimatedIndExt">
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="373067005"/>
+				<display value="No"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<identifier>
+		<system value="https://acme.org/identifiers"/>
+		<value value="watt-scenario-wound-exudate-volume-1001"/>
+	</identifier>
+	<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+			<code value="exam"/>
+			<display value="Exam"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="72291-8"/>
+			<display value="Drainage amount from device of Exudate from wound"/>
+		</coding>
+		<text value="Drainage amount from device of Exudate from wound"/>
+	</code>
+	<subject>
+		<reference value="Patient/patient-example"/>
+	</subject>
+	<effectiveDateTime value="2016-03-26"/>
+	<performer>
+		<reference value="Practitioner/practitioner-example"/>
+	</performer>
+	<valueQuantity>
+		<value value="10"/>
+		<unit value="mL"/>
+		<system value="http://unitsofmeasure.org"/>
+		<code value="mL"/>
+	</valueQuantity>
+</Observation>

@@ -48,13 +48,6 @@
     </grouping>
     <resource>
       <reference>
-        <reference value="StructureDefinition/AssociatedPreconditionExt"/>
-      </reference>
-      <description value="Associated Precondition"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="StructureDefinition/PresentOnAdmissionExt"/>
       </reference>
       <description value="Present on Admission"/>
@@ -328,6 +321,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/WoundRecurrenceExt"/>
+      </reference>
+      <description value="Wound Recurrence Extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/WoundAssert"/>
       </reference>
       <description value="Wound Assertion"/>
@@ -394,13 +394,6 @@
         <reference value="StructureDefinition/WoundTunnelingLength"/>
       </reference>
       <description value="Wound Tunneling Length"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/WoundTunnelingAbsentAssert"/>
-      </reference>
-      <description value="Wound Tunneling Absent Assert"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -475,20 +468,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/WoundUnderminingAbsentAssert"/>
-      </reference>
-      <description value="Wound Undermining Absent Assert"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/WoundExudateAbsentAssert"/>
-      </reference>
-      <description value="Wound Exudate Absent Assert"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="StructureDefinition/WoundShape"/>
       </reference>
       <description value="Wound Shape"/>
@@ -499,13 +478,6 @@
         <reference value="StructureDefinition/WoundRelatedObservationsPanel"/>
       </reference>
       <description value="Wound Related Observations Panel"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="CodeSystem/organization-hspc-organizationtype"/>
-      </reference>
-      <description value="HSPC Organization Type code system"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -527,13 +499,6 @@
         <reference value="ValueSet/courseVS"/>
       </reference>
       <description value="Course value set"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/organizationtypeVS"/>
-      </reference>
-      <description value="Organization Type value set"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -823,6 +788,27 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Condition/skinwoundexudateassert-example"/>
+      </reference>
+      <description value="Condition Skin Wound Exudate Assert example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/skinwoundtunnelingassert-example"/>
+      </reference>
+      <description value="Condition Skin Wound Tunneling Assert example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/skinwoundunderminingassert-example"/>
+      </reference>
+      <description value="Condition Skin Wound Undermining Assert example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Observation/skinwoundbedappearance-amend"/>
       </reference>
       <description value="Observation Skin Wound Bed Appearance amend"/>
@@ -907,6 +893,41 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Observation/skinwoundexudateamountdescription-example"/>
+      </reference>
+      <description value="Observation Skin Wound Exudate Amount Description example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/skinwoundexudateappearance-example"/>
+      </reference>
+      <description value="Observation Skin Wound Exudate Appearance example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/skinwoundexudatecolor-example"/>
+      </reference>
+      <description value="Observation Skin Wound Exudate Color example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/skinwoundexudateodor-example"/>
+      </reference>
+      <description value="Observation Skin Wound Exudate Odor example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/skinwoundexudatevolume-example"/>
+      </reference>
+      <description value="Observation Skin Wound Exudate Volume example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Observation/skinwoundrelatedobservationspanel-amend"/>
       </reference>
       <description value="Observation Skin Wound Related Observations Panel amend"/>
@@ -931,6 +952,34 @@
         <reference value="Observation/skinwoundrelatedobservationspanel-receive"/>
       </reference>
       <description value="Observation Skin Wound Related Observations Panel receive"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/skinwoundtunnelingdirection-example"/>
+      </reference>
+      <description value="Observation Skin Wound Tunneling Direction example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/skinwoundtunnelinglength-example"/>
+      </reference>
+      <description value="Observation Skin Wound Tunneling Length example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/skinwoundunderminingdirection-example"/>
+      </reference>
+      <description value="Observation Skin Wound Undermining Direction example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/skinwoundundermininglength-example"/>
+      </reference>
+      <description value="Observation Skin Wound Undermining Length example"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

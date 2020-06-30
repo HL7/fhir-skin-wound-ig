@@ -28,8 +28,8 @@
     </element>
 	<element id="Extension:BodyLocationExt.extension:AnatomicLocation">
 		<path value="Extension.extension"/>
-		<sliceName value="PrecoordinatedAnitomicLocation"/>
-		<short value="Precoordinated Anitomic Location"/>
+		<sliceName value="PrecoordinatedAnatomicLocation"/>
+		<short value="Precoordinated Anatomic Location"/>
 		<type>
 			<code value="Extension"/>
 			<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/AnatomicLocationExt"/>

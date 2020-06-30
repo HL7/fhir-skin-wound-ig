@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition xmlns="http://hl7.org/fhir">
+	<id value="skinwoundtunnelingassert-example"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundTunnelingAssert"/>
+		<security>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+			<code value="HTEST"/>
+			<display value="test health data"/>
+		</security>
+	</meta>
+	<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundTunnelingDirectionExt">
+		<valueReference>
+			<reference value="Observation/skinwoundtunnelingdirection-example"/>
+		</valueReference>
+	</extension>
+	<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundTunnelingLengthExt">
+		<valueReference>
+			<reference value="Observation/skinwoundtunnelinglength-example"/>
+		</valueReference>
+	</extension>
+	<clinicalStatus>
+		<coding> 
+			<system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+			<code value="active"/>
+		</coding>
+	</clinicalStatus>
+	<verificationStatus>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+			<code value="confirmed"/>
+		</coding>
+	</verificationStatus>
+	<category>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+			<code value="encounter-diagnosis"/>
+			<display value="Encounter Diagnosis"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="239158009"/>
+			<display value="Tunneling wound"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/patient-example"/>
+		<display value="Amy V. Shaw"/>
+	</subject>
+	<recordedDate value="2019-03-26"/>
+	<asserter>
+		<reference value="Practitioner/practitioner-example"/>
+	</asserter>
+</Condition>

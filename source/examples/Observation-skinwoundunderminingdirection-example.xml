@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="skinwoundunderminingdirection-example"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundUnderminingDirection"/>
+		<security>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+			<code value="HTEST"/>
+			<display value="test health data"/>
+		</security>
+	</meta>
+	<identifier>
+		<system value="https://acme.org/identifiers"/>
+		<value value="watt-scenario-wound-undermining-direction-1001"/>
+	</identifier>
+	<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+			<code value="exam"/>
+			<display value="Exam"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="72294-2"/>
+			<display value="Undermining clock position of Wound"/>
+		</coding>
+		<text value="Undermining clock position of Wound"/>
+	</code>
+	<subject>
+		<reference value="Patient/patient-example"/>
+	</subject>
+	<effectiveDateTime value="2016-03-26"/>
+	<performer>
+		<reference value="Practitioner/practitioner-example"/>
+	</performer>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="260318004"/>
+			<display value="1 o'clock position"/>
+		</coding>
+		<text value="1 o'clock position"/>
+	</valueCodeableConcept>
+</Observation>

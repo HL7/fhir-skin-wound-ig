@@ -2,6 +2,8 @@
 
 Please refer to the [Lower Extremity Skin Wound Assessment FHIR IG PSS](https://confluence.hl7.org/display/EHR/2020-02-19+Lower+Extremity+Skin+Wound+Assessment+FHIR+IG) for the project details.
 
+Please refer to the [Lower Extremity Skin Wound Assessment FHIR IG Proposal](https://confluence.hl7.org/display/FHIR/Lower+Extremity+Skin+Wound+Assessment+FHIR+IG) for the current status of the IG.
+
 Please refer the HL7 Confluence [EHR WG Projects / Podiatry](https://confluence.hl7.org/display/EHR/Podiatry) site for additional information around on-going efforts.
 
 

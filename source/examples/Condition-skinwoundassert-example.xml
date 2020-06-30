@@ -9,6 +9,95 @@
 			<display value="test health data"/>
 		</security>
 	</meta>
+	<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/PresentOnAdmissionExt">
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="373066001"/>
+				<display value="Yes"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/PressureUlcerAssociationExt">
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="449753006"/>
+				<display value="Pressure point of skin"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundAssessmentInterpretationExt">
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="449501000124109"/>
+				<display value="Within defined limits"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/EpisodeExt">
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="255227004"/>
+				<display value="Recurrent"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/TrendExt">
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="409052007"/>
+				<display value="Stabilization of status"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/PeriwoundConditionExt">
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="22253000"/>
+				<display value="Pain"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundTypeEtiologyExt">
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="449753006"/>
+				<display value="Pressure point of skin"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundImageExtension">
+		<valueAttachment>
+			<contentType value="application/pdf"/>
+			<language value="en"/>
+			<url value="http://example.org/woundimages.pdf"/>
+			<title value="Wound images" />
+		</valueAttachment>
+	</extension>
+	<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundInternalItemOrBodyStructureVisibleExt">
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="84820005"/>
+				<display value="Structure of fascia"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundGradationExt">
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="403190006"/>
+				<display value="First degree burn of skin"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
 	<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundRelatedObservationsPanelExt">
 		<valueReference>
 			<reference value="Observation/skinwoundrelatedobservationspanel-example"/>
@@ -105,6 +194,25 @@
 					<system value="http://snomed.info/sct"/>
 					<code value="255509001"/>
 					<display value="Large"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+	</extension>
+	<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundRecurrenceExt">
+		<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/PeriodicityExt">
+			<valueQuantity>
+				<value value="2"/>
+				<unit value="wk"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="wk"/>
+			</valueQuantity>
+		</extension>
+		<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/RecurrenceExt">
+			<valueCodeableConcept>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="81170007"/>
+					<display value="Second"/>
 				</coding>
 			</valueCodeableConcept>
 		</extension>

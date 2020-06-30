@@ -9,6 +9,21 @@
 			<display value="test health data"/>
 		</security>
 	</meta>
+	<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundTunnelingAssertExt">
+		<valueReference>
+			<reference value="Condition/skinwoundtunnelingassert-example"/>
+		</valueReference>
+	</extension>
+	<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundUnderminingAssertExt">
+		<valueReference>
+			<reference value="Condition/skinwoundunderminingassert-example"/>
+		</valueReference>
+	</extension>
+	<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundExudateAssertExt">
+		<valueReference>
+			<reference value="Condition/skinwoundexudateassert-example"/>
+		</valueReference>
+	</extension>
 	<identifier>
 		<system value="https://acme.org/identifiers"/>
 		<value value="watt-scenario-skin-wound-related-observations-panel-1001"/>

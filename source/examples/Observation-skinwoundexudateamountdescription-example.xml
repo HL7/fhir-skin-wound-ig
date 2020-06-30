@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="skinwoundexudateamountdescription-example"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundExudateAmountDescription"/>
+		<security>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+			<code value="HTEST"/>
+			<display value="test health data"/>
+		</security>
+	</meta>
+	<identifier>
+		<system value="https://acme.org/identifiers"/>
+		<value value="watt-scenario-wound-exudate-amount-description-1001"/>
+	</identifier>
+	<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+			<code value="exam"/>
+			<display value="Exam"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="39116-9"/>
+			<display value="Drainage amount of Wound"/>
+		</coding>
+		<text value="Drainage amount of Wound"/>
+	</code>
+	<subject>
+		<reference value="Patient/patient-example"/>
+	</subject>
+	<effectiveDateTime value="2016-03-26"/>
+	<performer>
+		<reference value="Practitioner/practitioner-example"/>
+	</performer>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="6736007"/>
+			<display value="Moderate"/>
+		</coding>
+		<text value="Moderate"/>
+	</valueCodeableConcept>
+</Observation>

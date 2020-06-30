@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition xmlns="http://hl7.org/fhir">
+	<id value="skinwoundunderminingassert-example"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundUnderminingAssert"/>
+		<security>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+			<code value="HTEST"/>
+			<display value="test health data"/>
+		</security>
+	</meta>
+	<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundUnderminingDirectionExt">
+		<valueReference>
+			<reference value="Observation/skinwoundunderminingdirection-example"/>
+		</valueReference>
+	</extension>
+	<extension url="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundUnderminingLengthExt">
+		<valueReference>
+			<reference value="Observation/skinwoundundermininglength-example"/>
+		</valueReference>
+	</extension>
+	<clinicalStatus>
+		<coding> 
+			<system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+			<code value="active"/>
+		</coding>
+	</clinicalStatus>
+	<verificationStatus>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+			<code value="confirmed"/>
+		</coding>
+	</verificationStatus>
+	<category>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+			<code value="encounter-diagnosis"/>
+			<display value="Encounter Diagnosis"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="449752001"/>
+			<display value="Wound tissue undermining"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/patient-example"/>
+		<display value="Amy V. Shaw"/>
+	</subject>
+	<recordedDate value="2019-03-26"/>
+	<asserter>
+		<reference value="Practitioner/practitioner-example"/>
+	</asserter>
+</Condition>

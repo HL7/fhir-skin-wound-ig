@@ -149,7 +149,7 @@
 				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundRelatedObservationsPanelExt"/>
 			</type>
 		</element>
-		<element id="Condition:HSPCWoundAssert.extension:BodyLocation">
+		<element id="Condition:HSPCWoundAssert.extension:BodyLocationExt">
 			<path value="Condition.extension"/>
 			<sliceName value="BodyLocation"/>
 			<short value="Body Location"/>
@@ -160,15 +160,15 @@
 				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/BodyLocationExt"/>
 			</type>
 		</element>
-		<element id="Condition:HSPCWoundAssert.extension:Recurrence">
+		<element id="Condition:HSPCWoundAssert.extension:WoundRecurrenceExt">
 			<path value="Condition.extension"/>
-			<sliceName value="Recurrence"/>
+			<sliceName value="WoundRecurrence"/>
 			<short value="Wound Recurrence"/>
 			<min value="0"/>
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/RecurrenceExt"/>
+				<profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundRecurrenceExt"/>
 			</type>
 		</element>
 		<element id="Condition:HSPCWoundAssert.identifier">

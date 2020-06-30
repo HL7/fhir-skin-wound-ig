@@ -21,11 +21,16 @@
   <format value="xml"/>
   <format value="json"/>
   <implementationGuide value="http://hl7.org/fhir/us/core"/>
+  <implementationGuide value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/ImplementationGuide/lower-extremity-skin-wound-assessment"/>
   <rest>
     <mode value="server"/>
     <resource>
-      <type value="Basic"/>
-      <profile value="http://hl7.org/fhir/StructureDefinition/Basic"/>
+      <type value="Condition"/>
+      <profile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+      <supportedProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundAssert"/>
+      <supportedProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundExudateAssert"/>
+      <supportedProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundTunnelingAssert"/>
+      <supportedProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundUnderminingAssert"/>
       <interaction>
         <code value="read"/>
         <documentation value="Implemented per the specification"/>
@@ -72,44 +77,468 @@
       <referencePolicy value="literal"/>
       <referencePolicy value="local"/>
       <referencePolicy value="logical"/>
-      <searchInclude value="Basic.subject"/>
-      <searchInclude value="Basic.patient"/>
-      <searchInclude value="Basic.author"/>
+      <searchInclude value="Condition:evidence-detail"/>
+      <searchInclude value="Condition:subject"/>
+      <searchInclude value="Condition:encounter"/>
+      <searchInclude value="Condition:asserter"/>
+      <searchInclude value="Condition:patient"/>
+      <searchRevInclude value="AdverseEvent:resultingcondition"/>
+      <searchRevInclude value="Appointment:reason-reference"/>
+      <searchRevInclude value="CarePlan:condition"/>
+      <searchRevInclude value="ClinicalImpression:finding-ref"/>
+      <searchRevInclude value="ClinicalImpression:problem"/>
+      <searchRevInclude value="Encounter:diagnosis"/>
+      <searchRevInclude value="Encounter:reason-reference"/>
+      <searchRevInclude value="EpisodeOfCare:condition"/>
+      <searchRevInclude value="Immunization:reason-reference"/>
+      <searchRevInclude value="Procedure:reason-reference"/>
+      <searchRevInclude value="RiskAssessment:condition"/>
       <searchParam>
-        <name value="author"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/Basic-author"/>
+        <name value="abatement-age"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Condition-abatement-age"/>
+        <type value="quantity"/>
+        <documentation value="Abatement as age or age range"/>
+      </searchParam>
+      <searchParam>
+        <name value="abatement-date"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Condition-abatement-date"/>
+        <type value="date"/>
+        <documentation value="Date-related abatements (dateTime and period)"/>
+      </searchParam>
+      <searchParam>
+        <name value="abatement-string"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Condition-abatement-string"/>
+        <type value="string"/>
+        <documentation value="Abatement as a string"/>
+      </searchParam>
+      <searchParam>
+        <name value="asserter"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Condition-asserter"/>
         <type value="reference"/>
-        <documentation value="Who created"/>
+        <documentation value="Person who asserts this condition"/>
+      </searchParam>
+      <searchParam>
+        <name value="body-site"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Condition-body-site"/>
+        <type value="token"/>
+        <documentation value="Anatomical location, if relevant"/>
+      </searchParam>
+      <searchParam>
+        <name value="category"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Condition-category"/>
+        <type value="token"/>
+        <documentation value="The category of the condition"/>
+      </searchParam>
+      <searchParam>
+        <name value="clinical-status"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Condition-clinical-status"/>
+        <type value="token"/>
+        <documentation value="The clinical status of the condition"/>
       </searchParam>
       <searchParam>
         <name value="code"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/Basic-code"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-code"/>
         <type value="token"/>
-        <documentation value="Kind of Resource"/>
+        <documentation value="Code for the condition"/>
       </searchParam>
       <searchParam>
-        <name value="created"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/Basic-created"/>
-        <type value="date"/>
-        <documentation value="When created"/>
+        <name value="encounter"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Condition-encounter"/>
+        <type value="reference"/>
+        <documentation value="Encounter created as part of"/>
+      </searchParam>
+      <searchParam>
+        <name value="evidence"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Condition-evidence"/>
+        <type value="token"/>
+        <documentation value="Manifestation/symptom"/>
+      </searchParam>
+      <searchParam>
+        <name value="evidence-detail"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Condition-evidence-detail"/>
+        <type value="reference"/>
+        <documentation value="Supporting information found elsewhere"/>
       </searchParam>
       <searchParam>
         <name value="identifier"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/Basic-identifier"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-identifier"/>
         <type value="token"/>
-        <documentation value="Business identifier"/>
+        <documentation value="A unique identifier of the condition record"/>
+      </searchParam>
+      <searchParam>
+        <name value="onset-age"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Condition-onset-age"/>
+        <type value="quantity"/>
+        <documentation value="Onsets as age or age range"/>
+      </searchParam>
+      <searchParam>
+        <name value="onset-date"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Condition-onset-date"/>
+        <type value="date"/>
+        <documentation value="Date related onsets (dateTime and Period)"/>
+      </searchParam>
+      <searchParam>
+        <name value="onset-info"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Condition-onset-info"/>
+        <type value="string"/>
+        <documentation value="Onsets as a string"/>
       </searchParam>
       <searchParam>
         <name value="patient"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/Basic-patient"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-patient"/>
         <type value="reference"/>
-        <documentation value="Identifies the focus of this resource"/>
+        <documentation value="Who has the condition?"/>
+      </searchParam>
+      <searchParam>
+        <name value="recorded-date"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Condition-recorded-date"/>
+        <type value="date"/>
+        <documentation value="Date record was first recorded"/>
+      </searchParam>
+      <searchParam>
+        <name value="severity"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Condition-severity"/>
+        <type value="token"/>
+        <documentation value="The severity of the condition"/>
+      </searchParam>
+      <searchParam>
+        <name value="stage"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Condition-stage"/>
+        <type value="token"/>
+        <documentation value="Simple summary (disease specific)"/>
       </searchParam>
       <searchParam>
         <name value="subject"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/Basic-subject"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Condition-subject"/>
         <type value="reference"/>
-        <documentation value="Identifies the focus of this resource"/>
+        <documentation value="Who has the condition?"/>
+      </searchParam>
+      <searchParam>
+        <name value="verification-status"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Condition-verification-status"/>
+        <type value="token"/>
+        <documentation value="unconfirmed | provisional | differential | confirmed | refuted | entered-in-error"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Observation"/>
+      <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+      <supportedProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundBed"/>
+      <supportedProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundBedAppearance"/>
+      <supportedProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundBedColor"/>
+      <supportedProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundEdge"/>
+      <supportedProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundEdgeColor"/>
+      <supportedProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundEdgeDescription"/>
+      <supportedProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundExudateAmountDescription"/>
+      <supportedProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundExudateAppearance"/>
+      <supportedProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundExudateColor"/>
+      <supportedProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundExudateOdor"/>
+      <supportedProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundExudateVolume"/>
+      <supportedProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundRelatedObservationsPanel"/>
+      <supportedProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundShape"/>
+      <supportedProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundSize"/>
+      <supportedProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundTunnelingDirection"/>
+      <supportedProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundTunnelingLength"/>
+      <supportedProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundUnderminingDirection"/>
+      <supportedProfile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/WoundUnderminingLength"/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Implemented per the specification"/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+        <documentation value="Implemented per the specification"/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+        <documentation value="Implemented per the specification"/>
+      </interaction>
+      <interaction>
+        <code value="delete"/>
+        <documentation value="Implemented per the specification"/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="Implemented per the specification"/>
+      </interaction>
+      <interaction>
+        <code value="history-type"/>
+        <documentation value="Implemented per the specification"/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Implemented per the specification"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Implemented per the specification"/>
+      </interaction>
+      <interaction>
+        <code value="patch"/>
+        <documentation value="Implemented per the specification"/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="true"/>
+      <conditionalCreate value="true"/>
+      <conditionalRead value="full-support"/>
+      <conditionalUpdate value="true"/>
+      <conditionalDelete value="multiple"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="local"/>
+      <referencePolicy value="logical"/>
+      <searchInclude value="Observation:subject"/>
+      <searchInclude value="Observation:focus"/>
+      <searchInclude value="Observation:derived-from"/>
+      <searchInclude value="Observation:part-of"/>
+      <searchInclude value="Observation:has-member"/>
+      <searchInclude value="Observation:based-on"/>
+      <searchInclude value="Observation:patient"/>
+      <searchInclude value="Observation:specimen"/>
+      <searchInclude value="Observation:performer"/>
+      <searchInclude value="Observation:encounter"/>
+      <searchInclude value="Observation:device"/>
+      <searchRevInclude value="Appointment:reason-reference"/>
+      <searchRevInclude value="ChargeItem:service"/>
+      <searchRevInclude value="ClinicalImpression:finding-ref"/>
+      <searchRevInclude value="ClinicalImpression:investigation"/>
+      <searchRevInclude value="DiagnosticReport:result"/>
+      <searchRevInclude value="Encounter:reason-reference"/>
+      <searchRevInclude value="Immunization:reaction"/>
+      <searchRevInclude value="Immunization:reason-reference"/>
+      <searchRevInclude value="MedicationStatement:part-of"/>
+      <searchRevInclude value="Observation:derived-from"/>
+      <searchRevInclude value="Observation:has-member"/>
+      <searchRevInclude value="Procedure:part-of"/>
+      <searchRevInclude value="Procedure:reason-reference"/>
+      <searchRevInclude value="QuestionnaireResponse:part-of"/>
+      <searchParam>
+        <name value="based-on"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-based-on"/>
+        <type value="reference"/>
+        <documentation value="Reference to the service request."/>
+      </searchParam>
+      <searchParam>
+        <name value="category"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-category"/>
+        <type value="token"/>
+        <documentation value="The classification of the type of observation"/>
+      </searchParam>
+      <searchParam>
+        <name value="code"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-code"/>
+        <type value="token"/>
+        <documentation value="The code of the observation type"/>
+      </searchParam>
+      <searchParam>
+        <name value="code-value-concept"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-code-value-concept"/>
+        <type value="composite"/>
+        <documentation value="Code and coded value parameter pair"/>
+      </searchParam>
+      <searchParam>
+        <name value="code-value-date"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-code-value-date"/>
+        <type value="composite"/>
+        <documentation value="Code and date/time value parameter pair"/>
+      </searchParam>
+      <searchParam>
+        <name value="code-value-quantity"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-code-value-quantity"/>
+        <type value="composite"/>
+        <documentation value="Code and quantity value parameter pair"/>
+      </searchParam>
+      <searchParam>
+        <name value="code-value-string"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-code-value-string"/>
+        <type value="composite"/>
+        <documentation value="Code and string value parameter pair"/>
+      </searchParam>
+      <searchParam>
+        <name value="combo-code"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-combo-code"/>
+        <type value="token"/>
+        <documentation value="The code of the observation type or component type"/>
+      </searchParam>
+      <searchParam>
+        <name value="combo-code-value-concept"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-combo-code-value-concept"/>
+        <type value="composite"/>
+        <documentation value="Code and coded value parameter pair, including in components"/>
+      </searchParam>
+      <searchParam>
+        <name value="combo-code-value-quantity"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-combo-code-value-quantity"/>
+        <type value="composite"/>
+        <documentation value="Code and quantity value parameter pair, including in components"/>
+      </searchParam>
+      <searchParam>
+        <name value="combo-data-absent-reason"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-combo-data-absent-reason"/>
+        <type value="token"/>
+        <documentation value="The reason why the expected value in the element Observation.value[x] or Observation.component.value[x] is missing."/>
+      </searchParam>
+      <searchParam>
+        <name value="combo-value-concept"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-combo-value-concept"/>
+        <type value="token"/>
+        <documentation value="The value or component value of the observation, if the value is a CodeableConcept"/>
+      </searchParam>
+      <searchParam>
+        <name value="combo-value-quantity"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-combo-value-quantity"/>
+        <type value="quantity"/>
+        <documentation value="The value or component value of the observation, if the value is a Quantity, or a SampledData (just search on the bounds of the values in sampled data)"/>
+      </searchParam>
+      <searchParam>
+        <name value="component-code"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-component-code"/>
+        <type value="token"/>
+        <documentation value="The component code of the observation type"/>
+      </searchParam>
+      <searchParam>
+        <name value="component-code-value-concept"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-component-code-value-concept"/>
+        <type value="composite"/>
+        <documentation value="Component code and component coded value parameter pair"/>
+      </searchParam>
+      <searchParam>
+        <name value="component-code-value-quantity"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-component-code-value-quantity"/>
+        <type value="composite"/>
+        <documentation value="Component code and component quantity value parameter pair"/>
+      </searchParam>
+      <searchParam>
+        <name value="component-data-absent-reason"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-component-data-absent-reason"/>
+        <type value="token"/>
+        <documentation value="The reason why the expected value in the element Observation.component.value[x] is missing."/>
+      </searchParam>
+      <searchParam>
+        <name value="component-value-concept"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-component-value-concept"/>
+        <type value="token"/>
+        <documentation value="The value of the component observation, if the value is a CodeableConcept"/>
+      </searchParam>
+      <searchParam>
+        <name value="component-value-quantity"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-component-value-quantity"/>
+        <type value="quantity"/>
+        <documentation value="The value of the component observation, if the value is a Quantity, or a SampledData (just search on the bounds of the values in sampled data)"/>
+      </searchParam>
+      <searchParam>
+        <name value="data-absent-reason"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-data-absent-reason"/>
+        <type value="token"/>
+        <documentation value="The reason why the expected value in the element Observation.value[x] is missing."/>
+      </searchParam>
+      <searchParam>
+        <name value="date"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-date"/>
+        <type value="date"/>
+        <documentation value="Obtained date/time. If the obtained element is a period, a date that falls in the period"/>
+      </searchParam>
+      <searchParam>
+        <name value="derived-from"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-derived-from"/>
+        <type value="reference"/>
+        <documentation value="Related measurements the observation is made from"/>
+      </searchParam>
+      <searchParam>
+        <name value="device"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-device"/>
+        <type value="reference"/>
+        <documentation value="The Device that generated the observation data."/>
+      </searchParam>
+      <searchParam>
+        <name value="encounter"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-encounter"/>
+        <type value="reference"/>
+        <documentation value="Encounter related to the observation"/>
+      </searchParam>
+      <searchParam>
+        <name value="focus"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-focus"/>
+        <type value="reference"/>
+        <documentation value="The focus of an observation when the focus is not the patient of record."/>
+      </searchParam>
+      <searchParam>
+        <name value="has-member"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-has-member"/>
+        <type value="reference"/>
+        <documentation value="Related resource that belongs to the Observation group"/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-identifier"/>
+        <type value="token"/>
+        <documentation value="The unique id for a particular observation"/>
+      </searchParam>
+      <searchParam>
+        <name value="method"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-method"/>
+        <type value="token"/>
+        <documentation value="The method used for the observation"/>
+      </searchParam>
+      <searchParam>
+        <name value="part-of"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-part-of"/>
+        <type value="reference"/>
+        <documentation value="Part of referenced event"/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-patient"/>
+        <type value="reference"/>
+        <documentation value="The subject that the observation is about (if patient)"/>
+      </searchParam>
+      <searchParam>
+        <name value="performer"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-performer"/>
+        <type value="reference"/>
+        <documentation value="Who performed the observation"/>
+      </searchParam>
+      <searchParam>
+        <name value="specimen"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-specimen"/>
+        <type value="reference"/>
+        <documentation value="Specimen used for this observation"/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-status"/>
+        <type value="token"/>
+        <documentation value="The status of the observation"/>
+      </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-subject"/>
+        <type value="reference"/>
+        <documentation value="The subject that the observation is about"/>
+      </searchParam>
+      <searchParam>
+        <name value="value-concept"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-value-concept"/>
+        <type value="token"/>
+        <documentation value="The value of the observation, if the value is a CodeableConcept"/>
+      </searchParam>
+      <searchParam>
+        <name value="value-date"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-value-date"/>
+        <type value="date"/>
+        <documentation value="The value of the observation, if the value is a date or period of time"/>
+      </searchParam>
+      <searchParam>
+        <name value="value-quantity"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-value-quantity"/>
+        <type value="quantity"/>
+        <documentation value="The value of the observation, if the value is a Quantity, or a SampledData (just search on the bounds of the values in sampled data)"/>
+      </searchParam>
+      <searchParam>
+        <name value="value-string"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Observation-value-string"/>
+        <type value="string"/>
+        <documentation value="The value of the observation, if the value is a string, and also searches in CodeableConcept.text"/>
       </searchParam>
     </resource>
     <interaction>

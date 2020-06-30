@@ -59,10 +59,6 @@
 				<display value ="Proximal interphalangeal joint of second toe"/>
 			</concept>	
 			<concept>	
-				<code value ="371292010"/>
-				<display value ="Proximal interphalangeal joint of second toe"/>
-			</concept>	
-			<concept>	
 				<code value ="371255009"/>
 				<display value ="Proximal interphalangeal joint of third toe"/>
 			</concept>	
@@ -71,7 +67,7 @@
 				<display value ="Proximal interphalangeal joint of fourth toe"/>
 			</concept>	
 			<concept>	
-				<code value ="371283998"/>
+				<code value ="371284000"/>
 				<display value ="Proximal interphalangeal joint of fifth toe"/>
 			</concept>	
 			<concept>	

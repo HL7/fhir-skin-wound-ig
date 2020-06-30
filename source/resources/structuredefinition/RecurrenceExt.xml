@@ -13,32 +13,24 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Condition"/>
+    <expression value="Extension"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
   <differential>
-    <element id="Extension:Recurrence">
+    <element id="Extension:RecurrenceExt">
       <path value="Extension"/>
       <definition value="How often an event re-occurs."/>
       <min value="0"/>
       <max value="1"/>
       <isModifier value="false"/>
     </element>
-    <element id="Extension:Recurrence.extension:Periodicity">
-      <path value="Extension.extension"/>
-      <sliceName value="Periodicity"/>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/PeriodicityExt"/>
-      </type>
-    </element>
-    <element id="Extension:Recurrence.url">
+    <element id="Extension:RecurrenceExt.url">
       <path value="Extension.url"/>
       <fixedUri value="http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/StructureDefinition/RecurrenceExt"/>
     </element>
-    <element id="Extension:Recurrence.valueCodeableConcept">
+    <element id="Extension:RecurrenceExt.valueCodeableConcept">
       <path value="Extension.valueCodeableConcept"/>
       <type>
         <code value="CodeableConcept"/>
